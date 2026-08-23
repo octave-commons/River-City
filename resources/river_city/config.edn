@@ -1,0 +1,50 @@
+{:sources
+ [{:id :source/imf-portwatch :name "IMF PortWatch Daily Chokepoints" :kind :api :url "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0" :license "Check upstream terms before redistribution" :cadence :daily :auth :none}
+  {:id :source/eia :name "U.S. EIA Open Data" :kind :api :url "https://api.eia.gov/v2/" :cadence :hourly :auth :api-key}
+  {:id :source/entsoe :name "ENTSO-E Transparency Platform" :kind :api :cadence :hourly :auth :token}
+  {:id :source/acled :name "ACLED" :kind :api :cadence :daily :auth :oauth}
+  {:id :source/ucdp :name "UCDP" :kind :api :cadence :periodic :auth :token}
+  {:id :source/nasa-firms :name "NASA FIRMS" :kind :api :cadence :near-real-time :auth :api-key}
+  {:id :source/openrouter :name "OpenRouter Models API" :kind :api :cadence :daily :auth :none}]
+ :theaters
+ [{:id :theater/hormuz :name "Hormuz / Iran" :kind :maritime :actors #{:actor/iran :actor/us :actor/gulf-states} :regions #{:region/persian-gulf :region/strait-of-hormuz} :active? true}
+  {:id :theater/ukraine :name "Ukraine / Russia" :kind :land-war :actors #{:actor/ukraine :actor/russia} :regions #{:region/ukraine :region/russia :region/black-sea} :active? true}
+  {:id :theater/red-sea :name "Red Sea / Bab el-Mandeb" :kind :maritime :actors #{:actor/houthis :actor/regional-shipping} :regions #{:region/red-sea :region/bab-el-mandeb} :active? true}]
+ :channels
+ [{:id :channel/energy :name "Energy pressure" :kind :energy}
+  {:id :channel/defense :name "Defense demand pressure" :kind :defense}
+  {:id :channel/logistics :name "Logistics pressure" :kind :logistics}
+  {:id :channel/finance :name "Financing pressure" :kind :finance}
+  {:id :channel/ai-infra :name "AI infrastructure stress" :kind :infrastructure}
+  {:id :channel/ai-cost :name "AI energy cost pressure" :kind :ai-cost}
+  {:id :channel/ai-pricing :name "AI public pricing" :kind :ai-pricing}]
+ :compounds
+ [{:id :compound/maritime-pressure :name "Maritime pressure" :aggregation :weighted-mean :missing :drop
+   :inputs [{:signal :signal/chokepoint-throughput-gap :weight 0.50} {:signal :signal/attack-tempo :weight 0.30} {:signal :signal/dark-shipping-share :weight 0.20}]
+   :channels #{:channel/logistics :channel/energy} :theaters #{:theater/hormuz :theater/red-sea}}
+  {:id :compound/energy-pressure :name "Energy pressure" :aggregation :weighted-mean :missing :drop
+   :inputs [{:signal :signal/crude-price-stress :weight 0.20} {:signal :signal/distillate-stress :weight 0.25} {:signal :signal/power-price-stress :weight 0.30} {:signal :signal/refinery-outage-stress :weight 0.25}]
+   :channels #{:channel/energy}}
+  {:id :compound/defense-pressure :name "Defense pressure" :aggregation :weighted-mean :missing :drop
+   :inputs [{:signal :signal/strike-tempo :weight 0.40} {:signal :signal/defense-procurement :weight 0.35} {:signal :signal/interceptor-burn :weight 0.25}]
+   :channels #{:channel/defense}}
+  {:id :compound/ai-cost-pressure :name "AI cost pressure" :aggregation :weighted-mean :missing :drop
+   :inputs [{:signal :signal/electricity-cost-floor :weight 0.40} {:signal :signal/ai-infra-finance-stress :weight 0.30} {:signal :signal/capacity-scarcity :weight 0.30}]
+   :channels #{:channel/ai-cost :channel/ai-infra}}]
+ :latents
+ [{:id :latent/defense-demand-pull :name "Defense demand pull" :description "Estimated incremental AI/compute demand attributable to defense and national-security workloads." :channels #{:channel/defense :channel/ai-infra} :observables #{:signal/defense-procurement :signal/ai-defense-contracts :signal/capacity-scarcity} :method :rule :confidence-floor 0.25}
+  {:id :latent/energy-exposure :name "Energy exposure" :description "Estimated sensitivity of provider compute economics to regional power costs and constrained generation." :channels #{:channel/energy :channel/ai-cost} :observables #{:signal/electricity-cost-floor :signal/power-price-stress} :method :residual :confidence-floor 0.30}
+  {:id :latent/strategic-subsidy :name "Strategic subsidy / absorption" :description "Estimated gap between observed API pricing and modeled cost pressure not explained by efficiency alone." :channels #{:channel/finance :channel/ai-pricing :channel/ai-cost} :observables #{:signal/api-price :signal/self-host-cost :signal/ai-infra-finance-stress} :method :residual :confidence-floor 0.20}]
+ :charts
+ [{:id :chart/passage-vs-normal :title "Chokepoint passage volume vs seasonal normal" :kind :line-band :dataset :dataset/chokepoint-daily :x :date :y :vessels :series :chokepoint :baseline :baseline/seasonal-normal :normal-band true}
+  {:id :chart/strike-tempo :title "Strike tempo by side" :kind :mirrored-bars :dataset :dataset/strike-daily :x :date :y :count :series :side}
+  {:id :chart/actor-timeline :title "Major event swimlane" :kind :swimlane :dataset :dataset/major-events :x :time :series :actor}
+  {:id :chart/latent-heatmap :title "Latent pressure estimates" :kind :heatmap :dataset :dataset/latent-daily :x :date :y :latent}
+  {:id :chart/api-vs-self-host :title "API price vs self-host cost" :kind :scatter :dataset :dataset/model-economics :x :self-host-cost-per-million :y :api-price-per-million :series :model}
+  {:id :chart/pricing-residual :title "API pricing residual vs modeled cost floor" :kind :residual :dataset :dataset/model-economics :x :date :y :residual :series :model}]
+ :reports
+ [{:id :report/daily :title "River City Daily"
+   :charts [:chart/passage-vs-normal :chart/strike-tempo :chart/actor-timeline :chart/latent-heatmap :chart/api-vs-self-host :chart/pricing-residual]
+   :compounds [:compound/maritime-pressure :compound/energy-pressure :compound/defense-pressure :compound/ai-cost-pressure]
+   :latents [:latent/defense-demand-pull :latent/energy-exposure :latent/strategic-subsidy]
+   :separate-fact-interpretation? true}]}
