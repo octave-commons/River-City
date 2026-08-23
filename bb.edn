@@ -1,0 +1,23 @@
+{:paths ["src" "resources" "scripts"]
+ :deps {metosin/malli {:mvn/version "0.20.1"}}
+ :tasks
+ {labels {:doc "Create/update GitHub labels from backlog/labels.edn; pass owner/repo after --"
+          :task (apply shell "bb" "scripts/create_labels.clj" *command-line-args*)}
+  issues {:doc "Create GitHub issues from backlog/issues.edn; pass owner/repo after --"
+          :task (apply shell "bb" "scripts/create_issues.clj" *command-line-args*)}
+  user-input {:doc "List decisions, credentials, and actions needed from the user"
+              :task (shell "bb scripts/list_user_input.clj")}
+  validate {:doc "Validate River City EDN configuration against law schemas"
+            :task (shell "bb scripts/validate.clj")}
+  test {:doc "Run tests"
+        :task (shell "clojure -M:test")}
+  ingest {:doc "Fetch configured raw observations"
+          :task (shell "bb -m river-city.infra.cli ingest")}
+  normalize {:doc "Normalize raw observations"
+             :task (shell "bb -m river-city.infra.cli normalize")}
+  score {:doc "Compute signals, compounds, and latent estimates"
+         :task (shell "bb -m river-city.infra.cli score")}
+  render {:doc "Render chart specs and daily report artifacts"
+          :task (shell "bb -m river-city.infra.cli render")}
+  daily {:doc "Run ingest -> normalize -> score -> render"
+         :depends [ingest normalize score render]}}}

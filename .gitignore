@@ -1,0 +1,15 @@
+.DS_Store
+.cpcache/
+.lsp/
+.clj-kondo/.cache/
+.nbb/
+node_modules/
+.env
+secrets.edn
+data/raw/*
+!data/raw/.gitkeep
+data/normalized/*
+!data/normalized/.gitkeep
+reports/daily/*
+!reports/daily/.gitkeep
+charts/*.json

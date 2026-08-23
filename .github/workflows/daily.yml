@@ -1,0 +1,29 @@
+name: river-city-daily
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 12 * * *"
+permissions:
+  contents: write
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeLaGuardo/setup-clojure@13.4
+        with:
+          cli: latest
+          bb: latest
+      - name: Validate law
+        run: bb validate
+      - name: Test
+        run: bb test
+      - name: Run daily pipeline
+        run: bb daily
+      - name: Commit generated artifacts
+        run: |
+          git config user.name "river-city-bot"
+          git config user.email "river-city-bot@users.noreply.github.com"
+          git add data/normalized reports/daily charts || true
+          git diff --cached --quiet || git commit -m "data: daily river city snapshot"
+          git push

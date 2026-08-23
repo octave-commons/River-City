@@ -1,0 +1,32 @@
+name: river-city-backlog
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "backlog/**"
+      - "scripts/create_labels.clj"
+      - "scripts/create_issues.clj"
+      - ".github/workflows/backlog.yml"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  sync-backlog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeLaGuardo/setup-clojure@13.4
+        with:
+          bb: latest
+      - name: Sync labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bb labels -- "$GITHUB_REPOSITORY"
+      - name: Sync issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bb issues -- "$GITHUB_REPOSITORY"

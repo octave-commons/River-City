@@ -1,0 +1,6 @@
+{
+  "name": "river-city",
+  "private": true,
+  "type": "module",
+  "scripts": {"nbb": "npx nbb"}
+}

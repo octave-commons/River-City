@@ -1,0 +1,2 @@
+{:paths ["src" "scripts"]
+ :deps {metosin/malli {:mvn/version "0.20.1"}}}
