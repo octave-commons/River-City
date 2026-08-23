@@ -1,0 +1,26 @@
+[{:name "lane:law" :color "5319e7" :description "Schemas, validators, invariants, contracts"}
+ {:name "lane:shape" :color "1d76db" :description "Normalization and structural transformations"}
+ {:name "lane:domain" :color "0e8a16" :description "Baselines, scoring, compounds, inference"}
+ {:name "lane:infra" :color "d93f0b" :description "Adapters, persistence, rendering, automation"}
+
+ {:name "input:decision" :color "fbca04" :description "Needs a modeling or policy decision from the user"}
+ {:name "input:api-key" :color "b60205" :description "Needs an API key/token from the user"}
+ {:name "input:account" :color "e99695" :description "Needs user registration/account setup"}
+ {:name "input:hardware" :color "f9d0c4" :description "Needs representative hardware/access for calibration"}
+ {:name "input:repo" :color "c5def5" :description "Needs repository creation/authorization from the user"}
+
+ {:name "foundation" :color "ededed" :description "Foundational architecture"}
+ {:name "data" :color "bfdadc" :description "Data acquisition or normalization"}
+ {:name "maritime" :color "0052cc" :description "Shipping and chokepoint observations"}
+ {:name "geopolitics" :color "8b0000" :description "Conflict theaters and security events"}
+ {:name "energy" :color "ffcc00" :description "Power, fuel, and energy markets"}
+ {:name "ai" :color "6f42c1" :description "AI models and providers"}
+ {:name "economics" :color "2ea44f" :description "Pricing and cost modeling"}
+ {:name "finance" :color "006b75" :description "Infrastructure financing and capital"}
+ {:name "scoring" :color "0e8a16" :description "Compound and observable scoring"}
+ {:name "inference" :color "7057ff" :description "Latent-variable inference"}
+ {:name "benchmark" :color "0366d6" :description "Calibration and benchmark work"}
+ {:name "chart" :color "d4c5f9" :description "Visualization output"}
+ {:name "report" :color "c2e0c6" :description "Daily briefing/report output"}
+ {:name "automation" :color "fef2c0" :description "Scheduled automation and CI"}
+ {:name "test" :color "bfe5bf" :description "Deterministic tests and replay fixtures"}]

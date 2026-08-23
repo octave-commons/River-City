@@ -1,0 +1,63 @@
+[{:title "Define River City law schemas and invariants"
+  :labels ["lane:law" "foundation"]
+  :body "Define Malli schemas for sources, evidence, claims, theaters, transmission channels, signals, compounds, latents, charts, reports, confidence and uncertainty. Law validates contracts only; scoring belongs in domain."}
+ {:title "Implement IMF PortWatch source adapter"
+  :labels ["lane:infra" "data" "maritime"]
+  :body "Ingest daily chokepoint vessel and capacity observations from IMF PortWatch / ArcGIS REST. Preserve raw payloads and source provenance. First target: Strait of Hormuz and Bab el-Mandeb."}
+ {:title "Compute seasonal normal-regime chokepoint baselines"
+  :labels ["lane:domain" "maritime" "input:decision"]
+  :body "Build comparable historical baselines by chokepoint and day-of-year. Produce median/mean and uncertainty band. Define normal-regime exclusion rules so conflict-disrupted periods do not contaminate the reference band. USER DECISION: choose or approve the initial definition of a normal regime and exclusion policy."}
+ {:title "Render passage-volume vs normal band chart"
+  :labels ["lane:infra" "chart" "maritime"]
+  :body "Create Vega-Lite line chart showing daily passages against seasonal normal band, with current deviation and confidence/coverage annotations."}
+ {:title "Model conflict theaters separately from transmission channels"
+  :labels ["lane:law" "geopolitics" "input:decision"]
+  :body "Represent theaters such as Hormuz/Iran, Ukraine/Russia, Red Sea and Taiwan Strait independently from channels such as energy, defense, logistics, finance, sanctions and AI infrastructure. Allow many-to-many contribution edges. USER DECISION: approve the initial theater/channel taxonomy and naming."}
+ {:title "Build conflict-event ingestion layer"
+  :labels ["lane:infra" "data" "geopolitics" "input:account" "input:api-key"]
+  :body "Add ACLED and UCDP structured-event adapters plus NASA FIRMS corroboration. Support provisional fast events and later reconciled canonical events without silently double-counting. USER ACTION: provision required accounts/tokens for ACLED, UCDP, and NASA FIRMS where needed."}
+ {:title "Render mirrored strike-tempo chart by side"
+  :labels ["lane:infra" "chart" "geopolitics"]
+  :body "Aggregate strike/attack events into daily counts and render opposing actors above/below a shared axis. Preserve theater and event-type filters; distinguish confirmed from provisional events."}
+ {:title "Render actor swimlane timeline"
+  :labels ["lane:infra" "chart" "geopolitics"]
+  :body "Render major events on actor/theater swimlanes with source-backed event markers, allowing the briefing to show sequence without collapsing it into raw counts."}
+ {:title "Implement compound score engine"
+  :labels ["lane:domain" "scoring" "input:decision"]
+  :body "Implement weighted mean, mean, sum, max, min and residual compounds with missing-data policy, contribution breakdown, trend and propagated confidence. Seed maritime, energy, defense and AI-cost compounds. USER DECISION: approve initial weights, aggregation functions, and missing-data behavior for named compounds."}
+ {:title "Implement latent-variable scoring and evidence ladder"
+  :labels ["lane:domain" "inference" "input:decision"]
+  :body "Estimate defense demand pull, energy exposure, capacity scarcity, strategic subsidy/absorption, geopolitical exposure and infrastructure fragility. Every estimate must include value, confidence, evidence level, explanation and contributing observables. USER DECISION: approve latent variable definitions and any priors/thresholds that encode judgment rather than observation."}
+ {:title "Render latent heatmap and evidence drilldown"
+  :labels ["lane:infra" "chart" "inference"]
+  :body "Render latent estimates over time as a heatmap. Provide companion evidence-ladder data so a reader can inspect which observations caused each score and where uncertainty enters."}
+ {:title "Add EIA and ENTSO-E power-market adapters"
+  :labels ["lane:infra" "data" "energy" "input:account" "input:api-key"]
+  :body "Ingest electricity prices, load, generation mix and relevant grid stress metrics. Normalize regional prices into comparable energy-cost observations used by AI cost-floor estimates. USER ACTION: provision an EIA API key and ENTSO-E Transparency Platform account/security token."}
+ {:title "Track AI provider and model API prices"
+  :labels ["lane:infra" "ai" "economics"]
+  :body "Capture official/API pricing for major GPT, Claude, Kimi, GLM, MiniMax/MiMo and comparable models. Use OpenRouter as a machine-readable cross-check, not as the sole canonical source. Track batch/cache/promotional discounts separately from list price."}
+ {:title "Build open-weight self-host calibration harness"
+  :labels ["lane:domain" "ai" "benchmark" "input:hardware" "input:decision"]
+  :body "Measure tokens/sec, wall power, hardware configuration and effective joules/token for open-weight baselines. Compute electricity-only and all-in self-host ranges with PUE and utilization sensitivity. Start with Kimi/GLM/MiniMax/MiMo-family models where weights and feasible runtimes exist. USER ACTION/DECISION: choose calibration hardware or provide access to representative hardware and approve which open-weight models form the first baseline set."}
+ {:title "Model API price vs self-host cost floor"
+  :labels ["lane:domain" "ai" "economics" "input:decision"]
+  :body "Join public API prices to self-host calibration ranges and regional energy costs. Produce API-vs-DIY ratio and pricing residuals. Never present closed-provider internal cost as known; report ranges and assumptions. USER DECISION: approve accounting assumptions such as PUE, utilization, amortization horizon, and regional power mapping."}
+ {:title "Render AI energy pass-through dashboard"
+  :labels ["lane:infra" "chart" "ai" "energy"]
+  :body "Track normalized energy shock, power-market stress, AI infrastructure stress and AI public pricing. Show divergences such as infra stress rising while token prices fall, signaling absorption, efficiency gains, subsidies or price competition."}
+ {:title "Track AI infrastructure financing and capacity scarcity"
+  :labels ["lane:infra" "ai" "finance"]
+  :body "Ingest observable financing, data-center construction, interconnect, power-availability and capacity data where public. Build signals that help distinguish model-price strategy from underlying infrastructure stress."}
+ {:title "Render daily report with facts, interpretations and hidden-variable estimates separated"
+  :labels ["lane:infra" "report"]
+  :body "Generate Markdown plus chart-ready JSON/Vega-Lite. Each section must distinguish confirmed observations, interpretations and latent estimates. Preserve confidence and source provenance inline."}
+ {:title "Add daily GitHub Actions pipeline"
+  :labels ["lane:infra" "automation"]
+  :body "Run validate -> ingest -> normalize -> score -> render daily. Cache responsibly, fail closed on schema violations, and commit dated normalized/report artifacts only when changed. API credentials will later be stored as Actions secrets."}
+ {:title "Add deterministic fixtures and replay tests"
+  :labels ["lane:shape" "test" "foundation"]
+  :body "Store small source fixtures for chokepoints, conflict events, power prices and model pricing. Make normalization, scoring and chart generation replayable without network access. Verify no-op/reconciliation behavior and confidence propagation."}
+ {:title "Define canonical normalized shapes and transformations"
+  :labels ["lane:shape" "data" "foundation"]
+  :body "Define canonical normalized records for chokepoint observations, conflict events, power prices, model prices, benchmark runs and infrastructure observations. Implement pure raw->canonical transformations with provenance preservation and no scoring or interpretation."}]

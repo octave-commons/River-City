@@ -1,0 +1,47 @@
+[ {:kind :credentials
+  :label "input:api-key"
+  :status :needed
+  :for ["Build conflict-event ingestion layer"]
+  :action "Provision credentials/tokens for ACLED, UCDP, and NASA FIRMS as required by their APIs."}
+
+ {:kind :credentials
+  :label "input:api-key"
+  :status :needed
+  :for ["Add EIA and ENTSO-E power-market adapters"]
+  :action "Provision an EIA API key and an ENTSO-E Transparency Platform account/security token."}
+
+ {:kind :decision
+  :label "input:decision"
+  :status :needed
+  :for ["Compute seasonal normal-regime chokepoint baselines"]
+  :action "Approve the first normal-regime baseline definition and rules for excluding disrupted/conflict periods."}
+
+ {:kind :decision
+  :label "input:decision"
+  :status :needed
+  :for ["Model conflict theaters separately from transmission channels"]
+  :action "Approve the initial theater taxonomy and transmission-channel taxonomy."}
+
+ {:kind :decision
+  :label "input:decision"
+  :status :needed
+  :for ["Implement compound score engine"]
+  :action "Approve initial compound weights, aggregation functions, and missing-data behavior."}
+
+ {:kind :decision
+  :label "input:decision"
+  :status :needed
+  :for ["Implement latent-variable scoring and evidence ladder"]
+  :action "Approve latent-variable definitions and judgment-bearing priors/thresholds."}
+
+ {:kind :hardware
+  :label "input:hardware"
+  :status :needed
+  :for ["Build open-weight self-host calibration harness"]
+  :action "Choose or provide access to representative inference hardware and approve the first open-weight calibration model set."}
+
+ {:kind :decision
+  :label "input:decision"
+  :status :needed
+  :for ["Model API price vs self-host cost floor"]
+  :action "Approve cost-accounting assumptions: PUE, utilization, hardware amortization horizon, and regional electricity-price mapping."}]
