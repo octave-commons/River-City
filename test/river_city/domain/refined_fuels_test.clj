@@ -12,7 +12,7 @@
            (double
             (domain/refined-fuels-stress
              {:distillate-inventory-stress 40.0
-              :refined-product-flow-gap 60.0}))))))
+              :refined-product-flow-gap 64.0}))))))
 
 (deftest refined-fuels-stress-empty-test
   (testing "returns nil when no usable evidence exists"
