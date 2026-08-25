@@ -31,6 +31,12 @@
  {:kind :decision
   :label "input:decision"
   :status :needed
+  :for ["Define refined-fuels stress series"]
+  :action "Approve or adjust the provisional refined-fuels weights: distillate inventory 0.35, refined-product flow gap 0.25, refining margins 0.20, refinery outages 0.20."}
+
+ {:kind :decision
+  :label "input:decision"
+  :status :needed
   :for ["Implement latent-variable scoring and evidence ladder"]
   :action "Approve latent-variable definitions and judgment-bearing priors/thresholds."}
 
