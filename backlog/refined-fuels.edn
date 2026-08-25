@@ -1,0 +1,4 @@
+{:title "Define refined-fuels stress series"
+ :labels ["lane:domain" "energy" "chart" "input:decision"]
+ :body "Define the refined-fuels stress series beside Hormuz and Bab el-Mandeb transit charts. Seed provisional 0-100 component weights: distillate inventory stress 0.35, refined-product flow gap 0.25, refining-margin stress 0.20, refinery-outage stress 0.20. Missing components are dropped and remaining weights renormalized; no evidence means unknown, never zero. Render diesel/distillates, jet fuel, and gasoline when coverage permits. USER DECISION: approve or adjust the provisional component weights before treating them as stable policy. Data dependencies include the EIA/refined-product adapter work and refinery-event corroboration."
+}
