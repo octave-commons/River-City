@@ -3,7 +3,9 @@
          '[river-city.law.ledger :as ledger-law])
 
 (defn producer []
-  {:git-sha (or (System/getenv "GITHUB_SHA") "local")
+  {:git-sha (or (System/getenv "RIVER_CITY_CODE_SHA")
+                (System/getenv "GITHUB_SHA")
+                "local")
    :workflow (or (System/getenv "GITHUB_WORKFLOW") "local")
    :job (or (System/getenv "GITHUB_JOB") "project-ledger")})
 
