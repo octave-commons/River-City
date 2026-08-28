@@ -6,4 +6,4 @@
          :main-opts ["-m" "clojure.test"
                      "river-city.law.core-test"
                      "river-city.domain.refined-fuels-test"
-                     "river-city.infra.ledger-test"]}}}
+                     "river-city.domain.portwatch-test"]}}}
