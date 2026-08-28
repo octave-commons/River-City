@@ -11,12 +11,6 @@
             :task (shell "bb scripts/validate.clj")}
   test {:doc "Run tests"
         :task (shell "clojure -M:test")}
-  ledger-portwatch {:doc "Append keyless IMF PortWatch observations to the immutable ledger"
-                    :task (shell "bb scripts/collect_portwatch.clj")}
-  ledger-project {:doc "Rebuild deterministic projections from ledger events"
-                  :task (shell "bb scripts/project_ledger.clj")}
-  ledger {:doc "Collect observations and rebuild projections"
-          :depends [ledger-portwatch ledger-project]}
   ingest {:doc "Fetch configured raw observations"
           :task (shell "bb -m river-city.infra.cli ingest")}
   normalize {:doc "Normalize raw observations"
