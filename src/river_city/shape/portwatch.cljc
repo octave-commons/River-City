@@ -1,5 +1,6 @@
 (ns river-city.shape.portwatch
-  (:require [malli.core :as m]))
+  (:require [clojure.edn :as edn]
+            [malli.core :as m]))
 
 (def source-id :source/imf-portwatch)
 (def event-type :river-city/portwatch-observed)
@@ -20,7 +21,7 @@
   [:string {:min 1}])
 
 (def source-record-id
-  [:or :int :string])
+  [:or :int nonblank-string])
 
 (def numeric
   [:or :int :double])
@@ -39,8 +40,8 @@
   [:map {:closed true}
    [:source/id [:= source-id]]
    [:source/record-id source-record-id]
-   [:source/date [:or :int :string]]
-   [:port/id [:or :int :string]]
+   [:source/date :int]
+   [:port/id [:or :int nonblank-string]]
    [:port/name nonblank-string]
    [:vessels number-map]
    [:capacity number-map]])
@@ -56,6 +57,24 @@
   [m]
   (into {} (remove (comp nil? val)) m))
 
+(defn- normalize-date
+  [value]
+  (cond
+    (integer? value) value
+    (string? value)
+    (let [parsed (try
+                   (edn/read-string value)
+                   (catch #?(:clj Exception :cljs :default) _ nil))]
+      (if (integer? parsed)
+        parsed
+        (throw (ex-info "PortWatch date string must contain epoch milliseconds"
+                        {:river-city/error :invalid-portwatch-date
+                         :source/date value}))))
+    :else
+    (throw (ex-info "PortWatch date must be epoch milliseconds"
+                    {:river-city/error :invalid-portwatch-date
+                     :source/date value}))))
+
 (defn target-chokepoint?
   [port-name]
   (boolean
@@ -64,11 +83,12 @@
 
 (defn normalize-attributes
   "Convert one ArcGIS PortWatch attribute map into River City's portable data
-   shape. Provider spelling and flat field layout stop at this boundary."
+   shape. Provider spelling and flat field layout stop at this boundary. Dates
+   are canonicalized to epoch-millisecond integers before entering the domain."
   [attrs]
   {:source/id source-id
    :source/record-id (attr attrs "ObjectId" "OBJECTID" "objectid")
-   :source/date (attr attrs "date")
+   :source/date (normalize-date (attr attrs "date"))
    :port/id (attr attrs "portid")
    :port/name (attr attrs "portname")
    :vessels
