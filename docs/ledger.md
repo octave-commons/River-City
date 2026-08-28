@@ -1,94 +1,78 @@
-# River City Ledger
+# River City ledger integration
 
-The River City briefing is a **reader of accumulated state**, not the authority that invents new state on every scheduled run.
+River City is a **domain consumer** of an event ledger, not the owner of a second event-sourcing kernel.
 
-## Contract
+The stable split is:
 
-River City separates four things:
+1. **River City** owns source-specific data shapes, normalization, scoring, and projections.
+2. **Clio** (from `open-hax/eta-mu/packages/clio`) owns immutable event identity, schema-history validation, append admission, physical ledger concurrency, causal/stream ordering, partition union, canonicalization, and projection replay order.
+3. **Katamorph** owns the resource-manifest grammar used to discover River City ledgers and projections inside a Foresight workspace.
+4. **Foresight** is the host constellation. It pins River City, eta-mu, and Katamorph as sibling sources and owns the `.ημ/river-city/` provenance material plus deterministic background-job wiring.
+5. **Daily Signal Briefing** reads accumulated River City projections. It may add breaking-news context, but it does not invent a new ledger implementation or scoring formula on each run.
 
-1. **Code and law** — schemas, adapters, transforms, scoring rules, and projection logic. These change through reviewed code changes.
-2. **Ledger events** — immutable source-backed observations written by background collectors. Data jobs may append these directly without a PR.
-3. **Projections** — deterministic derived state rebuilt from ledger events by version-controlled code. `latest.edn` files may be replaced by jobs because they are reproducible views, not authority.
-4. **Briefings/charts** — presentation over projections plus explicitly labeled breaking-news corroboration. The briefing must not silently change formulas, weights, schemas, or normalization rules.
+This is intentionally parallel to Foresight architecture archaeology: both workloads use Katamorph resources to reference Clio ledger partitions, but they record different event catalogs and derive different projections.
 
-The rule is simple:
+## Authority
 
-> Background jobs execute code. They do not write new code.
-
-A scheduled job may fetch observations, append events, rebuild projections, and commit generated data. A PR is required when schemas, adapters, scoring formulas, chart definitions, or other executable interpretation changes.
-
-## Layout
+The authority chain is:
 
 ```text
-ledger/
-  events/
-    YYYY/MM/DD/<source>/<event-id>.edn
-projections/
-  maritime/latest.edn
-  energy/latest.edn
-  defense/latest.edn
-  ai-economics/latest.edn
-reports/
-  daily/YYYY-MM-DD.md
-charts/
-  ...
+external source
+  -> River City normalization/data law
+  -> Clio event(s)
+  -> Clio canonical history
+  -> River City pure projection
+  -> chart/report/briefing
 ```
 
-`ledger/events` is append-only. Corrections are new events that supersede earlier events; collectors must never rewrite historical event files.
+Physical ledger files and resource manifests are not semantic ordering authorities. A correction to an upstream source record is another Clio stream revision, causally linked to the previous revision. Historical revisions remain facts; River City's current projection selects the newest revision while preserving all contributing event ids.
 
-`projections/*/latest.edn` is derived and replaceable. Its meaning is fixed by the producer code revision recorded in the projection.
+## PortWatch contract
 
-## Event identity and idempotency
+`river-city.shape.portwatch` defines the normalized PortWatch observation shape and provider-field boundary. `river-city.domain.portwatch` defines stable stream/subject identity and the pure current-record projection.
 
-Each event must contain enough provenance to answer:
+River City deliberately does **not** implement:
 
-- What source produced this observation?
-- What source record or query did it come from?
-- When was the underlying fact observed?
-- When did River City ingest it?
-- Which repository revision produced the event?
-- Has this exact normalized payload already been recorded?
+- canonical EDN hashing;
+- event UUID generation;
+- append locking or filesystem publication;
+- historical schema storage;
+- duplicate/collision admission;
+- causal DAG validation;
+- physical partition union;
+- deterministic topological replay.
 
-Event IDs are content-addressed from stable source identity plus normalized payload. A repeated fetch of unchanged source data therefore becomes a no-op. If a source corrects a record, the normalized payload changes and a new event is appended.
+Those are Clio responsibilities.
 
-## Projection determinism
+## Foresight layout
 
-A projection is a pure function of:
+The intended host layout mirrors archaeology:
 
 ```text
-ledger events + config + code revision -> projection
+Foresight/
+  river-city/                 # octave-commons/River-City submodule
+  eta-mu/packages/clio/       # shared event-sourcing kernel
+  katamorph/                  # shared resource contracts
+  .ημ/
+    archaeology/              # code-archaeology Clio ledgers/resources
+    river-city/               # news/market/PortWatch Clio ledgers/resources
 ```
 
-Projection output must not depend on model prose, wall-clock randomness, or hidden conversational state. When judgment is required—weights, priors, baseline exclusions—it lives in reviewed config/code and is surfaced as `input:decision` work.
+A River City Katamorph resource references ledger paths, schema catalog/history, and projection identity. Accumulating observations live only in Clio newline-delimited EDN ledgers; manifests remain reference/index objects.
 
-## Briefing behavior
+## Background jobs
 
-The Daily Signal Briefing should first read the latest River City projections and use them as its stable quantitative base. Web/news search is then used for:
+Background jobs belong to the Foresight host because that checkout supplies all three sibling dependencies. A job may:
 
-- breaking events newer than the last successful projection,
-- source corroboration,
-- missing-series diagnosis,
-- qualitative context and competing interpretations.
+- fetch external observations;
+- normalize them with River City code;
+- construct/append events with Clio;
+- canonicalize the referenced partitions;
+- rebuild River City projections;
+- commit generated `.ημ/river-city` data/projection artifacts when changed.
 
-If the briefing disagrees with a projection, it should state the discrepancy instead of silently recomputing the metric differently.
+A background job must not generate or edit schemas, adapters, normalization rules, scoring code, or projection logic. Those changes require a reviewed PR.
 
-## Commit policy
+## Review consequence
 
-Generated ledger/projection commits may land directly from the bot when only generated data changes. Code or config changes should use a branch/PR.
-
-Suggested generated-data commit prefix:
-
-```text
-ledger: update observations
-```
-
-Suggested code-change prefix:
-
-```text
-feat: ...
-fix: ...
-```
-
-## Initial collector
-
-The first automatic collector is IMF PortWatch because it is keyless and directly supports the Hormuz and Bab el-Mandeb maritime series. Additional collectors should implement the same event contract rather than adding ad-hoc files.
+The earlier PR implementation included a River City-local filesystem ledger. That duplicated Clio responsibilities and attracted valid review findings around canonical serialization, exclusive writes, read validation, path safety, source correction selection, schema identity, and workflow hardening. The integration direction removes that duplicate layer rather than independently repairing it.
