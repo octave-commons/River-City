@@ -9,11 +9,11 @@ jobs:
   daily:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: DeLaGuardo/setup-clojure@13.4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: DeLaGuardo/setup-clojure@3fe9b3ae632c6758d0b7757b0838606ef4287b08 # 13.4
         with:
-          cli: latest
-          bb: latest
+          cli: "1.12.0.1530"
+          bb: "1.12.208"
       - name: Validate law
         run: bb validate
       - name: Test
@@ -21,9 +21,24 @@ jobs:
       - name: Run daily pipeline
         run: bb daily
       - name: Commit generated artifacts
+        shell: bash
         run: |
+          set -euo pipefail
+          git add data/normalized reports/daily charts || true
+          if git diff --cached --quiet; then
+            echo "No generated artifacts changed."
+            exit 0
+          fi
+
+          disallowed=$(git diff --cached --name-only | grep -Ev '^(data/normalized/|reports/daily/|charts/)' || true)
+          if [ -n "$disallowed" ]; then
+            echo "Refusing generated commit with disallowed staged paths:" >&2
+            printf '%s\n' "$disallowed" >&2
+            exit 1
+          fi
+
           git config user.name "river-city-bot"
           git config user.email "river-city-bot@users.noreply.github.com"
-          git add data/normalized reports/daily charts || true
-          git diff --cached --quiet || git commit -m "data: daily river city snapshot"
-          git push
+          git commit -m "ledger: update River City generated artifacts"
+          git pull --rebase origin main
+          git push origin HEAD:main
