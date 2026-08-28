@@ -23,7 +23,7 @@
 (deftest normalizes-provider-shape
   (let [value (shape/normalize-attributes
                {"ObjectId" 42
-                "date" 1787875200000
+                "date" "1787875200000"
                 "portid" 7
                 "portname" "Strait of Hormuz"
                 "n_tanker" 6
@@ -32,7 +32,12 @@
                 "capacity" 900000})]
     (is (shape/valid-observation? value))
     (is (= 42 (:source/record-id value)))
+    (is (= 1787875200000 (:source/date value)))
     (is (= {:tanker 6 :total 10} (:vessels value)))))
+
+(deftest blank-source-record-id-is-rejected
+  (is (false? (shape/valid-observation?
+               (assoc base-data :source/record-id "")))))
 
 (deftest correction-keeps-history-but-projects-one-current-row
   (let [old (event "00000000-0000-4000-8000-000000000001" 1 base-data)
