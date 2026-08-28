@@ -51,11 +51,14 @@
       :unchanged
       (do (atomic-spit! path content) :written))))
 
-(defn event-path [{:keys [observed-at source/id event/id]}]
-  (let [[year month day] (str/split observed-at #"-" 3)
-        source-name (name id)]
+(defn event-path [event]
+  (let [observed-at (:observed-at event)
+        source-id (:source/id event)
+        event-id (:event/id event)
+        [year month day] (str/split observed-at #"-" 3)
+        source-name (name source-id)]
     (format "ledger/events/%s/%s/%s/%s/%s.edn"
-            year month day source-name id)))
+            year month day source-name event-id)))
 
 (defn read-events
   ([] (read-events "ledger/events"))
