@@ -1,6 +1,5 @@
 (ns river-city.shape.portwatch
-  (:require [clojure.string :as str]
-            [malli.core :as m]))
+  (:require [malli.core :as m]))
 
 (def source-id :source/imf-portwatch)
 (def event-type :river-city/portwatch-observed)
@@ -15,28 +14,33 @@
    "capacity_container" "capacity_dry_bulk" "capacity_general_cargo"
    "capacity_roro" "capacity_tanker" "capacity_cargo" "capacity"])
 
+;; Clio content-addresses schema forms. Keep every schema participating in the
+;; event catalog plain data: no predicate/function identities belong here.
 (def nonblank-string
-  [:and string? [:fn #(not (str/blank? %))]])
+  [:string {:min 1}])
 
 (def source-record-id
-  [:or int? string?])
+  [:or :int :string])
+
+(def numeric
+  [:or :int :double])
 
 (def number-map
   [:map {:closed true}
-   [:container {:optional true} number?]
-   [:dry-bulk {:optional true} number?]
-   [:general-cargo {:optional true} number?]
-   [:roro {:optional true} number?]
-   [:tanker {:optional true} number?]
-   [:cargo {:optional true} number?]
-   [:total {:optional true} number?]])
+   [:container {:optional true} numeric]
+   [:dry-bulk {:optional true} numeric]
+   [:general-cargo {:optional true} numeric]
+   [:roro {:optional true} numeric]
+   [:tanker {:optional true} numeric]
+   [:cargo {:optional true} numeric]
+   [:total {:optional true} numeric]])
 
 (def observation-data
   [:map {:closed true}
    [:source/id [:= source-id]]
    [:source/record-id source-record-id]
-   [:source/date [:or int? string?]]
-   [:port/id [:or int? string?]]
+   [:source/date [:or :int :string]]
+   [:port/id [:or :int :string]]
    [:port/name nonblank-string]
    [:vessels number-map]
    [:capacity number-map]])
