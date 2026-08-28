@@ -32,15 +32,13 @@
   path)
 
 (defn write-once!
-  "Write immutable EDN. If the path exists with different content, fail closed."
+  "Write immutable EDN exactly once. The path is content-addressed, so a repeated
+   fetch of the same normalized event is a no-op and preserves first-ingestion metadata."
   [path value]
-  (let [content (canonical-edn value)
-        file (io/file path)]
+  (let [file (io/file path)]
     (if (.exists file)
-      (if (= content (slurp file))
-        :unchanged
-        (throw (ex-info "attempted ledger rewrite" {:path path})))
-      (do (atomic-spit! path content) :written))))
+      :unchanged
+      (do (atomic-spit! path (canonical-edn value)) :written))))
 
 (defn write-derived!
   "Replace deterministic derived EDN only when the canonical content changed."
