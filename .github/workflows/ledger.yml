@@ -1,0 +1,44 @@
+name: river-city-ledger
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: river-city-ledger
+  cancel-in-progress: false
+
+jobs:
+  collect-project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: DeLaGuardo/setup-clojure@13.4
+        with:
+          bb: latest
+      - name: Compute stable code revision
+        shell: bash
+        run: |
+          CODE_SHA=$(git ls-files 'src/**' 'scripts/**' 'resources/**' bb.edn deps.edn | sort | xargs sha256sum | sha256sum | cut -d ' ' -f1)
+          echo "RIVER_CITY_CODE_SHA=$CODE_SHA" >> "$GITHUB_ENV"
+      - name: Collect and project ledger
+        run: bb ledger
+      - name: Commit generated ledger state
+        shell: bash
+        run: |
+          git add ledger projections || true
+          if git diff --cached --quiet; then
+            echo "No new River City observations."
+            exit 0
+          fi
+          git config user.name "river-city-bot"
+          git config user.email "river-city-bot@users.noreply.github.com"
+          git commit -m "ledger: update observations"
+          git pull --rebase origin main
+          git push origin HEAD:main
