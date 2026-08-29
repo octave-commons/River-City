@@ -5,4 +5,5 @@
  {:test {:extra-paths ["test"]
          :main-opts ["-m" "clojure.test"
                      "river-city.law.core-test"
-                     "river-city.domain.refined-fuels-test"]}}}
+                     "river-city.domain.refined-fuels-test"
+                     "river-city.domain.portwatch-test"]}}}
