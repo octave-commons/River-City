@@ -26,7 +26,7 @@ A theater can contribute to multiple channels; a channel can aggregate evidence 
 
 ## First vertical slice
 
-`IMF PortWatch -> normalized chokepoint observations -> seasonal baseline -> maritime pressure compound -> passage-vs-normal chart -> daily report`
+`IMF PortWatch -> normalized chokepoint observations -> descriptive historical projection -> Vega-Lite charts + GeoJSON map -> daily report`
 
 ## Commands
 
@@ -41,6 +41,21 @@ bb daily
 ```
 
 `nbb` is reserved for Node/JS interop where it is materially useful, especially chart rendering and APIs with mature JS clients.
+
+## Stable generated state
+
+The scheduled PortWatch vertical slice writes repository-readable state for downstream briefings and tools:
+
+- `projections/manifest.edn` and `projections/manifest.json` — read these first. They identify the latest successful projection, coverage, lineage mode, artifacts, and unresolved series.
+- `projections/portwatch/latest.edn` and `.json` — the current 180-day projection for Hormuz and Bab el-Mandeb, including source coverage, latest values, and a clearly provisional observed-history band.
+- `charts/portwatch/data/latest.json` — chart-ready rows.
+- `charts/portwatch/*.vl.json` — Vega-Lite passage, deviation, vessel-mix, and map specifications.
+- `maps/portwatch/latest.geojson` — map-ready latest chokepoint state using approximate reference anchors.
+- `reports/daily/latest.md` and dated reports — concise generated status and artifact links.
+
+The direct source snapshot is operational scaffolding, not a replacement for Clio/Foresight event hosting. `projections/manifest.edn` states whether a projection is ledger-backed. Source laws, normalization, baseline policy, and scoring semantics remain reviewed code/config changes; generated source observations and disposable projections may advance through the scheduled job.
+
+The observed-history band is not the approved normal-regime baseline. It compares each date with the same calendar day across all prior available years and exposes median/IQR plus sample count. River City issue #3 remains the policy gate for conflict-period exclusion rules.
 
 ## License
 
