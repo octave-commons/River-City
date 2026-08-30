@@ -3,7 +3,4 @@
         metosin/malli {:mvn/version "0.20.1"}}
  :aliases
  {:test {:extra-paths ["test"]
-         :main-opts ["-m" "clojure.test"
-                     "river-city.law.core-test"
-                     "river-city.domain.refined-fuels-test"
-                     "river-city.domain.portwatch-test"]}}}
+         :main-opts ["-m" "river-city.test-runner"]}}}

@@ -1,0 +1,11 @@
+{:chokepoints
+ [{:id :hormuz
+   :matches ["hormuz"]
+   :longitude 56.25
+   :latitude 26.5667
+   :geometry-note "Approximate reference anchor for visualization; not a legal or navigational boundary."}
+  {:id :bab-el-mandeb
+   :matches ["mandeb"]
+   :longitude 43.3333
+   :latitude 12.5833
+   :geometry-note "Approximate reference anchor for visualization; not a legal or navigational boundary."}]}

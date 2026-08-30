@@ -15,9 +15,9 @@
           :task (shell "bb -m river-city.infra.cli ingest")}
   normalize {:doc "Normalize raw observations"
              :task (shell "bb -m river-city.infra.cli normalize")}
-  score {:doc "Compute signals, compounds, and latent estimates"
+  score {:doc "Build disposable source projections"
          :task (shell "bb -m river-city.infra.cli score")}
-  render {:doc "Render chart specs and daily report artifacts"
+  render {:doc "Render chart specs, maps, manifest, and daily report artifacts"
           :task (shell "bb -m river-city.infra.cli render")}
-  daily {:doc "Run ingest -> normalize -> score -> render"
-         :depends [ingest normalize score render]}}}
+  daily {:doc "Run the PortWatch vertical slice sequentially"
+         :task (shell "bb -m river-city.infra.cli daily")}}}

@@ -6,10 +6,10 @@
 node_modules/
 .env
 secrets.edn
+
+# Raw upstream responses are ephemeral and may be large.
 data/raw/*
 !data/raw/.gitkeep
-data/normalized/*
-!data/normalized/.gitkeep
-reports/daily/*
-!reports/daily/.gitkeep
-charts/*.json
+
+# Normalized data, projections, chart specs/data, maps, and reports are
+# intentional generated repository state and are committed by the daily job.
