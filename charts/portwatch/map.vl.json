@@ -1,0 +1,109 @@
+{
+  "$schema" : "https://vega.github.io/schema/vega-lite/v5.json",
+  "height" : 430,
+  "layer" : [ {
+    "data" : {
+      "sphere" : true
+    },
+    "mark" : {
+      "fill" : "white",
+      "stroke" : "lightgray",
+      "type" : "geoshape"
+    }
+  }, {
+    "data" : {
+      "format" : {
+        "feature" : "countries",
+        "type" : "topojson"
+      },
+      "url" : "https://vega.github.io/vega-datasets/data/world-110m.json"
+    },
+    "mark" : {
+      "fill" : "#eeeeee",
+      "stroke" : "white",
+      "type" : "geoshape"
+    }
+  }, {
+    "data" : {
+      "format" : {
+        "property" : "rows",
+        "type" : "json"
+      },
+      "url" : "data/map-points.json"
+    },
+    "encoding" : {
+      "latitude" : {
+        "field" : "latitude",
+        "type" : "quantitative"
+      },
+      "longitude" : {
+        "field" : "longitude",
+        "type" : "quantitative"
+      },
+      "size" : {
+        "field" : "vessels-total",
+        "legend" : {
+          "title" : "Visible vessels"
+        },
+        "type" : "quantitative"
+      },
+      "tooltip" : [ {
+        "field" : "port-name",
+        "type" : "nominal"
+      }, {
+        "field" : "date",
+        "type" : "temporal"
+      }, {
+        "field" : "vessels-total",
+        "type" : "quantitative"
+      }, {
+        "field" : "baseline-median",
+        "type" : "quantitative"
+      }, {
+        "field" : "deviation-percent",
+        "format" : ".1f",
+        "type" : "quantitative"
+      }, {
+        "field" : "geometry-note",
+        "type" : "nominal"
+      } ]
+    },
+    "mark" : {
+      "filled" : true,
+      "opacity" : 0.85,
+      "type" : "circle"
+    }
+  }, {
+    "data" : {
+      "format" : {
+        "property" : "rows",
+        "type" : "json"
+      },
+      "url" : "data/map-points.json"
+    },
+    "encoding" : {
+      "latitude" : {
+        "field" : "latitude",
+        "type" : "quantitative"
+      },
+      "longitude" : {
+        "field" : "longitude",
+        "type" : "quantitative"
+      },
+      "text" : {
+        "field" : "port-name",
+        "type" : "nominal"
+      }
+    },
+    "mark" : {
+      "dy" : -14,
+      "fontSize" : 12,
+      "type" : "text"
+    }
+  } ],
+  "projection" : {
+    "type" : "equalEarth"
+  },
+  "title" : "Latest visible chokepoint state",
+  "width" : 820
+}

@@ -1,0 +1,123 @@
+{
+  "$schema" : "https://vega.github.io/schema/vega-lite/v5.json",
+  "data" : {
+    "format" : {
+      "property" : "rows",
+      "type" : "json"
+    },
+    "url" : "data/latest.json"
+  },
+  "description" : "The shaded IQR and median are provisional descriptive history, not an approved normal-regime baseline.",
+  "facet" : {
+    "row" : {
+      "field" : "port-name",
+      "header" : {
+        "labelAngle" : 0,
+        "title" : null
+      },
+      "type" : "nominal"
+    }
+  },
+  "spec" : {
+    "height" : 190,
+    "layer" : [ {
+      "encoding" : {
+        "x" : {
+          "field" : "date",
+          "title" : null,
+          "type" : "temporal"
+        },
+        "y" : {
+          "field" : "baseline-q25",
+          "title" : "Visible vessels / day",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "baseline-q75"
+        }
+      },
+      "mark" : {
+        "opacity" : 0.18,
+        "type" : "area"
+      }
+    }, {
+      "encoding" : {
+        "tooltip" : [ {
+          "field" : "date",
+          "type" : "temporal"
+        }, {
+          "field" : "baseline-median",
+          "type" : "quantitative"
+        }, {
+          "field" : "baseline-n",
+          "type" : "quantitative"
+        } ],
+        "x" : {
+          "field" : "date",
+          "type" : "temporal"
+        },
+        "y" : {
+          "field" : "baseline-median",
+          "type" : "quantitative"
+        }
+      },
+      "mark" : {
+        "strokeDash" : [ 5, 4 ],
+        "type" : "line"
+      }
+    }, {
+      "encoding" : {
+        "tooltip" : [ {
+          "field" : "date",
+          "type" : "temporal"
+        }, {
+          "field" : "port-name",
+          "type" : "nominal"
+        }, {
+          "field" : "vessels-total",
+          "type" : "quantitative"
+        }, {
+          "field" : "baseline-median",
+          "type" : "quantitative"
+        }, {
+          "field" : "deviation-percent",
+          "format" : ".1f",
+          "type" : "quantitative"
+        } ],
+        "x" : {
+          "field" : "date",
+          "type" : "temporal"
+        },
+        "y" : {
+          "field" : "vessels-total",
+          "type" : "quantitative"
+        }
+      },
+      "mark" : {
+        "point" : false,
+        "type" : "line"
+      }
+    }, {
+      "encoding" : {
+        "x" : {
+          "field" : "date",
+          "type" : "temporal"
+        },
+        "y" : {
+          "field" : "vessels-total",
+          "type" : "quantitative"
+        }
+      },
+      "mark" : {
+        "filled" : true,
+        "size" : 110,
+        "type" : "point"
+      },
+      "transform" : [ {
+        "filter" : "datum.latest === true"
+      } ]
+    } ],
+    "width" : 760
+  },
+  "title" : "Visible chokepoint passages vs observed prior-year calendar-day history"
+}

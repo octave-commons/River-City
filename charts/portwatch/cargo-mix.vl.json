@@ -1,0 +1,58 @@
+{
+  "$schema" : "https://vega.github.io/schema/vega-lite/v5.json",
+  "data" : {
+    "format" : {
+      "property" : "rows",
+      "type" : "json"
+    },
+    "url" : "data/latest.json"
+  },
+  "facet" : {
+    "row" : {
+      "field" : "port-name",
+      "header" : {
+        "labelAngle" : 0,
+        "title" : null
+      },
+      "type" : "nominal"
+    }
+  },
+  "spec" : {
+    "encoding" : {
+      "color" : {
+        "field" : "series",
+        "type" : "nominal"
+      },
+      "tooltip" : [ {
+        "field" : "date",
+        "type" : "temporal"
+      }, {
+        "field" : "series",
+        "type" : "nominal"
+      }, {
+        "field" : "value",
+        "type" : "quantitative"
+      } ],
+      "x" : {
+        "field" : "date",
+        "title" : null,
+        "type" : "temporal"
+      },
+      "y" : {
+        "field" : "value",
+        "title" : "Visible vessels / day",
+        "type" : "quantitative"
+      }
+    },
+    "height" : 170,
+    "mark" : {
+      "type" : "line"
+    },
+    "width" : 760
+  },
+  "title" : "Visible vessel mix by chokepoint",
+  "transform" : [ {
+    "as" : [ "series", "value" ],
+    "fold" : [ "vessels-total", "vessels-cargo", "vessels-tanker" ]
+  } ]
+}

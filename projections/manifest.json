@@ -1,0 +1,53 @@
+{
+  "artifacts" : {
+    "chart-data" : "charts/portwatch/data/latest.json",
+    "charts" : [ {
+      "id" : "chart/portwatch-passage-vs-history",
+      "spec" : "charts/portwatch/passage-vs-history.vl.json"
+    }, {
+      "id" : "chart/portwatch-deviation",
+      "spec" : "charts/portwatch/deviation-from-history.vl.json"
+    }, {
+      "id" : "chart/portwatch-cargo-mix",
+      "spec" : "charts/portwatch/cargo-mix.vl.json"
+    }, {
+      "id" : "chart/portwatch-map",
+      "spec" : "charts/portwatch/map.vl.json"
+    } ],
+    "maps" : [ {
+      "geojson" : "maps/portwatch/latest.geojson",
+      "geometry-status" : "approximate-reference-anchors",
+      "id" : "map/portwatch-latest"
+    } ],
+    "reports" : [ {
+      "id" : "report/daily-latest",
+      "path" : "reports/daily/latest.md"
+    }, {
+      "id" : "report/daily-dated",
+      "path" : "reports/daily/2026-08-23.md"
+    } ]
+  },
+  "generated-at" : "2026-08-30T15:02:32.465806105Z",
+  "latest-successful-projection" : {
+    "portwatch" : {
+      "edn" : "projections/portwatch/latest.edn",
+      "json" : "projections/portwatch/latest.json",
+      "ledger-backed?" : false,
+      "lineage-mode" : "direct-source-snapshot",
+      "source-updated-through" : "2026-08-23"
+    }
+  },
+  "missing-series" : [ {
+    "issue" : 3,
+    "reason" : "Observed-history band exists; disruption-exclusion policy is not approved.",
+    "series" : "baseline/approved-normal-regime",
+    "status" : "blocked"
+  }, {
+    "issue" : 2,
+    "reason" : "Direct source snapshot is operational; Foresight-hosted Clio accumulation remains pending.",
+    "series" : "ledger/clio-hosted-portwatch",
+    "status" : "pending"
+  } ],
+  "read-order" : [ "projections/manifest.edn", "projections/portwatch/latest.edn", "charts/portwatch/data/latest.json", "maps/portwatch/latest.geojson", "reports/daily/latest.md" ],
+  "river-city/state-version" : 1
+}
