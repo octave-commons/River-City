@@ -2,5 +2,9 @@
   "name": "river-city",
   "private": true,
   "type": "module",
-  "scripts": {"nbb": "npx nbb"}
+  "scripts": {
+    "nbb": "npx nbb",
+    "model-watch": "node scripts/model_watch.mjs",
+    "test:model-watch": "node --test test/model_watch.test.mjs"
+  }
 }
