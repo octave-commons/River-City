@@ -63,6 +63,7 @@ function providerSnapshot({models = [model()], facts = ["gpt a input $1 output $
       id: "official",
       url: "https://example.test/pricing",
       ok: true,
+      observed_at: "2026-08-31T12:00:00.000Z",
       facts,
       facts_digest: JSON.stringify(facts)
     }]
@@ -139,6 +140,35 @@ test("page layout churn is not alertable without commercial fact changes", () =>
   const htmlB = "<html><body><div><h1>Pricing</h1></div><section>GPT A input $1 / 1M tokens</section></body></html>";
   assert.deepEqual(extractCommercialFacts(htmlA, "text/html"), extractCommercialFacts(htmlB, "text/html"));
   assert.match(visibleText(htmlA, "text/html"), /GPT A input/);
+});
+
+test("silently seeds an official source that recovers without a prior good observation", () => {
+  const previousProvider = providerSnapshot();
+  previousProvider.official_sources = [{
+    id: "official",
+    url: "https://example.test/pricing",
+    ok: false,
+    stale: false,
+    error: "HTTP 404 Not Found",
+    facts: [],
+    facts_digest: JSON.stringify([])
+  }];
+  const currentProvider = providerSnapshot({facts: ["gpt a input $1 output $5 per 1m tokens"]});
+  assert.equal(detectMaterialChanges(snapshot(previousProvider), snapshot(currentProvider), config).length, 0);
+});
+
+test("preserves material fact detection after recovery from a stale good observation", () => {
+  const previousProvider = providerSnapshot({facts: ["gpt a input $1 output $5 per 1m tokens"]});
+  previousProvider.official_sources[0] = {
+    ...previousProvider.official_sources[0],
+    ok: false,
+    stale: true,
+    error: "request timed out"
+  };
+  const currentProvider = providerSnapshot({facts: ["gpt a input $1.5 output $5 per 1m tokens"]});
+  const changes = detectMaterialChanges(snapshot(previousProvider), snapshot(currentProvider), config);
+  assert.equal(changes.length, 1);
+  assert.equal(changes[0].kind, "official-commercial-facts");
 });
 
 test("alerts when an official package quota changes", () => {
