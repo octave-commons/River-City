@@ -239,6 +239,7 @@ function officialFactChanges(providerId, previousProvider, currentProvider) {
   for (const source of currentProvider?.official_sources ?? []) {
     const previous = previousSources.get(source.id);
     if (source.ok === false) continue;
+    if (previous && !previous.observed_at) continue;
     const isNewSource = !previous && previousSources.size > 0;
     if (!isNewSource && (!previous || previous.facts_digest === source.facts_digest)) continue;
     const added = isNewSource ? (source.facts ?? []) : setDifference(source.facts ?? [], previous.facts ?? []);

@@ -44,7 +44,7 @@
         },
         {
           "id": "openai-models",
-          "url": "https://developers.openai.com/api/docs/models/gpt"
+          "url": "https://developers.openai.com/api/docs/models.md"
         },
         {
           "id": "openai-deprecations",
