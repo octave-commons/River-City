@@ -38,6 +38,7 @@ bb normalize
 bb score
 bb render
 bb daily
+bb model-watch
 ```
 
 `nbb` is reserved for Node/JS interop where it is materially useful, especially chart rendering and APIs with mature JS clients.
@@ -56,6 +57,12 @@ The scheduled PortWatch vertical slice writes repository-readable state for down
 The direct source snapshot is operational scaffolding, not a replacement for Clio/Foresight event hosting. `projections/manifest.edn` states whether a projection is ledger-backed. Source laws, normalization, baseline policy, and scoring semantics remain reviewed code/config changes; generated source observations and disposable projections may advance through the scheduled job.
 
 The observed-history band is not the approved normal-regime baseline. It compares each date with the same calendar day across all prior available years and exposes median/IQR plus sample count. River City issue #3 remains the policy gate for conflict-period exclusion rules.
+
+## Model economics watch
+
+The daily model-economics workflow monitors GPT, Claude, Kimi, GLM, Mistral, and MiMo. It keeps official provider pages authoritative, uses OpenRouter only as a machine-readable cross-check, and follows official Hugging Face organizations for open-weight releases. The first run seeds a baseline; later runs comment on issue #13 only for material pricing, packaging, lifecycle, capability-frontier, or open-weight changes.
+
+See [`docs/model-watch.md`](docs/model-watch.md) for the evidence hierarchy, materiality law, generated state, and alert contract.
 
 ## License
 

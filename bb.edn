@@ -9,8 +9,11 @@
               :task (shell "bb scripts/list_user_input.clj")}
   validate {:doc "Validate River City EDN configuration against law schemas"
             :task (shell "bb scripts/validate.clj")}
-  test {:doc "Run tests"
-        :task (shell "clojure -M:test")}
+  test {:doc "Run Clojure and model-watch tests"
+        :task (do (shell "clojure -M:test")
+                  (shell "node --test test/model_watch.test.mjs"))}
+  model-watch {:doc "Observe material AI model-economics changes"
+               :task (shell "node scripts/model_watch.mjs")}
   ingest {:doc "Fetch configured raw observations"
           :task (shell "bb -m river-city.infra.cli ingest")}
   normalize {:doc "Normalize raw observations"

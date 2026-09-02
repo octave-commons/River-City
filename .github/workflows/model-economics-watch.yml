@@ -1,0 +1,110 @@
+name: river-city-model-economics-watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "47 13 * * *"
+  pull_request:
+    paths:
+      - "scripts/model_watch.mjs"
+      - "resources/river_city/model-watch.json"
+      - "test/model_watch.test.mjs"
+      - "docs/model-watch.md"
+      - "package.json"
+      - "bb.edn"
+      - ".github/workflows/model-economics-watch.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/model_watch.mjs"
+      - "resources/river_city/model-watch.json"
+      - "test/model_watch.test.mjs"
+      - "docs/model-watch.md"
+      - "package.json"
+      - "bb.edn"
+      - ".github/workflows/model-economics-watch.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: river-city-model-economics-watch
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Verify model-watch law
+        run: node --test test/model_watch.test.mjs
+
+  monitor:
+    permissions:
+      contents: write
+      issues: write
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Observe provider economics
+        env:
+          RESULT_PATH: ${{ runner.temp }}/model-watch-result.json
+        run: node scripts/model_watch.mjs --result "$RESULT_PATH"
+
+      - name: Alert only on material change
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RESULT_PATH: ${{ runner.temp }}/model-watch-result.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          material=$(node -e 'const fs=require("fs"); const r=JSON.parse(fs.readFileSync(process.env.RESULT_PATH)); process.stdout.write(String(r.material));')
+          if [ "$material" != "true" ]; then
+            echo "No material model-economics change; suppressing notification."
+            exit 0
+          fi
+
+          issue=$(node -e 'const fs=require("fs"); const c=JSON.parse(fs.readFileSync("resources/river_city/model-watch.json")); process.stdout.write(String(c.alert_issue));')
+          alert_path=$(node -e 'const fs=require("fs"); const r=JSON.parse(fs.readFileSync(process.env.RESULT_PATH)); process.stdout.write(r.alert_path);')
+          digest=$(node -e 'const fs=require("fs"); const r=JSON.parse(fs.readFileSync(process.env.RESULT_PATH)); process.stdout.write(r.alert_digest);')
+          test -n "$alert_path"
+          test -f "$alert_path"
+          test -n "$digest"
+
+          marker="**Alert digest:** \`$digest\`"
+          comments=$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$issue/comments?per_page=100" --jq '.[].body')
+          if grep -Fq "$marker" <<<"$comments"; then
+            echo "Alert $digest already delivered; suppressing duplicate."
+          else
+            gh issue comment "$issue" --repo "$GITHUB_REPOSITORY" --body-file "$alert_path"
+          fi
+
+      - name: Commit durable model-watch state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add --all -- data/normalized/model-watch reports/model-watch
+          if git diff --cached --quiet; then
+            echo "No model-watch state changed."
+            exit 0
+          fi
+
+          disallowed=$(git diff --cached --name-only | grep -Ev '^(data/normalized/model-watch/|reports/model-watch/)' || true)
+          if [ -n "$disallowed" ]; then
+            echo "Refusing model-watch commit with disallowed staged paths:" >&2
+            printf '%s\n' "$disallowed" >&2
+            exit 1
+          fi
+
+          git config user.name "river-city-bot"
+          git config user.email "river-city-bot@users.noreply.github.com"
+          git commit -m "ledger: update model economics watch"
+          git pull --rebase origin main
+          git push origin HEAD:main
