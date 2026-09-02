@@ -1,12 +1,12 @@
 # River City model-economics watch
 
-Observed: 2026-09-02T00:30:06.569Z
+Observed: 2026-09-02T00:37:00.564Z
 
-Baseline seeded. No launch or price alert was emitted on the first observation.
+No material pricing, packaging, lifecycle, capability-frontier, or open-weight change crossed the alert gate.
 
 ## Coverage
 
-- GPT / OpenAI: 89 OpenRouter rows; 39 official Hugging Face rows; 2/3 official pages fresh.
+- GPT / OpenAI: 89 OpenRouter rows; 39 official Hugging Face rows; 3/3 official pages fresh.
 - Claude / Anthropic: 26 OpenRouter rows; 0 official Hugging Face rows; 3/3 official pages fresh.
 - Kimi / Moonshot AI: 8 OpenRouter rows; 19 official Hugging Face rows; 12/12 official pages fresh.
 - GLM / Z.ai: 16 OpenRouter rows; 60 official Hugging Face rows; 2/2 official pages fresh.
