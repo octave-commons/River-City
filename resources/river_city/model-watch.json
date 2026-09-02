@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "alert_issue": 13,
+  "mention": "@riatzukiza",
+  "thresholds": {
+    "price_fraction": 0.1,
+    "cost_frontier_fraction": 0.2,
+    "context_multiplier": 1.5,
+    "benchmark_points": 5,
+    "minimum_context_tokens": 262144,
+    "minimum_open_weight_parameters": 1000000000
+  },
+  "workloads": [
+    {
+      "id": "balanced",
+      "label": "balanced 80% input / 20% output",
+      "input": 0.8,
+      "cached_input": 0.0,
+      "output": 0.2
+    },
+    {
+      "id": "agentic-cache",
+      "label": "agentic 50% uncached / 30% cached / 20% output",
+      "input": 0.5,
+      "cached_input": 0.3,
+      "output": 0.2
+    }
+  ],
+  "openrouter_url": "https://openrouter.ai/api/v1/models",
+  "providers": [
+    {
+      "id": "openai",
+      "label": "GPT / OpenAI",
+      "openrouter_prefixes": [
+        "openai/"
+      ],
+      "hugging_face_orgs": [
+        "openai"
+      ],
+      "official_sources": [
+        {
+          "id": "openai-pricing",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        },
+        {
+          "id": "openai-models",
+          "url": "https://developers.openai.com/api/docs/models/gpt"
+        },
+        {
+          "id": "openai-deprecations",
+          "url": "https://developers.openai.com/api/docs/deprecations"
+        }
+      ]
+    },
+    {
+      "id": "anthropic",
+      "label": "Claude / Anthropic",
+      "openrouter_prefixes": [
+        "anthropic/"
+      ],
+      "hugging_face_orgs": [],
+      "official_sources": [
+        {
+          "id": "anthropic-pricing",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+        },
+        {
+          "id": "anthropic-models",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/overview"
+        },
+        {
+          "id": "anthropic-release-notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview"
+        }
+      ]
+    },
+    {
+      "id": "kimi",
+      "label": "Kimi / Moonshot AI",
+      "openrouter_prefixes": [
+        "moonshotai/"
+      ],
+      "hugging_face_orgs": [
+        "moonshotai"
+      ],
+      "official_sources": [
+        {
+          "id": "kimi-index",
+          "url": "https://platform.kimi.ai/docs/llms.txt",
+          "discover_kimi_docs": true
+        },
+        {
+          "id": "kimi-models",
+          "url": "https://platform.kimi.ai/docs/models.md"
+        },
+        {
+          "id": "kimi-changelog",
+          "url": "https://platform.kimi.ai/docs/platform-changelog.md"
+        }
+      ]
+    },
+    {
+      "id": "glm",
+      "label": "GLM / Z.ai",
+      "openrouter_prefixes": [
+        "z-ai/"
+      ],
+      "hugging_face_orgs": [
+        "zai-org"
+      ],
+      "official_sources": [
+        {
+          "id": "zai-pricing",
+          "url": "https://docs.z.ai/guides/overview/pricing"
+        },
+        {
+          "id": "zai-models",
+          "url": "https://docs.z.ai/guides/overview/overview"
+        }
+      ]
+    },
+    {
+      "id": "mistral",
+      "label": "Mistral",
+      "openrouter_prefixes": [
+        "mistralai/"
+      ],
+      "hugging_face_orgs": [
+        "mistralai"
+      ],
+      "official_sources": [
+        {
+          "id": "mistral-pricing",
+          "url": "https://docs.mistral.ai/inference/pricing"
+        },
+        {
+          "id": "mistral-models",
+          "url": "https://docs.mistral.ai/models"
+        },
+        {
+          "id": "mistral-lifecycle",
+          "url": "https://docs.mistral.ai/inference/model-lifecycle"
+        }
+      ]
+    },
+    {
+      "id": "mimo",
+      "label": "MiMo / Xiaomi",
+      "openrouter_prefixes": [
+        "xiaomi/",
+        "xiaomimimo/"
+      ],
+      "hugging_face_orgs": [
+        "XiaomiMiMo"
+      ],
+      "official_sources": [
+        {
+          "id": "mimo-paygo",
+          "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go"
+        },
+        {
+          "id": "mimo-token-plan",
+          "url": "https://mimo.mi.com/docs/en-US/price/token-plan"
+        },
+        {
+          "id": "mimo-model-updates",
+          "url": "https://mimo.mi.com/docs/en-US/updates/model"
+        }
+      ]
+    }
+  ]
+}
