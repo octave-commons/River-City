@@ -1,13 +1,13 @@
 # River City model-economics watch
 
-Observed: 2026-09-02T00:37:00.564Z
+Observed: 2026-09-02T17:25:13.115Z
 
-No material pricing, packaging, lifecycle, capability-frontier, or open-weight change crossed the alert gate.
+1 material change(s) crossed the alert gate.
 
 ## Coverage
 
 - GPT / OpenAI: 89 OpenRouter rows; 39 official Hugging Face rows; 3/3 official pages fresh.
-- Claude / Anthropic: 26 OpenRouter rows; 0 official Hugging Face rows; 3/3 official pages fresh.
+- Claude / Anthropic: 27 OpenRouter rows; 0 official Hugging Face rows; 3/3 official pages fresh.
 - Kimi / Moonshot AI: 8 OpenRouter rows; 19 official Hugging Face rows; 12/12 official pages fresh.
 - GLM / Z.ai: 16 OpenRouter rows; 60 official Hugging Face rows; 2/2 official pages fresh.
 - Mistral: 20 OpenRouter rows; 60 official Hugging Face rows; 3/3 official pages fresh.
