@@ -44,7 +44,7 @@ jobs:
     permissions:
       contents: write
       issues: write
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    if: github.event_name != 'pull_request'
     needs: verify
     runs-on: ubuntu-latest
     timeout-minutes: 10
