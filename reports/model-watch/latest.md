@@ -1,8 +1,8 @@
 # River City model-economics watch
 
-Observed: 2026-09-06T16:27:49.906Z
+Observed: 2026-09-07T18:25:38.880Z
 
-No material pricing, packaging, lifecycle, capability-frontier, or open-weight change crossed the alert gate.
+5 material change(s) crossed the alert gate.
 
 ## Coverage
 
