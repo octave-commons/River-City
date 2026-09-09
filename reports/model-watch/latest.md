@@ -1,8 +1,8 @@
 # River City model-economics watch
 
-Observed: 2026-09-08T17:34:08.671Z
+Observed: 2026-09-09T17:19:55.667Z
 
-10 material change(s) crossed the alert gate.
+8 material change(s) crossed the alert gate.
 
 ## Coverage
 
