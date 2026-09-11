@@ -18,7 +18,7 @@
     "through" : "2026-09-06",
     "years" : [ 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 ]
   },
-  "generated-at" : "2026-09-10T16:28:56.327663682Z",
+  "generated-at" : "2026-09-11T16:33:38.021627074Z",
   "latest" : [ {
     "baseline-max" : 80.0,
     "baseline-median" : 61.0,
@@ -9079,5 +9079,5 @@
     "vessels-total" : 6
   } ],
   "source/id" : "source/imf-portwatch",
-  "source/retrieved-at" : "2026-09-10T16:28:29.232087070Z"
+  "source/retrieved-at" : "2026-09-11T16:33:06.341312156Z"
 }
