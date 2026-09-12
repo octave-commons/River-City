@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-09-11T17:19:14.828Z",
+  "observed_at": "2026-09-12T16:31:59.448Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -5471,8 +5471,8 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.163Z",
-          "content_digest": "58b01ab6ee1d1a300b41ba895e2b382cb76ae8cbba511196c4ec3cb1aa864e82",
+          "observed_at": "2026-09-12T16:31:58.372Z",
+          "content_digest": "cdb4c23fc83e314861e4e6d722502239579044d4c2a22ec35392a223c3ee50de",
           "facts_digest": "fa8a8e70fb96b6d3cc22c41b58c45fd8cf2bf36f4963f1ea28c079aceb34fb63",
           "facts": [
             "$0.10 / gb per day (1 gb free)",
@@ -5486,8 +5486,8 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.173Z",
-          "content_digest": "0011a0c1fbee2d89188d2ad4fccc792dc7d9adc90f18343bf11d66ac0d2f9140",
+          "observed_at": "2026-09-12T16:31:58.421Z",
+          "content_digest": "61233b4715644d129dce3aa50e2211e3dc6bc3718f0a9da827b4ade4daab1769",
           "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
           "facts": [
             "- [gpt-4.5 preview](/api/docs/models/gpt-4.5-preview.md): deprecated large model.",
@@ -5498,9 +5498,9 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.238Z",
-          "content_digest": "f227bdcb49b5e2ad3d0cbf14963ad9b65cfe9a24950e21e1608725cca6324d72",
-          "facts_digest": "aee283c073ee7fa817b2edb1ec72b93af9f9797de2734b848842febc8471977d",
+          "observed_at": "2026-09-12T16:31:58.350Z",
+          "content_digest": "5c2245d12ea0f541d5f5be82626aaf1bafac3ce6ccb5bc250851c0b577e23634",
+          "facts_digest": "6529c6d0bd62c30e6288f2581ac53a4c0cf66de1b33522ad48330238900b12d2",
           "facts": [
             "2026-06-02: gpt image model deprecations",
             "2026-06-11: gpt-5 and o3 model deprecations",
@@ -5531,6 +5531,7 @@
             "on november 6th, 2023, we announced the release of an updated gpt-3.5-turbo model (which now comes by default with 16k context) along with deprecation of gpt-3.5-turbo-0613 and gpt-3.5-turbo-16k-0613 . as of june 17, 2024, only existing users of these models will be able to continue using them.",
             "preview models: preview models, identified by preview in the model name, may be retired with much shorter notice, such as 2 weeks. examples include computer-use-preview and gpt-4o-audio-preview . we don’t recommend using preview models for business-critical production workloads unless you can migrate on short notice.",
             "specialized variants of generally available models: at least 3 months. examples include chat variants such as gpt-5.1-chat-latest , codex variants such as gpt-5.3-codex , and deep research variants such as o3-deep-research .",
+            "the gpt-5.4-cyber model is deprecated and will be removed from the api on october 1, 2026. migrate to gpt-5.6-cyber before the shutdown date.",
             "these notice periods give customers time to evaluate recommended replacement models, test application behavior, and complete migrations before a model is no longer available. in some cases, developers may be able to provision dedicated capacity for continued access after a model’s shutdown date. to explore this option, contact our sales team .",
             "to improve reliability and make it easier for developers to choose the right models, we deprecated a set of older openai models with declining usage. access to these models was shut down on march 26, 2026.",
             "unless safety or compliance concerns require a faster timeline, we provide the following minimum notice periods before model retirement:",
@@ -6651,7 +6652,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.388Z",
+          "observed_at": "2026-09-12T16:31:58.616Z",
           "content_digest": "7c0459212a057ebed45c685b41e666dddcf0e2c9f0f09a2e2c69afda7b305127",
           "facts_digest": "fa7cc9666aa4e495b7454a1cd2bbb6daaf696546eae3597b83790a7a7ddc2644",
           "facts": [
@@ -6694,7 +6695,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.807Z",
+          "observed_at": "2026-09-12T16:31:58.979Z",
           "content_digest": "5973778a6ba23c571b5758e304177cb7ec59ad2db0483a054f1830b269f305d4",
           "facts_digest": "1159cde5da021f717575d4bb7575f8583b46ebb427ea1bf247cd905a1f7af469",
           "facts": [
@@ -6708,7 +6709,7 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.495Z",
+          "observed_at": "2026-09-12T16:31:58.608Z",
           "content_digest": "19b617e530a0e28617b5f3810f886a244720bd28874b4409c1e34336f58b2529",
           "facts_digest": "1804ebb68b27a9d2bfcc6c9e8fabaf720dd4707a7871a7069a56312c103c509b",
           "facts": [
@@ -6854,7 +6855,7 @@
           "created": 1762440622,
           "description": "Kimi K2 Thinking is Moonshot AI’s most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in...",
           "context_length": 262144,
-          "max_output_tokens": 100352,
+          "max_output_tokens": 235929,
           "input_modalities": [
             "text"
           ],
@@ -6882,7 +6883,7 @@
           ],
           "pricing": {
             "input": 0.6,
-            "cached_input": 0.15,
+            "cached_input": null,
             "cache_write": null,
             "output": 2.5
           },
@@ -7077,10 +7078,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 2.34,
-            "cached_input": 0.261,
+            "input": 2.302729,
+            "cached_input": 0.263169,
             "cache_write": null,
-            "output": 11.7
+            "output": 11.550195
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
@@ -7581,7 +7582,7 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.947Z",
+          "observed_at": "2026-09-12T16:31:58.899Z",
           "content_digest": "7a55f6f78686c32229d72e0e4f3f0332f15029635da6c2e2c226734ac4576a65",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
@@ -7592,7 +7593,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.988Z",
+          "observed_at": "2026-09-12T16:31:58.939Z",
           "content_digest": "fe149f0b42b83c907c22caf07053583636cd32da1811c5715440d4e432253ece",
           "facts_digest": "370512c570a525c7088cea11f2abbfda93010bff0ecefe72e31091594b1a7d21",
           "facts": [
@@ -7619,7 +7620,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:14.452Z",
+          "observed_at": "2026-09-12T16:31:59.372Z",
           "content_digest": "61c9d5ed744356bb8ec737e207bc45b6d8a006ba49df9356ab717413413e7446",
           "facts_digest": "e5f5f028d2ffc429c61d773da3a5724aac7859b9b7e7e4b9d1ad828b652675d1",
           "facts": [
@@ -7631,7 +7632,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:14.542Z",
+          "observed_at": "2026-09-12T16:31:59.298Z",
           "content_digest": "fe149f0b42b83c907c22caf07053583636cd32da1811c5715440d4e432253ece",
           "facts_digest": "370512c570a525c7088cea11f2abbfda93010bff0ecefe72e31091594b1a7d21",
           "facts": [
@@ -7658,7 +7659,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.950Z",
+          "observed_at": "2026-09-12T16:31:58.953Z",
           "content_digest": "61c9d5ed744356bb8ec737e207bc45b6d8a006ba49df9356ab717413413e7446",
           "facts_digest": "e5f5f028d2ffc429c61d773da3a5724aac7859b9b7e7e4b9d1ad828b652675d1",
           "facts": [
@@ -7670,7 +7671,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.996Z",
+          "observed_at": "2026-09-12T16:31:58.950Z",
           "content_digest": "ffaff718bcbf7fcaddd69668b590fd5bd178230861b63143023eb3b5a3eb18f1",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
@@ -7681,7 +7682,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:14.078Z",
+          "observed_at": "2026-09-12T16:31:58.941Z",
           "content_digest": "4ac50114af211dfd10c53805b492914ae8248850231f192ac2b0fa7946b2193f",
           "facts_digest": "4fd83d47790c54d87f72cc10e50999aeb845c30edb576ba01d239590cae212b0",
           "facts": [
@@ -7694,7 +7695,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.991Z",
+          "observed_at": "2026-09-12T16:31:59.262Z",
           "content_digest": "63a4e3d07ec92193a708d0bfb9ac39eb1640bacaa44904eb9426ed4be42af8cd",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
@@ -7705,7 +7706,7 @@
           "id": "kimi-discovered-213aa5a1e3",
           "url": "https://platform.kimi.ai/docs/pricing/tools.md",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:14.489Z",
+          "observed_at": "2026-09-12T16:31:58.965Z",
           "content_digest": "ceff635a5002138fa185e78fa43fd7ae0a6a65c574d51603c37f3dd2fc9fa927",
           "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
           "facts": [
@@ -8333,13 +8334,13 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.15,
-            "cached_input": 0.03,
+            "input": 0.075,
+            "cached_input": 0.015,
             "cache_write": null,
-            "output": 0.5
+            "output": 0.25
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
-          "expiration_date": "2098-12-31",
+          "expiration_date": null,
           "benchmark_score": 71.5,
           "variant": false
         },
@@ -9832,7 +9833,7 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.477Z",
+          "observed_at": "2026-09-12T16:31:58.632Z",
           "content_digest": "c72eb76bd999b7f188c7bff94c259075250525cbf2008a4db5741c5b1ec720df",
           "facts_digest": "d3c746d98dc5d5424bfd3d5af6e471b683f0f16c6fa2455fed6d1c94d2f3ba4c",
           "facts": [
@@ -9843,7 +9844,7 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.548Z",
+          "observed_at": "2026-09-12T16:31:58.625Z",
           "content_digest": "75c349da14750c5061d8a3699c08f850a9cbadc7f239305264d23135fb32b02a",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -10770,7 +10771,7 @@
           "name": "Mistral: Mistral Small 3.2 24B",
           "created": 1750443016,
           "description": "Mistral-Small-3.2-24B-Instruct-2506 is an updated 24B parameter model from Mistral optimized for instruction following, repetition reduction, and improved function calling. Compared to the 3.1 release, version 3.2 significantly improves accuracy on...",
-          "context_length": 131072,
+          "context_length": 256000,
           "max_output_tokens": 16384,
           "input_modalities": [
             "image",
@@ -12889,7 +12890,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.519Z",
+          "observed_at": "2026-09-12T16:31:58.642Z",
           "content_digest": "b085efc4ca86ede242750084b54781691deb13ea826ae67302c5a3629c45d63e",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -12898,7 +12899,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.505Z",
+          "observed_at": "2026-09-12T16:31:58.660Z",
           "content_digest": "57fb37aab49cb571f1007d82a50f55d9d8fd7c1f5750171e094ed2b7ea2c4caa",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -12911,7 +12912,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:13.512Z",
+          "observed_at": "2026-09-12T16:31:58.672Z",
           "content_digest": "8f056874dcae3624936a03554b44293d38631025bd2df834ae14871de77def69",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -13578,7 +13579,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:14.484Z",
+          "observed_at": "2026-09-12T16:31:59.411Z",
           "content_digest": "fd39910913cb3d5328c12554e03c52d8cf4322abffbefc4949ca01f50b7a463d",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13587,7 +13588,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:14.487Z",
+          "observed_at": "2026-09-12T16:31:59.422Z",
           "content_digest": "d2976e353e453acac35600608a5e0620788a2188d7d129d3e2690dd67a72a098",
           "facts_digest": "c15a9d16a49edfb8f2d5abff1303e1418255cbe20f845d898f0815afaccd898f",
           "facts": [
@@ -13610,7 +13611,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-09-11T17:19:14.828Z",
+          "observed_at": "2026-09-12T16:31:59.448Z",
           "content_digest": "40587b751917af68860ed5481f453c6524cd38ca0da1196d9749fb58516943b0",
           "facts_digest": "fbb7daed38c143da27f946fdcf16ba9016d536119a7d5b1207bcb9a431eddefb",
           "facts": [
