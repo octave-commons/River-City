@@ -24,17 +24,17 @@
       "path" : "reports/daily/latest.md"
     }, {
       "id" : "report/daily-dated",
-      "path" : "reports/daily/2026-09-06.md"
+      "path" : "reports/daily/2026-09-13.md"
     } ]
   },
-  "generated-at" : "2026-09-14T18:07:08.080827579Z",
+  "generated-at" : "2026-09-15T17:04:49.754905003Z",
   "latest-successful-projection" : {
     "portwatch" : {
       "edn" : "projections/portwatch/latest.edn",
       "json" : "projections/portwatch/latest.json",
       "ledger-backed?" : false,
       "lineage-mode" : "direct-source-snapshot",
-      "source-updated-through" : "2026-09-06"
+      "source-updated-through" : "2026-09-13"
     }
   },
   "missing-series" : [ {
