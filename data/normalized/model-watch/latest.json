@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-09-20T17:02:02.771Z",
+  "observed_at": "2026-09-21T18:55:21.394Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -3144,51 +3144,6 @@
         },
         {
           "provider": "openai",
-          "id": "openai/gpt-oss-120b:batch",
-          "canonical_slug": "openai/gpt-oss-120b",
-          "name": "OpenAI: gpt-oss-120b (batch)",
-          "created": 1754414231,
-          "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized...",
-          "context_length": 131072,
-          "max_output_tokens": 117964,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "repetition_penalty",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.15,
-            "cached_input": null,
-            "cache_write": null,
-            "output": 0.6
-          },
-          "hugging_face_id": "openai/gpt-oss-120b",
-          "expiration_date": null,
-          "benchmark_score": 30.4,
-          "variant": true
-        },
-        {
-          "provider": "openai",
           "id": "openai/gpt-oss-20b",
           "canonical_slug": "openai/gpt-oss-20b",
           "name": "OpenAI: gpt-oss-20b",
@@ -5386,7 +5341,7 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.562Z",
+          "observed_at": "2026-09-21T18:55:20.084Z",
           "content_digest": "b64aaef2b2b77c1cf64dd56ca8d71a820d4413fa12d3175899482627fc305c8b",
           "facts_digest": "fa8a8e70fb96b6d3cc22c41b58c45fd8cf2bf36f4963f1ea28c079aceb34fb63",
           "facts": [
@@ -5401,7 +5356,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.599Z",
+          "observed_at": "2026-09-21T18:55:20.054Z",
           "content_digest": "61233b4715644d129dce3aa50e2211e3dc6bc3718f0a9da827b4ade4daab1769",
           "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
           "facts": [
@@ -5413,7 +5368,7 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.530Z",
+          "observed_at": "2026-09-21T18:55:20.073Z",
           "content_digest": "bd10250406493006ee8f725d3ac63ba5812ffc56ec62ac41eaec7955897d6f37",
           "facts_digest": "6529c6d0bd62c30e6288f2581ac53a4c0cf66de1b33522ad48330238900b12d2",
           "facts": [
@@ -5605,6 +5560,7 @@
             "response_format",
             "stop",
             "structured_outputs",
+            "tool_choice",
             "tools",
             "verbosity"
           ],
@@ -5741,44 +5697,6 @@
           "expiration_date": null,
           "benchmark_score": 43.9,
           "variant": true
-        },
-        {
-          "provider": "anthropic",
-          "id": "anthropic/claude-opus-4",
-          "canonical_slug": "anthropic/claude-4-opus-20250522",
-          "name": "Anthropic: Claude Opus 4",
-          "created": 1747931245,
-          "description": "Claude Opus 4 is benchmarked as the world’s best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in...",
-          "context_length": 200000,
-          "max_output_tokens": 32000,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 15,
-            "cached_input": 1.5,
-            "cache_write": 18.75,
-            "output": 75
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": false
         },
         {
           "provider": "anthropic",
@@ -6278,7 +6196,7 @@
           "name": "Anthropic: Claude Sonnet 4",
           "created": 1747930371,
           "description": "Claude Sonnet 4 significantly enhances the capabilities of its predecessor, Sonnet 3.7, excelling in both coding and reasoning tasks with improved precision and controllability. Achieving state-of-the-art performance on SWE-bench (72.7%),...",
-          "context_length": 1000000,
+          "context_length": 200000,
           "max_output_tokens": 64000,
           "input_modalities": [
             "file",
@@ -6567,7 +6485,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.867Z",
+          "observed_at": "2026-09-21T18:55:20.291Z",
           "content_digest": "7c0459212a057ebed45c685b41e666dddcf0e2c9f0f09a2e2c69afda7b305127",
           "facts_digest": "fa7cc9666aa4e495b7454a1cd2bbb6daaf696546eae3597b83790a7a7ddc2644",
           "facts": [
@@ -6610,7 +6528,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.242Z",
+          "observed_at": "2026-09-21T18:55:20.746Z",
           "content_digest": "5973778a6ba23c571b5758e304177cb7ec59ad2db0483a054f1830b269f305d4",
           "facts_digest": "1159cde5da021f717575d4bb7575f8583b46ebb427ea1bf247cd905a1f7af469",
           "facts": [
@@ -6624,7 +6542,7 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.942Z",
+          "observed_at": "2026-09-21T18:55:20.357Z",
           "content_digest": "52138219b74a6931a7c3376b642e0da4c95fe6e8a2143601645a803844ee5e10",
           "facts_digest": "1804ebb68b27a9d2bfcc6c9e8fabaf720dd4707a7871a7069a56312c103c509b",
           "facts": [
@@ -6993,53 +6911,6 @@
             "top_p"
           ],
           "pricing": {
-            "input": 1.7,
-            "cached_input": 0.17,
-            "cache_write": null,
-            "output": 8.5
-          },
-          "hugging_face_id": "moonshotai/Kimi-K3",
-          "expiration_date": null,
-          "benchmark_score": 76.2,
-          "variant": false
-        },
-        {
-          "provider": "kimi",
-          "id": "moonshotai/kimi-k3:batch",
-          "canonical_slug": "moonshotai/kimi-k3-20260715",
-          "name": "MoonshotAI: Kimi K3 (batch)",
-          "created": 1784215858,
-          "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
-          "context_length": 1048576,
-          "max_output_tokens": 943718,
-          "input_modalities": [
-            "image",
-            "text",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "repetition_penalty",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "pricing": {
             "input": 3,
             "cached_input": 0.3,
             "cache_write": null,
@@ -7048,7 +6919,7 @@
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
           "benchmark_score": 76.2,
-          "variant": true
+          "variant": false
         }
       ],
       "open_weight_models": [
@@ -7498,8 +7369,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.111Z",
-          "content_digest": "44af5719dc7c4733e77df141467691c9108d02a6ac2d5267a4b98a8ff4a8fa7e",
+          "observed_at": "2026-09-21T18:55:20.707Z",
+          "content_digest": "6574f04a1d8719d7549e248e242da35489c31cf599b987b7ebaa12c91649b279",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -7509,7 +7380,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.234Z",
+          "observed_at": "2026-09-21T18:55:20.795Z",
           "content_digest": "9ae59c591f4a6324a43bba204fd6516bec89776ce56b7fdc2548a9dd6781f1e5",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -7535,7 +7406,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.218Z",
+          "observed_at": "2026-09-21T18:55:20.798Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -7549,7 +7420,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.227Z",
+          "observed_at": "2026-09-21T18:55:21.331Z",
           "content_digest": "9ae59c591f4a6324a43bba204fd6516bec89776ce56b7fdc2548a9dd6781f1e5",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -7575,7 +7446,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.216Z",
+          "observed_at": "2026-09-21T18:55:20.796Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -7589,7 +7460,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.230Z",
+          "observed_at": "2026-09-21T18:55:21.336Z",
           "content_digest": "ffaff718bcbf7fcaddd69668b590fd5bd178230861b63143023eb3b5a3eb18f1",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
@@ -7600,7 +7471,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.238Z",
+          "observed_at": "2026-09-21T18:55:20.789Z",
           "content_digest": "e77c81733bc2beab44fe655046c3b9238ecec529c90049eb48b0dbe1a3ecf4ef",
           "facts_digest": "9d0de1df7a1424d55935ab23acdc2e8a21b863b4bacd288fdef260b70e6e8f3b",
           "facts": [
@@ -7612,7 +7483,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.237Z",
+          "observed_at": "2026-09-21T18:55:20.783Z",
           "content_digest": "987b36bc8ae194aa281ace4ade6b8b520c1eedbf7e5c65b6081eba123bcac057",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
@@ -7623,7 +7494,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.220Z",
+          "observed_at": "2026-09-21T18:55:20.800Z",
           "content_digest": "4a6d92c1e605409942e856e6c7090cfa41fab869bfa4478501e3ecf3d3fd3278",
           "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
           "facts": [
@@ -8260,7 +8131,7 @@
           "created": 1787752741,
           "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
           "context_length": 1310720,
-          "max_output_tokens": 131072,
+          "max_output_tokens": 102400,
           "input_modalities": [
             "image",
             "text",
@@ -8276,6 +8147,7 @@
             "logprobs",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -8292,10 +8164,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.09,
-            "cached_input": 0.018,
+            "input": 0.075,
+            "cached_input": 0.02,
             "cache_write": null,
-            "output": 0.3
+            "output": 0.25
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
@@ -8325,7 +8197,6 @@
             "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -9832,7 +9703,7 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.010Z",
+          "observed_at": "2026-09-21T18:55:20.384Z",
           "content_digest": "fb92677645f261f49aebef59f803dc83e68a02ef3921dcff82d847b326c36320",
           "facts_digest": "d3c746d98dc5d5424bfd3d5af6e471b683f0f16c6fa2455fed6d1c94d2f3ba4c",
           "facts": [
@@ -9843,7 +9714,7 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.848Z",
+          "observed_at": "2026-09-21T18:55:20.400Z",
           "content_digest": "dd50e5ad3d96520ad289ba8155bb38deebd4be626a349e5fc445bdf93d74c7cf",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -12849,7 +12720,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.897Z",
+          "observed_at": "2026-09-21T18:55:20.372Z",
           "content_digest": "0d90a9d6119bdb27f83dcc670782088ca1479b9f830af96c240e1c7c3ddd9b45",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -12858,7 +12729,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.925Z",
+          "observed_at": "2026-09-21T18:55:20.418Z",
           "content_digest": "a6f1d813ecc8e99c882011b117d807521348d7122ef29294cb796b3acb336636",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -12871,7 +12742,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:01.904Z",
+          "observed_at": "2026-09-21T18:55:20.406Z",
           "content_digest": "8f056874dcae3624936a03554b44293d38631025bd2df834ae14871de77def69",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -13538,7 +13409,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.708Z",
+          "observed_at": "2026-09-21T18:55:21.390Z",
           "content_digest": "094c1299027b7e3fcaee0207dbf4b174b1bbcc2589520369959e76faa8007da9",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13547,7 +13418,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.693Z",
+          "observed_at": "2026-09-21T18:55:21.388Z",
           "content_digest": "f50fe1abb903662c81ec0d9505669501aef1102b26e3f4ed3496f95ee36d5589",
           "facts_digest": "c15a9d16a49edfb8f2d5abff1303e1418255cbe20f845d898f0815afaccd898f",
           "facts": [
@@ -13570,7 +13441,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-09-20T17:02:02.771Z",
+          "observed_at": "2026-09-21T18:55:21.393Z",
           "content_digest": "23568d757514be58fcc7cdb6c394f3056f6bcbd2eba597abc8157279a3870753",
           "facts_digest": "fbb7daed38c143da27f946fdcf16ba9016d536119a7d5b1207bcb9a431eddefb",
           "facts": [
