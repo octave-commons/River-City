@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-09-21T18:55:21.394Z",
+  "observed_at": "2026-09-22T17:46:39.494Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -3150,7 +3150,7 @@
           "created": 1754414229,
           "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
           "context_length": 131072,
-          "max_output_tokens": 117964,
+          "max_output_tokens": 32768,
           "input_modalities": [
             "text"
           ],
@@ -3180,15 +3180,61 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.03,
-            "cached_input": 0.03,
+            "input": 0.018,
+            "cached_input": null,
             "cache_write": null,
-            "output": 0.13
+            "output": 0.09
           },
           "hugging_face_id": "openai/gpt-oss-20b",
           "expiration_date": null,
           "benchmark_score": 20.7,
           "variant": false
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-oss-20b:batch",
+          "canonical_slug": "openai/gpt-oss-20b",
+          "name": "OpenAI: gpt-oss-20b (batch)",
+          "created": 1754414229,
+          "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
+          "context_length": 131072,
+          "max_output_tokens": 117964,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "pricing": {
+            "input": 0.024,
+            "cached_input": null,
+            "cache_write": null,
+            "output": 0.112
+          },
+          "hugging_face_id": "openai/gpt-oss-20b",
+          "expiration_date": null,
+          "benchmark_score": 20.7,
+          "variant": true
         },
         {
           "provider": "openai",
@@ -5341,8 +5387,8 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.084Z",
-          "content_digest": "b64aaef2b2b77c1cf64dd56ca8d71a820d4413fa12d3175899482627fc305c8b",
+          "observed_at": "2026-09-22T17:46:38.198Z",
+          "content_digest": "b34e7a249bdfd703f55ef7ae240d5bfe05b7b49161bf2b40b66f33eb52396e8b",
           "facts_digest": "fa8a8e70fb96b6d3cc22c41b58c45fd8cf2bf36f4963f1ea28c079aceb34fb63",
           "facts": [
             "$0.10 / gb per day (1 gb free)",
@@ -5356,7 +5402,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.054Z",
+          "observed_at": "2026-09-22T17:46:38.290Z",
           "content_digest": "61233b4715644d129dce3aa50e2211e3dc6bc3718f0a9da827b4ade4daab1769",
           "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
           "facts": [
@@ -5368,8 +5414,8 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.073Z",
-          "content_digest": "bd10250406493006ee8f725d3ac63ba5812ffc56ec62ac41eaec7955897d6f37",
+          "observed_at": "2026-09-22T17:46:38.255Z",
+          "content_digest": "db69562468053b27441f4f8ad8db1fca3da766af67ad7a8ee290af515563f0b1",
           "facts_digest": "6529c6d0bd62c30e6288f2581ac53a4c0cf66de1b33522ad48330238900b12d2",
           "facts": [
             "2026-06-02: gpt image model deprecations",
@@ -6191,6 +6237,88 @@
         },
         {
           "provider": "anthropic",
+          "id": "anthropic/claude-opus-5.5",
+          "canonical_slug": "anthropic/claude-opus-5.5-20260921",
+          "name": "Anthropic: Claude Opus 5.5",
+          "created": 1790094732,
+          "description": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step changes in large codebases, code...",
+          "context_length": 1000000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 4,
+            "cached_input": 0.2,
+            "cache_write": 5,
+            "output": 20
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": false
+        },
+        {
+          "provider": "anthropic",
+          "id": "anthropic/claude-opus-5.5:batch",
+          "canonical_slug": "anthropic/claude-opus-5.5-20260921",
+          "name": "Anthropic: Claude Opus 5.5 (batch)",
+          "created": 1790094732,
+          "description": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step changes in large codebases, code...",
+          "context_length": 1000000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 2,
+            "cached_input": 0.1,
+            "cache_write": 2.5,
+            "output": 10
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": true
+        },
+        {
+          "provider": "anthropic",
           "id": "anthropic/claude-sonnet-4",
           "canonical_slug": "anthropic/claude-4-sonnet-20250522",
           "name": "Anthropic: Claude Sonnet 4",
@@ -6485,17 +6613,18 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.291Z",
-          "content_digest": "7c0459212a057ebed45c685b41e666dddcf0e2c9f0f09a2e2c69afda7b305127",
-          "facts_digest": "fa7cc9666aa4e495b7454a1cd2bbb6daaf696546eae3597b83790a7a7ddc2644",
+          "observed_at": "2026-09-22T17:46:38.427Z",
+          "content_digest": "c9e1ed5fcdac04e517dc2a87883470299a519dd3ec3cf327aa2b7f206c2c2057",
+          "facts_digest": "43f28732cbd572fa9bbbca1f51511961b07950b2aefd2b02ff9b4b65ddc4c9d3",
           "facts": [
             "$0.01 per ccu (fixed; discounts apply at token-to-ccu conversion, not to the ccu price)",
-            "0.1x base input price (0.025x on claude fable 5.1 and claude mythos 5.1)",
-            "1 cache hits and refreshes on claude fable 5.1 and claude mythos 5.1 are priced at 0.025x the base input price. all other models use the standard 0.1x multiplier.",
+            "0.1x base input price (0.025x on claude fable 5.1 and claude mythos 5.1 ; 0.05x on claude opus 5.5 )",
+            "1 cache hits and refreshes on claude fable 5.1 and claude mythos 5.1 are priced at 0.025x the base input price.",
+            "2 cache hits and refreshes on claude opus 5.5 are priced at 0.05x the base input price.",
             "all tokens consumed by a claude managed agents session are billed at the rates shown in model pricing . prompt caching multipliers apply identically. web search triggered inside a session incurs the standard $10 per 1,000 searches. on claude platform on aws , session token and runtime charges convert to claude consumption units at the standard rate. fast mode premium pricing applies when an agent&#x27;s model.speed is set to \"fast\" .",
             "cache valid for 1 hour",
             "cache valid for 5 minutes",
-            "cache write tokens are charged when content is first stored. cache read tokens are charged when a subsequent request retrieves the cached content. a cache hit costs 10% of the standard input price, which means caching pays off after one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write). on claude fable 5.1 and claude mythos 5.1, a cache hit costs 2.5% of the standard input price ($0.25 usd per million tokens).",
+            "cache write tokens are charged when content is first stored. cache read tokens are charged when a subsequent request retrieves the cached content. a cache hit costs 10% of the standard input price, which means caching pays off after one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write). on claude fable 5.1 and claude mythos 5.1, a cache hit costs 2.5% of the standard input price ($0.25 usd per million tokens). on claude opus 5.5, a cache hit costs 5% of the standard input price ($0.20 usd per million tokens).",
             "claude 4.6 and later models and claude mythos preview include the full 1m token context window at standard pricing. (a 900k-token request is billed at the same per-token rate as a 9k-token request.) prompt caching and batch processing discounts apply at standard rates across the full context window.",
             "claude haiku 3.5 ( retired, except on bedrock and google cloud )",
             "claude in microsoft foundry bills through the azure marketplace using claude consumption units (ccus). anthropic rates your token usage in usd at standard per-model, per-feature rates, applies any negotiated discount, converts the result to ccus at $0.01 per ccu, and reports the ccu quantity to the azure marketplace hourly. your azure bill shows a single ccu line item.",
@@ -6528,8 +6657,8 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.746Z",
-          "content_digest": "5973778a6ba23c571b5758e304177cb7ec59ad2db0483a054f1830b269f305d4",
+          "observed_at": "2026-09-22T17:46:39.037Z",
+          "content_digest": "a907c16b1e6adb8af94c47cacd1fb3d8338b8526fd9138b2fa6402076ba14b16",
           "facts_digest": "1159cde5da021f717575d4bb7575f8583b46ebb427ea1bf247cd905a1f7af469",
           "facts": [
             "lifecycle status and retirement commitments for every model.",
@@ -6542,9 +6671,9 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.357Z",
-          "content_digest": "52138219b74a6931a7c3376b642e0da4c95fe6e8a2143601645a803844ee5e10",
-          "facts_digest": "1804ebb68b27a9d2bfcc6c9e8fabaf720dd4707a7871a7069a56312c103c509b",
+          "observed_at": "2026-09-22T17:46:38.593Z",
+          "content_digest": "3966c9d6c1b236ac2afbe0e6629976fc4539a51a43bef2ffef721c247b201ff0",
+          "facts_digest": "fd3a8e478f82297612af6f8de5fac92ba73f1701886122f6bb7e376e54291671",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer.",
             "claude opus 4.7 supports high-resolution image input , raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot understanding, and document analysis. high-resolution support is automatic and requires no beta header; images may use up to approximately 3x more image tokens than on prior models.",
@@ -6552,6 +6681,7 @@
             "mcp tunnels (research preview): the management api moved from /v1/organizations/tunnels on the admin api to /v1/tunnels on the claude api. the new surface uses the anthropic-beta: mcp-tunnels-2026-06-22 header and the workspace:manage_tunnels wif scope. the previous surface remains available during a migration window. see the tunnels api reference .",
             "message batches api : process large batches of messages asynchronously at 50% of the standard api cost.",
             "on claude opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on claude opus 4.7.",
+            "on claude opus 5.5, thinking can&#x27;t be disabled: thinking: {\"type\": \"disabled\"} and thinking: {\"type\": \"enabled\", ...} return a 400 error. omit the thinking field and control thinking depth with the effort parameter . tool_choice types any and tool also return a 400 error, as on claude fable 5.1; use auto with strict tool use . on the claude api and google cloud, computer use on this model requires the computer_toolset_20260801 toolset and the earlier computer_20251124 tool returns a 400 error; on amazon bedrock, computer_20251124 keeps working. see the migration guide .",
             "prompt cache reads on claude fable 5.1 and claude mythos 5.1 cost $0.25 usd per million tokens: 0.025x the base input price, compared with 0.1x on other models. cache writes are unchanged. see prompt caching pricing .",
             "prompt caching is now available as a beta feature in the claude api. cache and re-use prompts to reduce latency by up to 80% and costs by up to 90%.",
             "setting the sampling parameters temperature , top_p , or top_k to a non-default value returns a 400 error on claude opus 4.8, same as on claude opus 4.7. see the migration guide for details.",
@@ -6582,6 +6712,7 @@
             "we&#x27;ve launched claude opus 4.7 , our most capable widely released model for complex reasoning and agentic coding, at the same $5 / $25 per mtok pricing as opus 4.6. see what&#x27;s new in claude opus 4.7 for capability improvements, new features, and the updated tokenizer. opus 4.7 includes api breaking changes versus opus 4.6; see the migration guide before upgrading.",
             "we&#x27;ve launched claude opus 4.8 ( claude-opus-4-8 ), our most capable widely released model. claude opus 4.8 supports a 1m token context window by default on the claude api, amazon bedrock, google cloud, and microsoft foundry, 128k max output tokens, and the same set of tools and platform features as claude opus 4.7. see the migration guide for baseline settings, features, and migration guidance.",
             "we&#x27;ve launched claude opus 5 ( claude-opus-5 ), a step-change improvement over claude opus 4.8. claude opus 5 supports a 1m token context window (both the default and the maximum), 128k max output tokens, and thinking on by default, at $5 / $25 usd per mtok, the same pricing as claude opus 4.8. it&#x27;s available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what&#x27;s new in claude opus 5 for new features, behavior changes, and migration guidance, and the models overview for complete specs.",
+            "we&#x27;ve launched claude opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. it has a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking , at $4 / $20 usd per mtok (claude opus 5 is $5 / $25). claude opus 5.5 is available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what&#x27;s new in claude opus 5.5 for capabilities, api changes, and migration guidance.",
             "we&#x27;ve launched claude sonnet 4.6 , our latest balanced model combining speed and intelligence for everyday tasks. sonnet 4.6 delivers improved agentic search performance while consuming fewer tokens. sonnet 4.6 supports extended thinking and a 1m token context window (beta). see models & pricing for details.",
             "we&#x27;ve retired the 1m token context window beta ( context-1m-2025-08-07 ) for claude sonnet 4.5 and claude sonnet 4. the beta header now has no effect on these models, and requests exceeding the standard 200k-token context window return an error. to use the 1m context window, migrate to claude sonnet 4.6 or claude opus 4.6 , where it&#x27;s included at standard pricing with no beta header required.",
             "we&#x27;ve retired the claude 1 and instant models. read more in model deprecations .",
@@ -6864,7 +6995,7 @@
             "input": 0.7062,
             "cached_input": 0.18,
             "cache_write": null,
-            "output": 3.21
+            "output": 3.3
           },
           "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
           "expiration_date": null,
@@ -6920,6 +7051,54 @@
           "expiration_date": null,
           "benchmark_score": 76.2,
           "variant": false
+        },
+        {
+          "provider": "kimi",
+          "id": "moonshotai/kimi-k3:batch",
+          "canonical_slug": "moonshotai/kimi-k3-20260715",
+          "name": "MoonshotAI: Kimi K3 (batch)",
+          "created": 1784215858,
+          "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
+          "context_length": 1048576,
+          "max_output_tokens": 16384,
+          "input_modalities": [
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "pricing": {
+            "input": 2.28,
+            "cached_input": 0.228,
+            "cache_write": null,
+            "output": 11.4
+          },
+          "hugging_face_id": "moonshotai/Kimi-K3",
+          "expiration_date": null,
+          "benchmark_score": 76.2,
+          "variant": true
         }
       ],
       "open_weight_models": [
@@ -7369,7 +7548,7 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.707Z",
+          "observed_at": "2026-09-22T17:46:38.789Z",
           "content_digest": "6574f04a1d8719d7549e248e242da35489c31cf599b987b7ebaa12c91649b279",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
@@ -7380,7 +7559,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.795Z",
+          "observed_at": "2026-09-22T17:46:38.993Z",
           "content_digest": "9ae59c591f4a6324a43bba204fd6516bec89776ce56b7fdc2548a9dd6781f1e5",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -7406,7 +7585,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.798Z",
+          "observed_at": "2026-09-22T17:46:38.972Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -7420,7 +7599,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:21.331Z",
+          "observed_at": "2026-09-22T17:46:38.983Z",
           "content_digest": "9ae59c591f4a6324a43bba204fd6516bec89776ce56b7fdc2548a9dd6781f1e5",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -7446,7 +7625,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.796Z",
+          "observed_at": "2026-09-22T17:46:39.466Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -7460,7 +7639,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:21.336Z",
+          "observed_at": "2026-09-22T17:46:38.994Z",
           "content_digest": "ffaff718bcbf7fcaddd69668b590fd5bd178230861b63143023eb3b5a3eb18f1",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
@@ -7471,7 +7650,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.789Z",
+          "observed_at": "2026-09-22T17:46:38.965Z",
           "content_digest": "e77c81733bc2beab44fe655046c3b9238ecec529c90049eb48b0dbe1a3ecf4ef",
           "facts_digest": "9d0de1df7a1424d55935ab23acdc2e8a21b863b4bacd288fdef260b70e6e8f3b",
           "facts": [
@@ -7483,7 +7662,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.783Z",
+          "observed_at": "2026-09-22T17:46:38.995Z",
           "content_digest": "987b36bc8ae194aa281ace4ade6b8b520c1eedbf7e5c65b6081eba123bcac057",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
@@ -7494,7 +7673,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.800Z",
+          "observed_at": "2026-09-22T17:46:38.981Z",
           "content_digest": "4a6d92c1e605409942e856e6c7090cfa41fab869bfa4478501e3ecf3d3fd3278",
           "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
           "facts": [
@@ -7989,52 +8168,6 @@
         },
         {
           "provider": "glm",
-          "id": "z-ai/glm-5.2:batch",
-          "canonical_slug": "z-ai/glm-5.2-20260616",
-          "name": "Z.ai: GLM 5.2 (batch)",
-          "created": 1781631930,
-          "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
-          "context_length": 1048576,
-          "max_output_tokens": 943718,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "repetition_penalty",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.7,
-            "cached_input": 0.07,
-            "cache_write": null,
-            "output": 2.2
-          },
-          "hugging_face_id": "zai-org/GLM-5.2",
-          "expiration_date": null,
-          "benchmark_score": 68.8,
-          "variant": true
-        },
-        {
-          "provider": "glm",
           "id": "z-ai/glm-5.2:free",
           "canonical_slug": "z-ai/glm-5.2-20260616",
           "name": "Z.ai: GLM 5.2 (free)",
@@ -8113,10 +8246,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.91,
-            "cached_input": 0.169,
+            "input": 0.6538,
+            "cached_input": 0.12142,
             "cache_write": null,
-            "output": 2.86
+            "output": 2.0548
           },
           "hugging_face_id": "zai-org/GLM-5.3",
           "expiration_date": null,
@@ -8131,7 +8264,7 @@
           "created": 1787752741,
           "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
           "context_length": 1310720,
-          "max_output_tokens": 102400,
+          "max_output_tokens": 943718,
           "input_modalities": [
             "image",
             "text",
@@ -8164,10 +8297,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.075,
-            "cached_input": 0.02,
+            "input": 0.15,
+            "cached_input": 0.05,
             "cache_write": null,
-            "output": 0.25
+            "output": 0.5
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
@@ -8182,7 +8315,7 @@
           "created": 1787752741,
           "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
           "context_length": 1048576,
-          "max_output_tokens": 943718,
+          "max_output_tokens": 131072,
           "input_modalities": [
             "image",
             "text",
@@ -8195,27 +8328,27 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
             "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "pricing": {
-            "input": 0.075,
-            "cached_input": 0.015,
+            "input": 0.06,
+            "cached_input": 0.012,
             "cache_write": null,
-            "output": 0.25
+            "output": 0.2
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
@@ -8270,7 +8403,7 @@
           "created": 1787086655,
           "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves...",
           "context_length": 1048576,
-          "max_output_tokens": 943718,
+          "max_output_tokens": 131072,
           "input_modalities": [
             "text"
           ],
@@ -8281,27 +8414,27 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
             "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "pricing": {
-            "input": 0.7,
-            "cached_input": 0.13,
+            "input": 0.72,
+            "cached_input": 0.12,
             "cache_write": null,
-            "output": 2.2
+            "output": 2.4
           },
           "hugging_face_id": "zai-org/GLM-5.3",
           "expiration_date": null,
@@ -9703,7 +9836,7 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.384Z",
+          "observed_at": "2026-09-22T17:46:38.552Z",
           "content_digest": "fb92677645f261f49aebef59f803dc83e68a02ef3921dcff82d847b326c36320",
           "facts_digest": "d3c746d98dc5d5424bfd3d5af6e471b683f0f16c6fa2455fed6d1c94d2f3ba4c",
           "facts": [
@@ -9714,7 +9847,7 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.400Z",
+          "observed_at": "2026-09-22T17:46:38.557Z",
           "content_digest": "dd50e5ad3d96520ad289ba8155bb38deebd4be626a349e5fc445bdf93d74c7cf",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -12720,7 +12853,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.372Z",
+          "observed_at": "2026-09-22T17:46:38.991Z",
           "content_digest": "0d90a9d6119bdb27f83dcc670782088ca1479b9f830af96c240e1c7c3ddd9b45",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -12729,7 +12862,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.418Z",
+          "observed_at": "2026-09-22T17:46:38.635Z",
           "content_digest": "a6f1d813ecc8e99c882011b117d807521348d7122ef29294cb796b3acb336636",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -12742,7 +12875,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:20.406Z",
+          "observed_at": "2026-09-22T17:46:38.626Z",
           "content_digest": "8f056874dcae3624936a03554b44293d38631025bd2df834ae14871de77def69",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -12849,6 +12982,135 @@
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
           "expiration_date": null,
           "benchmark_score": 60.2,
+          "variant": false
+        },
+        {
+          "provider": "mimo",
+          "id": "xiaomi/mimo-v2.6-flash",
+          "canonical_slug": "xiaomi/mimo-v2.6-flash-20260921",
+          "name": "Xiaomi: MiMo-V2.6-Flash",
+          "created": 1790021264,
+          "description": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employs a hybrid attention mechanism for...",
+          "context_length": 1048576,
+          "max_output_tokens": 131072,
+          "input_modalities": [
+            "audio",
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "pricing": {
+            "input": 0.14,
+            "cached_input": 0.0028,
+            "cache_write": null,
+            "output": 0.28
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": false
+        },
+        {
+          "provider": "mimo",
+          "id": "xiaomi/mimo-v2.6-pro",
+          "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
+          "name": "Xiaomi: MiMo-V2.6-Pro",
+          "created": 1790021259,
+          "description": "MiMo-V2.6-Pro is the flagship foundation model developed by Xiaomi. Built at a scale of over 1T parameters, it is designed to push the ceiling of capability for the most demanding...",
+          "context_length": 1048576,
+          "max_output_tokens": 131072,
+          "input_modalities": [
+            "audio",
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "pricing": {
+            "input": 0.435,
+            "cached_input": 0.0036,
+            "cache_write": null,
+            "output": 0.87
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": 46.3,
+          "variant": false
+        },
+        {
+          "provider": "mimo",
+          "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+          "canonical_slug": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
+          "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+          "created": 1790021267,
+          "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original model in quality while delivering roughly 10x...",
+          "context_length": 1048576,
+          "max_output_tokens": 131072,
+          "input_modalities": [
+            "audio",
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "pricing": {
+            "input": 4.35,
+            "cached_input": 0.036,
+            "cache_write": null,
+            "output": 8.7
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
           "variant": false
         }
       ],
@@ -13279,6 +13541,94 @@
         },
         {
           "provider": "mimo",
+          "id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+          "created_at": "2026-09-21T18:18:40.000Z",
+          "last_modified": "2026-09-22T03:52:45.000Z",
+          "pipeline_tag": "image-text-to-text",
+          "library_name": "transformers",
+          "tags": [
+            "agentic",
+            "base_model:Qwen/Qwen3.5-9B",
+            "base_model:finetune:Qwen/Qwen3.5-9B",
+            "code",
+            "conversational",
+            "distillation",
+            "endpoints_compatible",
+            "eval-results",
+            "image-text-to-text",
+            "license:mit",
+            "mimo_v2",
+            "qwen3_5",
+            "region:us",
+            "safetensors",
+            "supervised-fine-tuning",
+            "tool-use",
+            "transformers"
+          ],
+          "parameters": null
+        },
+        {
+          "provider": "mimo",
+          "id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "created_at": "2026-09-21T15:39:51.000Z",
+          "last_modified": "2026-09-22T03:52:25.000Z",
+          "pipeline_tag": "text-generation",
+          "library_name": "transformers",
+          "tags": [
+            "8-bit",
+            "agent",
+            "audio",
+            "conversational",
+            "custom_code",
+            "en",
+            "eval-results",
+            "fp8",
+            "license:mit",
+            "long-context",
+            "mimo_v2",
+            "multimodal",
+            "region:us",
+            "safetensors",
+            "text-generation",
+            "transformers",
+            "video-understanding",
+            "vision-language",
+            "zh"
+          ],
+          "parameters": null
+        },
+        {
+          "provider": "mimo",
+          "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+          "created_at": "2026-09-21T15:39:33.000Z",
+          "last_modified": "2026-09-22T03:52:00.000Z",
+          "pipeline_tag": "text-generation",
+          "library_name": "transformers",
+          "tags": [
+            "8-bit",
+            "agent",
+            "audio",
+            "conversational",
+            "custom_code",
+            "en",
+            "eval-results",
+            "fp8",
+            "license:mit",
+            "long-context",
+            "mimo_v2",
+            "multimodal",
+            "region:us",
+            "safetensors",
+            "text-generation",
+            "transformers",
+            "video-understanding",
+            "vision-language",
+            "zh"
+          ],
+          "parameters": null
+        },
+        {
+          "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-RL",
           "created_at": "2025-05-30T00:37:21.000Z",
           "last_modified": "2025-06-07T06:09:22.000Z",
@@ -13409,18 +13759,22 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:21.390Z",
-          "content_digest": "094c1299027b7e3fcaee0207dbf4b174b1bbcc2589520369959e76faa8007da9",
-          "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-          "facts": []
+          "observed_at": "2026-09-22T17:46:39.461Z",
+          "content_digest": "c6c8fa6911fa5279df0e00a64c0e814b4f0881c3f4117064ef6e150fb22feb34",
+          "facts_digest": "3e91890c934d03d9c7b6ec7f57023bebd247ea65c505fe394362b318a2f66d0e",
+          "facts": [
+            "mimo-v2.5-pro and mimo-v2.5 will be officially deprecated at 10:00 (beijing time) on october 21,2026. it is recommended to switch to the new version of the models as soon as possible. for details, please refer to model deprecation .",
+            "mimo-v2.6-flash 、 mimo-v2.5 (to be deprecated)",
+            "mimo-v2.6-pro 、 mimo-v2.5-pro (to be deprecated)"
+          ]
         },
         {
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:21.388Z",
-          "content_digest": "f50fe1abb903662c81ec0d9505669501aef1102b26e3f4ed3496f95ee36d5589",
-          "facts_digest": "c15a9d16a49edfb8f2d5abff1303e1418255cbe20f845d898f0815afaccd898f",
+          "observed_at": "2026-09-22T17:46:39.465Z",
+          "content_digest": "9dc9131572fa8d910caf43a28a065eb618d0a57f0b9e301bb12505b9ee29f882",
+          "facts_digest": "78a01edac467d8fa3acc3b1a1a632fdef84f27d3e590678ebb5d6037213a2763",
           "facts": [
             "100 credits",
             "2 credits",
@@ -13429,20 +13783,18 @@
             "300 credits",
             "30m credits",
             "600 credits",
-            "continuous annual subscription: enjoy an 88% discount compared to continuous monthly subscription; first purchase discounts do not apply to annual subscriptions;",
-            "discounts: 0.8x consumption at night, first purchase of a package enjoys 12% discount, consecutive annual subscription enjoys 12% discount, token plan existing users exclusively enjoy once the \"credits usage refresh and reset\" event after tokenplan upgrade.",
-            "first purchase discount: enjoy 12% off on your first purchase, available only once per account;",
-            "for example, if you have ordered the lite package (4.1b credits), you can call mimo-v 2.5 series models individually or in combination mimo-v2.5-pro input (cache miss) tokens, which is equivalent to consuming 3000 m credits, you can still enjoy 1100m mimo-v2.5 credits quota.if you subscribe to the lite plan and only use the asr model, you can use 4100m ÷ 30m/hour = 136.6 hours per month (equivalent to processing 4.5 hours of audio per day for 1 consecutive month). you can check the quota and usage of your current plan in subscription management .",
-            "nighttime discount rate: off-peak hours (beijing time 0:00-8:00, i.e., utc 16:00-24:00) with a consumption coefficient of 0.8x.",
-            "note: mimo-v2-pro , mimo-v2-omni and mimo-v2-tts have been officially deprecated on june 30 00:00, 2026. please switch to the new models as soon as possible."
+            "annual subscription (auto-renewal): compared with the monthly auto-renewal plan, both the individual plan and team plan enjoy a 12% discount for annual auto-renewal, and first-purchase offers are not applicable to annual auto-renewal plans;",
+            "first purchase discount: users purchasing the individual edition for the first time can enjoy a 12% discount, and each account is only eligible for this discount once; the team edition is not eligible for this discount.",
+            "for example, if you subscribe to the lite plan (4.1b credits), you can call the mimo- v2.6 series models either individually or in combination. after you use 10m mimo-v2.6-pro input tokens (cache miss), this is equivalent to consuming 3000 m credit s, and you will still have 1100m mimo-v2.5-flash credits remaining.in addition, if you dedicate the entire quota of the lite plan exclusively to the asr model, you will get 4100m per month ÷ 30m/hour = 136.6 hours (equivalent to processing 4.5 hours of audio per day for 1 consecutive month). you can check the quota and usage of your current plan at token plan .",
+            "night discount rate: during off-peak hours (beijing time 00:00–08:00, i. e. utc 16:00–24:00), the consumption coefficient is 0.8x."
           ]
         },
         {
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-09-21T18:55:21.393Z",
-          "content_digest": "23568d757514be58fcc7cdb6c394f3056f6bcbd2eba597abc8157279a3870753",
+          "observed_at": "2026-09-22T17:46:39.494Z",
+          "content_digest": "ec19733f7404c4984eba63ab8594f0f092611ee8882118ae7d541e03be45ea9d",
           "facts_digest": "fbb7daed38c143da27f946fdcf16ba9016d536119a7d5b1207bcb9a431eddefb",
           "facts": [
             "by optimizing cot generation strategies, the consumption of redundant tokens has been significantly reduced. in benchmarks such as aime25 and hmmt, the average generation length has decreased by 13% to 30% . this effectively lowers latency and token costs while maintaining model performance.",
