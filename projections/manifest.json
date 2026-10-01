@@ -27,7 +27,7 @@
       "path" : "reports/daily/2026-09-27.md"
     } ]
   },
-  "generated-at" : "2026-09-30T18:01:32.256569489Z",
+  "generated-at" : "2026-10-01T18:27:43.649619009Z",
   "latest-successful-projection" : {
     "portwatch" : {
       "edn" : "projections/portwatch/latest.edn",
