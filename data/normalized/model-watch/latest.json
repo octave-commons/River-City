@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-10-08T19:30:28.056Z",
+  "observed_at": "2026-10-09T19:02:32.601Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -5958,8 +5958,8 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:26.986Z",
-          "content_digest": "b169bf1aa3c7fbac5f15668fc65f0616bc607750355ec40d39b5aa840a2a60c1",
+          "observed_at": "2026-10-09T19:02:31.436Z",
+          "content_digest": "1f2614981ea16ea58e6dbb96d371d08bb855c189141a6809eceb933d399d6479",
           "facts_digest": "5a6e727af516ad4a052c69ef6cc25ad9d3affeb2cea1fe5fb2f59444b6355920",
           "facts": [
             "$0.10 / gb per day (1 gb free)",
@@ -5974,7 +5974,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.014Z",
+          "observed_at": "2026-10-09T19:02:31.498Z",
           "content_digest": "619b1ff9bce056ba0f05029ab762bc7bd48c4c26a66c4bee889305ef25fad822",
           "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
           "facts": [
@@ -5986,8 +5986,8 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:26.969Z",
-          "content_digest": "e9a13a81ae3b48cb78099976d92500e824cc3d220203ce3328722a4985e37293",
+          "observed_at": "2026-10-09T19:02:31.459Z",
+          "content_digest": "c5572b6cae5bb61ae0ad62c0f2a9666253d75296bfcf6a098146b424e6d40f48",
           "facts_digest": "c2d0fde1134d6a9b5b4c4fd7c1cd8a4e762f33fbc7447226ba566386b35c91fc",
           "facts": [
             "2026-06-02: gpt image model deprecations",
@@ -7310,24 +7310,24 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.274Z",
-          "content_digest": "5f487c3ca974cf657a59079798e3b6904db32420ca8641b62e1b678a65e6c4a3",
-          "facts_digest": "d24231193c37695b30e4a1c36c5fa72cc09510eeb5203c067b28e56427208624",
+          "observed_at": "2026-10-09T19:02:31.744Z",
+          "content_digest": "4af1d079e9585cc19f46f511f113d3b239a5213f3a6116ccee0c7dbed9735122",
+          "facts_digest": "6376b14093d1e65c98b6542130514f7935f280ffa173e9c9b3693a5fb7e4ccb0",
           "facts": [
             "$0.01 per ccu (fixed; discounts apply at token-to-ccu conversion, not to the ccu price)",
-            "0.1x base input price (0.025x on claude fable 5.1 and claude mythos 5.1; 0.05x on claude opus 5.5 and claude sonnet 5.5 )",
+            "0.1x base input price (0.025x on claude fable 5.1 and claude mythos 5.1; 0.05x on claude opus 5.5 and claude sonnet 5.5)",
             "all tokens consumed by a claude managed agents session are billed at the rates shown in model pricing . prompt caching multipliers apply identically. web search triggered inside a session incurs the standard $10 per 1,000 searches. on claude platform on aws , session token and runtime charges convert to claude consumption units at the standard rate. fast mode premium pricing applies when an agent&#x27;s model.speed is set to \"fast\" .",
             "cache valid for 1 hour",
             "cache valid for 5 minutes",
             "cache write tokens are charged when content is first stored. cache read tokens are charged when a subsequent request retrieves the cached content. a cache hit costs 10% of the standard input price, which means caching pays off after one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write). on claude fable 5.1 and claude mythos 5.1, a cache hit costs 2.5% of the standard input price ($0.25 usd per million tokens). on claude opus 5.5 and claude sonnet 5.5, a cache hit costs 5% of the standard input price ($0.20 usd per million tokens on claude opus 5.5, $0.10 usd on claude sonnet 5.5).",
             "claude 4.6 and later models (except claude haiku 5.5) and claude mythos preview include the full 1m token context window at standard pricing. (a 900k-token request is billed at the same per-token rate as a 9k-token request.) prompt caching and batch processing discounts apply at standard rates across the full context window.",
             "claude 4.7 and later models and claude mythos preview use a newer tokenizer that contributes to their improved performance on a wide range of tasks. this tokenizer produces approximately 30% more tokens for the same text. the exact increase depends on the content and workload shape. claude sonnet 4.6 and earlier models use the previous tokenizer.",
-            "claude haiku 5.5 is priced by prompt length: a prompt of over 100,000 tokens pays higher prices. model pricing and batch processing list both sets of prices.",
+            "claude haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. a request&#x27;s prompt length counts all of its input tokens, including cache reads and cache writes. each request is priced on its own: a request over the threshold pays the higher prices even when part of its prompt is a cache hit, and earlier requests keep the prices they were billed at. model pricing and batch processing list both sets of prices.",
             "claude in microsoft foundry bills through the azure marketplace using claude consumption units (ccus). anthropic rates your token usage in usd at standard per-model, per-feature rates, applies any negotiated discount, converts the result to ccus at $0.01 per ccu, and reports the ccu quantity to the azure marketplace hourly. your azure bill shows a single ccu line item.",
             "claude platform on aws bills through aws marketplace using claude consumption units (ccus). anthropic rates your token usage in usd at standard per-model, per-feature rates, applies any negotiated discount, converts the result to ccus at $0.01 per ccu, and reports the ccu quantity to aws marketplace hourly. your aws bill shows a single ccu line item.",
             "deployments hosted on azure can use the us data zone standard deployment type, which keeps inference within the united states. this is equivalent to inference_geo: \"us\" on the claude api and applies the same 1.1x pricing multiplier. see data residency for details.",
             "execution time has a minimum of 5 minutes",
-            "for claude 4.6 and later models, specifying us-only inference through the inference_geo parameter incurs a 1.1x multiplier on all token pricing categories, including input tokens, output tokens, cache writes, and cache reads. global routing (the default) uses standard pricing.",
+            "for claude 4.6 and later models, specifying us-only inference through the inference_geo parameter incurs a 1.1x multiplier on all token pricing categories, including input tokens, output tokens, cache writes, and cache reads. on claude haiku 5.5, the multiplier also applies to the higher prices for prompts over 100,000 tokens (see long context pricing ). global routing (the default) uses standard pricing.",
             "for claude 4.6 and later models, using inference_geo: \"us\" applies a 1.1x pricing multiplier. inference_geo: \"global\" (default) uses standard pricing. see data residency for details.",
             "model ids and versioning model deprecations model cards pricing api credits for subscribers system prompts",
             "regional and multi-region endpoints include a 10% premium over global endpoints. the claude api (first-party) is global by default; for first-party data residency options and pricing, see data residency pricing .",
@@ -7337,8 +7337,7 @@
             "this applies to the claude api (first-party) and claude platform on aws. on claude in microsoft foundry, the same 1.1x multiplier applies to deployments that use the us data zone standard deployment type (see inference geography ). partner-operated platforms (bedrock and google cloud) have independent regional pricing. see bedrock and google cloud for details. earlier models do not support the inference_geo parameter and always use standard pricing; requests that include the parameter on these models return a 400 error.",
             "this page provides detailed pricing information for anthropic&#x27;s models and features. all prices are in usd.",
             "token usage rated in usd at standard per-model, per-feature rates (same as claude api pricing ), then converted to ccus at $0.01 per ccu",
-            "tokens are pieces of text that models process. as a rough estimate, 1 token is approximately 4 characters or 0.75 words in english. the exact count varies by language and content type.",
-            "toolset definition overhead: declaring browser_toolset_20260801 with its default members adds about 6,600 input tokens to a request (about 6,610 on claude fable 5, claude mythos 5, claude opus 5, and claude opus 4.8, and about 6,670 on claude sonnet 5), which covers the member tool definitions and the tool use system prompt. enabling all four optional members adds about 880 tokens, and disabling members with configs reduces the count. the exact count for a request is reported in the response usage , and you can estimate it in advance with the token counting endpoint .",
+            "toolset definition overhead: declaring browser_toolset_20260801 with its default members adds about 6,600 input tokens to a request (about 6,670 on claude sonnet 5 and about 6,610 on the other supported models), which covers the member tool definitions and the tool use system prompt. enabling all four optional members adds about 880 tokens, and disabling members with configs reduces the count. the exact count for a request is reported in the response usage , and you can estimate it in advance with the token counting endpoint .",
             "web search is available on the claude api for $10 per 1,000 searches , plus standard token costs for search-generated content. web search results retrieved throughout a conversation are counted as input tokens, in search iterations executed during a single turn and in subsequent conversation turns."
           ]
         },
@@ -7346,7 +7345,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.507Z",
+          "observed_at": "2026-10-09T19:02:32.133Z",
           "content_digest": "014000270a90337ce590b4ece4781f54efafc6aabb9f5ae88e7c463a71b0d03f",
           "facts_digest": "d439934845a9b3f6c1f0a0d9039c579715dfcfebbadc3aef4691f19bb5af9e77",
           "facts": [
@@ -7361,13 +7360,12 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.309Z",
-          "content_digest": "18366e9af84e04ba211bf211c575b163c3fe48f76e3577b50583bdf452f3c60d",
-          "facts_digest": "93a41d3a453aaa9e21e8e64589c1d09916dd1e94485c481f1718b629c6677070",
+          "observed_at": "2026-10-09T19:02:31.922Z",
+          "content_digest": "dcc4d5658c3b9d38b940179e6ded8546ccaf0b44c0073c29157d4f0a2c178e4f",
+          "facts_digest": "e3e237a9957c2bb7d8b7eb558f4042f1603e58a8971595f271810f95921ce3f1",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer.",
             "claude opus 4.7 supports high-resolution image input , raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot understanding, and document analysis. high-resolution support is automatic and requires no beta header; images may use up to approximately 3x more image tokens than on prior models.",
-            "code written for claude haiku 4.5 can break on claude haiku 5.5. manual extended thinking ( budget_tokens ) returns a 400 error, and adaptive thinking is on by default, so a response can begin with thinking blocks. the same text also counts as more tokens. see the migration guide . for model-specific prompting patterns, see prompting claude haiku 5.5 .",
             "generate outputs up to 8,192 tokens in length from claude sonnet 3.5 with the new anthropic-beta: max-tokens-3-5-sonnet-2024-07-15 header.",
             "mcp tunnels (research preview): the management api moved from /v1/organizations/tunnels on the admin api to /v1/tunnels on the claude api. the new surface uses the anthropic-beta: mcp-tunnels-2026-06-22 header and the workspace:manage_tunnels wif scope. the previous surface remains available during a migration window. see the tunnels api reference .",
             "message batches api : process large batches of messages asynchronously at 50% of the standard api cost.",
@@ -7513,7 +7511,7 @@
           "created": 1762440622,
           "description": "Kimi K2 Thinking is Moonshot AI’s most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in...",
           "context_length": 262144,
-          "max_output_tokens": 235929,
+          "max_output_tokens": 98304,
           "input_modalities": [
             "text"
           ],
@@ -7541,7 +7539,7 @@
           ],
           "pricing": {
             "input": 0.6,
-            "cached_input": null,
+            "cached_input": 0.15,
             "cache_write": null,
             "output": 2.5
           },
@@ -7637,8 +7635,8 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.4357,
-            "cached_input": 0.1205,
+            "input": 0.4344,
+            "cached_input": 0.1077,
             "cache_write": null,
             "output": 2.45
           },
@@ -7736,10 +7734,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.82,
-            "cached_input": 0.55,
+            "input": 0.9,
+            "cached_input": 0.6,
             "cache_write": null,
-            "output": 13.5
+            "output": 14
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
@@ -8242,7 +8240,7 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.610Z",
+          "observed_at": "2026-10-09T19:02:32.034Z",
           "content_digest": "f9365aaa854d609000e42b0fe66dacf9dac4f18ade423edb16c233de5117183f",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
@@ -8253,7 +8251,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.622Z",
+          "observed_at": "2026-10-09T19:02:32.086Z",
           "content_digest": "1257936c74c4e0a125978e94b875a4b485d1f6aea053d5d7c5ce671f7dcf1c31",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -8279,7 +8277,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.621Z",
+          "observed_at": "2026-10-09T19:02:32.104Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -8293,7 +8291,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.626Z",
+          "observed_at": "2026-10-09T19:02:32.087Z",
           "content_digest": "1257936c74c4e0a125978e94b875a4b485d1f6aea053d5d7c5ce671f7dcf1c31",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -8319,7 +8317,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.648Z",
+          "observed_at": "2026-10-09T19:02:32.092Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -8333,7 +8331,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.623Z",
+          "observed_at": "2026-10-09T19:02:32.104Z",
           "content_digest": "ffaff718bcbf7fcaddd69668b590fd5bd178230861b63143023eb3b5a3eb18f1",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
@@ -8344,7 +8342,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.640Z",
+          "observed_at": "2026-10-09T19:02:32.099Z",
           "content_digest": "9dbaa6375943c83870936ff93d57ee9834b8f4aa0d50199065d80c9f00f28682",
           "facts_digest": "9d0de1df7a1424d55935ab23acdc2e8a21b863b4bacd288fdef260b70e6e8f3b",
           "facts": [
@@ -8356,7 +8354,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.622Z",
+          "observed_at": "2026-10-09T19:02:32.096Z",
           "content_digest": "987b36bc8ae194aa281ace4ade6b8b520c1eedbf7e5c65b6081eba123bcac057",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
@@ -8367,7 +8365,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.615Z",
+          "observed_at": "2026-10-09T19:02:32.124Z",
           "content_digest": "4a6d92c1e605409942e856e6c7090cfa41fab869bfa4478501e3ecf3d3fd3278",
           "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
           "facts": [
@@ -8819,7 +8817,7 @@
           "created": 1781631930,
           "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
           "context_length": 1048576,
-          "max_output_tokens": 131072,
+          "max_output_tokens": 943718,
           "input_modalities": [
             "text"
           ],
@@ -8850,10 +8848,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.07,
-            "cached_input": 0.07,
+            "input": 0.06,
+            "cached_input": 0.059,
             "cache_write": null,
-            "output": 4.3
+            "output": 8
           },
           "hugging_face_id": "zai-org/GLM-5.2",
           "expiration_date": null,
@@ -8899,10 +8897,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.09,
-            "cached_input": 0.048,
+            "input": 0.04,
+            "cached_input": 0.039,
             "cache_write": null,
-            "output": 3.39
+            "output": 7
           },
           "hugging_face_id": "zai-org/GLM-5.3",
           "expiration_date": null,
@@ -10534,7 +10532,7 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.189Z",
+          "observed_at": "2026-10-09T19:02:31.807Z",
           "content_digest": "fb92677645f261f49aebef59f803dc83e68a02ef3921dcff82d847b326c36320",
           "facts_digest": "d3c746d98dc5d5424bfd3d5af6e471b683f0f16c6fa2455fed6d1c94d2f3ba4c",
           "facts": [
@@ -10545,7 +10543,7 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.152Z",
+          "observed_at": "2026-10-09T19:02:31.815Z",
           "content_digest": "dd50e5ad3d96520ad289ba8155bb38deebd4be626a349e5fc445bdf93d74c7cf",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -11005,7 +11003,7 @@
           "canonical_slug": "mistralai/mistral-large-4-0-20261006",
           "name": "Mistral: Mistral Large 4",
           "created": 1791294122,
-          "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 512K-token context window with up...",
+          "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 1M-token context window with up...",
           "context_length": 1048576,
           "max_output_tokens": 262144,
           "input_modalities": [
@@ -11290,7 +11288,7 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.019,
+            "input": 0.029,
             "cached_input": null,
             "cache_write": null,
             "output": 0.03
@@ -11879,6 +11877,69 @@
             "license:apache-2.0",
             "region:us",
             "vllm"
+          ],
+          "parameters": null
+        },
+        {
+          "provider": "mistral",
+          "id": "mistralai/LIDstral-Arabic",
+          "created_at": "2026-10-08T11:37:05.000Z",
+          "last_modified": "2026-10-09T17:11:36.000Z",
+          "pipeline_tag": "text-classification",
+          "library_name": "fasttext",
+          "tags": [
+            "aa",
+            "ace",
+            "acm",
+            "acx",
+            "aeb",
+            "afb",
+            "ajp",
+            "apc",
+            "apd",
+            "ar",
+            "arq",
+            "ars",
+            "ary",
+            "arz",
+            "ayl",
+            "ayn",
+            "az",
+            "brh",
+            "ckb",
+            "dialect-identification",
+            "din",
+            "fa",
+            "fasttext",
+            "ff",
+            "glk",
+            "ha",
+            "hac",
+            "kk",
+            "kr",
+            "ks",
+            "ky",
+            "language-identification",
+            "license:apache-2.0",
+            "mey",
+            "ms",
+            "nqo",
+            "om",
+            "pnb",
+            "ps",
+            "region:us",
+            "sd",
+            "shu",
+            "sw",
+            "text-classification",
+            "tg",
+            "ti",
+            "tr",
+            "tzm",
+            "ur",
+            "uz",
+            "wo",
+            "zgh"
           ],
           "parameters": null
         },
@@ -13378,62 +13439,6 @@
         },
         {
           "provider": "mistral",
-          "id": "mistralai/Mistral-Small-Instruct-2409",
-          "created_at": "2024-09-17T13:05:37.000Z",
-          "last_modified": "2025-07-28T17:21:40.000Z",
-          "pipeline_tag": null,
-          "library_name": "vllm",
-          "tags": [
-            "de",
-            "en",
-            "es",
-            "eval-results",
-            "fr",
-            "it",
-            "ja",
-            "ko",
-            "license:other",
-            "mistral",
-            "mistral-common",
-            "pt",
-            "region:us",
-            "ru",
-            "safetensors",
-            "vllm",
-            "zh"
-          ],
-          "parameters": null
-        },
-        {
-          "provider": "mistral",
-          "id": "mistralai/Pixtral-12B-2409",
-          "created_at": "2024-09-11T18:11:16.000Z",
-          "last_modified": "2026-06-02T04:44:58.000Z",
-          "pipeline_tag": null,
-          "library_name": "vllm",
-          "tags": [
-            "base_model:finetune:mistralai/Pixtral-12B-Base-2409",
-            "base_model:mistralai/Pixtral-12B-Base-2409",
-            "de",
-            "deploy:azure",
-            "deploy:sagemaker",
-            "en",
-            "es",
-            "fr",
-            "it",
-            "ja",
-            "license:apache-2.0",
-            "mistral-common",
-            "pt",
-            "region:us",
-            "ru",
-            "vllm",
-            "zh"
-          ],
-          "parameters": null
-        },
-        {
-          "provider": "mistral",
           "id": "mistralai/Pixtral-12B-Base-2409",
           "created_at": "2024-10-17T12:04:42.000Z",
           "last_modified": "2025-07-28T17:20:44.000Z",
@@ -13605,6 +13610,44 @@
         },
         {
           "provider": "mistral",
+          "id": "mistralai/Voxtral-Mini-4B-Realtime-Arabic",
+          "created_at": "2026-10-08T11:36:06.000Z",
+          "last_modified": "2026-10-09T17:11:35.000Z",
+          "pipeline_tag": "automatic-speech-recognition",
+          "library_name": "vllm",
+          "tags": [
+            "acm",
+            "acx",
+            "aeb",
+            "afb",
+            "ajp",
+            "apc",
+            "apd",
+            "ar",
+            "arq",
+            "ars",
+            "ary",
+            "arz",
+            "audio",
+            "automatic-speech-recognition",
+            "ayl",
+            "ayn",
+            "base_model:finetune:mistralai/Voxtral-Mini-4B-Realtime-2602",
+            "base_model:mistralai/Voxtral-Mini-4B-Realtime-2602",
+            "mey",
+            "mistral-common",
+            "realtime",
+            "region:us",
+            "safetensors",
+            "shu",
+            "speech-to-text",
+            "vllm",
+            "voxtral_realtime"
+          ],
+          "parameters": null
+        },
+        {
+          "provider": "mistral",
           "id": "mistralai/Voxtral-Small-24B-2507",
           "created_at": "2025-07-01T14:11:59.000Z",
           "last_modified": "2025-12-20T23:34:49.000Z",
@@ -13638,7 +13681,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.356Z",
+          "observed_at": "2026-10-09T19:02:31.760Z",
           "content_digest": "5ba77494b7794b29c4c074195c9b8acaa1886738d2a2fafaa28a54fd7cf9fe4a",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13647,8 +13690,8 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.343Z",
-          "content_digest": "a1a2d98115f2c001ab56a38e6114be2f7a9aba7ea76c08cc4c12307917d0ce0c",
+          "observed_at": "2026-10-09T19:02:31.776Z",
+          "content_digest": "3cb87c8197a56de68a2e1fb64445674db659e17cd7c0fe9a51a0f7557ca6a32a",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
             "deprecated & retired models",
@@ -13660,7 +13703,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.334Z",
+          "observed_at": "2026-10-09T19:02:31.766Z",
           "content_digest": "3a9c4858d25271e7ebe53e5626d1e6f532109f94375526c50df84ffed32c2051",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -14364,7 +14407,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
           "created_at": "2026-09-27T04:01:00.000Z",
-          "last_modified": "2026-09-27T16:59:08.000Z",
+          "last_modified": "2026-10-09T06:30:44.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14393,7 +14436,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
           "created_at": "2026-09-21T15:39:51.000Z",
-          "last_modified": "2026-09-22T03:52:25.000Z",
+          "last_modified": "2026-10-09T06:30:29.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14423,7 +14466,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
           "created_at": "2026-09-27T03:58:00.000Z",
-          "last_modified": "2026-09-27T16:58:58.000Z",
+          "last_modified": "2026-10-09T06:30:36.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14452,7 +14495,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
           "created_at": "2026-09-21T15:39:33.000Z",
-          "last_modified": "2026-09-22T03:52:00.000Z",
+          "last_modified": "2026-10-09T06:30:24.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14610,8 +14653,8 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.963Z",
-          "content_digest": "ed6a6773aa8524817475a701b9213cd78b519d0a103e3c4156b4f8284bf21bf2",
+          "observed_at": "2026-10-09T19:02:32.571Z",
+          "content_digest": "5756c7a11219367ed2ff7325a483561d5472cd7106441400d267ba8bea2ccbc6",
           "facts_digest": "58b24f5dfa1a486db3be9224fb68bde162e16560395cc3929d8726f4a78043bb",
           "facts": [
             "mimo-v2.5 (to be deprecated)",
@@ -14623,8 +14666,8 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:27.967Z",
-          "content_digest": "9dc9131572fa8d910caf43a28a065eb618d0a57f0b9e301bb12505b9ee29f882",
+          "observed_at": "2026-10-09T19:02:32.567Z",
+          "content_digest": "dc6811fc71f15bd8eea6756b03c358c8bfdeefa8240fafad0cd13e233c47ffc4",
           "facts_digest": "78a01edac467d8fa3acc3b1a1a632fdef84f27d3e590678ebb5d6037213a2763",
           "facts": [
             "100 credits",
@@ -14644,8 +14687,8 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-10-08T19:30:28.056Z",
-          "content_digest": "ec19733f7404c4984eba63ab8594f0f092611ee8882118ae7d541e03be45ea9d",
+          "observed_at": "2026-10-09T19:02:32.601Z",
+          "content_digest": "3c148d0b3d600d77d60a4f5120fac80013cc1767276811e354ffc34a12ff360a",
           "facts_digest": "fbb7daed38c143da27f946fdcf16ba9016d536119a7d5b1207bcb9a431eddefb",
           "facts": [
             "by optimizing cot generation strategies, the consumption of redundant tokens has been significantly reduced. in benchmarks such as aime25 and hmmt, the average generation length has decreased by 13% to 30% . this effectively lowers latency and token costs while maintaining model performance.",
