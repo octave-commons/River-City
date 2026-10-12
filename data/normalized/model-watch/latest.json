@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-10-11T18:29:13.253Z",
+  "observed_at": "2026-10-12T21:53:02.152Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -5958,7 +5958,7 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.166Z",
+          "observed_at": "2026-10-12T21:52:57.501Z",
           "content_digest": "f3521bbf73736d3db2945392eef412b0f8acd8c3a24cc6b3da3d9606ed59bd4c",
           "facts_digest": "5a6e727af516ad4a052c69ef6cc25ad9d3affeb2cea1fe5fb2f59444b6355920",
           "facts": [
@@ -5974,7 +5974,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.215Z",
+          "observed_at": "2026-10-12T21:52:57.463Z",
           "content_digest": "619b1ff9bce056ba0f05029ab762bc7bd48c4c26a66c4bee889305ef25fad822",
           "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
           "facts": [
@@ -5986,7 +5986,7 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.199Z",
+          "observed_at": "2026-10-12T21:52:57.481Z",
           "content_digest": "a740a30a3ecf175853fb3d1c00f6299d965e10319a4c484a2f7c47a98f008d5e",
           "facts_digest": "c2d0fde1134d6a9b5b4c4fd7c1cd8a4e762f33fbc7447226ba566386b35c91fc",
           "facts": [
@@ -7310,7 +7310,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.625Z",
+          "observed_at": "2026-10-12T21:52:57.777Z",
           "content_digest": "4af1d079e9585cc19f46f511f113d3b239a5213f3a6116ccee0c7dbed9735122",
           "facts_digest": "6376b14093d1e65c98b6542130514f7935f280ffa173e9c9b3693a5fb7e4ccb0",
           "facts": [
@@ -7345,7 +7345,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.845Z",
+          "observed_at": "2026-10-12T21:53:01.706Z",
           "content_digest": "014000270a90337ce590b4ece4781f54efafc6aabb9f5ae88e7c463a71b0d03f",
           "facts_digest": "d439934845a9b3f6c1f0a0d9039c579715dfcfebbadc3aef4691f19bb5af9e77",
           "facts": [
@@ -7360,7 +7360,7 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.614Z",
+          "observed_at": "2026-10-12T21:52:57.850Z",
           "content_digest": "b24ff40264f00d6ac10b37d06b71740aeb29afc39e21e55df7597ad5db06062a",
           "facts_digest": "90562f0fff2ae04f60af9b3865e65e7d816321f323af832143dda7f3bbf95819",
           "facts": [
@@ -7734,10 +7734,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.8,
+            "input": 0.73,
             "cached_input": 0.55,
             "cache_write": null,
-            "output": 13.5
+            "output": 10
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
@@ -8240,7 +8240,7 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.695Z",
+          "observed_at": "2026-10-12T21:53:01.673Z",
           "content_digest": "f9365aaa854d609000e42b0fe66dacf9dac4f18ade423edb16c233de5117183f",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
@@ -8251,7 +8251,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.840Z",
+          "observed_at": "2026-10-12T21:53:02.129Z",
           "content_digest": "1257936c74c4e0a125978e94b875a4b485d1f6aea053d5d7c5ce671f7dcf1c31",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -8277,7 +8277,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.826Z",
+          "observed_at": "2026-10-12T21:53:01.710Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -8291,7 +8291,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.839Z",
+          "observed_at": "2026-10-12T21:53:01.685Z",
           "content_digest": "1257936c74c4e0a125978e94b875a4b485d1f6aea053d5d7c5ce671f7dcf1c31",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -8317,7 +8317,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.848Z",
+          "observed_at": "2026-10-12T21:53:01.680Z",
           "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
@@ -8331,7 +8331,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.820Z",
+          "observed_at": "2026-10-12T21:53:01.707Z",
           "content_digest": "ffaff718bcbf7fcaddd69668b590fd5bd178230861b63143023eb3b5a3eb18f1",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
@@ -8342,7 +8342,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.840Z",
+          "observed_at": "2026-10-12T21:53:02.065Z",
           "content_digest": "9dbaa6375943c83870936ff93d57ee9834b8f4aa0d50199065d80c9f00f28682",
           "facts_digest": "9d0de1df7a1424d55935ab23acdc2e8a21b863b4bacd288fdef260b70e6e8f3b",
           "facts": [
@@ -8354,7 +8354,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:13.188Z",
+          "observed_at": "2026-10-12T21:53:02.121Z",
           "content_digest": "987b36bc8ae194aa281ace4ade6b8b520c1eedbf7e5c65b6081eba123bcac057",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
@@ -8365,7 +8365,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.846Z",
+          "observed_at": "2026-10-12T21:53:01.690Z",
           "content_digest": "4a6d92c1e605409942e856e6c7090cfa41fab869bfa4478501e3ecf3d3fd3278",
           "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
           "facts": [
@@ -8897,8 +8897,8 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.07,
-            "cached_input": 0.05,
+            "input": 0.079,
+            "cached_input": 0.059,
             "cache_write": null,
             "output": 4.8
           },
@@ -9990,7 +9990,7 @@
           "provider": "glm",
           "id": "zai-org/GLM-5.3",
           "created_at": "2026-08-25T06:42:50.000Z",
-          "last_modified": "2026-09-04T06:41:23.000Z",
+          "last_modified": "2026-10-12T13:00:09.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -10037,7 +10037,7 @@
           "provider": "glm",
           "id": "zai-org/GLM-5.3-Flash",
           "created_at": "2026-08-25T06:43:14.000Z",
-          "last_modified": "2026-09-07T12:13:47.000Z",
+          "last_modified": "2026-10-12T12:59:41.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -10532,7 +10532,7 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.486Z",
+          "observed_at": "2026-10-12T21:53:01.108Z",
           "content_digest": "d578c510428d59b2437b41fe17462707a3a98a7ef63d3e90852897f9b292e960",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
@@ -10544,7 +10544,7 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.537Z",
+          "observed_at": "2026-10-12T21:53:01.091Z",
           "content_digest": "c3f6dc321a5028d3a5622abde0a5fc5f9811e79d3e5e42807d79bd4d4127cf3f",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13613,7 +13613,7 @@
           "provider": "mistral",
           "id": "mistralai/Voxtral-Mini-4B-Realtime-Arabic",
           "created_at": "2026-10-08T11:36:06.000Z",
-          "last_modified": "2026-10-09T17:11:35.000Z",
+          "last_modified": "2026-10-12T10:28:56.000Z",
           "pipeline_tag": "automatic-speech-recognition",
           "library_name": "vllm",
           "tags": [
@@ -13682,7 +13682,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.548Z",
+          "observed_at": "2026-10-12T21:53:01.363Z",
           "content_digest": "5ba77494b7794b29c4c074195c9b8acaa1886738d2a2fafaa28a54fd7cf9fe4a",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13691,7 +13691,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.562Z",
+          "observed_at": "2026-10-12T21:53:01.347Z",
           "content_digest": "3cb87c8197a56de68a2e1fb64445674db659e17cd7c0fe9a51a0f7557ca6a32a",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -13704,7 +13704,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:12.761Z",
+          "observed_at": "2026-10-12T21:53:01.327Z",
           "content_digest": "3a9c4858d25271e7ebe53e5626d1e6f532109f94375526c50df84ffed32c2051",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -14654,7 +14654,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:13.228Z",
+          "observed_at": "2026-10-12T21:53:02.112Z",
           "content_digest": "5756c7a11219367ed2ff7325a483561d5472cd7106441400d267ba8bea2ccbc6",
           "facts_digest": "58b24f5dfa1a486db3be9224fb68bde162e16560395cc3929d8726f4a78043bb",
           "facts": [
@@ -14667,7 +14667,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:13.225Z",
+          "observed_at": "2026-10-12T21:53:02.148Z",
           "content_digest": "dc6811fc71f15bd8eea6756b03c358c8bfdeefa8240fafad0cd13e233c47ffc4",
           "facts_digest": "78a01edac467d8fa3acc3b1a1a632fdef84f27d3e590678ebb5d6037213a2763",
           "facts": [
@@ -14688,7 +14688,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-10-11T18:29:13.253Z",
+          "observed_at": "2026-10-12T21:53:02.151Z",
           "content_digest": "3c148d0b3d600d77d60a4f5120fac80013cc1767276811e354ffc34a12ff360a",
           "facts_digest": "fbb7daed38c143da27f946fdcf16ba9016d536119a7d5b1207bcb9a431eddefb",
           "facts": [
