@@ -1,14 +1,14 @@
 # River City Daily: PortWatch
 
-Generated: `2026-10-13T19:20:29.611013927Z`  
-Source coverage through: `2026-10-04`
+Generated: `2026-10-14T17:18:09.210963591Z`  
+Source coverage through: `2026-10-11`
 
 ## Status
 
 | Chokepoint | Date | Visible vessels | Prior-year median | Deviation | Baseline n |
 |---|---:|---:|---:|---:|---:|
-| Bab el-Mandeb Strait | 2026-10-04 | 34 | 56.0 | -39.3% | 7 |
-| Strait of Hormuz | 2026-10-04 | 4 | 89.0 | -95.5% | 7 |
+| Bab el-Mandeb Strait | 2026-10-11 | 31 | 47.0 | -34.0% | 7 |
+| Strait of Hormuz | 2026-10-11 | 2 | 69.0 | -97.1% | 7 |
 
 ## Stable artifacts
 
