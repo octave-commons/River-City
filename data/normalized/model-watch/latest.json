@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-10-19T19:30:18.368Z",
+  "observed_at": "2026-10-20T18:07:49.768Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -5958,23 +5958,22 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.245Z",
-          "content_digest": "1f1422768e14526c01871cb3fc1cb64d62df41cbab5da01c8087db337514aa51",
-          "facts_digest": "5a6e727af516ad4a052c69ef6cc25ad9d3affeb2cea1fe5fb2f59444b6355920",
+          "observed_at": "2026-10-20T18:07:48.447Z",
+          "content_digest": "8e5d3110f147390f0c871f101c9eedb5dbafdc757676595eb5a40d3ebbca18e0",
+          "facts_digest": "3a190256927b00081cc38c61a256516b818d1e09b1ea31827ec1a73f9f0757af",
           "facts": [
             "$0.10 / gb per day (1 gb free)",
             "$0.10 / gb-day after 1 gb free per account per month",
-            "charged a 10% uplift. priority processing was renamed fast mode on july 30,",
             "models are deprecated. the full timeline is",
-            "regional processing (data residency) endpoints are charged a 10% uplift for",
-            "regional processing (data residency) endpoints are charged a 10% uplift for models released on or after march 5, 2026, that are eligible for data residency. see our your data guide for supported regions and processing details."
+            "regional processing (data residency) endpoints are charged a 10% uplift for models released on or after march 5, 2026, that are eligible for data residency. see our your data guide for supported regions and processing details.",
+            "regional processing (data residency) endpoints are charged a 10% uplift for models released on or after march 5, 2026. fedramp endpoints are also charged a 10% uplift. priority processing was renamed fast mode on july 30, 2026. gpt-5.6 sol’s promotional pricing is available at least through november 21, 2026."
           ]
         },
         {
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.292Z",
+          "observed_at": "2026-10-20T18:07:48.495Z",
           "content_digest": "619b1ff9bce056ba0f05029ab762bc7bd48c4c26a66c4bee889305ef25fad822",
           "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
           "facts": [
@@ -5986,8 +5985,8 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.265Z",
-          "content_digest": "12e5ffe85bad4ce2b383acb0f8ba5a5615285b065a8157cff816172a09a3001b",
+          "observed_at": "2026-10-20T18:07:48.603Z",
+          "content_digest": "6b0fb46ad7a93d6c621daa8fd2ca0f8baab66e3048ae434a1ee66eb981452858",
           "facts_digest": "f1addc37c677281a4b5ce3c17c7067df1ff817c2bd9f667fab8fa4d001c05d5f",
           "facts": [
             "2026-06-02: gpt image model deprecations",
@@ -7273,7 +7272,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.767Z",
+          "observed_at": "2026-10-20T18:07:48.756Z",
           "content_digest": "53bd57228880ad1ada542c2b3991ca7b45c08e44cd02085230763b9fb9988050",
           "facts_digest": "6376b14093d1e65c98b6542130514f7935f280ffa173e9c9b3693a5fb7e4ccb0",
           "facts": [
@@ -7308,8 +7307,8 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.921Z",
-          "content_digest": "014000270a90337ce590b4ece4781f54efafc6aabb9f5ae88e7c463a71b0d03f",
+          "observed_at": "2026-10-20T18:07:49.434Z",
+          "content_digest": "7a9efab27c078667828afe59105d58500d5c7d414d2f628b0ae13a4aa6f6d826",
           "facts_digest": "d439934845a9b3f6c1f0a0d9039c579715dfcfebbadc3aef4691f19bb5af9e77",
           "facts": [
             "lifecycle status and retirement commitments for every model.",
@@ -7323,9 +7322,9 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.729Z",
-          "content_digest": "c0ef84cd05f6c0dc2e870f4dcf29ddd4b5a144c8952677a3214b9ef2aaf0f1af",
-          "facts_digest": "90562f0fff2ae04f60af9b3865e65e7d816321f323af832143dda7f3bbf95819",
+          "observed_at": "2026-10-20T18:07:48.837Z",
+          "content_digest": "e458c6236b56d722f0b1190217df799d3ca2f5cc9cee9bd2c84ba1b25f9dd8cd",
+          "facts_digest": "2e3c8d27d934fe11f3b3f6d141bbd0ee902775d5d26b634c798eb7ff7d2f47ce",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer.",
             "claude opus 4.7 supports high-resolution image input , raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot understanding, and document analysis. high-resolution support is automatic and requires no beta header; images may use up to approximately 3x more image tokens than on prior models.",
@@ -7341,7 +7340,7 @@
             "the 1m token context window is now available on vertex ai. for more information, see claude on vertex ai .",
             "the 1m token context window is out of beta for claude opus 4.6 and sonnet 4.6, at standard pricing. requests over 200k tokens work automatically for these models with no beta header required. the 1m token context window remains in beta for claude sonnet 4.5 and sonnet 4.",
             "the introductory pricing for claude sonnet 5 ($2 / $10 per mtok) is now the standard price: the previously scheduled increase to $3 / $15 per mtok on september 1, 2026 will not occur. see pricing .",
-            "the legacy workbench ( platform.claude.com/workbench ) in the claude console is being sunset with access ending on august 17, 2026. saved prompts, variables, and evals are not supported in the updated workbench . you can export any data you want to keep from the banner and under your organizational settings . for more, see how do i use the workbench? in the claude help center.",
+            "the legacy workbench ( platform.claude.com/workbench ) in the claude console is being sunset with access ending on august 17, 2026. saved prompts, variables, and evals are not supported in the updated workbench in the console. you can export any data you want to keep from the banner and under your organizational settings . for more, see how do i use the workbench? in the claude help center.",
             "the message batches api is now available in beta. process large batches of queries asynchronously in the claude api for 50% less cost. read more in batch processing .",
             "we announced the deprecation of the claude 1 models. read more in model deprecations .",
             "we announced the deprecation of the claude 2, claude 2.1, and claude sonnet 3 models. read more in model deprecations .",
@@ -8203,8 +8202,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.982Z",
-          "content_digest": "f9365aaa854d609000e42b0fe66dacf9dac4f18ade423edb16c233de5117183f",
+          "observed_at": "2026-10-20T18:07:49.063Z",
+          "content_digest": "f3d4dd7e0763d76939fde618fb378993a5f7ea9ecdcdc3a879f876a8e1022315",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -8214,7 +8213,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.019Z",
+          "observed_at": "2026-10-20T18:07:49.229Z",
           "content_digest": "1257936c74c4e0a125978e94b875a4b485d1f6aea053d5d7c5ce671f7dcf1c31",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -8240,8 +8239,8 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.020Z",
-          "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
+          "observed_at": "2026-10-20T18:07:49.236Z",
+          "content_digest": "b3031fa17af2a28d8eb5e49fa6d4f23346a9068a2faa25ae3253b0183550664c",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
             "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](/docs/guide/kimi-k3-quickstart).",
@@ -8254,7 +8253,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.076Z",
+          "observed_at": "2026-10-20T18:07:49.227Z",
           "content_digest": "1257936c74c4e0a125978e94b875a4b485d1f6aea053d5d7c5ce671f7dcf1c31",
           "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
           "facts": [
@@ -8280,8 +8279,8 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.014Z",
-          "content_digest": "69067d9dde6f63939ef714980f6d37b32354693733cc1b6b99043fc733f49baf",
+          "observed_at": "2026-10-20T18:07:49.265Z",
+          "content_digest": "b3031fa17af2a28d8eb5e49fa6d4f23346a9068a2faa25ae3253b0183550664c",
           "facts_digest": "25b308d94fc3ea810df44afae7f2dd6f515986f8e7182418c6cb7b402753323d",
           "facts": [
             "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](/docs/guide/kimi-k3-quickstart).",
@@ -8294,8 +8293,8 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.009Z",
-          "content_digest": "ffaff718bcbf7fcaddd69668b590fd5bd178230861b63143023eb3b5a3eb18f1",
+          "observed_at": "2026-10-20T18:07:49.240Z",
+          "content_digest": "6b00cec2d9971b0384e61d271cc94ddaa206d4721bd8f8b3d70be6dba862808f",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
             "batch api inference costs are **60%** of the standard model price, ideal for large-scale tasks with low real-time requirements."
@@ -8305,20 +8304,17 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.031Z",
-          "content_digest": "9dbaa6375943c83870936ff93d57ee9834b8f4aa0d50199065d80c9f00f28682",
-          "facts_digest": "9d0de1df7a1424d55935ab23acdc2e8a21b863b4bacd288fdef260b70e6e8f3b",
-          "facts": [
-            "[\"kimi-k2.6\", \"1m tokens\", <>{\"$\"}0.16 , <>{\"$\"}0.95 , <>{\"$\"}4.00 , \"262,144 tokens\"],",
-            "[\"kimi-k2.7-code-highspeed\", \"1m tokens\", <>{\"$\"}0.38 , <>{\"$\"}1.90 , <>{\"$\"}8.00 , \"262,144 tokens\"],"
-          ]
+          "observed_at": "2026-10-20T18:07:49.249Z",
+          "content_digest": "08819de3335500aecbdf0a6e585dd95387ef1b0c5ccc1ed5b1f01a033969de94",
+          "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "facts": []
         },
         {
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.032Z",
-          "content_digest": "987b36bc8ae194aa281ace4ade6b8b520c1eedbf7e5c65b6081eba123bcac057",
+          "observed_at": "2026-10-20T18:07:49.259Z",
+          "content_digest": "cd3023cfa71d801cd255a40a4bd01276ea07d2a7d6b0311618c1ae721486f55f",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
             "* to prevent abuse, you need to recharge at least \\$1 to start using, and when your cumulative recharge reaches \\$5, you will receive a \\$5 voucher."
@@ -8328,8 +8324,8 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.030Z",
-          "content_digest": "4a6d92c1e605409942e856e6c7090cfa41fab869bfa4478501e3ecf3d3fd3278",
+          "observed_at": "2026-10-20T18:07:49.239Z",
+          "content_digest": "04512e8e43bed9127978ce5e65e8d53c3c2c85595b87b654adcc01f056268657",
           "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
           "facts": [
             "additionally, when using `$web_search`, we still charge for the tokens generated by the `/chat/completions` interface based on the model size. **it is important to note that when the `$web_search` tool is triggered, the search results are also counted in the tokens. the number of tokens occupied by the search results can be obtained from the returned `tool_call.function.arguments`.** for example, if the content of the `$web_search` occupies 4k tokens, these 4k tokens will be included in the total tokens when the caller makes the next call to the `/chat/completions` interface. the total billing tokens will be:"
@@ -10497,8 +10493,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.594Z",
-          "content_digest": "d578c510428d59b2437b41fe17462707a3a98a7ef63d3e90852897f9b292e960",
+          "observed_at": "2026-10-20T18:07:48.928Z",
+          "content_digest": "3677a9f84ac75e7078379658fdf1e87c21beabb04ba492f9cdae094ae233e666",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10509,8 +10505,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.607Z",
-          "content_digest": "c3f6dc321a5028d3a5622abde0a5fc5f9811e79d3e5e42807d79bd4d4127cf3f",
+          "observed_at": "2026-10-20T18:07:48.887Z",
+          "content_digest": "c1398640a22b5797b7bce9ff5597ec461d39104fc24dd58705b6726a02de7d1e",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -10998,10 +10994,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.68,
-            "cached_input": 0.07,
+            "input": 1.36,
+            "cached_input": 0.14,
             "cache_write": null,
-            "output": 2.09
+            "output": 4.18
           },
           "hugging_face_id": null,
           "expiration_date": null,
@@ -13623,8 +13619,8 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.655Z",
-          "content_digest": "5ba77494b7794b29c4c074195c9b8acaa1886738d2a2fafaa28a54fd7cf9fe4a",
+          "observed_at": "2026-10-20T18:07:48.923Z",
+          "content_digest": "e70475f384faab36321317947155c05d48ef9cae9ede986aa6d055797119e56b",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         },
@@ -13632,8 +13628,8 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.602Z",
-          "content_digest": "308e0aeaba0a3c370ed1a9081aca9541eccc2b53617adf8bf112087288daff60",
+          "observed_at": "2026-10-20T18:07:48.942Z",
+          "content_digest": "a7b170c566a3f1d5ba571751451c3b8b30d5b50d5afcc1c5e799d1cda62a32ae",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
             "deprecated & retired models",
@@ -13645,7 +13641,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:17.633Z",
+          "observed_at": "2026-10-20T18:07:48.983Z",
           "content_digest": "3a9c4858d25271e7ebe53e5626d1e6f532109f94375526c50df84ffed32c2051",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -14595,7 +14591,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.365Z",
+          "observed_at": "2026-10-20T18:07:49.707Z",
           "content_digest": "5756c7a11219367ed2ff7325a483561d5472cd7106441400d267ba8bea2ccbc6",
           "facts_digest": "58b24f5dfa1a486db3be9224fb68bde162e16560395cc3929d8726f4a78043bb",
           "facts": [
@@ -14608,7 +14604,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.368Z",
+          "observed_at": "2026-10-20T18:07:49.711Z",
           "content_digest": "dc6811fc71f15bd8eea6756b03c358c8bfdeefa8240fafad0cd13e233c47ffc4",
           "facts_digest": "78a01edac467d8fa3acc3b1a1a632fdef84f27d3e590678ebb5d6037213a2763",
           "facts": [
@@ -14629,7 +14625,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-10-19T19:30:18.363Z",
+          "observed_at": "2026-10-20T18:07:49.767Z",
           "content_digest": "3c148d0b3d600d77d60a4f5120fac80013cc1767276811e354ffc34a12ff360a",
           "facts_digest": "fbb7daed38c143da27f946fdcf16ba9016d536119a7d5b1207bcb9a431eddefb",
           "facts": [
