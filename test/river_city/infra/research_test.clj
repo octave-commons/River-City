@@ -100,3 +100,89 @@
     (is (re-find #"M60\.0," svg))
     (is (not (re-find #"[0-9]+/[0-9]+" svg)))
     (is (re-find #"M556\.0," svg))))
+
+(deftest retained-reservations-require-accountable-fields
+  (doseq [change [#(dissoc % :day) #(assoc % :day "today") #(dissoc % :id)
+                  #(dissoc % :request-id) #(dissoc % :policy)]]
+    (let [dir (fs/create-temp-dir)
+          r (research/run! {:signals [(fixture/signal (repeat 7 20))] :as-of "2026-10-21"
+                            :input-refs [] :directory dir :policy-value fixture/policy :worker (node-worker [])})
+          file (fs/path (get-in r [:results 0 :path]) "request.edn")]
+      (spit (str file) (pr-str (change (edn/read-string (slurp (str file))))))
+      (is (thrown-with-msg? Exception #"Invalid research reservation" (research/history dir))))))
+
+(deftest retained-completed-results-are-revalidated-before-replay
+  (doseq [change [#(assoc % :request-id "different") #(assoc % :production-change? true)
+                  #(assoc % :status :invented) #(dissoc % :tests)]]
+    (let [dir (fs/create-temp-dir)
+          r (research/run! {:signals [(fixture/signal (repeat 7 20))] :as-of "2026-10-21"
+                            :input-refs [] :directory dir :policy-value fixture/policy :worker (node-worker [])})
+          file (fs/path (get-in r [:results 0 :path]) "result.edn")]
+      (spit (str file) (pr-str (change (edn/read-string (slurp (str file))))))
+      (is (thrown-with-msg? Exception #"Invalid or unretained research result" (research/history dir)))))
+  (let [dir (fs/create-temp-dir)
+        r (research/run! {:signals [(fixture/signal (repeat 7 20))] :as-of "2026-10-21"
+                          :input-refs [] :directory dir :policy-value fixture/policy :worker (node-worker [])})]
+    (spit (str (fs/path (get-in r [:results 0 :path]) "query-0.json")) "changed after completion")
+    (is (thrown-with-msg? Exception #"Invalid or unretained research result" (research/history dir)))))
+
+(deftest counterpart-observations-are-research-causes
+  (let [s (assoc (fixture/signal (repeat 7 20)) :comparison-key "same"
+                 :counterpart {:unit "vessels/day" :comparison-key "same"
+                               :observations (mapv #(assoc % :event-ids ["counterpart-source"])
+                                                   (:observations (fixture/signal (repeat 7 100))))})
+        r (research/run! {:signals [s] :as-of "2026-10-21" :input-refs [] :directory (fs/create-temp-dir)
+                          :policy-value fixture/policy :worker (node-worker [])})]
+    (is (contains? (get-in r [:results 0 :request :flags]) :divergent))
+    (is (= ["counterpart-source"] (get-in r [:results 0 :request :causal/parents])))))
+
+(deftest replay-links-current-dossiers-before-bounding-history
+  (let [history (mapv (fn [n] {:id (str n) :request-id (str "request-" n) :day n
+                               :path (str "data/research/" n) :status :null}) (range 10))
+        report (research/report-intro {:lead (river-city.domain.research/lead []) :results [] :history history
+                                      :admission {:suppressed [{:request-id "request-0" :reason :duplicate}]}})]
+    (is (str/includes? report "../../data/research/0/result.edn"))))
+
+(deftest stopped-port-remains-a-canonical-stale-signal
+  (let [p {:rows [{:port-id "b" :port-name "B" :date "2026-10-20" :vessels-total 20 :source-record-id 2}]
+           :latest [{:port-id "a" :port-name "A" :date "2025-01-01" :vessels-total 10 :source-record-id 1}
+                    {:port-id "b" :port-name "B" :date "2026-10-20" :vessels-total 20 :source-record-id 2}]}
+        signals (shape/portwatch-signals p "2026-10-21")
+        a (first (filter #(= "portwatch/a" (:id %)) signals))]
+    (is (some? a))
+    (when a
+      (let [assessment (river-city.domain.research/assess fixture/policy a)]
+        (is (contains? (:flags assessment) :stale))
+        (is (contains? (:flags assessment) :insufficient))
+        (is (:research? assessment))))))
+
+(deftest worker-process-has-an-enforced-deadline
+  (let [dir (fs/create-temp-dir)
+        p (assoc fixture/policy :queries-per-run 1 :timeout-ms 1)
+        start (System/nanoTime)]
+    (is (thrown-with-msg? Exception #"Research worker timed out"
+          (research/execute-worker! dir p ["node" "-e" "setInterval(()=>{},1000)"])))
+    (is (< (/ (- (System/nanoTime) start) 1e6) 8000))))
+
+(deftest contended-budget-lock-keeps-its-diagnostic
+  (let [dir (fs/create-temp-dir)
+        path (str (fs/path dir ".budget.lock"))
+        code (str "(import '[java.nio.channels FileChannel] '[java.nio.file Paths StandardOpenOption])"
+                  "(with-open [c (FileChannel/open (Paths/get " (pr-str path) " (make-array String 0))"
+                  " (into-array StandardOpenOption [StandardOpenOption/CREATE StandardOpenOption/WRITE]))]"
+                  " (let [l (.lock c)] (println :locked) (flush) (read-line)))")
+        child (process/process {:out :stream :err :inherit :in :stream}
+                               (or (System/getenv "RIVER_CITY_BB") "bb") "--config" "/dev/null" "-e" code)]
+    (try
+      (is (= ":locked" (.readLine (java.io.BufferedReader. (java.io.InputStreamReader. (:out child))))))
+      (is (thrown-with-msg? Exception #"Research budget is already in use"
+            (research/run! {:signals [] :as-of "2026-10-21" :input-refs [] :directory dir
+                            :policy-value fixture/policy})))
+      (finally (process/destroy-tree child)))))
+
+(deftest worker-process-preserves-success-and-failure-handling
+  (let [dir (fs/create-temp-dir)
+        write-code "require('fs').writeFileSync(process.argv[1]+'/worker-result.json',JSON.stringify({status:'null'}))"]
+    (is (= "null" (:status (research/execute-worker! dir fixture/policy ["node" "-e" write-code (str dir)]))))
+    (is (thrown-with-msg? Exception #"Research worker failed"
+                          (research/execute-worker! dir fixture/policy ["node" "-e" "process.exit(2)"])))))

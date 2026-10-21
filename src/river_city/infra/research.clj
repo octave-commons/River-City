@@ -11,7 +11,8 @@
             [river-city.shape.research :as shape])
   (:import [java.security MessageDigest]
            [java.nio.channels FileChannel]
-           [java.nio.file StandardOpenOption Files]))
+           [java.nio.file StandardOpenOption Files]
+           [java.util.concurrent TimeUnit]))
 
 (def root "data/research")
 (defn- read-edn [path] (edn/read-string (slurp (str path))))
@@ -57,6 +58,8 @@
 
 (defn policy [] (validate-policy! (read-edn "resources/river_city/research.edn")))
 
+(declare retained-evidence?)
+
 (defn history [directory]
   ;; A crash before request publication must block further spending, rather
   ;; than making its reservation disappear from the daily accounting.
@@ -65,20 +68,45 @@
     (when-not (fs/exists? (fs/path path "request.edn"))
       (throw (ex-info "Incomplete research reservation; reconcile before new spending" {:path (str path)}))))
   (mapv (fn [file]
-          (let [request (read-edn file)]
-            (assoc (select-keys request [:request-id :id :day]) :path (str (fs/parent file))
-                   :status (if (fs/exists? (fs/path (fs/parent file) "result.edn"))
-                             (:status (read-edn (fs/path (fs/parent file) "result.edn")))
-                             :interrupted))))
+          (let [request (read-edn file)
+                request-id (:request-id request)
+                path (fs/parent file)
+                base (assoc (select-keys request [:request-id :id :day]) :path (str path))
+                result-path (fs/path path "result.edn")]
+            (when-not (and (m/validate law/Reservation request)
+                           (= request-id (str (fs/file-name path)))
+                           (try (= (:day request) (shape/epoch-day (:as-of request)))
+                                (catch Exception _ false)))
+              (throw (ex-info "Invalid research reservation" {:request-id request-id :path (str file)})))
+            (try (validate-policy! (:policy request))
+                 (catch Exception e
+                   (throw (ex-info "Invalid research reservation" {:request-id request-id :path (str file)} e))))
+            (if-not (fs/exists? result-path)
+              (assoc base :status :interrupted)
+              (let [result (read-edn result-path)]
+                (when-not (and (= request-id (:request-id result))
+                               (false? (:production-change? result))
+                               (m/validate law/Result result)
+                               (every? #(retained-evidence? path (:policy request) %) (:evidence result)))
+                  (throw (ex-info "Invalid or unretained research result" {:request-id request-id})))
+                (assoc base :status (:status result))))))
         (sort (fs/glob directory "*/request.edn"))))
 
-(defn execute-worker! [directory p]
-  (let [result (process/shell {:out :string :err :string :continue true
-                               :timeout (+ 5000 (* (:queries-per-run p) (:timeout-ms p)))}
-                              "node" "scripts/research_worker.mjs" (str directory))]
-    (when-not (zero? (:exit result))
-      (throw (ex-info "Research worker failed" {:exit (:exit result) :error (:err result)})))
-    (json/parse-string (slurp (str (fs/path directory "worker-result.json"))) true)))
+(defn execute-worker!
+  ([directory p] (execute-worker! directory p ["node" "scripts/research_worker.mjs" (str directory)]))
+  ([directory p command]
+   (let [deadline (+ 5000 (* (:queries-per-run p) (:timeout-ms p)))
+         child (apply process/process {:out :inherit :err :inherit} command)
+         ^Process proc (:proc child)]
+     (try
+       (when-not (.waitFor proc (long deadline) TimeUnit/MILLISECONDS)
+         (throw (ex-info "Research worker timed out" {:deadline-ms deadline})))
+       (when-not (zero? (.exitValue proc))
+         (throw (ex-info "Research worker failed" {:exit (.exitValue proc)})))
+       (json/parse-string (slurp (str (fs/path directory "worker-result.json"))) true)
+       (finally
+         ;; Includes descendants; no unbounded deref waits on inherited pipes.
+         (process/destroy-tree child))))))
 
 (defn- retained-evidence? [directory policy evidence]
   (let [{:keys [raw-path sha256]} evidence]
@@ -138,26 +166,28 @@
         (throw (ex-info "Invalid canonical signal" {:id (:id s)}))))
     (fs/create-dirs directory)
     (with-open [channel (FileChannel/open (fs/path directory ".budget.lock")
-                                         (into-array StandardOpenOption [StandardOpenOption/CREATE StandardOpenOption/WRITE]))
-                ^java.lang.AutoCloseable lock (.tryLock channel)]
-      (when-not lock (throw (ex-info "Research budget is already in use" {})))
-      (let [implementation-id (implementation)
-            day (shape/epoch-day as-of)
-            assessments (mapv (fn [s]
-                                (assoc (domain/assess p s)
-                                       :request-id (str "research-" (digest {:signal s :policy p :implementation implementation-id})))) signals)
-            prior (history directory)
-            admission (domain/admit p day prior assessments)
-            results (mapv (fn [a]
-                            (run-request! directory
-                              (assoc a :day day :as-of as-of :policy p :implementation implementation-id
-                                     :input-refs (vec input-refs)
-                                     :causal/parents (vec (distinct (mapcat :event-ids (:observations a))))) worker))
-                          (:admitted admission))]
-        {:as-of as-of :policy p :assessments assessments :lead (domain/lead assessments)
-         :admission admission :results results :history (history directory)
-         :lineage {:mode :source-evidence-bundles :ledger-backed? false :event-host :foresight
-                   :event-admission :pending :input-refs (vec input-refs)}}))))
+                                         (into-array StandardOpenOption [StandardOpenOption/CREATE StandardOpenOption/WRITE]))]
+      (let [lock (.tryLock channel)]
+        (when-not lock (throw (ex-info "Research budget is already in use" {})))
+        (try
+          (let [implementation-id (implementation)
+                day (shape/epoch-day as-of)
+                assessments (mapv (fn [s]
+                                    (assoc (domain/assess p s)
+                                           :request-id (str "research-" (digest {:signal s :policy p :implementation implementation-id})))) signals)
+                prior (history directory)
+                admission (domain/admit p day prior assessments)
+                results (mapv (fn [a]
+                                (run-request! directory
+                                  (assoc a :day day :as-of as-of :policy p :implementation implementation-id
+                                         :input-refs (vec input-refs)
+                                         :causal/parents (domain/causal-parents a)) worker))
+                              (:admitted admission))]
+            {:as-of as-of :policy p :assessments assessments :lead (domain/lead assessments)
+             :admission admission :results results :history (history directory)
+             :lineage {:mode :source-evidence-bundles :ledger-backed? false :event-host :foresight
+                       :event-admission :pending :input-refs (vec input-refs)}})
+          (finally (.close ^java.lang.AutoCloseable lock)))))))
 
 (defn- xml [x]
   (str/escape (str x) {\& "&amp;" \< "&lt;" \> "&gt;" \" "&quot;" \' "&apos;"}))
@@ -204,6 +234,15 @@
               (take 4 assessments))))
          "<text x=\"25\" y=\"318\" font-size=\"12\">Source coverage and uncertainty constrain interpretation; see report for testable question.</text></g></svg>")))
 
+(defn retained-links [research]
+  (let [history (:history research)
+        current (set (concat (map :request-id (get-in research [:admission :admitted]))
+                             (map :request-id (get-in research [:admission :suppressed]))))
+        required (filter #(contains? current (:request-id %)) history)
+        additional (->> history (remove #(contains? current (:request-id %)))
+                        (sort-by (juxt :day :request-id)) (take-last 6))]
+    (concat required additional)))
+
 (defn report-intro [research]
   (let [lead (:lead research)]
     (str "![" (:label lead) "](../../" (or (:chart-path research) "charts/research/lead.svg") ")\n\n"
@@ -225,7 +264,7 @@
                            "[Dossier](../../" path "/result.edn).\n")))
          (when (seq (:history research))
            (str "\nRetained research: "
-                (str/join "; " (for [h (take-last 6 (:history research))]
+                (str/join "; " (for [h (retained-links research)]
                                  (str "[`" (:id h) "` " (name (:status h)) "](../../" (:path h) (if (= :interrupted (:status h)) "/request.edn)" "/result.edn)"))))
                 ".\n"))
          "\nLiterature metadata supplies leads, not verified experimental findings. Null searches remain valid; failed searches remain failures. "

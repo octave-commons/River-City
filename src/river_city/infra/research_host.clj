@@ -7,7 +7,10 @@
             [clio.infra.ledger :as ledger]
             [clio.law.schema :as schema]
             [river-city.law.research :as law]
-            [malli.core :as m]))
+            [malli.core :as m])
+  (:import [java.nio.file Files]
+           [java.security MessageDigest]
+           [java.util HexFormat]))
 
 (def catalog
   {:river-city/research-completed
@@ -39,7 +42,9 @@
       (throw (ex-info "Invalid retained research result" {})))
     (doseq [{:keys [raw-path sha256]} (:evidence result)]
       (when-not (and (re-matches #"query-[0-3]\.json" raw-path)
-                     (= sha256 (crypto/sha256 (slurp (io/file dossier-path raw-path)))))
+                     (= sha256 (.formatHex (HexFormat/of)
+                       (.digest (MessageDigest/getInstance "SHA-256")
+                                (Files/readAllBytes (.toPath (io/file dossier-path raw-path)))))))
         (throw (ex-info "Retained research evidence digest mismatch" {:path raw-path}))))
     (when (seq missing)
       (throw (ex-info "Research source parents absent from Foresight history" {:missing (vec missing)})))

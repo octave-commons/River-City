@@ -95,3 +95,26 @@ Clio runtime. Repository output explicitly records pending host admission.
 **Remaining scope:** a current Foresight integration PR must restore the declared
 River City source and activate its collector. Current Foresight main lacks that
 source. Passing an isolated host test is not deployment evidence.
+
+## PR #38 review corrections
+
+**Story / why:** As the operator, I need retained dossiers, causal inputs and
+execution limits to remain valid on replay and under degraded conditions, so a
+passing first run does not conceal later evidence corruption or lost coverage.
+
+**Acceptance and verification:**
+
+| Review finding | Acceptance / regression |
+| --- | --- |
+| Codex: counterpart parents | Shaped divergent sources → research request → actual Clio admission names both source events; omitting the counterpart ledger refuses admission |
+| Codex: reservation accounting | Missing/noninteger day, missing signal/request identity or missing policy blocks history before spending |
+| Codex: replay evidence links | Current suppressed dossier is linked even with more than six historical attempts |
+| Codex: byte digests | A failed response containing non-UTF-8 bytes is admitted with its original byte digest |
+| Codex: stopped canonical port | A port present only in `:latest` remains stale/insufficient and eligible for research |
+| CodeRabbit: checkout credentials | Verification checkout disables credential persistence; publishing checkout retains its push configuration |
+| CodeRabbit: retained evidence | Stored result identity/schema/production boundary and raw evidence digests are revalidated before replay/report use |
+| CodeRabbit: worker deadline | A real stalled subprocess is terminated by an enforced deadline; ordinary success/nonzero exit handling still works |
+| CodeRabbit: lock contention | A second process holding the budget lock yields the intended contention error rather than a nil-close NPE |
+
+Prior verification receipts and live dossiers remain unchanged. The new review
+receipt records the replacement source digests and available validation.

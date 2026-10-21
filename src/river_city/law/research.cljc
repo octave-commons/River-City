@@ -35,3 +35,7 @@
    [:input-refs [:vector :any]]
    [:status [:enum :completed :null :failed :interrupted]]
    [:production-change? [:= false]]])
+
+(def Reservation
+  [:map [:request-id [:string {:min 1}]] [:id [:string {:min 1}]]
+   [:day :int] [:as-of :string] [:policy Policy]])

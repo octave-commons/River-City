@@ -9,7 +9,9 @@
   "Evaluate source observation dates, not projection generation/retrieval time.
    Carries original source row and causal event refs when supplied by the host."
   [projection as-of]
-  (->> (:rows projection)
+  (->> (let [recent-ports (set (map :port-id (:rows projection)))]
+         (concat (:rows projection)
+                 (remove #(contains? recent-ports (:port-id %)) (:latest projection))))
        (group-by :port-id)
        (sort-by key)
        (mapv

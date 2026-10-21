@@ -92,6 +92,21 @@
                                             (= :normal (get-in signal [:regime :status])))
             :question question :research? (boolean (seq flags))})))
 
+(defn causal-parents
+  "Source events used by the primary assessment and comparable matched pairs."
+  [assessment]
+  (let [rows (:observations assessment)
+        primary (into {} (map (juxt :date identity)) rows)
+        counterpart (:counterpart assessment)
+        comparable? (and (some? (:comparison-key assessment))
+                         (= (:comparison-key assessment) (:comparison-key counterpart))
+                         (= (:unit assessment) (:unit counterpart)))
+        matched (when comparable?
+                  (filter #(and (finite? (:value %))
+                                (finite? (:value (get primary (:date %)))))
+                          (:observations counterpart)))]
+    (->> (concat rows matched) (mapcat :event-ids) distinct sort vec)))
+
 (defn lead [assessments]
   (or (first (sort-by (juxt (comp - :rank) :id) assessments))
       {:id "coverage" :label "Canonical signal coverage" :chart-kind :coverage

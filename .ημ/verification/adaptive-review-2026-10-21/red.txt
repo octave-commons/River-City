@@ -1,0 +1,346 @@
+
+Testing river-city.infra.research-test
+
+FAIL in (counterpart-observations-are-research-causes) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:129)
+expected: (= ["counterpart-source"] (get-in r [:results 0 :request :causal/parents]))
+  actual: (not (= ["counterpart-source"] []))
+
+FAIL in (worker-process-has-an-enforced-deadline) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:159)
+expected: (thrown-with-msg? Exception #"Research worker timed out" (research/execute-worker! dir p ["node" "-e" "setInterval(()=>{},1000)"]))
+  actual: #error {
+ :cause "Wrong number of args (3) passed to: sci.impl.fns/fun/arity-2--1147"
+ :via
+ [{:type clojure.lang.ArityException
+   :message "Wrong number of args (3) passed to: sci.impl.fns/fun/arity-2--1147"
+   :at [clojure.lang.AFn throwArity "AFn.java" 429]}]
+ :trace
+ [[clojure.lang.AFn throwArity "AFn.java" 429]
+  [clojure.lang.AFn invoke "AFn.java" 40]
+  [sci.lang.Var invoke "lang.cljc" 213]
+  [sci.impl.analyzer$return_call$reify__4617 eval "analyzer.cljc" 1374]
+  [sci.impl.analyzer$return_do$reify__4077 eval "analyzer.cljc" 79]
+  [sci.impl.evaluator$eval_try invokeStatic "evaluator.cljc" 84]
+  [sci.impl.analyzer$analyze_try$reify__4409 eval "analyzer.cljc" 915]
+  [sci.impl.evaluator$eval_try invokeStatic "evaluator.cljc" 84]
+  [sci.impl.analyzer$analyze_try$reify__4409 eval "analyzer.cljc" 915]
+  [sci.impl.analyzer$return_do$reify__4077 eval "analyzer.cljc" 79]
+  [sci.impl.analyzer$analyze_let_STAR_$reify__4341 eval "analyzer.cljc" 604]
+  [sci.impl.fns$fun$arity_0__1138 invoke "fns.cljc" 108]
+  [babashka.impl.clojure.test$test_var_impl$fn__33380 invoke "test.clj" 720]
+  [babashka.impl.clojure.test$test_var_impl invokeStatic "test.clj" 720]
+  [babashka.impl.clojure.test$test_var_impl invoke "test.clj" 711]
+  [sci.lang.Var invoke "lang.cljc" 209]
+  [babashka.impl.clojure.test$test_vars$fn__33417$fn__33422 invoke "test.clj" 741]
+  [babashka.impl.clojure.test$default_fixture invokeStatic "test.clj" 690]
+  [babashka.impl.clojure.test$default_fixture invoke "test.clj" 686]
+  [babashka.impl.clojure.test$test_vars$fn__33417 invoke "test.clj" 741]
+  [babashka.impl.clojure.test$default_fixture invokeStatic "test.clj" 690]
+  [babashka.impl.clojure.test$default_fixture invoke "test.clj" 686]
+  [babashka.impl.clojure.test$test_vars invokeStatic "test.clj" 737]
+  [babashka.impl.clojure.test$test_all_vars invokeStatic "test.clj" 744]
+  [babashka.impl.clojure.test$test_ns invokeStatic "test.clj" 766]
+  [babashka.impl.clojure.test$run_tests$fn__33437 invoke "test.clj" 783]
+  [clojure.core$map$fn__5956 invoke "core.clj" 2772]
+  [clojure.lang.LazySeq force "LazySeq.java" 50]
+  [clojure.lang.LazySeq realize "LazySeq.java" 89]
+  [clojure.lang.LazySeq seq "LazySeq.java" 106]
+  [clojure.lang.Cons next "Cons.java" 41]
+  [clojure.lang.RT boundedLength "RT.java" 1810]
+  [clojure.lang.RestFn applyTo "RestFn.java" 133]
+  [clojure.core$apply invokeStatic "core.clj" 669]
+  [babashka.impl.clojure.test$run_tests invokeStatic "test.clj" 776]
+  [babashka.impl.clojure.test$run_tests doInvoke "test.clj" 776]
+  [clojure.lang.RestFn applyTo "RestFn.java" 142]
+  [clojure.core$apply invokeStatic "core.clj" 669]
+  [babashka.impl.test$contextualize$fn__33453 doInvoke "test.clj" 7]
+  [clojure.lang.RestFn invoke "RestFn.java" 411]
+  [sci.lang.Var invoke "lang.cljc" 209]
+  [sci.impl.analyzer$return_call$reify__4609 eval "analyzer.cljc" 1374]
+  [sci.impl.analyzer$analyze_let_STAR_$reify__4343 eval "analyzer.cljc" 615]
+  [sci.impl.interpreter$eval_form_STAR_ invokeStatic "interpreter.cljc" 45]
+  [sci.impl.interpreter$eval_form invokeStatic "interpreter.cljc" 63]
+  [sci.impl.interpreter$eval_string_STAR_ invokeStatic "interpreter.cljc" 85]
+  [sci.impl.interpreter$eval_string_STAR_ invoke "interpreter.cljc" 71]
+  [sci.impl.interpreter$eval_string_STAR_ invokeStatic "interpreter.cljc" 73]
+  [sci.core$eval_string_STAR_ invokeStatic "core.cljc" 275]
+  [babashka.main$exec$fn__34466$fn__34506$fn__34507 invoke "main.clj" 1082]
+  [babashka.main$exec$fn__34466$fn__34506 invoke "main.clj" 1082]
+  [babashka.main$exec$fn__34466 invoke "main.clj" 1072]
+  [clojure.lang.AFn applyToHelper "AFn.java" 152]
+  [clojure.lang.AFn applyTo "AFn.java" 144]
+  [clojure.core$apply invokeStatic "core.clj" 667]
+  [clojure.core$with_bindings_STAR_ invokeStatic "core.clj" 1990]
+  [clojure.core$with_bindings_STAR_ doInvoke "core.clj" 1990]
+  [clojure.lang.RestFn invoke "RestFn.java" 428]
+  [babashka.main$exec invokeStatic "main.clj" 864]
+  [babashka.main$main invokeStatic "main.clj" 1263]
+  [babashka.main$main doInvoke "main.clj" 1206]
+  [clojure.lang.RestFn applyTo "RestFn.java" 140]
+  [clojure.core$apply invokeStatic "core.clj" 667]
+  [babashka.main$_main invokeStatic "main.clj" 1275]
+  [babashka.main$_main doInvoke "main.clj" 1267]
+  [clojure.lang.RestFn applyTo "RestFn.java" 140]
+  [babashka.main main nil -1]
+  [java.lang.invoke.LambdaForm$DMH/sa346b79c invokeStaticInit "LambdaForm$DMH" -1]]}
+
+ERROR in (contended-budget-lock-keeps-its-diagnostic) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:167)
+Uncaught exception, not in assertion.
+expected: nil
+  actual: clojure.lang.ExceptionInfo: Cannot run program "bb": error=2, No such file or directory
+{:type :sci/error, :line 174, :column 15, :message "Cannot run program \"bb\": error=2, No such file or directory", :sci.impl/callstack #object[clojure.lang.Volatile 0x491e5109 {:status :ready, :val ({:line 174, :column 15, :ns #object[sci.lang.Namespace 0x453db9ec "river-city.infra.research-test"], :file "/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj", :sci.impl/f-meta {:ns #object[sci.lang.Namespace 0x703164cf "babashka.process"], :name process, :arglists ([& args]), :doc nil}})}], :file "/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj"}
+ at sci.impl.utils$rethrow_with_location_of_node.invokeStatic (utils.cljc:140)
+    sci.impl.analyzer$return_call$reify__4629.eval (analyzer.cljc:1374)
+    sci.impl.analyzer$analyze_let_STAR_$reify__4343.eval (analyzer.cljc:621)
+    sci.impl.fns$fun$arity_0__1138.invoke (fns.cljc:108)
+    babashka.impl.clojure.test$test_var_impl$fn__33380.invoke (test.clj:720)
+    babashka.impl.clojure.test$test_var_impl.invokeStatic (test.clj:720)
+    babashka.impl.clojure.test$test_var_impl.invoke (test.clj:711)
+    sci.lang.Var.invoke (lang.cljc:209)
+    babashka.impl.clojure.test$test_vars$fn__33417$fn__33422.invoke (test.clj:741)
+    babashka.impl.clojure.test$default_fixture.invokeStatic (test.clj:690)
+    babashka.impl.clojure.test$default_fixture.invoke (test.clj:686)
+    babashka.impl.clojure.test$test_vars$fn__33417.invoke (test.clj:741)
+    babashka.impl.clojure.test$default_fixture.invokeStatic (test.clj:690)
+    babashka.impl.clojure.test$default_fixture.invoke (test.clj:686)
+    babashka.impl.clojure.test$test_vars.invokeStatic (test.clj:737)
+    babashka.impl.clojure.test$test_all_vars.invokeStatic (test.clj:744)
+    babashka.impl.clojure.test$test_ns.invokeStatic (test.clj:766)
+    babashka.impl.clojure.test$run_tests$fn__33437.invoke (test.clj:783)
+    clojure.core$map$fn__5956.invoke (core.clj:2772)
+    clojure.lang.LazySeq.force (LazySeq.java:50)
+    clojure.lang.LazySeq.realize (LazySeq.java:89)
+    clojure.lang.LazySeq.seq (LazySeq.java:106)
+    clojure.lang.Cons.next (Cons.java:41)
+    clojure.lang.RT.boundedLength (RT.java:1810)
+    clojure.lang.RestFn.applyTo (RestFn.java:133)
+    clojure.core$apply.invokeStatic (core.clj:669)
+    babashka.impl.clojure.test$run_tests.invokeStatic (test.clj:776)
+    babashka.impl.clojure.test$run_tests.doInvoke (test.clj:776)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:669)
+    babashka.impl.test$contextualize$fn__33453.doInvoke (test.clj:7)
+    clojure.lang.RestFn.invoke (RestFn.java:411)
+    sci.lang.Var.invoke (lang.cljc:209)
+    sci.impl.analyzer$return_call$reify__4609.eval (analyzer.cljc:1374)
+    sci.impl.analyzer$analyze_let_STAR_$reify__4343.eval (analyzer.cljc:615)
+    sci.impl.interpreter$eval_form_STAR_.invokeStatic (interpreter.cljc:45)
+    sci.impl.interpreter$eval_form.invokeStatic (interpreter.cljc:63)
+    sci.impl.interpreter$eval_string_STAR_.invokeStatic (interpreter.cljc:85)
+    sci.impl.interpreter$eval_string_STAR_.invoke (interpreter.cljc:71)
+    sci.impl.interpreter$eval_string_STAR_.invokeStatic (interpreter.cljc:73)
+    sci.core$eval_string_STAR_.invokeStatic (core.cljc:275)
+    babashka.main$exec$fn__34466$fn__34506$fn__34507.invoke (main.clj:1082)
+    babashka.main$exec$fn__34466$fn__34506.invoke (main.clj:1082)
+    babashka.main$exec$fn__34466.invoke (main.clj:1072)
+    clojure.lang.AFn.applyToHelper (AFn.java:152)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1990)
+    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1990)
+    clojure.lang.RestFn.invoke (RestFn.java:428)
+    babashka.main$exec.invokeStatic (main.clj:864)
+    babashka.main$main.invokeStatic (main.clj:1263)
+    babashka.main$main.doInvoke (main.clj:1206)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    babashka.main$_main.invokeStatic (main.clj:1275)
+    babashka.main$_main.doInvoke (main.clj:1267)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    babashka.main.main (:-1)
+    java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit (LambdaForm$DMH:-1)
+Caused by: java.io.IOException: Cannot run program "bb": error=2, No such file or directory
+ at java.lang.ProcessBuilder.start (ProcessBuilder.java:1110)
+    java.lang.ProcessBuilder.start (ProcessBuilder.java:1044)
+    babashka.process$process_STAR_.invokeStatic (process.cljc:382)
+    babashka.process$process.invokeStatic (process.cljc:438)
+    babashka.process$process.doInvoke (process.cljc:438)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    babashka.impl.process$process.invokeStatic (process.clj:15)
+    babashka.impl.process$process.doInvoke (process.clj:15)
+    clojure.lang.RestFn.invoke (RestFn.java:515)
+    sci.lang.Var.invoke (lang.cljc:219)
+    sci.impl.analyzer$return_call$reify__4629.eval (analyzer.cljc:1374)
+    sci.impl.analyzer$analyze_let_STAR_$reify__4343.eval (analyzer.cljc:621)
+    sci.impl.fns$fun$arity_0__1138.invoke (fns.cljc:108)
+    babashka.impl.clojure.test$test_var_impl$fn__33380.invoke (test.clj:720)
+    babashka.impl.clojure.test$test_var_impl.invokeStatic (test.clj:720)
+    babashka.impl.clojure.test$test_var_impl.invoke (test.clj:711)
+    sci.lang.Var.invoke (lang.cljc:209)
+    babashka.impl.clojure.test$test_vars$fn__33417$fn__33422.invoke (test.clj:741)
+    babashka.impl.clojure.test$default_fixture.invokeStatic (test.clj:690)
+    babashka.impl.clojure.test$default_fixture.invoke (test.clj:686)
+    babashka.impl.clojure.test$test_vars$fn__33417.invoke (test.clj:741)
+    babashka.impl.clojure.test$default_fixture.invokeStatic (test.clj:690)
+    babashka.impl.clojure.test$default_fixture.invoke (test.clj:686)
+    babashka.impl.clojure.test$test_vars.invokeStatic (test.clj:737)
+    babashka.impl.clojure.test$test_all_vars.invokeStatic (test.clj:744)
+    babashka.impl.clojure.test$test_ns.invokeStatic (test.clj:766)
+    babashka.impl.clojure.test$run_tests$fn__33437.invoke (test.clj:783)
+    clojure.core$map$fn__5956.invoke (core.clj:2772)
+    clojure.lang.LazySeq.force (LazySeq.java:50)
+    clojure.lang.LazySeq.realize (LazySeq.java:89)
+    clojure.lang.LazySeq.seq (LazySeq.java:106)
+    clojure.lang.Cons.next (Cons.java:41)
+    clojure.lang.RT.boundedLength (RT.java:1810)
+    clojure.lang.RestFn.applyTo (RestFn.java:133)
+    clojure.core$apply.invokeStatic (core.clj:669)
+    babashka.impl.clojure.test$run_tests.invokeStatic (test.clj:776)
+    babashka.impl.clojure.test$run_tests.doInvoke (test.clj:776)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:669)
+    babashka.impl.test$contextualize$fn__33453.doInvoke (test.clj:7)
+    clojure.lang.RestFn.invoke (RestFn.java:411)
+    sci.lang.Var.invoke (lang.cljc:209)
+    sci.impl.analyzer$return_call$reify__4609.eval (analyzer.cljc:1374)
+    sci.impl.analyzer$analyze_let_STAR_$reify__4343.eval (analyzer.cljc:615)
+    sci.impl.interpreter$eval_form_STAR_.invokeStatic (interpreter.cljc:45)
+    sci.impl.interpreter$eval_form.invokeStatic (interpreter.cljc:63)
+    sci.impl.interpreter$eval_string_STAR_.invokeStatic (interpreter.cljc:85)
+    sci.impl.interpreter$eval_string_STAR_.invoke (interpreter.cljc:71)
+    sci.impl.interpreter$eval_string_STAR_.invokeStatic (interpreter.cljc:73)
+    sci.core$eval_string_STAR_.invokeStatic (core.cljc:275)
+    babashka.main$exec$fn__34466$fn__34506$fn__34507.invoke (main.clj:1082)
+    babashka.main$exec$fn__34466$fn__34506.invoke (main.clj:1082)
+    babashka.main$exec$fn__34466.invoke (main.clj:1072)
+    clojure.lang.AFn.applyToHelper (AFn.java:152)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1990)
+    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1990)
+    clojure.lang.RestFn.invoke (RestFn.java:428)
+    babashka.main$exec.invokeStatic (main.clj:864)
+    babashka.main$main.invokeStatic (main.clj:1263)
+    babashka.main$main.doInvoke (main.clj:1206)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    babashka.main$_main.invokeStatic (main.clj:1275)
+    babashka.main$_main.doInvoke (main.clj:1267)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    babashka.main.main (:-1)
+    java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit (LambdaForm$DMH:-1)
+Caused by: java.io.IOException: error=2, No such file or directory
+ at java.lang.ProcessImpl.forkAndExec (ProcessImpl.java:-2)
+    java.lang.ProcessImpl.<init> (ProcessImpl.java:290)
+    java.lang.ProcessImpl.start (ProcessImpl.java:221)
+    java.lang.ProcessBuilder.start (ProcessBuilder.java:1076)
+    java.lang.ProcessBuilder.start (ProcessBuilder.java:1044)
+    babashka.process$process_STAR_.invokeStatic (process.cljc:382)
+    babashka.process$process.invokeStatic (process.cljc:438)
+    babashka.process$process.doInvoke (process.cljc:438)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    babashka.impl.process$process.invokeStatic (process.clj:15)
+    babashka.impl.process$process.doInvoke (process.clj:15)
+    clojure.lang.RestFn.invoke (RestFn.java:515)
+    sci.lang.Var.invoke (lang.cljc:219)
+    sci.impl.analyzer$return_call$reify__4629.eval (analyzer.cljc:1374)
+    sci.impl.analyzer$analyze_let_STAR_$reify__4343.eval (analyzer.cljc:621)
+    sci.impl.fns$fun$arity_0__1138.invoke (fns.cljc:108)
+    babashka.impl.clojure.test$test_var_impl$fn__33380.invoke (test.clj:720)
+    babashka.impl.clojure.test$test_var_impl.invokeStatic (test.clj:720)
+    babashka.impl.clojure.test$test_var_impl.invoke (test.clj:711)
+    sci.lang.Var.invoke (lang.cljc:209)
+    babashka.impl.clojure.test$test_vars$fn__33417$fn__33422.invoke (test.clj:741)
+    babashka.impl.clojure.test$default_fixture.invokeStatic (test.clj:690)
+    babashka.impl.clojure.test$default_fixture.invoke (test.clj:686)
+    babashka.impl.clojure.test$test_vars$fn__33417.invoke (test.clj:741)
+    babashka.impl.clojure.test$default_fixture.invokeStatic (test.clj:690)
+    babashka.impl.clojure.test$default_fixture.invoke (test.clj:686)
+    babashka.impl.clojure.test$test_vars.invokeStatic (test.clj:737)
+    babashka.impl.clojure.test$test_all_vars.invokeStatic (test.clj:744)
+    babashka.impl.clojure.test$test_ns.invokeStatic (test.clj:766)
+    babashka.impl.clojure.test$run_tests$fn__33437.invoke (test.clj:783)
+    clojure.core$map$fn__5956.invoke (core.clj:2772)
+    clojure.lang.LazySeq.force (LazySeq.java:50)
+    clojure.lang.LazySeq.realize (LazySeq.java:89)
+    clojure.lang.LazySeq.seq (LazySeq.java:106)
+    clojure.lang.Cons.next (Cons.java:41)
+    clojure.lang.RT.boundedLength (RT.java:1810)
+    clojure.lang.RestFn.applyTo (RestFn.java:133)
+    clojure.core$apply.invokeStatic (core.clj:669)
+    babashka.impl.clojure.test$run_tests.invokeStatic (test.clj:776)
+    babashka.impl.clojure.test$run_tests.doInvoke (test.clj:776)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:669)
+    babashka.impl.test$contextualize$fn__33453.doInvoke (test.clj:7)
+    clojure.lang.RestFn.invoke (RestFn.java:411)
+    sci.lang.Var.invoke (lang.cljc:209)
+    sci.impl.analyzer$return_call$reify__4609.eval (analyzer.cljc:1374)
+    sci.impl.analyzer$analyze_let_STAR_$reify__4343.eval (analyzer.cljc:615)
+    sci.impl.interpreter$eval_form_STAR_.invokeStatic (interpreter.cljc:45)
+    sci.impl.interpreter$eval_form.invokeStatic (interpreter.cljc:63)
+    sci.impl.interpreter$eval_string_STAR_.invokeStatic (interpreter.cljc:85)
+    sci.impl.interpreter$eval_string_STAR_.invoke (interpreter.cljc:71)
+    sci.impl.interpreter$eval_string_STAR_.invokeStatic (interpreter.cljc:73)
+    sci.core$eval_string_STAR_.invokeStatic (core.cljc:275)
+    babashka.main$exec$fn__34466$fn__34506$fn__34507.invoke (main.clj:1082)
+    babashka.main$exec$fn__34466$fn__34506.invoke (main.clj:1082)
+    babashka.main$exec$fn__34466.invoke (main.clj:1072)
+    clojure.lang.AFn.applyToHelper (AFn.java:152)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1990)
+    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1990)
+    clojure.lang.RestFn.invoke (RestFn.java:428)
+    babashka.main$exec.invokeStatic (main.clj:864)
+    babashka.main$main.invokeStatic (main.clj:1263)
+    babashka.main$main.doInvoke (main.clj:1206)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    clojure.core$apply.invokeStatic (core.clj:667)
+    babashka.main$_main.invokeStatic (main.clj:1275)
+    babashka.main$_main.doInvoke (main.clj:1267)
+    clojure.lang.RestFn.applyTo (RestFn.java:140)
+    babashka.main.main (:-1)
+    java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit (LambdaForm$DMH:-1)
+
+FAIL in (replay-links-current-dossiers-before-bounding-history) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:139)
+expected: (str/includes? report "../../data/research/0/result.edn")
+  actual: (not (str/includes? "![Canonical signal coverage](../../charts/research/lead.svg)\n\n**Establishes:** Canonical measurement coverage is too old, invalid, or insufficient for a current trend claim.\n\n**Does not establish:** an approved normal regime, true unobserved traffic, deliverability, or a causal explanation.\n\n**Question:** Which canonical signal can supply enough current observations to test a substantive explanation?\n\n**Diagnostic flags:** insufficient. Source age: unknown days.\n\nResearch attempts this report: 0; retained attempts: 10. Suppressed: [{:reason :duplicate}].\n\n\nRetained research: [`4` null](../../data/research/4/result.edn); [`5` null](../../data/research/5/result.edn); [`6` null](../../data/research/6/result.edn); [`7` null](../../data/research/7/result.edn); [`8` null](../../data/research/8/result.edn); [`9` null](../../data/research/9/result.edn).\n\nLiterature metadata supplies leads, not verified experimental findings. Null searches remain valid; failed searches remain failures. Proposed indicators/tests do not modify production definitions. Foresight/Clio event admission is explicitly pending.\n\n" "../../data/research/0/result.edn"))
+
+FAIL in (stopped-port-remains-a-canonical-stale-signal) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:146)
+expected: (some? a)
+  actual: (not (some? nil))
+
+FAIL in (retained-completed-results-are-revalidated-before-replay) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:114)
+expected: (thrown-with-msg? Exception #"Invalid or unretained research result" (research/history dir))
+  actual: nil
+
+FAIL in (retained-completed-results-are-revalidated-before-replay) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:114)
+expected: (thrown-with-msg? Exception #"Invalid or unretained research result" (research/history dir))
+  actual: nil
+
+FAIL in (retained-completed-results-are-revalidated-before-replay) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:114)
+expected: (thrown-with-msg? Exception #"Invalid or unretained research result" (research/history dir))
+  actual: nil
+
+FAIL in (retained-completed-results-are-revalidated-before-replay) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:114)
+expected: (thrown-with-msg? Exception #"Invalid or unretained research result" (research/history dir))
+  actual: nil
+
+FAIL in (retained-completed-results-are-revalidated-before-replay) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:114)
+expected: (thrown-with-msg? Exception #"Invalid or unretained research result" (research/history dir))
+  actual: nil
+
+FAIL in (retained-reservations-require-accountable-fields) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:104)
+expected: (thrown-with-msg? Exception #"Invalid research reservation" (research/history dir))
+  actual: nil
+
+FAIL in (retained-reservations-require-accountable-fields) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:104)
+expected: (thrown-with-msg? Exception #"Invalid research reservation" (research/history dir))
+  actual: nil
+
+FAIL in (retained-reservations-require-accountable-fields) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:104)
+expected: (thrown-with-msg? Exception #"Invalid research reservation" (research/history dir))
+  actual: nil
+
+FAIL in (retained-reservations-require-accountable-fields) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:104)
+expected: (thrown-with-msg? Exception #"Invalid research reservation" (research/history dir))
+  actual: nil
+
+FAIL in (retained-reservations-require-accountable-fields) (/workspace/scratch/0aa4b4cecdee/River-City/test/river_city/infra/research_test.clj:104)
+expected: (thrown-with-msg? Exception #"Invalid research reservation" (research/history dir))
+  actual: nil
+
+Ran 13 tests containing 46 assertions.
+14 failures, 1 errors.

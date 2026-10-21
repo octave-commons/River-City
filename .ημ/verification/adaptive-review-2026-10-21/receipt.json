@@ -1,0 +1,83 @@
+{
+  "reviewed_head": "a3d62cf966d245bc8df12dfd84559a46e368be75",
+  "pr": 38,
+  "findings_fixed": [
+    4340833845,
+    4340833859,
+    4340833867,
+    4340833876,
+    4340833885,
+    4340895628,
+    4340895680,
+    4340895745,
+    4340895778
+  ],
+  "tests": {
+    "jvm": {
+      "tests": 15,
+      "assertions": 51
+    },
+    "orchestration": {
+      "tests": 14,
+      "assertions": 52
+    },
+    "clio_host": {
+      "tests": 3,
+      "assertions": 13
+    },
+    "node": {
+      "tests": 21
+    }
+  },
+  "total_tests": 53,
+  "status": "all-local-tests-passed",
+  "checks": [
+    "configuration and policy validation",
+    "readback validation of both retained live dossiers",
+    "git diff --check"
+  ],
+  "red_observation": "14 failing assertions and one fixture environment error (bb not on PATH); the executable override was corrected before the passing run.",
+  "dependency_provenance": "Same pinned dependency source classpath and runtime as the preceding immutable adaptive-research receipt. Hosted dependency-graph validation remains separate.",
+  "files": [
+    {
+      "path": ".github/workflows/daily.yml",
+      "sha256": "bbbc8f3099550ac44a3580e6fd39899e6ab2f8358bc91ac917a0b7ba6a2ddc45"
+    },
+    {
+      "path": "src/river_city/domain/research.cljc",
+      "sha256": "636457714f9caf8d9717442bd5c2debc748245b8931fa42a1512e4b21e36e984"
+    },
+    {
+      "path": "src/river_city/infra/research.clj",
+      "sha256": "eb5bf4dce7b224b29b5987b87f39a5644d3ab46caedab71bdda41e2969988cc5"
+    },
+    {
+      "path": "src/river_city/infra/research_host.clj",
+      "sha256": "394adb4376501ae73aab9a0f3570d4d1fbf99f2ea54c93b098fc70b98f71122a"
+    },
+    {
+      "path": "src/river_city/law/research.cljc",
+      "sha256": "ab565df45ab31f0df7faa814f60b7c73003c87ba1e0aa3fb08c40a84b6c01f92"
+    },
+    {
+      "path": "src/river_city/shape/research.clj",
+      "sha256": "6360d44519801da9fcc9e4fb5d23ba9f0031ac6edd316c78e6de230beb7a0622"
+    },
+    {
+      "path": "test/river_city/infra/research_test.clj",
+      "sha256": "97c8231f8ab4707c3fd7756d42ab01feae6380d0c4d8b9727799b0dd714380be"
+    },
+    {
+      "path": "test/river_city/host/research_test.clj",
+      "sha256": "f6ae536ea3335aea8aeabc987333d73e54e5d28b8482cda3ae366c28eb791c3f"
+    },
+    {
+      "path": "test/fixtures/divergence_dossier.clj",
+      "sha256": "eaac55f309756ce908074f803dc6b83e8d75b22bb50939729990dbec260131b8"
+    },
+    {
+      "path": "docs/stories/adaptive-research.md",
+      "sha256": "3574827ba49f53c7b8f22f8adca289dcff87192e5b6073db23c09681ec2e3006"
+    }
+  ]
+}
