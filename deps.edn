@@ -2,5 +2,13 @@
  :deps {org.clojure/clojure {:mvn/version "1.12.4"}
         metosin/malli {:mvn/version "0.20.1"}}
  :aliases
- {:test {:extra-paths ["test"]
+ {:host {:extra-deps {io.github.open-hax/clio
+                       {:git/url "https://github.com/open-hax/clio.git"
+                        :git/sha "d474fede8631a1a440a39f80f6625badbecfc458"}}}
+  :host-test {:extra-paths ["test"]
+              :extra-deps {io.github.open-hax/clio
+                          {:git/url "https://github.com/open-hax/clio.git"
+                           :git/sha "d474fede8631a1a440a39f80f6625badbecfc458"}}
+              :main-opts ["-m" "river-city.host.research-test"]}
+  :test {:extra-paths ["test"]
          :main-opts ["-m" "river-city.test-runner"]}}}

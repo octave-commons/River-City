@@ -24,7 +24,7 @@
       "path" : "reports/daily/latest.md"
     }, {
       "id" : "report/daily-dated",
-      "path" : "reports/daily/2026-10-18.md"
+      "path" : "reports/daily/2026-10-21-3b830cf53e7df004.md"
     } ]
   },
   "generated-at" : "2026-10-21T17:18:20.406593978Z",
@@ -49,5 +49,23 @@
     "status" : "pending"
   } ],
   "read-order" : [ "projections/manifest.edn", "projections/portwatch/latest.edn", "charts/portwatch/data/latest.json", "maps/portwatch/latest.geojson", "reports/daily/latest.md" ],
+  "research" : {
+    "assessment" : "projections/research/latest.edn",
+    "dossiers" : "data/research",
+    "lead-chart" : "charts/research/lead.svg",
+    "lineage" : {
+      "event-admission" : "pending",
+      "event-host" : "foresight",
+      "input-refs" : [ {
+        "digest" : "8102d97cdb292f0509ee00a0e2081d0e43a8b29976409891af8641785ede4f87",
+        "lineage/mode" : "direct-source-snapshot",
+        "path" : "projections/portwatch/latest.edn",
+        "source/id" : "source/imf-portwatch",
+        "source/retrieved-at" : "2026-10-21T17:17:33.333530706Z"
+      } ],
+      "ledger-backed?" : false,
+      "mode" : "source-evidence-bundles"
+    }
+  },
   "river-city/state-version" : 1
 }

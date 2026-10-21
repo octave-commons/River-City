@@ -1,6 +1,24 @@
 # River City Daily: PortWatch
 
-Generated: `2026-10-21T17:18:20.406593978Z`  
+![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-10-21-3b830cf53e7df004.svg)
+
+**Establishes:** The source records 32 vessels/day at its latest observation; 14 finite observations inform this diagnostic window.
+
+**Does not establish:** an approved normal regime, true unobserved traffic, deliverability, or a causal explanation.
+
+**Question:** Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?
+
+**Diagnostic flags:** displaced, regime-unknown, unexplained. Source age: 3 days.
+
+Research attempts this report: 0; retained attempts: 2. Suppressed: [{:id "portwatch/chokepoint4", :reason :cooldown} {:id "portwatch/chokepoint6", :reason :cooldown}].
+
+
+Retained research: [`portwatch/chokepoint4` completed](../../data/research/research-aed82fa1ddd0eb1e7ccb389734511822c94cacad7bd06034554892e68ab4f20e/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-bba0aaf799f16362442220e4335a1b79e489554f46e80377e30ed38c011ca2fb/result.edn).
+
+Literature metadata supplies leads, not verified experimental findings. Null searches remain valid; failed searches remain failures. Proposed indicators/tests do not modify production definitions. Foresight/Clio event admission is explicitly pending.
+
+Generated: `2026-10-21T17:18:20.406593978Z`
+
 Source coverage through: `2026-10-18`
 
 ## Status

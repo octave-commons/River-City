@@ -1,0 +1,193 @@
+{
+  "status": "local-verification-passed",
+  "tests": {
+    "jvm": {
+      "tests": 15,
+      "assertions": 51
+    },
+    "node": {
+      "tests": 21
+    },
+    "babashka": {
+      "tests": 6,
+      "assertions": 29
+    },
+    "clio_host": {
+      "tests": 1,
+      "assertions": 7
+    }
+  },
+  "total_tests": 43,
+  "river_city_base": "711484d724cfa606150374e1157d3703a36ca06b",
+  "foresight_observed": "cffc34448aa6807fc51135d7f90f0f9fe6ba7efe",
+  "clio": "d474fede8631a1a440a39f80f6625badbecfc458",
+  "malli": "13656199432c9fc44747212a0114f3c7c9a9fb4b",
+  "edamame": "38e627467daa3f6f1e5a8eb6421f702d2a940b7f",
+  "dynaload": "ad11c760fc5b9c7d8d7817f1433eecf09115b2d0",
+  "runtime": {
+    "babashka": "1.12.208",
+    "jvm_clojure": "1.12.2 in Clojure tools 1.12.2.1565",
+    "node": "v24.19.0"
+  },
+  "checks": [
+    "law/config validation",
+    "research policy validation",
+    "git diff --check",
+    "node --check",
+    "rendered SVG inspected",
+    "report links checked",
+    "replay made zero research requests"
+  ],
+  "limitations": [
+    "Standard Maven dependency resolution is unavailable in this container; JVM tests used the actual pinned source dependencies on an explicit classpath. Hosted CI must test the declared dependency graph and Clojure 1.12.4.",
+    "No active Foresight collector on observed main; isolated actual Clio integration is not deployment.",
+    "Default research inspects bibliographic metadata and available abstracts, not full-text experimental evidence.",
+    "Initial live dossiers predate implementation-digest stamping; they are retained unchanged."
+  ],
+  "files": [
+    {
+      "path": "src/river_city/infra/portwatch.clj",
+      "sha256": "b844a800c3f85c20ee9007bd03ae1c292c8d4dfb33ec12479d6be58dcf546760"
+    },
+    {
+      "path": "src/river_city/infra/research.clj",
+      "sha256": "9a7a69fc21d6c272cf78947e3a97745d56f958ad53beafeace3f4f3653e7c903"
+    },
+    {
+      "path": "src/river_city/infra/cli.clj",
+      "sha256": "4cc0eba5a2a7b0ed797e290e6f5149d686532907d0ab51f1799a2c3526d65f6f"
+    },
+    {
+      "path": "src/river_city/infra/research_host.clj",
+      "sha256": "7ded8c8025fd2eee5e6e061f275168e274dde4924f92af1465df6e02dd748385"
+    },
+    {
+      "path": "src/river_city/shape/core.cljc",
+      "sha256": "4cff1a216b19dbf1d53562bdb7597263e0396f29cfc0aabfa2bb7f0add927d7f"
+    },
+    {
+      "path": "src/river_city/shape/research.clj",
+      "sha256": "5171a3af496b0c659eab9a584f80e3d1cee6a6720a26f175628a96006a01bbd7"
+    },
+    {
+      "path": "src/river_city/shape/portwatch.cljc",
+      "sha256": "92051898696704fa77385d48bc5ced3057627992837277bf56e3fe9e559fbf82"
+    },
+    {
+      "path": "src/river_city/domain/portwatch_snapshot.clj",
+      "sha256": "f2ec6763cb1a61972c48120d8b93e11a0aaa4186ad2055fe32384e3c9212a237"
+    },
+    {
+      "path": "src/river_city/domain/core.cljc",
+      "sha256": "768053278f3bbc5c2ec24809669776047a77fa051d2c2850abbbc24eff53627b"
+    },
+    {
+      "path": "src/river_city/domain/research.cljc",
+      "sha256": "ab7c6bb8613f69c55bb7a63f49dbd023f1b6320abd9c241eb582e948568b3476"
+    },
+    {
+      "path": "src/river_city/domain/portwatch.cljc",
+      "sha256": "0acbdc8f73be75f5a5b1b2bb6c1faef414e2b4d689970a86d86b497c3a2fe87d"
+    },
+    {
+      "path": "src/river_city/law/core.cljc",
+      "sha256": "4c42dafa4e351b669524655f306ba8bb78866d7aa529493a9cc85dd0f7bef670"
+    },
+    {
+      "path": "src/river_city/law/research.cljc",
+      "sha256": "9598d0fa7db09fc243778e580019220c55298a28b8fb64a95f5b91492b680467"
+    },
+    {
+      "path": "test/research_worker.test.mjs",
+      "sha256": "b3ecd7879402440c134f155d521475ff0305a45e291fa3cfb7ed23a7d7cc58fd"
+    },
+    {
+      "path": "test/model_watch.test.mjs",
+      "sha256": "a2a5e8254a1fa317b1dfad02636bb1e0a9a7586ee3f89c61ef7705bfcef18ca4"
+    },
+    {
+      "path": "test/river_city/test_runner.clj",
+      "sha256": "99b658e852bdd7cb8cb49299995028ccff314e355266b08dd93b8b9b313de9ff"
+    },
+    {
+      "path": "test/river_city/host/research_test.clj",
+      "sha256": "166ea643585c09337f27bd714bb0fb89500d54b9b35ddf91585028716e73c699"
+    },
+    {
+      "path": "test/river_city/infra/research_test.clj",
+      "sha256": "dea5a14c15404363bcc8f15c85dc5221ae39abf291b554126ff6bc874bad449d"
+    },
+    {
+      "path": "test/river_city/shape/portwatch_test.cljc",
+      "sha256": "bd5cfc2bee2dab622cd3bcade956b16ff7bb5c4cfb101d7264b3cc5efbb154f5"
+    },
+    {
+      "path": "test/river_city/domain/portwatch_snapshot_test.clj",
+      "sha256": "33702d21207439208ed84e6d4248ecd2e3afc01535f897bfe6b15f355f5a18e0"
+    },
+    {
+      "path": "test/river_city/domain/refined_fuels_test.clj",
+      "sha256": "0219820e5f42f178bc01d4b7219d2aff72719f60511dabd0d57a94845ff37014"
+    },
+    {
+      "path": "test/river_city/domain/research_test.cljc",
+      "sha256": "71f29f5cd98a0aff215bd43376448d52b4ec1d1974baba2c9f8ffa6f3f202554"
+    },
+    {
+      "path": "test/river_city/domain/portwatch_test.cljc",
+      "sha256": "c6bca500f417065d06a8c9acae5fba6abf2dacc70ecac5159141f2041b423bdf"
+    },
+    {
+      "path": "test/river_city/law/core_test.clj",
+      "sha256": "cf7b0f6f64f65a3ae7e0aebae3761b1ed93d879e41959e8482ae7daa7ecb7cc5"
+    },
+    {
+      "path": "scripts/create_labels.clj",
+      "sha256": "ef49ebeec6bda9460276d5099591ba62ebc4f4a99d01613ae62aa3309b738ad9"
+    },
+    {
+      "path": "scripts/research_worker.mjs",
+      "sha256": "dd85eb4cb56d072ec00a6ad091ffe22512c48a87884b91be3394d72b42607e9e"
+    },
+    {
+      "path": "scripts/create_issues.clj",
+      "sha256": "eefb540e65b1b219c444b8be1be5430e1c29d76badb835b1dbd05f06ed073b0c"
+    },
+    {
+      "path": "scripts/list_user_input.clj",
+      "sha256": "32e6fe7067c554f62be90090194600ab776827b6bef6089fc5777e3af1605005"
+    },
+    {
+      "path": "scripts/test_research.clj",
+      "sha256": "cc6172096a7c11e5df2021207f15a992333d74f5e3182b1c09efe95e12928636"
+    },
+    {
+      "path": "scripts/list_issues.clj",
+      "sha256": "01463a28597b597cd49c999de90295fd099a437a7d1deee74d94f5f9c62ebef7"
+    },
+    {
+      "path": "scripts/model_watch.mjs",
+      "sha256": "32d5b361e7576dbdc92162a3658f693844a2814adfcf1c3013dd6ab2ba7343c1"
+    },
+    {
+      "path": "scripts/validate.clj",
+      "sha256": "c6ca7067b15fd60b310877579d7da46ccf1e9659193cf6dcf16be298e6a9a956"
+    },
+    {
+      "path": "resources/river_city/research.edn",
+      "sha256": "feb080c162e600474505a0f820e0e0471b3d4e514a30ca332e6fa88afa7788b8"
+    },
+    {
+      "path": "resources/river_city/config.edn",
+      "sha256": "037c0fe83d034b36391a1abff27737b8a3d44e299cb6a04b1afcb0f23483d227"
+    },
+    {
+      "path": "resources/river_city/chokepoints.edn",
+      "sha256": "de76526f1c19738257b7f1cfc4c44d97c133f850cef1445a22a4fec90e8bf617"
+    },
+    {
+      "path": "resources/river_city/model-watch.json",
+      "sha256": "db9a583fc7e3384639ba778b0e9cea88c7a08794f06a5669cbba87c21363e68c"
+    }
+  ]
+}

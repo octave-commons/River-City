@@ -13,3 +13,6 @@ data/raw/*
 
 # Normalized data, projections, chart specs/data, maps, and reports are
 # intentional generated repository state and are committed by the daily job.
+
+# Research mutex is operational state; retained dossiers are committed.
+data/research/.budget.lock

@@ -1,0 +1,5 @@
+
+Testing river-city.host.research-test
+
+Ran 1 tests containing 7 assertions.
+0 failures, 0 errors.

@@ -11,7 +11,9 @@
             :task (shell "bb scripts/validate.clj")}
   test {:doc "Run Clojure and model-watch tests"
         :task (do (shell "clojure -M:test")
-                  (shell "node --test test/model_watch.test.mjs"))}
+                  (shell "clojure -M:host-test")
+                  (shell "node --test test/model_watch.test.mjs test/research_worker.test.mjs")
+                  (shell "bb scripts/test_research.clj"))}
   model-watch {:doc "Observe material AI model-economics changes"
                :task (shell "node scripts/model_watch.mjs")}
   ingest {:doc "Fetch configured raw observations"
