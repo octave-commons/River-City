@@ -118,3 +118,22 @@ passing first run does not conceal later evidence corruption or lost coverage.
 
 Prior verification receipts and live dossiers remain unchanged. The new review
 receipt records the replacement source digests and available validation.
+
+## PR #38 integration and relocated replay
+
+**Story / why:** As an operator moving a research dossier between checkouts, I
+want content identity to govern replay and current projections to govern report
+lineage, so filesystem locations and generated-state merges cannot invalidate
+otherwise intact evidence or mislabel its inputs.
+
+**Acceptance:** relocating identical request/result bytes returns the original
+Clio event without rewriting stored paths; changed dossier contents still fail.
+Rendering the existing projection updates both manifests and research lineage
+with its actual digest and retrieval metadata, without ingesting or replacing
+that projection. Historical dossiers and reports remain unchanged.
+
+**Verification:** the relocated replay regression failed before the fix and
+passes afterward, alongside the existing changed-content refusal. A render-only
+run and lineage assertions verify the projection digest/metadata and unchanged
+projection bytes. Evidence is retained in
+`.ημ/verification/adaptive-replay-2026-10-22/`.

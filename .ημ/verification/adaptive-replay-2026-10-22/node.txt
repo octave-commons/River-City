@@ -1,0 +1,29 @@
+✔ normalizes OpenRouter per-token prices to per-million prices (3.055731ms)
+✔ ignores sub-threshold price changes and alerts at the threshold (1.964194ms)
+✔ ignores OpenRouter batch/free variants as model launches (0.341305ms)
+✔ alerts on a material context frontier launch (14.890089ms)
+✔ does not treat a small-context increase as the configured context frontier (0.275116ms)
+✔ page layout churn is not alertable without commercial fact changes (1.705133ms)
+✔ silently seeds an official source that recovers without a prior good observation (0.202706ms)
+✔ preserves material fact detection after recovery from a stale good observation (1.25896ms)
+✔ alerts when an official package quota changes (0.368516ms)
+✔ official fact alerts expose only the high-signal delta (0.558292ms)
+✔ alerts on a new official open-weight model and computes memory floors (0.475918ms)
+✔ EDN snapshots use stable keyword keys (1.027351ms)
+✔ first observation seeds a baseline without an alert (0.11896ms)
+✔ alert digest is stable across observation timestamps for retry deduplication (1.074271ms)
+✔ alert rendering contains the required cost/update/evidence structure (0.204608ms)
+✔ executes bounded research and retains exact source bytes and candidate-only claims (14.669947ms)
+✔ null is a retained successful search outcome, not absence proof (3.262843ms)
+✔ malformed, HTTP-failed and rejected fetches remain failed, never null (4.05566ms)
+✔ byte and hard call budgets fail closed (1.270177ms)
+✔ research follows discovered measurement vocabulary and retains proposed tests (4.125636ms)
+✔ an actual abort deadline ends a pending provider request (9.983901ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 170.963163

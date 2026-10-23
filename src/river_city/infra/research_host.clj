@@ -53,7 +53,8 @@
           existing (first (filter #(= stream (:event/stream %)) (ledger/read-ledger ledger-path)))]
       (if existing
         (do
-          (when-not (= data (:event/data existing))
+          (when-not (= (dissoc data :request-path :result-path)
+                       (dissoc (:event/data existing) :request-path :result-path))
             (throw (ex-info "Retained research dossier differs from admitted event" {:request-id (:request-id request)})))
           (runtime/ensure-durable! rt ledger-path)
           {:append/result :already-present :event existing})

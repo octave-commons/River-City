@@ -1,0 +1,5 @@
+
+Testing river-city.infra.research-test
+
+Ran 14 tests containing 52 assertions.
+0 failures, 0 errors.

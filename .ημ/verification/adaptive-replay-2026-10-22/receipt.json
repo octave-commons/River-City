@@ -1,0 +1,31 @@
+{
+  "kind": "review-corrections",
+  "parent": "0fc72cd652f372ba0841e1b2f011f4773259dfa4",
+  "findings": [
+    4355580286,
+    4355580292
+  ],
+  "red": "Relocated identical dossier throws Retained research dossier differs from admitted event before fix",
+  "green": {
+    "jvm_tests": 15,
+    "jvm_assertions": 51,
+    "host_tests": 3,
+    "host_assertions": 15,
+    "node_tests": 21,
+    "orchestration_tests": 14,
+    "orchestration_assertions": 52
+  },
+  "lineage": "render! only; existing projection bytes unchanged; digest, retrieval metadata, generation timestamp asserted",
+  "research_runs": 0,
+  "runtimes": {
+    "babashka": "1.12.208",
+    "clojure_local": "1.12.2 via official tools 1.12.2.1565 uberjar; hosted CI must verify declared 1.12.4",
+    "malli_source": "13656199432c9fc44747212a0114f3c7c9a9fb4b",
+    "clio_source": "d474fede8631a1a440a39f80f6625badbecfc458"
+  },
+  "sha256": {
+    "src/river_city/infra/research_host.clj": "6366c66f409b217087f5b6e20820f8d7cc92f9d3c5558628a61943f12b1188be",
+    "test/river_city/host/research_test.clj": "351d03e5733e97a723630e26cdfc485592cd3a2b05551c9a452c174f62725ee4",
+    "docs/stories/adaptive-research.md": "0a60077b14912cdf35c91d67cd59f31d4579adde576bd7f38b1860aa0e7f22ea"
+  }
+}

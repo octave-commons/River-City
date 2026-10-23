@@ -36,6 +36,12 @@
       (is (= 2 (count (:canonical/events history))))
       (is (= [(:event/id parent)] (get-in first-result [:event :event/causes])))
       (is (= (:event first-result) (:event replay)))
+      (let [relocated (str (Files/createTempDirectory "river-clio-copy-" (make-array FileAttribute 0)))]
+        (doseq [name ["request.edn" "result.edn"]]
+          (io/copy (io/file dir name) (io/file relocated name)))
+        (let [moved-replay (host/admit! (assoc options :dossier-path relocated))]
+          (is (= :already-present (:append/result moved-replay)))
+          (is (= (:event first-result) (:event moved-replay)))))
       (is (thrown-with-msg? Exception #"parents absent" (host/admit! (assoc options :parent-ledgers []))))
       (spit (io/file dir "result.edn") (pr-str (assoc result :status :completed)))
       (is (thrown-with-msg? Exception #"differs" (host/admit! options))))))
