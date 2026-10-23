@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-10-23T16:04:10.401Z",
+  "observed_at": "2026-10-23T17:58:13.262Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -5958,7 +5958,7 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.337Z",
+          "observed_at": "2026-10-23T17:58:12.042Z",
           "content_digest": "8c55f807eebde79c29100a92f2f24372e417462baebbd6318aee146e4edde6ae",
           "facts_digest": "3a190256927b00081cc38c61a256516b818d1e09b1ea31827ec1a73f9f0757af",
           "facts": [
@@ -5973,7 +5973,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.339Z",
+          "observed_at": "2026-10-23T17:58:12.114Z",
           "content_digest": "619b1ff9bce056ba0f05029ab762bc7bd48c4c26a66c4bee889305ef25fad822",
           "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
           "facts": [
@@ -5985,7 +5985,7 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.296Z",
+          "observed_at": "2026-10-23T17:58:12.099Z",
           "content_digest": "fa83c7f1e5230482f8ca7e223498548e96891603f1f7147b6d883dbdacdd1e60",
           "facts_digest": "f1addc37c677281a4b5ce3c17c7067df1ff817c2bd9f667fab8fa4d001c05d5f",
           "facts": [
@@ -7272,7 +7272,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.701Z",
+          "observed_at": "2026-10-23T17:58:12.596Z",
           "content_digest": "1c1d74cb8a3c872d7f83f09e13eaa4a98ed4125e576083c9920671ba24c65b19",
           "facts_digest": "6232172f5b1e7bc744682aa6ccc9818c935ff05614d6aeaa96b872f4ba817b4c",
           "facts": [
@@ -7305,7 +7305,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.042Z",
+          "observed_at": "2026-10-23T17:58:12.858Z",
           "content_digest": "3b95fc637cad1ebe759996f6ea9fe1c621f7c3f9776624d81986d6d4260f87dc",
           "facts_digest": "7ed68675d60a56ab607a0b99c8da9b591f15dcdc8577fb82710f454c41145837",
           "facts": [
@@ -7320,7 +7320,7 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.662Z",
+          "observed_at": "2026-10-23T17:58:13.142Z",
           "content_digest": "a2a4ad4b03b179a8a05e4436479984bb66d71627df2db9295f988c5c21a90104",
           "facts_digest": "4772b78bc12766f1d478e25bd43b5c3a9bdc27241acda2d770a918d0a12e77e8",
           "facts": [
@@ -7699,7 +7699,7 @@
             "input": 0.239,
             "cached_input": 0.21,
             "cache_write": null,
-            "output": 11.936
+            "output": 10.8
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
@@ -8202,8 +8202,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.063Z",
-          "content_digest": "f3d4dd7e0763d76939fde618fb378993a5f7ea9ecdcdc3a879f876a8e1022315",
+          "observed_at": "2026-10-23T17:58:12.714Z",
+          "content_digest": "13ae7f89df561dd3d66833b74bd162bd08e4404b80f7f60d910e8780e28f6ae6",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -8213,11 +8213,12 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.133Z",
-          "content_digest": "0737239696a6a73a2ce90f678c9a01c16d36209df698981297833945279f8b87",
-          "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
+          "observed_at": "2026-10-23T17:58:12.765Z",
+          "content_digest": "58ec383db512058988d1124a5d2198a41b0012ea4ea158ac943e776e03db60eb",
+          "facts_digest": "f64ec3c36609c6c9b92ff99f7753cad26a86c534d375022192c57852f6b31fb9",
           "facts": [
             "## deprecated models",
+            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
             "> review currently available kimi multimodal and coding models, plus migration guidance for discontinued models.",
             "| `kimi-k2-0711-preview` | deprecated |",
             "| `kimi-k2-0905-preview` | deprecated |",
@@ -8239,7 +8240,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.111Z",
+          "observed_at": "2026-10-23T17:58:12.781Z",
           "content_digest": "dd7fefc950f196301852e645a345acefd7f923fed54df9e72134bd3ca164a2fe",
           "facts_digest": "b3912f3f1eda5ab9383e04e66c642b80e9c981040896b8ad4ae70e3b0821deed",
           "facts": [
@@ -8253,11 +8254,12 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.105Z",
-          "content_digest": "0737239696a6a73a2ce90f678c9a01c16d36209df698981297833945279f8b87",
-          "facts_digest": "0c9d6b827f9184b1808faf073cadb7e0ec70f16b4fc381e5d8a9477b43331ed9",
+          "observed_at": "2026-10-23T17:58:12.780Z",
+          "content_digest": "58ec383db512058988d1124a5d2198a41b0012ea4ea158ac943e776e03db60eb",
+          "facts_digest": "f64ec3c36609c6c9b92ff99f7753cad26a86c534d375022192c57852f6b31fb9",
           "facts": [
             "## deprecated models",
+            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
             "> review currently available kimi multimodal and coding models, plus migration guidance for discontinued models.",
             "| `kimi-k2-0711-preview` | deprecated |",
             "| `kimi-k2-0905-preview` | deprecated |",
@@ -8279,7 +8281,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.137Z",
+          "observed_at": "2026-10-23T17:58:12.805Z",
           "content_digest": "dd7fefc950f196301852e645a345acefd7f923fed54df9e72134bd3ca164a2fe",
           "facts_digest": "b3912f3f1eda5ab9383e04e66c642b80e9c981040896b8ad4ae70e3b0821deed",
           "facts": [
@@ -8293,7 +8295,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.123Z",
+          "observed_at": "2026-10-23T17:58:12.767Z",
           "content_digest": "fda3ee0dcf3822c0483ee6d9154de5767adf3d8daadb229a3b48288d6ab03651",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
@@ -8304,16 +8306,18 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.139Z",
-          "content_digest": "57d37b7cfc1b2eaab08cf6b08b6813789b40e6589ffc2ca0cae692e419cb4f0e",
-          "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-          "facts": []
+          "observed_at": "2026-10-23T17:58:12.822Z",
+          "content_digest": "fb6d77302529d91ea33a20916bbaba8ba424f9444988d6318771cfea16cecad8",
+          "facts_digest": "63ebb17ded2d43132b9c235ded66579ec9607f0d9efcfe49f9157a3a0c9bb1e2",
+          "facts": [
+            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](/docs/guide/kimi-k3-1-pro-quickstart.md) in advance."
+          ]
         },
         {
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.106Z",
+          "observed_at": "2026-10-23T17:58:12.794Z",
           "content_digest": "3f5303f25d7243fba64b19d18afd762c300648e8fd72ac0d6aa29f54c3c4b077",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
@@ -8324,7 +8328,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.135Z",
+          "observed_at": "2026-10-23T17:58:12.770Z",
           "content_digest": "a488d62f658b8005a0f493d7d2e98a366987a0553b9fa31aae92ea68cfb3a8a3",
           "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
           "facts": [
@@ -10493,7 +10497,7 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.453Z",
+          "observed_at": "2026-10-23T17:58:12.264Z",
           "content_digest": "ffe689aa72a025b19f2cef239ee4ae68f63a78de1e31214bcb7c39a40774d774",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
@@ -10505,7 +10509,7 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.668Z",
+          "observed_at": "2026-10-23T17:58:12.368Z",
           "content_digest": "58e11726222b8cc302d90d0878f422e3c8bba7574399d80ba1ffd8c01f8fa768",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13619,7 +13623,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.594Z",
+          "observed_at": "2026-10-23T17:58:12.563Z",
           "content_digest": "6340d76f4778786b615651e784de408a0327d7186fffa7f15a185ee35c9387f2",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13628,7 +13632,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.585Z",
+          "observed_at": "2026-10-23T17:58:12.579Z",
           "content_digest": "88376fc3d7a6ab31969f48b2b40425b5ad021370c4287e14a1b40e171ad27523",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -13641,7 +13645,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:09.673Z",
+          "observed_at": "2026-10-23T17:58:12.777Z",
           "content_digest": "3a9c4858d25271e7ebe53e5626d1e6f532109f94375526c50df84ffed32c2051",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -14586,7 +14590,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.396Z",
+          "observed_at": "2026-10-23T17:58:13.181Z",
           "content_digest": "a0d98accee8e3218edb6a142e1c5e7d92f0a1245014f8f6062c11ec1f76c4ed6",
           "facts_digest": "5ed3a04651d99a5c64a46a166b243ded5400a6e213a05bb7664aef7c5b99110d",
           "facts": [
@@ -14598,7 +14602,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.399Z",
+          "observed_at": "2026-10-23T17:58:13.185Z",
           "content_digest": "8109fa7192085b0d2bac98358316e5cbda749c8bcf174f280bf09387429c667f",
           "facts_digest": "2ae2eacaa8e77c27443d1defd5cab615c225f6d9fe87f8bba0727df56959c580",
           "facts": [
@@ -14620,7 +14624,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-10-23T16:04:10.401Z",
+          "observed_at": "2026-10-23T17:58:13.262Z",
           "content_digest": "f6f7acb395a30b265f83b3993ab4e4e8a8e97a00e6008898f5c7963d856aa111",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
