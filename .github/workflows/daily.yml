@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/research_worker.mjs"
       - "scripts/test_research.clj"
+      - "scripts/validate.clj"
       - "src/**"
       - "resources/**"
       - "test/**"
