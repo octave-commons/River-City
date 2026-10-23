@@ -134,5 +134,5 @@ and Babashka orchestration/report tests. Network fixtures are deterministic;
 PR checks make no live research requests and carry read-only credentials.
 The non-PR daily publisher runs only after verification.
 
-See [the stories](stories/adaptive-research.md) and the session verification
-receipt in `.ημ/sessions/` for observed results and environment limitations.
+See [the stories](stories/adaptive-research.md) and the verification
+receipts in `.ημ/verification/` for observed results and environment limitations.
