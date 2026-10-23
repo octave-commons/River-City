@@ -11,7 +11,7 @@
       "request-id" : "research-7052f246db5baf69485df3fffca17e22d894cfc1679935d391763d9c81ee5894"
     } ]
   },
-  "as-of" : "2026-10-23T16:07:05.790531592Z",
+  "as-of" : "2026-10-23T17:15:13.538814493Z",
   "assessments" : [ {
     "chart-kind" : "freshness",
     "comparison" : {
@@ -237,7 +237,7 @@
     "spread-relative" : 2.036363636363636,
     "unit" : "vessels/day"
   } ],
-  "chart-path" : "charts/research/2026-10-23-a145ea97fae2238f.svg",
+  "chart-path" : "charts/research/2026-10-23-0b81637ceb0b4724.svg",
   "history" : [ {
     "day" : 20747,
     "id" : "portwatch/chokepoint4",
@@ -368,11 +368,11 @@
     "event-admission" : "pending",
     "event-host" : "foresight",
     "input-refs" : [ {
-      "digest" : "6bbdffe172af3de4ce3b6834142cffa6eebd2ab421682c15a551f4290a247dd4",
+      "digest" : "a0750344822566bf44e8e257639be634dafe1113eaea33b61d875de1cea3598a",
       "lineage/mode" : "direct-source-snapshot",
       "path" : "projections/portwatch/latest.edn",
       "source/id" : "source/imf-portwatch",
-      "source/retrieved-at" : "2026-10-23T16:04:47.779061054Z"
+      "source/retrieved-at" : "2026-10-23T17:14:22.744159220Z"
     } ],
     "ledger-backed?" : false,
     "mode" : "source-evidence-bundles"
