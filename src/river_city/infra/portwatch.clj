@@ -10,6 +10,8 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [river-city.domain.portwatch-snapshot :as snapshot]
+            [river-city.infra.research :as research]
+            [river-city.shape.research :as research-shape]
             [river-city.shape.portwatch :as shape])
   (:import [java.net URLEncoder]
            [java.nio.charset StandardCharsets]
@@ -339,7 +341,7 @@
 (defn- format-number [value]
   (if (number? value) (format "%.1f" (double value)) "—"))
 
-(defn- report-markdown [projection]
+(defn- report-markdown [projection research-state]
   (let [generated-at (:generated-at projection)
         through (get-in projection [:coverage :through])
         table-lines
@@ -352,7 +354,8 @@
                     " | " (or (:baseline-n row) 0) " |"))
              (:latest projection))]
     (str "# River City Daily: PortWatch\n\n"
-         "Generated: `" generated-at "`  \n"
+         (research/report-intro research-state)
+         "Generated: `" generated-at "`\n\n"
          "Source coverage through: `" through "`\n\n"
          "## Status\n\n"
          "| Chokepoint | Date | Visible vessels | Prior-year median | Deviation | Baseline n |\n"
@@ -376,8 +379,20 @@
   (let [projection (read-edn-file projection-latest-edn)
         generated-at (:generated-at projection)
         date (get-in projection [:coverage :through])
+        as-of (utc-now)
+        research-base (research/run!
+                        {:signals (research-shape/portwatch-signals projection as-of)
+                         :as-of as-of
+                         :input-refs [{:path projection-latest-edn
+                                       :digest (research/digest projection)
+                                       :source/id (:source/id projection)
+                                       :source/retrieved-at (:source/retrieved-at projection)
+                                       :lineage/mode (:lineage/mode projection)}]})
+        run-id (str (subs as-of 0 10) "-" (subs (research/digest research-base) 0 16))
+        immutable-chart (str "charts/research/" run-id ".svg")
+        research-state (assoc research-base :chart-path immutable-chart)
         points (latest-map-points projection)
-        dated-report (str "reports/daily/" date ".md")
+        dated-report (str "reports/daily/" run-id ".md")
         manifest
         {:river-city/state-version 1
          :generated-at generated-at
@@ -402,6 +417,10 @@
                   :geometry-status :approximate-reference-anchors}]
           :reports [{:id :report/daily-latest :path report-latest-path}
                     {:id :report/daily-dated :path dated-report}]}
+         :research {:assessment "projections/research/latest.edn"
+                    :lead-chart "charts/research/lead.svg"
+                    :dossiers "data/research"
+                    :lineage (:lineage research-state)}
          :read-order [manifest-edn-path projection-latest-edn chart-data-path
                       map-geojson-path report-latest-path]
          :missing-series
@@ -413,6 +432,11 @@
            :status :pending
            :issue 2
            :reason "Direct source snapshot is operational; Foresight-hosted Clio accumulation remains pending."}]}]
+    (ensure-parent! "charts/research/lead.svg")
+    (spit "charts/research/lead.svg" (research/chart-svg research-state))
+    (spit immutable-chart (research/chart-svg research-state))
+    (write-edn! "projections/research/latest.edn" research-state)
+    (write-json! "projections/research/latest.json" research-state)
     (write-json! chart-data-path {:generated-at generated-at
                                   :baseline (:baseline projection)
                                   :rows (:rows projection)})
@@ -423,7 +447,7 @@
     (write-json! "charts/portwatch/cargo-mix.vl.json" (cargo-mix-chart-spec))
     (write-json! "charts/portwatch/map.vl.json" (map-chart-spec))
     (ensure-parent! report-latest-path)
-    (let [report (report-markdown projection)]
+    (let [report (report-markdown projection research-state)]
       (spit report-latest-path report)
       (spit dated-report report))
     (write-edn! manifest-edn-path manifest)

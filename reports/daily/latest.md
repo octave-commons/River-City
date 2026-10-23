@@ -1,6 +1,24 @@
 # River City Daily: PortWatch
 
-Generated: `2026-10-22T17:16:19.556942920Z`  
+![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-10-23-6b29f6c72e256796.svg)
+
+**Establishes:** Canonical measurement coverage is too old, invalid, or insufficient for a current trend claim.
+
+**Does not establish:** an approved normal regime, true unobserved traffic, deliverability, or a causal explanation.
+
+**Question:** Does a newer independent observation confirm or contradict the last measured level?
+
+**Diagnostic flags:** displaced, regime-unknown, stale, unexplained. Source age: 5 days.
+
+Research attempts this report: 0; retained attempts: 2. Suppressed: [{:id "portwatch/chokepoint4", :reason :cooldown} {:id "portwatch/chokepoint6", :reason :cooldown}].
+
+
+Retained research: [`portwatch/chokepoint4` completed](../../data/research/research-aed82fa1ddd0eb1e7ccb389734511822c94cacad7bd06034554892e68ab4f20e/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-bba0aaf799f16362442220e4335a1b79e489554f46e80377e30ed38c011ca2fb/result.edn).
+
+Literature metadata supplies leads, not verified experimental findings. Null searches remain valid; failed searches remain failures. Proposed indicators/tests do not modify production definitions. Foresight/Clio event admission is explicitly pending.
+
+Generated: `2026-10-22T17:16:19.556942920Z`
+
 Source coverage through: `2026-10-18`
 
 ## Status

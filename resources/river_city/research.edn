@@ -1,0 +1,16 @@
+{:version 1
+ :window 14
+ :min-points 5
+ :max-age-days 3
+ :flat-relative 0.03
+ :noise-relative 0.35
+ :abnormal-relative 0.25
+ :divergence-relative 0.25
+ :max-relative-uncertainty 0.5
+ :cooldown-days 7
+ :max-runs-per-day 2
+ :max-runs-per-report 2
+ :queries-per-run 2
+ :max-response-bytes 262144
+ :timeout-ms 15000
+ :max-candidates 4}

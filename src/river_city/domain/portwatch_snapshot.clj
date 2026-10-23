@@ -56,6 +56,8 @@
      :port-id (:port/id observation)
      :port-name (:port/name observation)
      :source-record-id (:source/record-id observation)
+     :event-ids (vec (distinct (concat (:event-ids observation)
+                                       (when-let [id (:event/id observation)] [id]))))
      :vessels-container (get-in observation [:vessels :container])
      :vessels-dry-bulk (get-in observation [:vessels :dry-bulk])
      :vessels-general-cargo (get-in observation [:vessels :general-cargo])

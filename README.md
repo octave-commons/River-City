@@ -99,3 +99,13 @@ The actionable queue is also stored in `backlog/user-input.edn` and can be print
 ```bash
 bb user-input
 ```
+
+## Adaptive research
+
+Daily reports now evaluate canonical PortWatch measurements, deterministically
+admit bounded research, retain source evidence, and lead with a rendered
+visualization plus an explicit testable question. Research candidates remain
+separate from reviewed analytical definitions. See
+[`docs/adaptive-research.md`](docs/adaptive-research.md) and
+[the acceptance stories](docs/stories/adaptive-research.md) for budgets, evidence
+scope, Clio host integration, verification and outstanding activation work.

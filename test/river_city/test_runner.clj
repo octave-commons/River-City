@@ -6,6 +6,7 @@
   (:require [clojure.test :as test]
             [river-city.domain.portwatch-snapshot-test]
             [river-city.domain.portwatch-test]
+            [river-city.domain.research-test]
             [river-city.domain.refined-fuels-test]
             [river-city.law.core-test]
             [river-city.shape.portwatch-test]))
@@ -14,6 +15,7 @@
   '[river-city.law.core-test
     river-city.shape.portwatch-test
     river-city.domain.portwatch-test
+    river-city.domain.research-test
     river-city.domain.portwatch-snapshot-test
     river-city.domain.refined-fuels-test])
 

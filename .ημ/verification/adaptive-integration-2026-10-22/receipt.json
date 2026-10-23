@@ -1,0 +1,21 @@
+{
+  "kind": "integration-preparation",
+  "pr": 38,
+  "reviewed_parent": "a4088e2f7d93d41ff8045862d4e0e8b979852aac",
+  "main_parent": "88f942b7195479b24a261db389683a0c533fa0d3",
+  "conflicts": [
+    "projections/manifest.edn",
+    "reports/daily/latest.md"
+  ],
+  "resolution": "Keep the reviewed adaptive report and matching EDN/JSON manifest snapshot. Preserve newer main source projections, model-watch observations and alerts. The next daily run regenerates latest outputs. No analytical definitions changed.",
+  "tests": {
+    "node": {
+      "passed": 21,
+      "failed": 0
+    },
+    "clojure_local": "unavailable: prior temporary runtimes and dependency checkouts no longer exist",
+    "hosted_current_head": "pending publication"
+  },
+  "whitespace_check": "Existing generated Markdown on main includes deliberate hard-break trailing spaces and captured-source trailing spaces; preserved unchanged.",
+  "authorization": "User authorized integration and merge after available reviewers approve; quota-unavailable CodeRabbit need not block."
+}
