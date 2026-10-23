@@ -25,13 +25,23 @@ export async function boundedGet(url, { timeoutMs, maxBytes, fetcher = fetch }) 
   return { status: response.status, bytes: Buffer.concat(chunks) };
 }
 
+const decodeEntities = value => value
+  .replace(/&lt;/gu, '<')
+  .replace(/&gt;/gu, '>')
+  .replace(/&quot;/gu, '"')
+  .replace(/&#39;|&apos;/gu, "'")
+  .replace(/&amp;/gu, '&');
+
+const stripMarkup = value =>
+  value.replace(/<\/?[A-Za-z][\w:.-]*(?:\s[^<>]*)?\/?>/gu, ' ');
+
 export function candidatesFromCrossref(payload, limit) {
   if (!payload || !Array.isArray(payload.message?.items)) throw new Error('invalid-crossref-response');
   return payload.message.items.slice(0, limit).flatMap(item => {
     const title = item.title?.[0];
     if (typeof title !== 'string' || typeof item.DOI !== 'string' || !/^10\.\d{4,9}\/\S+$/u.test(item.DOI)) return [];
     const abstract = typeof item.abstract === 'string'
-      ? item.abstract.replace(/<[^>]*>/gu, ' ').replace(/\s+/gu, ' ').trim().slice(0, 6000) : null;
+      ? stripMarkup(decodeEntities(item.abstract)).replace(/\s+/gu, ' ').trim().slice(0, 6000) : null;
     const text = `${title} ${abstract ?? ''}`;
     const indicators = [
       ['AIS', /\bAIS\b|automatic identification system/iu],
