@@ -5,7 +5,7 @@ import { mkdtemp, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
-import { boundedGet, executeResearch } from '../scripts/research_worker.mjs';
+import { boundedGet, candidatesFromCrossref, executeResearch } from '../scripts/research_worker.mjs';
 const policy = { 'queries-per-run': 2, 'max-response-bytes': 4096, 'timeout-ms': 100, 'max-candidates': 4 };
 const request = { policy, 'request-id': 'research-a', label: 'Hormuz visible passages' };
 const response = items => new Response(JSON.stringify({ message: { items } }));
@@ -55,6 +55,16 @@ test('research follows discovered measurement vocabulary and retains proposed te
   assert.ok(result.proposals.every(p => p['source-sha256'] && p['production-change?'] === false));
   assert.ok(result.tests[0].falsifies);
 });
+test('decodes escaped abstract markup without deleting comparisons or doubly escaped text', () => {
+  const [candidate] = candidatesFromCrossref({ message: { items: [{
+    title: ['AIS comparison'],
+    DOI: '10.1234/markup',
+    abstract: '<jats:p>&lt;p&gt;&lt;span&gt;AIS&lt;/span&gt; coverage p &lt; 0.05 and n &gt; 30&lt;/p&gt; &amp;lt;kept&amp;gt;</jats:p>',
+  }] } }, 1);
+  assert.equal(candidate.abstract, 'AIS coverage p < 0.05 and n > 30 &lt;kept&gt;');
+  assert.deepEqual(candidate.indicators, ['AIS']);
+});
+
 test('an actual abort deadline ends a pending provider request', async () => {
   await assert.rejects(boundedGet('https://api.crossref.org/works', {
     timeoutMs: 10, maxBytes: 100,
