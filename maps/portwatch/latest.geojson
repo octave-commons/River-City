@@ -19,6 +19,7 @@
       "date-ms" : 1792281600000,
       "deviation-absolute" : -14.0,
       "deviation-percent" : -30.434782608695656,
+      "event-ids" : [ ],
       "geometry-note" : "Approximate reference anchor for visualization; not a legal or navigational boundary.",
       "latest" : true,
       "port-id" : "chokepoint4",
@@ -53,6 +54,7 @@
       "date-ms" : 1792281600000,
       "deviation-absolute" : -83.0,
       "deviation-percent" : -95.40229885057471,
+      "event-ids" : [ ],
       "geometry-note" : "Approximate reference anchor for visualization; not a legal or navigational boundary.",
       "latest" : true,
       "port-id" : "chokepoint6",
@@ -68,7 +70,7 @@
     },
     "type" : "Feature"
   } ],
-  "river-city/generated-at" : "2026-10-22T17:16:19.556942920Z",
+  "river-city/generated-at" : "2026-10-23T16:07:05.388436543Z",
   "river-city/geometry-status" : "approximate-reference-anchors",
   "type" : "FeatureCollection"
 }

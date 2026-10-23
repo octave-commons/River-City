@@ -4,14 +4,14 @@
     "suppressed" : [ {
       "id" : "portwatch/chokepoint4",
       "reason" : "cooldown",
-      "request-id" : "research-bf27fd3f69bf7b0ea822891984c6b998c663e769e05395e1e804fd0078a5bd78"
+      "request-id" : "research-69e2c7c0810c10bd8e7638fb5b6f65fe8681ebaf841b61f091f5cf9f31e91ae4"
     }, {
       "id" : "portwatch/chokepoint6",
       "reason" : "cooldown",
-      "request-id" : "research-f1de8bae3f53e7a95a00ba2764d341e5ec59690a7048578fb6f2c785a7b1c7f2"
+      "request-id" : "research-7052f246db5baf69485df3fffca17e22d894cfc1679935d391763d9c81ee5894"
     } ]
   },
-  "as-of" : "2026-10-23T02:42:53.222235577Z",
+  "as-of" : "2026-10-23T16:07:05.790531592Z",
   "assessments" : [ {
     "chart-kind" : "freshness",
     "comparison" : {
@@ -119,7 +119,7 @@
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-bf27fd3f69bf7b0ea822891984c6b998c663e769e05395e1e804fd0078a5bd78",
+    "request-id" : "research-69e2c7c0810c10bd8e7638fb5b6f65fe8681ebaf841b61f091f5cf9f31e91ae4",
     "research?" : true,
     "source-age-days" : 5,
     "spread-relative" : 0.6579634464751958,
@@ -231,13 +231,13 @@
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-f1de8bae3f53e7a95a00ba2764d341e5ec59690a7048578fb6f2c785a7b1c7f2",
+    "request-id" : "research-7052f246db5baf69485df3fffca17e22d894cfc1679935d391763d9c81ee5894",
     "research?" : true,
     "source-age-days" : 5,
     "spread-relative" : 2.036363636363636,
     "unit" : "vessels/day"
   } ],
-  "chart-path" : "charts/research/2026-10-23-6b29f6c72e256796.svg",
+  "chart-path" : "charts/research/2026-10-23-a145ea97fae2238f.svg",
   "history" : [ {
     "day" : 20747,
     "id" : "portwatch/chokepoint4",
@@ -358,7 +358,7 @@
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-bf27fd3f69bf7b0ea822891984c6b998c663e769e05395e1e804fd0078a5bd78",
+    "request-id" : "research-69e2c7c0810c10bd8e7638fb5b6f65fe8681ebaf841b61f091f5cf9f31e91ae4",
     "research?" : true,
     "source-age-days" : 5,
     "spread-relative" : 0.6579634464751958,
@@ -368,11 +368,11 @@
     "event-admission" : "pending",
     "event-host" : "foresight",
     "input-refs" : [ {
-      "digest" : "4f38be42c8cd03a80643e4e7bc12dab5c6a44fb6b46e446494cd49772a141502",
+      "digest" : "6bbdffe172af3de4ce3b6834142cffa6eebd2ab421682c15a551f4290a247dd4",
       "lineage/mode" : "direct-source-snapshot",
       "path" : "projections/portwatch/latest.edn",
       "source/id" : "source/imf-portwatch",
-      "source/retrieved-at" : "2026-10-22T17:15:36.238251791Z"
+      "source/retrieved-at" : "2026-10-23T16:04:47.779061054Z"
     } ],
     "ledger-backed?" : false,
     "mode" : "source-evidence-bundles"

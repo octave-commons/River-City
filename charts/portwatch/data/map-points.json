@@ -1,5 +1,5 @@
 {
-  "generated-at" : "2026-10-22T17:16:19.556942920Z",
+  "generated-at" : "2026-10-23T16:07:05.388436543Z",
   "rows" : [ {
     "baseline-max" : 77.0,
     "baseline-median" : 46.0,
@@ -15,6 +15,7 @@
     "date-ms" : 1792281600000,
     "deviation-absolute" : -14.0,
     "deviation-percent" : -30.434782608695656,
+    "event-ids" : [ ],
     "geometry-note" : "Approximate reference anchor for visualization; not a legal or navigational boundary.",
     "latest" : true,
     "latitude" : 12.5833,
@@ -44,6 +45,7 @@
     "date-ms" : 1792281600000,
     "deviation-absolute" : -83.0,
     "deviation-percent" : -95.40229885057471,
+    "event-ids" : [ ],
     "geometry-note" : "Approximate reference anchor for visualization; not a legal or navigational boundary.",
     "latest" : true,
     "latitude" : 26.5667,
