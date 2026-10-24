@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-10-23T17:58:13.262Z",
+  "observed_at": "2026-10-24T17:01:28.517Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -5958,8 +5958,8 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.042Z",
-          "content_digest": "8c55f807eebde79c29100a92f2f24372e417462baebbd6318aee146e4edde6ae",
+          "observed_at": "2026-10-24T17:01:27.488Z",
+          "content_digest": "053d5a0ee60e1ca567ee4b3a5b63486d23338e0523de3e0dbe9c5b2daa14d2e2",
           "facts_digest": "3a190256927b00081cc38c61a256516b818d1e09b1ea31827ec1a73f9f0757af",
           "facts": [
             "$0.10 / gb per day (1 gb free)",
@@ -5973,11 +5973,12 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.114Z",
-          "content_digest": "619b1ff9bce056ba0f05029ab762bc7bd48c4c26a66c4bee889305ef25fad822",
-          "facts_digest": "7f986f09165c364aa43329b98e648c317e4d93544ff1bd39721d2616fbfdeeb7",
+          "observed_at": "2026-10-24T17:01:27.509Z",
+          "content_digest": "c1cb5034c8c8b1112daa030dd2ad10c7c016f25e29c21470f83d8faf3b9288de",
+          "facts_digest": "fe42b0fa2990ebaea454c8c38b45dab0233aa4838c0d06e2b2e882cf02195393",
           "facts": [
             "- [gpt-4.5 preview](/api/docs/models/gpt-4.5-preview.md): deprecated large model.",
+            "- [gpt-image-1](/api/docs/models/gpt-image-1.md): retired image generation model",
             "see [how openai uses your data](/api/docs/guides/your-data.md) and review [deprecated models](/api/docs/deprecations.md)."
           ]
         },
@@ -5985,9 +5986,9 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.099Z",
-          "content_digest": "fa83c7f1e5230482f8ca7e223498548e96891603f1f7147b6d883dbdacdd1e60",
-          "facts_digest": "f1addc37c677281a4b5ce3c17c7067df1ff817c2bd9f667fab8fa4d001c05d5f",
+          "observed_at": "2026-10-24T17:01:27.472Z",
+          "content_digest": "b7b8b8edd63cc710e01bb82b70fbb45da5b7a748e27ead71b01e636d1e7f3417",
+          "facts_digest": "5769ffc2a9999164699e428c8d9eb44c505a6e866fd2f7db4873e68adbe7e740",
           "facts": [
             "2026-06-02: gpt image model deprecations",
             "2026-06-11: gpt-5 and o3 model deprecations",
@@ -6002,6 +6003,7 @@
             "model deprecation notice periods",
             "on april 14th, 2025, we notified developers that the gpt-4.5-preview model is deprecated and will be removed from the api in the coming months.",
             "on april 22, 2026, we announced the deprecation of the following older openai models. access to these models was shut down on july 23, 2026.",
+            "on april 22, 2026, we announced the deprecation of the following older openai models. access to these models was shut down on october 23, 2026.",
             "on august 26, 2026, we notified developers using whisper-1 , gpt-4o-transcribe , gpt-4o-mini-transcribe , and gpt-4o-transcribe-diarize of their deprecation and removal from the api on february 26, 2027.",
             "on july 06, 2023, we announced the upcoming retirements of older gpt-3 and gpt-3.5 models served via the completions endpoint. we also announced the upcoming retirement of our first-generation text embedding models. they will be shut down on january 04, 2024.",
             "on july 20, 2026, we notified developers using legacy audio, realtime, and transcription model families and snapshots of their deprecation and removal from the api on january 20, 2027.",
@@ -7272,7 +7274,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.596Z",
+          "observed_at": "2026-10-24T17:01:28.013Z",
           "content_digest": "1c1d74cb8a3c872d7f83f09e13eaa4a98ed4125e576083c9920671ba24c65b19",
           "facts_digest": "6232172f5b1e7bc744682aa6ccc9818c935ff05614d6aeaa96b872f4ba817b4c",
           "facts": [
@@ -7305,7 +7307,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.858Z",
+          "observed_at": "2026-10-24T17:01:28.457Z",
           "content_digest": "3b95fc637cad1ebe759996f6ea9fe1c621f7c3f9776624d81986d6d4260f87dc",
           "facts_digest": "7ed68675d60a56ab607a0b99c8da9b591f15dcdc8577fb82710f454c41145837",
           "facts": [
@@ -7320,8 +7322,8 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:13.142Z",
-          "content_digest": "a2a4ad4b03b179a8a05e4436479984bb66d71627df2db9295f988c5c21a90104",
+          "observed_at": "2026-10-24T17:01:28.517Z",
+          "content_digest": "8e287e5543a67eb94f057ae91a924f6e7c24f2bb55400f003c5463622d10704f",
           "facts_digest": "4772b78bc12766f1d478e25bd43b5c3a9bdc27241acda2d770a918d0a12e77e8",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer.",
@@ -7753,6 +7755,47 @@
           "expiration_date": null,
           "benchmark_score": 76.2,
           "variant": true
+        },
+        {
+          "provider": "kimi",
+          "id": "moonshotai/kimi-k3.1-pro",
+          "canonical_slug": "moonshotai/kimi-k3.1-pro-20261023",
+          "name": "MoonshotAI: Kimi K3.1 Pro",
+          "created": 1792778188,
+          "description": "Kimi K3.1 Pro is Moonshot AI's flagship open-weight multimodal reasoning model and a post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, 3D...",
+          "context_length": 1048576,
+          "max_output_tokens": 943718,
+          "input_modalities": [
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          "pricing": {
+            "input": 2,
+            "cached_input": 0.2,
+            "cache_write": null,
+            "output": 10
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": 55.1,
+          "variant": false
         }
       ],
       "open_weight_models": [
@@ -8202,8 +8245,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.714Z",
-          "content_digest": "13ae7f89df561dd3d66833b74bd162bd08e4404b80f7f60d910e8780e28f6ae6",
+          "observed_at": "2026-10-24T17:01:28.016Z",
+          "content_digest": "e2d5d2e5d0a070e0c561ba44e0d7ea6f295d08ba4cd9d91070c9da75d05e5fb7",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -8213,12 +8256,12 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.765Z",
-          "content_digest": "58ec383db512058988d1124a5d2198a41b0012ea4ea158ac943e776e03db60eb",
-          "facts_digest": "f64ec3c36609c6c9b92ff99f7753cad26a86c534d375022192c57852f6b31fb9",
+          "observed_at": "2026-10-24T17:01:28.038Z",
+          "content_digest": "3f6aaee6d8ec9513ba791c3d0cc7c833ea9497e9ce9d3190b7c5875ccd31b61d",
+          "facts_digest": "b688f28a0436d5051f9cd2544f9612c53ab3f91cc26a6b531d782c13d3ca7ad2",
           "facts": [
             "## deprecated models",
-            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
+            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
             "> review currently available kimi multimodal and coding models, plus migration guidance for discontinued models.",
             "| `kimi-k2-0711-preview` | deprecated |",
             "| `kimi-k2-0905-preview` | deprecated |",
@@ -8240,26 +8283,26 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.781Z",
-          "content_digest": "dd7fefc950f196301852e645a345acefd7f923fed54df9e72134bd3ca164a2fe",
-          "facts_digest": "b3912f3f1eda5ab9383e04e66c642b80e9c981040896b8ad4ae70e3b0821deed",
+          "observed_at": "2026-10-24T17:01:28.043Z",
+          "content_digest": "bf5ed7f985b31c7750afd7c924a4eb1d8c0927238bb78226a4469f4bcde0d610",
+          "facts_digest": "35ea819dccea95aac042e64470208c3aaff93ea5494c895e2c2678f2fe051358",
           "facts": [
-            "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](/docs/guide/kimi-k3-quickstart.md).",
-            "* the `kimi-k2` series (including `kimi-k2-0905-preview`, `kimi-k2-0711-preview`, `kimi-k2-turbo-preview`, `kimi-k2-thinking`, and `kimi-k2-thinking-turbo`) was retired and is no longer maintained or supported. please migrate to [kimi k3](/docs/guide/kimi-k3-quickstart.md).",
+            "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md).",
+            "* the `kimi-k2` series (including `kimi-k2-0905-preview`, `kimi-k2-0711-preview`, `kimi-k2-turbo-preview`, `kimi-k2-thinking`, and `kimi-k2-thinking-turbo`) was retired and is no longer maintained or supported. please migrate to [kimi k3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md).",
             "* updated kimi cli and k2 quickstart documentation, ended the kimi turbo half-price promotion, refreshed k2vv and sales information, and retired manual context cache list views.",
-            "kimi k3 — our flagship model for long-horizon coding and end-to-end knowledge work — is now available through the open platform api, with a 1m token context and leading overall intelligence. see the [kimi k3 quickstart](/docs/guide/kimi-k3-quickstart.md). at the same time, `kimi-k2.5` and the `moonshot-v1` series are no longer offered to newly registered users; the global edition added email verification-code sign-up/login and email & google account binding management. the account overview now shows current-day spending, and the platform terms of service have been updated."
+            "kimi k3 — our flagship model for long-horizon coding and end-to-end knowledge work — is now available through the open platform api, with a 1m token context and leading overall intelligence. see the [kimi k3 quickstart](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md). at the same time, `kimi-k2.5` and the `moonshot-v1` series are no longer offered to newly registered users; the global edition added email verification-code sign-up/login and email & google account binding management. the account overview now shows current-day spending, and the platform terms of service have been updated."
           ]
         },
         {
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.780Z",
-          "content_digest": "58ec383db512058988d1124a5d2198a41b0012ea4ea158ac943e776e03db60eb",
-          "facts_digest": "f64ec3c36609c6c9b92ff99f7753cad26a86c534d375022192c57852f6b31fb9",
+          "observed_at": "2026-10-24T17:01:28.163Z",
+          "content_digest": "3f6aaee6d8ec9513ba791c3d0cc7c833ea9497e9ce9d3190b7c5875ccd31b61d",
+          "facts_digest": "b688f28a0436d5051f9cd2544f9612c53ab3f91cc26a6b531d782c13d3ca7ad2",
           "facts": [
             "## deprecated models",
-            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
+            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
             "> review currently available kimi multimodal and coding models, plus migration guidance for discontinued models.",
             "| `kimi-k2-0711-preview` | deprecated |",
             "| `kimi-k2-0905-preview` | deprecated |",
@@ -8281,22 +8324,22 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.805Z",
-          "content_digest": "dd7fefc950f196301852e645a345acefd7f923fed54df9e72134bd3ca164a2fe",
-          "facts_digest": "b3912f3f1eda5ab9383e04e66c642b80e9c981040896b8ad4ae70e3b0821deed",
+          "observed_at": "2026-10-24T17:01:28.037Z",
+          "content_digest": "bf5ed7f985b31c7750afd7c924a4eb1d8c0927238bb78226a4469f4bcde0d610",
+          "facts_digest": "35ea819dccea95aac042e64470208c3aaff93ea5494c895e2c2678f2fe051358",
           "facts": [
-            "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](/docs/guide/kimi-k3-quickstart.md).",
-            "* the `kimi-k2` series (including `kimi-k2-0905-preview`, `kimi-k2-0711-preview`, `kimi-k2-turbo-preview`, `kimi-k2-thinking`, and `kimi-k2-thinking-turbo`) was retired and is no longer maintained or supported. please migrate to [kimi k3](/docs/guide/kimi-k3-quickstart.md).",
+            "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md).",
+            "* the `kimi-k2` series (including `kimi-k2-0905-preview`, `kimi-k2-0711-preview`, `kimi-k2-turbo-preview`, `kimi-k2-thinking`, and `kimi-k2-thinking-turbo`) was retired and is no longer maintained or supported. please migrate to [kimi k3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md).",
             "* updated kimi cli and k2 quickstart documentation, ended the kimi turbo half-price promotion, refreshed k2vv and sales information, and retired manual context cache list views.",
-            "kimi k3 — our flagship model for long-horizon coding and end-to-end knowledge work — is now available through the open platform api, with a 1m token context and leading overall intelligence. see the [kimi k3 quickstart](/docs/guide/kimi-k3-quickstart.md). at the same time, `kimi-k2.5` and the `moonshot-v1` series are no longer offered to newly registered users; the global edition added email verification-code sign-up/login and email & google account binding management. the account overview now shows current-day spending, and the platform terms of service have been updated."
+            "kimi k3 — our flagship model for long-horizon coding and end-to-end knowledge work — is now available through the open platform api, with a 1m token context and leading overall intelligence. see the [kimi k3 quickstart](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md). at the same time, `kimi-k2.5` and the `moonshot-v1` series are no longer offered to newly registered users; the global edition added email verification-code sign-up/login and email & google account binding management. the account overview now shows current-day spending, and the platform terms of service have been updated."
           ]
         },
         {
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.767Z",
-          "content_digest": "fda3ee0dcf3822c0483ee6d9154de5767adf3d8daadb229a3b48288d6ab03651",
+          "observed_at": "2026-10-24T17:01:28.037Z",
+          "content_digest": "a38348dec7828ba21886a5dc5653b9546e20156499e0f744a13fb3aba9fb6742",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
             "batch api inference costs are **60%** of the standard model price, ideal for large-scale tasks with low real-time requirements."
@@ -8306,19 +8349,20 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.822Z",
-          "content_digest": "fb6d77302529d91ea33a20916bbaba8ba424f9444988d6318771cfea16cecad8",
-          "facts_digest": "63ebb17ded2d43132b9c235ded66579ec9607f0d9efcfe49f9157a3a0c9bb1e2",
+          "observed_at": "2026-10-24T17:01:28.033Z",
+          "content_digest": "cde89879abb62bbafc50745508dfe9446d2220dfbe8d7cce8a9437d12856782d",
+          "facts_digest": "92b3a11d47c094ebaf141de1030337453872bbdbd2d07a4c31e57c87d2b07811",
           "facts": [
-            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](/docs/guide/kimi-k3-1-pro-quickstart.md) in advance."
+            "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
+            "token: a token represents a common sequence of characters. the number of tokens used for each english character may vary. for example, a single character like \"antidisestablishmentarianism\" might be broken down into several tokens, while a short and common phrase like \"word\" might use just one token. generally speaking, for a typical english text, 1 token is roughly equivalent to 3-4 english characters. the exact number of tokens generated by each call can be obtained through the [token calculation api](https://platform.kimi.ai/docs/api/estimate.md)."
           ]
         },
         {
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.794Z",
-          "content_digest": "3f5303f25d7243fba64b19d18afd762c300648e8fd72ac0d6aa29f54c3c4b077",
+          "observed_at": "2026-10-24T17:01:28.032Z",
+          "content_digest": "e513666b71edffbf59edea2a84315756b7ce96866f9ff6ef46361126b9802ca4",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
             "* to prevent abuse, you need to recharge at least \\$1 to start using, and when your cumulative recharge reaches \\$5, you will receive a \\$5 voucher."
@@ -8328,10 +8372,11 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.770Z",
-          "content_digest": "a488d62f658b8005a0f493d7d2e98a366987a0553b9fa31aae92ea68cfb3a8a3",
-          "facts_digest": "e853e7f1e06698b7ff331b2955f145f6247ff4c3f739f6c7bd53949d14e3afa5",
+          "observed_at": "2026-10-24T17:01:28.038Z",
+          "content_digest": "095349a26aa68f7988ae10b9c9ea5ff5d213ac78e335f51cf827a45cedeceef6",
+          "facts_digest": "33b96b9679e8ec87130fa3513d04ae9d00867c422994a5eb22f7546f39540d21",
           "facts": [
+            "> `$web_search` is a built-in tool triggered via `tools` in `/v1/chat/completions`. it is independent of the rest endpoints above and billed separately. this approach is expected to be deprecated on october 20, 2026 — for new integrations, please use the `/v1/tools/search` endpoint or the `web-search` official tool; see the [web search guide](https://platform.kimi.ai/docs/guide/use-web-search.md).",
             "additionally, when using `$web_search`, we still charge for the tokens generated by the `/chat/completions` interface based on the model size. **it is important to note that when the `$web_search` tool is triggered, the search results are also counted in the tokens. the number of tokens occupied by the search results can be obtained from the returned `tool_call.function.arguments`.** for example, if the content of the `$web_search` occupies 4k tokens, these 4k tokens will be included in the total tokens when the caller makes the next call to the `/chat/completions` interface. the total billing tokens will be:"
           ]
         }
@@ -10497,8 +10542,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.264Z",
-          "content_digest": "ffe689aa72a025b19f2cef239ee4ae68f63a78de1e31214bcb7c39a40774d774",
+          "observed_at": "2026-10-24T17:01:27.764Z",
+          "content_digest": "3d49d60ea727260d76c87c6ba0d56e65a7f3c42e4ba8a9ab6978ca5d5510a0aa",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10509,8 +10554,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.368Z",
-          "content_digest": "58e11726222b8cc302d90d0878f422e3c8bba7574399d80ba1ffd8c01f8fa768",
+          "observed_at": "2026-10-24T17:01:27.757Z",
+          "content_digest": "71e51986278344734385f6fb3577c5e666e26ded2ad900f2d3c94d4a37f1bb73",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -13623,7 +13668,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.563Z",
+          "observed_at": "2026-10-24T17:01:27.752Z",
           "content_digest": "6340d76f4778786b615651e784de408a0327d7186fffa7f15a185ee35c9387f2",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13632,7 +13677,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.579Z",
+          "observed_at": "2026-10-24T17:01:27.799Z",
           "content_digest": "88376fc3d7a6ab31969f48b2b40425b5ad021370c4287e14a1b40e171ad27523",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -13645,7 +13690,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:12.777Z",
+          "observed_at": "2026-10-24T17:01:27.809Z",
           "content_digest": "3a9c4858d25271e7ebe53e5626d1e6f532109f94375526c50df84ffed32c2051",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -14590,7 +14635,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:13.181Z",
+          "observed_at": "2026-10-24T17:01:28.495Z",
           "content_digest": "a0d98accee8e3218edb6a142e1c5e7d92f0a1245014f8f6062c11ec1f76c4ed6",
           "facts_digest": "5ed3a04651d99a5c64a46a166b243ded5400a6e213a05bb7664aef7c5b99110d",
           "facts": [
@@ -14602,7 +14647,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:13.185Z",
+          "observed_at": "2026-10-24T17:01:28.488Z",
           "content_digest": "8109fa7192085b0d2bac98358316e5cbda749c8bcf174f280bf09387429c667f",
           "facts_digest": "2ae2eacaa8e77c27443d1defd5cab615c225f6d9fe87f8bba0727df56959c580",
           "facts": [
@@ -14624,7 +14669,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-10-23T17:58:13.262Z",
+          "observed_at": "2026-10-24T17:01:28.492Z",
           "content_digest": "f6f7acb395a30b265f83b3993ab4e4e8a8e97a00e6008898f5c7963d856aa111",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
