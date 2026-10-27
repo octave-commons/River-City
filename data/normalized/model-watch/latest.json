@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-10-26T19:35:37.295Z",
+  "observed_at": "2026-10-27T19:00:12.925Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -3389,6 +3389,48 @@
           ],
           "supported_parameters": [
             "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 1,
+            "cached_input": 0.05,
+            "cache_write": 1.25,
+            "output": 5
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": 48.1,
+          "variant": false
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.1-terra-pro",
+          "canonical_slug": "openai/gpt-6.1-terra-pro-20261026",
+          "name": "OpenAI: GPT-6.1 Terra Pro",
+          "created": 1793038556,
+          "description": "GPT-6.1 Terra Pro is the same underlying model as [GPT-6.1 Terra](https://openrouter.ai/openai/gpt-6.1-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_completion_tokens",
             "max_tokens",
             "reasoning",
             "reasoning_effort",
@@ -3409,6 +3451,46 @@
           "expiration_date": null,
           "benchmark_score": null,
           "variant": false
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.1-terra-pro:batch",
+          "canonical_slug": "openai/gpt-6.1-terra-pro-20261026",
+          "name": "OpenAI: GPT-6.1 Terra Pro (batch)",
+          "created": 1793038556,
+          "description": "GPT-6.1 Terra Pro is the same underlying model as [GPT-6.1 Terra](https://openrouter.ai/openai/gpt-6.1-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 0.5,
+            "cached_input": 0.025,
+            "cache_write": 0.625,
+            "output": 2.5
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": true
         },
         {
           "provider": "openai",
@@ -3447,7 +3529,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": null,
+          "benchmark_score": 48.1,
           "variant": true
         },
         {
@@ -5914,8 +5996,8 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.210Z",
-          "content_digest": "5953011df7cdf3f660c6bafeb4b7b77695760be156599e799264dfb133c88766",
+          "observed_at": "2026-10-27T19:00:11.712Z",
+          "content_digest": "feda7eb36006d2b3c766ede504c9c986db9552958528810a5600eac80c362327",
           "facts_digest": "3a190256927b00081cc38c61a256516b818d1e09b1ea31827ec1a73f9f0757af",
           "facts": [
             "$0.10 / gb per day (1 gb free)",
@@ -5929,7 +6011,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.226Z",
+          "observed_at": "2026-10-27T19:00:11.724Z",
           "content_digest": "b92363ae9d22b993d09bdc28a9d64d4b11f9bc1232dee4a07a3e4c6f76c0fc57",
           "facts_digest": "fe42b0fa2990ebaea454c8c38b45dab0233aa4838c0d06e2b2e882cf02195393",
           "facts": [
@@ -5942,9 +6024,9 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.172Z",
-          "content_digest": "b7b8b8edd63cc710e01bb82b70fbb45da5b7a748e27ead71b01e636d1e7f3417",
-          "facts_digest": "5769ffc2a9999164699e428c8d9eb44c505a6e866fd2f7db4873e68adbe7e740",
+          "observed_at": "2026-10-27T19:00:11.667Z",
+          "content_digest": "8d301cfd2cd55cfddc2548b8d7c5164073ac44240f23302f7e4911ea84d4c6e9",
+          "facts_digest": "85db676a899781128abc96a9f61b8bc86a3a9344bba031701f12cf577b9fbe64",
           "facts": [
             "2026-06-02: gpt image model deprecations",
             "2026-06-11: gpt-5 and o3 model deprecations",
@@ -5983,6 +6065,7 @@
             "the gpt-5.4-cyber model is deprecated and will be removed from the api on october 1, 2026. migrate to the most capable cyber model available to you before the shutdown date.",
             "these notice periods give customers time to evaluate recommended replacement models, test application behavior, and complete migrations before a model is no longer available. in some cases, developers may be able to provision dedicated capacity for continued access after a model’s shutdown date. to explore this option, contact our sales team .",
             "to improve reliability and make it easier for developers to choose the right models, we deprecated a set of older openai models with declining usage. access to these models was shut down on march 26, 2026.",
+            "to improve reliability and make it easier for developers to choose the right models, we deprecated a set of older openai models with declining usage. access to these models was shut down on september 28, 2026.",
             "unless safety or compliance concerns require a faster timeline, we provide the following minimum notice periods before model retirement:",
             "we provide advance notice before retiring models so customers have time to plan and migrate. when we announce a model deprecation, we notify customers who are actively using the model by email and document the deprecation on this page.",
             "we use the term “deprecation” to refer to the process of retiring a model or endpoint. when we announce that a model or endpoint is being deprecated, it immediately becomes deprecated. all deprecated models and endpoints will also have a shut down date. at the time of the shut down, the model or endpoint will no longer be accessible.",
@@ -7230,19 +7313,19 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.643Z",
-          "content_digest": "1c1d74cb8a3c872d7f83f09e13eaa4a98ed4125e576083c9920671ba24c65b19",
-          "facts_digest": "6232172f5b1e7bc744682aa6ccc9818c935ff05614d6aeaa96b872f4ba817b4c",
+          "observed_at": "2026-10-27T19:00:12.206Z",
+          "content_digest": "f6d2c7f5a67819ed3f6a3430bcd956500c9470ae8233c7681875ae71e611837b",
+          "facts_digest": "6de1bf86db8eb29a29e2d71781e66c05a17388b89c618ec2b61294a6de7ba08c",
           "facts": [
             "$0.01 usd per ccu (fixed; discounts apply at token-to-ccu conversion, not to the ccu price)",
             "0.1x base input price (0.025x on claude fable 5.1 and claude mythos 5.1; 0.05x on claude opus 5.5 and claude sonnet 5.5)",
-            "all tokens consumed by a claude managed agents session are billed at the rates shown in model pricing . prompt caching multipliers apply identically. web search triggered inside a session incurs the standard $10 usd per 1,000 searches. on claude platform on aws, session token and runtime charges convert to claude consumption units at the standard rate (see claude platform on aws pricing ). fast mode premium pricing applies when an agent&#x27;s model.speed is set to \"fast\" .",
+            "all tokens consumed by a claude managed agents session are billed at the rates shown in model pricing . prompt caching multipliers apply identically. web search triggered inside a session incurs the standard $10 usd per 1,000 searches. on claude platform on aws, session token and runtime charges convert to claude consumption units at the standard rate (see claude platform on aws pricing ). fast mode premium pricing applies when an agent’s model.speed is set to \"fast\" .",
             "cache valid for 1 hour",
             "cache valid for 5 minutes",
             "cache write tokens are charged when content is first stored. cache read tokens are charged when a subsequent request retrieves the cached content. a cache hit costs 10% of the standard input price, which means caching pays off after one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write). on claude fable 5.1 and claude mythos 5.1, a cache hit costs 2.5% of the standard input price ($0.25 usd per million tokens). on claude opus 5.5 and claude sonnet 5.5, a cache hit costs 5% of the standard input price ($0.20 usd per million tokens on claude opus 5.5, $0.10 usd on claude sonnet 5.5).",
             "claude 4.6 and later models (except claude haiku 5.5) and claude mythos preview include the full 1m token context window at standard pricing. (a 900k-token request is billed at the same per-token rate as a 9k-token request.) prompt caching and batch processing discounts apply at standard rates across the full context window.",
             "claude 4.7 and later models and claude mythos preview use a newer tokenizer that contributes to their improved performance on a wide range of tasks. this tokenizer produces approximately 30% more tokens for the same text. the exact increase depends on the content and workload shape. claude sonnet 4.6 and earlier models use the previous tokenizer.",
-            "claude haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. a request&#x27;s prompt length counts all of its input tokens, including cache reads and cache writes. each request is priced on its own: a request over the threshold pays the higher prices even when part of its prompt is a cache hit, and earlier requests keep the prices they were billed at. the model pricing and batch processing pricing sections list both sets of prices.",
+            "claude haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. a request’s prompt length counts all of its input tokens, including cache reads and cache writes. each request is priced on its own: a request over the threshold pays the higher prices even when part of its prompt is a cache hit, and earlier requests keep the prices they were billed at. the model pricing and batch processing pricing sections list both sets of prices.",
             "claude in microsoft foundry bills through the azure marketplace using claude consumption units (ccus). anthropic rates your token usage in usd at standard per-model, per-feature rates, applies any negotiated discount, converts the result to ccus at $0.01 usd per ccu, and reports the ccu quantity to the azure marketplace hourly. your azure bill shows a single ccu line item.",
             "claude platform on aws bills through aws marketplace using claude consumption units (ccus). anthropic rates your token usage in usd at standard per-model, per-feature rates, applies any negotiated discount, converts the result to ccus at $0.01 usd per ccu, and reports the ccu quantity to aws marketplace hourly. your aws bill shows a single ccu line item.",
             "deployments hosted on azure can use the us data zone standard deployment type, which keeps inference within the united states. this is equivalent to inference_geo: \"us\" on the claude api and applies the same 1.1x pricing multiplier. see data residency for details.",
@@ -7251,9 +7334,9 @@
             "for claude 4.6 and later models, using inference_geo: \"us\" applies a 1.1x pricing multiplier. inference_geo: \"global\" (default) uses standard pricing. see data residency for details.",
             "model ids and versioning model deprecations model cards pricing api credits for subscribers system prompts",
             "scope: this pricing structure applies to claude sonnet 4.5 (deprecated), haiku 4.5, opus 4.5, and all future models. earlier models (claude opus 4.1 and prior releases) retain their existing pricing.",
-            "the data residency multiplier also applies: when an agent&#x27;s model.inference_geo is pinned to \"us\" , tokens consumed by sessions running that agent are billed at 1.1x the standard rates, the same multiplier that applies to us-only inference on the messages api.",
+            "the data residency multiplier also applies: when an agent’s model.inference_geo is pinned to \"us\" , tokens consumed by sessions running that agent are billed at 1.1x the standard rates, the same multiplier that applies to us-only inference on the messages api.",
             "this applies to the claude api (first-party), claude platform on aws, and claude models on google cloud (anthropic managed). on claude in microsoft foundry, the same 1.1x multiplier applies to deployments that use the us data zone standard deployment type (see inference geography ). partner-operated platforms, bedrock and claude models on google cloud (google managed), have independent regional pricing. see bedrock pricing and google cloud pricing for details. earlier models do not support the inference_geo parameter and always use standard pricing; requests that include the parameter on these models return a 400 error.",
-            "this page provides detailed pricing information for anthropic&#x27;s models and features. all prices are in usd.",
+            "this page provides detailed pricing information for anthropic’s models and features. all prices are in usd.",
             "token usage rated in usd at standard per-model, per-feature rates (same as claude api pricing ), then converted to ccus at $0.01 usd per ccu",
             "toolset definition overhead: declaring browser_toolset_20260801 with its default members adds about 6,600 input tokens to a request (about 6,670 on claude sonnet 5 and about 6,610 on the other supported models), which covers the member tool definitions and the tool use system prompt. enabling all four optional members adds about 880 tokens, and disabling members with configs reduces the count. the exact count for a request is reported in the response usage , and you can estimate it in advance with the token counting endpoint .",
             "web search is available on the claude api for $10 usd per 1,000 searches , plus standard token costs for search-generated content. web search results retrieved throughout a conversation are counted as input tokens, in search iterations run during a single turn and in subsequent conversation turns."
@@ -7263,14 +7346,20 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.919Z",
-          "content_digest": "3b95fc637cad1ebe759996f6ea9fe1c621f7c3f9776624d81986d6d4260f87dc",
-          "facts_digest": "7ed68675d60a56ab607a0b99c8da9b591f15dcdc8577fb82710f454c41145837",
+          "observed_at": "2026-10-27T19:00:12.502Z",
+          "content_digest": "c3f567beef6ff8d1f394123cc88c487ec68f5b9fc42a6335067f5933208130ef",
+          "facts_digest": "daf076ddedd84d35d0bbb1765fed1383dc3b348aeaa4c6f18da406a6cfd089aa",
           "facts": [
+            "active : the model is available for use, open to new adopters, and not scheduled for retirement.",
+            "deprecated : the model remains callable for organizations with existing access, but is headed for retirement and closed to new adopters.",
+            "filter the list to models in any of the given lifecycle stages ( active , deprecated , or retired ). up to 3 values. when omitted, the list contains the active and deprecated models; retired models appear only when retired is requested explicitly.",
             "lifecycle status and retirement commitments for every model.",
             "model deprecations",
             "model ids and versioning model deprecations model cards pricing api credits for subscribers system prompts",
-            "output quality: when migrating from a previous model generation, you might notice larger improvements in overall performance. if you&#x27;re on claude opus 5 or earlier, see the claude opus 5.5 migration guide .",
+            "output quality: when migrating from a previous model generation, you might notice larger improvements in overall performance. if you’re on claude opus 5 or earlier, see the claude opus 5.5 migration guide .",
+            "retired : the model is no longer available for use; inference requests naming it fail. it remains in the catalogue as the historical record of its retirement.",
+            "rfc 3339 datetime string representing the model&#x27;s currently scheduled retirement date. the schedule can be revised until retirement occurs; null while the model is active or while no retirement is scheduled. a past date on a deprecated model means retirement is overdue, not that it has occurred: lifecycle is the retirement signal.",
+            "rfc 3339 datetime string representing the time of the model&#x27;s most recent deprecation. populated for deprecated and retired models; null while the model is active .",
             " choosing a model  pricing  migration guide  copy page"
           ]
         },
@@ -7278,9 +7367,9 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.621Z",
-          "content_digest": "8e287e5543a67eb94f057ae91a924f6e7c24f2bb55400f003c5463622d10704f",
-          "facts_digest": "4772b78bc12766f1d478e25bd43b5c3a9bdc27241acda2d770a918d0a12e77e8",
+          "observed_at": "2026-10-27T19:00:12.367Z",
+          "content_digest": "7eea9784f5f0528d5fe32475a63a509f768ab84b92c877c394fa584f2137753a",
+          "facts_digest": "8b89b5e1138250de2343dc44eacebdd840e4f91d44ae570e9496d6dfeca34b56",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer.",
             "claude opus 4.7 supports high-resolution image input , raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot understanding, and document analysis. high-resolution support is automatic and requires no beta header; images may use up to approximately 3x more image tokens than on prior models.",
@@ -7288,7 +7377,7 @@
             "mcp tunnels (research preview): the management api moved from /v1/organizations/tunnels on the admin api to /v1/tunnels on the claude api. the new surface uses the anthropic-beta: mcp-tunnels-2026-06-22 header and the workspace:manage_tunnels wif scope. the previous surface remains available during a migration window. see the tunnels api reference .",
             "message batches api : process large batches of messages asynchronously at 50% of the standard api cost.",
             "on claude opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on claude opus 4.7.",
-            "on claude opus 5.5, thinking can&#x27;t be disabled: thinking: {\"type\": \"disabled\"} and thinking: {\"type\": \"enabled\", ...} return a 400 error. omit the thinking field and control thinking depth with the effort parameter . tool_choice types any and tool also return a 400 error, as on claude fable 5.1; use auto with strict tool use . on the claude api and google cloud, computer use on this model requires the computer_toolset_20260801 toolset and the earlier computer_20251124 tool returns a 400 error; on amazon bedrock, computer_20251124 keeps working. see the claude opus 5.5 migration guide .",
+            "on claude opus 5.5, thinking can’t be disabled: thinking: {\"type\": \"disabled\"} and thinking: {\"type\": \"enabled\", ...} return a 400 error. omit the thinking field and control thinking depth with the effort parameter . tool_choice types any and tool also return a 400 error, as on claude fable 5.1; use auto with strict tool use . on the claude api and google cloud, computer use on this model requires the computer_toolset_20260801 toolset and the earlier computer_20251124 tool returns a 400 error; on amazon bedrock, computer_20251124 keeps working. see the claude opus 5.5 migration guide .",
             "prompt cache reads on claude fable 5.1 and claude mythos 5.1 cost $0.25 usd per million tokens: 0.025x the base input price, compared with 0.1x on other models. cache writes are unchanged. see prompt caching pricing .",
             "prompt caching is now available as a beta feature in the claude api. cache and re-use prompts to reduce latency by up to 80% and costs by up to 90%.",
             "setting the sampling parameters temperature , top_p , or top_k to a non-default value returns a 400 error on claude opus 4.8, same as on claude opus 4.7. see the migration guide for details.",
@@ -7308,31 +7397,32 @@
             "we announced the deprecation of the claude sonnet 3.7 model. read more in model deprecations .",
             "we announced the deprecation of the claude sonnet 4 model ( claude-sonnet-4-20250514 ) and the claude opus 4 model ( claude-opus-4-20250514 ), with retirement on the claude api scheduled for june 15, 2026. we recommend migrating to claude sonnet 4.6 and claude opus 4.8 respectively. read more in model deprecations .",
             "we announced the deprecation of the claude sonnet 4.5 model ( claude-sonnet-4-5-20250929 ), with retirement on the claude api scheduled for november 30, 2026. we recommend migrating to claude sonnet 5.5 . read more in model deprecations .",
-            "we&#x27;re retiring the 1m token context window beta for claude sonnet 4.5 and claude sonnet 4 on april 30, 2026 . after that date, the context-1m-2025-08-07 beta header will have no effect on these models, and requests that exceed the standard 200k-token context window will return an error. to continue using 1m context windows, migrate to claude sonnet 4.6 or claude opus 4.6 , which support the full 1m token context window at standard pricing with no beta header required.",
-            "we&#x27;ve deprecated fast mode for claude opus 4.6, with removal approximately 30 days after launch. migrate to fast mode for claude opus 4.8 or claude opus 4.7. read more in fast mode model availability .",
-            "we&#x27;ve deprecated fast mode for claude opus 4.7, with removal on july 24, 2026. after removal, requests to claude-opus-4-7 with speed: \"fast\" will return an error. migrate to fast mode for claude opus 4.8. read more in fast mode model availability .",
-            "we&#x27;ve deprecated the build and scale plans in favor of a standard feature suite (formerly referred to as build), along with additional features that are available through sales. read more in our api pricing information .",
-            "we&#x27;ve increased rate limits on the 1m token context window for claude sonnet 4 on the claude api.",
-            "we&#x27;ve introduced data residency controls , allowing you to specify where model inference runs with the inference_geo parameter. us-only inference is available at 1.1x pricing for models released after february 1, 2026.",
-            "we&#x27;ve launched beta support for a 1m token context window in claude sonnet 4 on the claude api and amazon bedrock.",
-            "we&#x27;ve launched claude fable 5 ( claude-fable-5 ), our most capable model open to all customers, alongside claude mythos 5 ( claude-mythos-5 ) for project glasswing participants. both models support a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking . see claude fable 5 for specifications, pricing, and availability.",
-            "we&#x27;ve launched claude haiku 5.5 ( claude-haiku-5-5 ), our most capable model tuned for high-volume and latency-sensitive work. it has a 1m token context window , 128k max output tokens, and adaptive thinking with the effort parameter . it&#x27;s available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what&#x27;s new in claude haiku 5.5 .",
-            "we&#x27;ve launched claude opus 4.6 , our most intelligent model for complex agentic tasks and long-horizon work. opus 4.6 recommends adaptive thinking ( thinking: {type: \"adaptive\"} ); manual thinking ( type: \"enabled\" with budget_tokens ) is deprecated. opus 4.6 does not support prefilling assistant messages. learn more in what&#x27;s new in claude 4.6 .",
-            "we&#x27;ve launched claude opus 4.7 , our most capable model for complex reasoning and agentic coding, at the same $5 / $25 usd per mtok pricing as opus 4.6. see what&#x27;s new in claude opus 4.7 for capability improvements, new features, and the updated tokenizer. opus 4.7 includes api breaking changes versus opus 4.6; see the migration guide before upgrading.",
-            "we&#x27;ve launched claude opus 4.8 ( claude-opus-4-8 ), our most capable model. claude opus 4.8 supports a 1m token context window by default on the claude api, amazon bedrock, google cloud, and microsoft foundry, 128k max output tokens, and the same set of tools and platform features as claude opus 4.7. see the migration guide for baseline settings, features, and migration guidance.",
-            "we&#x27;ve launched claude opus 5 ( claude-opus-5 ), a step-change improvement over claude opus 4.8. claude opus 5 supports a 1m token context window (both the default and the maximum), 128k max output tokens, and thinking on by default, at $5 / $25 usd per mtok, the same pricing as claude opus 4.8. it&#x27;s available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what&#x27;s new in claude opus 5 for new features, behavior changes, and migration guidance, and the models overview for complete specs.",
-            "we&#x27;ve launched claude opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. it has a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking , at $4 / $20 usd per mtok (claude opus 5 is $5 / $25 usd). claude opus 5.5 is available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what&#x27;s new in claude opus 5.5 for capabilities, api changes, and migration guidance.",
-            "we&#x27;ve launched claude sonnet 4.6 , our latest balanced model combining speed and intelligence for everyday tasks. sonnet 4.6 delivers improved agentic search performance while consuming fewer tokens. sonnet 4.6 supports extended thinking and a 1m token context window (beta). see models & pricing for details.",
-            "we&#x27;ve lowered the price of prompt cache reads on claude sonnet 5.5 from $0.20 usd to $0.10 usd per million tokens: 0.05x the base input price instead of 0.1x. cache writes and all other prices are unchanged. see prompt caching pricing .",
-            "we&#x27;ve retired the 1m token context window beta ( context-1m-2025-08-07 ) for claude sonnet 4.5 and claude sonnet 4. the beta header now has no effect on these models, and requests exceeding the standard 200k-token context window return an error. to use the 1m context window, migrate to claude sonnet 4.6 or claude opus 4.6 , where it&#x27;s included at standard pricing with no beta header required.",
-            "we&#x27;ve retired the claude 1 and instant models. read more in model deprecations .",
-            "we&#x27;ve retired the claude 2.0, claude 2.1, and claude sonnet 3 models. all requests to these models will now return an error. read more in model deprecations .",
-            "we&#x27;ve retired the claude haiku 3 model ( claude-3-haiku-20240307 ). all requests to this model will now return an error. we recommend upgrading to claude haiku 4.5 .",
-            "we&#x27;ve retired the claude opus 3 model ( claude-3-opus-20240229 ). all requests to this model will now return an error. we recommend upgrading to claude opus 4.5 , which offers significantly improved intelligence at a third of the cost. researchers can request ongoing access to claude opus 3 on the api through the external researcher access program .",
-            "we&#x27;ve retired the claude opus 4.1 model ( claude-opus-4-1-20250805 ). all requests to this model on the claude api will now return an error. we recommend upgrading to claude opus 5 . researchers can request ongoing access through the external researcher access program .",
-            "we&#x27;ve retired the claude sonnet 3.5 models. all requests to these models will now return an error.",
-            "we&#x27;ve retired the claude sonnet 3.7 model ( claude-3-7-sonnet-20250219 ) and the claude haiku 3.5 model ( claude-3-5-haiku-20241022 ). all requests to claude sonnet 3.7 will now return an error. requests to claude haiku 3.5 on the claude api will now return an error; it remains available on amazon bedrock and google cloud. we recommend upgrading to claude sonnet 4.6 and claude haiku 4.5 respectively. researchers can request ongoing access through the external researcher access program .",
-            "we&#x27;ve retired the claude sonnet 4 model ( claude-sonnet-4-20250514 ) and the claude opus 4 model ( claude-opus-4-20250514 ). all requests to these models on the claude api will now return an error. we recommend upgrading to claude sonnet 4.6 and claude opus 4.8 respectively. researchers can request ongoing access through the external researcher access program .",
+            "we’re retiring the 1m token context window beta for claude sonnet 4.5 and claude sonnet 4 on april 30, 2026 . after that date, the context-1m-2025-08-07 beta header will have no effect on these models, and requests that exceed the standard 200k-token context window will return an error. to continue using 1m context windows, migrate to claude sonnet 4.6 or claude opus 4.6 , which support the full 1m token context window at standard pricing with no beta header required.",
+            "we’ve deprecated fast mode for claude opus 4.6, with removal approximately 30 days after launch. migrate to fast mode for claude opus 4.8 or claude opus 4.7. read more in fast mode model availability .",
+            "we’ve deprecated fast mode for claude opus 4.7, with removal on july 24, 2026. after removal, requests to claude-opus-4-7 with speed: \"fast\" will return an error. migrate to fast mode for claude opus 4.8. read more in fast mode model availability .",
+            "we’ve deprecated the build and scale plans in favor of a standard feature suite (formerly referred to as build), along with additional features that are available through sales. read more in our api pricing information .",
+            "we’ve increased rate limits on the 1m token context window for claude sonnet 4 on the claude api.",
+            "we’ve introduced data residency controls , allowing you to specify where model inference runs with the inference_geo parameter. us-only inference is available at 1.1x pricing for models released after february 1, 2026.",
+            "we’ve launched beta support for a 1m token context window in claude sonnet 4 on the claude api and amazon bedrock.",
+            "we’ve launched claude fable 5 ( claude-fable-5 ), our most capable model open to all customers, alongside claude mythos 5 ( claude-mythos-5 ) for project glasswing participants. both models support a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking . see claude fable 5 for specifications, pricing, and availability.",
+            "we’ve launched claude fable 5.1 ( claude-fable-5-1 ), the successor to claude fable 5 for long-running agentic coding, knowledge work, and research, alongside claude mythos 5.1 ( claude-mythos-5-1 ) for project glasswing participants. both models support a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking , at $10 / $50 usd per mtok, the same as claude fable 5, with cache reads cut to $0.25 usd per mtok. claude fable 5.1 is available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what’s new in claude fable 5.1 for capabilities, api changes, and migration guidance.",
+            "we’ve launched claude haiku 5.5 ( claude-haiku-5-5 ), our most capable model tuned for high-volume and latency-sensitive work. it has a 1m token context window , 128k max output tokens, and adaptive thinking with the effort parameter . it’s available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what’s new in claude haiku 5.5 .",
+            "we’ve launched claude opus 4.6 , our most intelligent model for complex agentic tasks and long-horizon work. opus 4.6 recommends adaptive thinking ( thinking: {type: \"adaptive\"} ); manual thinking ( type: \"enabled\" with budget_tokens ) is deprecated. opus 4.6 does not support prefilling assistant messages. learn more in what’s new in claude 4.6 .",
+            "we’ve launched claude opus 4.7 , our most capable model for complex reasoning and agentic coding, at the same $5 / $25 usd per mtok pricing as opus 4.6. see what’s new in claude opus 4.7 for capability improvements, new features, and the updated tokenizer. opus 4.7 includes api breaking changes versus opus 4.6; see the migration guide before upgrading.",
+            "we’ve launched claude opus 4.8 ( claude-opus-4-8 ), our most capable model. claude opus 4.8 supports a 1m token context window by default on the claude api, amazon bedrock, google cloud, and microsoft foundry, 128k max output tokens, and the same set of tools and platform features as claude opus 4.7. see the migration guide for baseline settings, features, and migration guidance.",
+            "we’ve launched claude opus 5 ( claude-opus-5 ), a step-change improvement over claude opus 4.8. claude opus 5 supports a 1m token context window (both the default and the maximum), 128k max output tokens, and thinking on by default, at $5 / $25 usd per mtok, the same pricing as claude opus 4.8. it’s available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what’s new in claude opus 5 for new features, behavior changes, and migration guidance, and the models overview for complete specs.",
+            "we’ve launched claude opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. it has a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking , at $4 / $20 usd per mtok (claude opus 5 is $5 / $25 usd). claude opus 5.5 is available on the claude api, claude in amazon bedrock , claude platform on aws , claude on google cloud , and claude in microsoft foundry . see what’s new in claude opus 5.5 for capabilities, api changes, and migration guidance.",
+            "we’ve launched claude sonnet 4.6 , our latest balanced model combining speed and intelligence for everyday tasks. sonnet 4.6 delivers improved agentic search performance while consuming fewer tokens. sonnet 4.6 supports extended thinking and a 1m token context window (beta). see models & pricing for details.",
+            "we’ve lowered the price of prompt cache reads on claude sonnet 5.5 from $0.20 usd to $0.10 usd per million tokens: 0.05x the base input price instead of 0.1x. cache writes and all other prices are unchanged. see prompt caching pricing .",
+            "we’ve retired the 1m token context window beta ( context-1m-2025-08-07 ) for claude sonnet 4.5 and claude sonnet 4. the beta header now has no effect on these models, and requests exceeding the standard 200k-token context window return an error. to use the 1m context window, migrate to claude sonnet 4.6 or claude opus 4.6 , where it’s included at standard pricing with no beta header required.",
+            "we’ve retired the claude 1 and instant models. read more in model deprecations .",
+            "we’ve retired the claude 2.0, claude 2.1, and claude sonnet 3 models. all requests to these models will now return an error. read more in model deprecations .",
+            "we’ve retired the claude haiku 3 model ( claude-3-haiku-20240307 ). all requests to this model will now return an error. we recommend upgrading to claude haiku 4.5 .",
+            "we’ve retired the claude opus 3 model ( claude-3-opus-20240229 ). all requests to this model will now return an error. we recommend upgrading to claude opus 4.5 , which offers significantly improved intelligence at a third of the cost. researchers can request ongoing access to claude opus 3 on the api through the external researcher access program .",
+            "we’ve retired the claude opus 4.1 model ( claude-opus-4-1-20250805 ). all requests to this model on the claude api will now return an error. we recommend upgrading to claude opus 5 . researchers can request ongoing access through the external researcher access program .",
+            "we’ve retired the claude sonnet 3.5 models. all requests to these models will now return an error.",
+            "we’ve retired the claude sonnet 3.7 model ( claude-3-7-sonnet-20250219 ) and the claude haiku 3.5 model ( claude-3-5-haiku-20241022 ). all requests to claude sonnet 3.7 will now return an error. requests to claude haiku 3.5 on the claude api will now return an error; it remains available on amazon bedrock and google cloud. we recommend upgrading to claude sonnet 4.6 and claude haiku 4.5 respectively. researchers can request ongoing access through the external researcher access program .",
+            "we’ve retired the claude sonnet 4 model ( claude-sonnet-4-20250514 ) and the claude opus 4 model ( claude-opus-4-20250514 ). all requests to these models on the claude api will now return an error. we recommend upgrading to claude sonnet 4.6 and claude opus 4.8 respectively. researchers can request ongoing access through the external researcher access program .",
             "with claude managed agents, large outputs from agent_toolset and mcp tools exceeding 100k characters (about 25k tokens) are now automatically spilled to a file in the sandbox. the model receives a truncated preview with the file path and can read the full content from there."
           ]
         }
@@ -7602,10 +7692,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.6712,
+            "input": 0.56,
             "cached_input": 0.15,
             "cache_write": null,
-            "output": 3.35
+            "output": 3.1
           },
           "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
           "expiration_date": null,
@@ -7654,10 +7744,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.189,
-            "cached_input": 0.179,
+            "input": 0.15,
+            "cached_input": 0.14,
             "cache_write": null,
-            "output": 20
+            "output": 11.5
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
@@ -7732,6 +7822,7 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -7740,7 +7831,8 @@
             "stop",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "top_logprobs"
           ],
           "pricing": {
             "input": 2,
@@ -8201,8 +8293,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.768Z",
-          "content_digest": "e2d5d2e5d0a070e0c561ba44e0d7ea6f295d08ba4cd9d91070c9da75d05e5fb7",
+          "observed_at": "2026-10-27T19:00:12.306Z",
+          "content_digest": "50f2a34e9adf43fd4ae3e4dc8e74c818af4ee96f302020c0d798ba87a5296cb2",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -8212,7 +8304,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.782Z",
+          "observed_at": "2026-10-27T19:00:12.378Z",
           "content_digest": "3f6aaee6d8ec9513ba791c3d0cc7c833ea9497e9ce9d3190b7c5875ccd31b61d",
           "facts_digest": "b688f28a0436d5051f9cd2544f9612c53ab3f91cc26a6b531d782c13d3ca7ad2",
           "facts": [
@@ -8239,7 +8331,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.782Z",
+          "observed_at": "2026-10-27T19:00:12.387Z",
           "content_digest": "bf5ed7f985b31c7750afd7c924a4eb1d8c0927238bb78226a4469f4bcde0d610",
           "facts_digest": "35ea819dccea95aac042e64470208c3aaff93ea5494c895e2c2678f2fe051358",
           "facts": [
@@ -8253,7 +8345,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.792Z",
+          "observed_at": "2026-10-27T19:00:12.371Z",
           "content_digest": "3f6aaee6d8ec9513ba791c3d0cc7c833ea9497e9ce9d3190b7c5875ccd31b61d",
           "facts_digest": "b688f28a0436d5051f9cd2544f9612c53ab3f91cc26a6b531d782c13d3ca7ad2",
           "facts": [
@@ -8280,7 +8372,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.798Z",
+          "observed_at": "2026-10-27T19:00:12.374Z",
           "content_digest": "bf5ed7f985b31c7750afd7c924a4eb1d8c0927238bb78226a4469f4bcde0d610",
           "facts_digest": "35ea819dccea95aac042e64470208c3aaff93ea5494c895e2c2678f2fe051358",
           "facts": [
@@ -8294,7 +8386,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.796Z",
+          "observed_at": "2026-10-27T19:00:12.385Z",
           "content_digest": "a38348dec7828ba21886a5dc5653b9546e20156499e0f744a13fb3aba9fb6742",
           "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
           "facts": [
@@ -8305,7 +8397,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.776Z",
+          "observed_at": "2026-10-27T19:00:12.385Z",
           "content_digest": "cde89879abb62bbafc50745508dfe9446d2220dfbe8d7cce8a9437d12856782d",
           "facts_digest": "92b3a11d47c094ebaf141de1030337453872bbdbd2d07a4c31e57c87d2b07811",
           "facts": [
@@ -8317,7 +8409,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.781Z",
+          "observed_at": "2026-10-27T19:00:12.392Z",
           "content_digest": "e513666b71edffbf59edea2a84315756b7ce96866f9ff6ef46361126b9802ca4",
           "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
           "facts": [
@@ -8328,7 +8420,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.791Z",
+          "observed_at": "2026-10-27T19:00:12.401Z",
           "content_digest": "095349a26aa68f7988ae10b9c9ea5ff5d213ac78e335f51cf827a45cedeceef6",
           "facts_digest": "33b96b9679e8ec87130fa3513d04ae9d00867c422994a5eb22f7546f39540d21",
           "facts": [
@@ -8542,7 +8634,7 @@
           ],
           "pricing": {
             "input": 0.3,
-            "cached_input": 0.05,
+            "cached_input": 0.055,
             "cache_write": null,
             "output": 0.9
           },
@@ -8734,7 +8826,7 @@
           "created": 1775578025,
           "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
           "context_length": 204800,
-          "max_output_tokens": 131072,
+          "max_output_tokens": 128000,
           "input_modalities": [
             "text"
           ],
@@ -8763,10 +8855,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 1.4,
-            "cached_input": 0.26,
+            "input": 0.966,
+            "cached_input": 0.1794,
             "cache_write": null,
-            "output": 4.4
+            "output": 3.036
           },
           "hugging_face_id": "zai-org/GLM-5.1",
           "expiration_date": null,
@@ -8812,8 +8904,8 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.0341,
-            "cached_input": 0.033,
+            "input": 0.0319,
+            "cached_input": 0.0309,
             "cache_write": null,
             "output": 7
           },
@@ -8879,7 +8971,7 @@
           "created": 1787752741,
           "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
           "context_length": 1048576,
-          "max_output_tokens": 943717,
+          "max_output_tokens": 131072,
           "input_modalities": [
             "image",
             "text",
@@ -8912,10 +9004,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.15,
+            "input": 0.0345,
             "cached_input": 0.03,
             "cache_write": null,
-            "output": 0.5
+            "output": 0.0823
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
@@ -10498,8 +10590,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.403Z",
-          "content_digest": "bdbce7171966b95a9e24434f4511a945097f36bb5f6641b109af8ea769675eaf",
+          "observed_at": "2026-10-27T19:00:11.978Z",
+          "content_digest": "dfac9c3ec1d5352d8cc4aeaaba14a87c3995d7243b3efd2a0c8b00aa8302f6f5",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10510,8 +10602,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.342Z",
-          "content_digest": "2b972e86b9187d515cd362eb3482a5982de578fdc870c671216fd986d74dd5b2",
+          "observed_at": "2026-10-27T19:00:11.995Z",
+          "content_digest": "466c401fc01eff17a9c6fbdf833ed495472eba4760ba97e5450869bc93a569cf",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -10560,47 +10652,6 @@
           "expiration_date": null,
           "benchmark_score": null,
           "variant": false
-        },
-        {
-          "provider": "mistral",
-          "id": "mistralai/codestral-2508:batch",
-          "canonical_slug": "mistralai/codestral-2508",
-          "name": "Mistral: Codestral 2508 (batch)",
-          "created": 1754079630,
-          "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test generation. [Blog Post](https://mistral.ai/news/codestral-25-08)",
-          "context_length": 256000,
-          "max_output_tokens": 204800,
-          "input_modalities": [
-            "file",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "prediction",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.15,
-            "cached_input": 0.015,
-            "cache_write": null,
-            "output": 0.45
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": true
         },
         {
           "provider": "mistral",
@@ -10764,46 +10815,6 @@
         },
         {
           "provider": "mistral",
-          "id": "mistralai/ministral-8b-2512:batch",
-          "canonical_slug": "mistralai/ministral-8b-2512",
-          "name": "Mistral: Ministral 3 8B 2512 (batch)",
-          "created": 1764681654,
-          "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities.",
-          "context_length": 262144,
-          "max_output_tokens": 209715,
-          "input_modalities": [
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.075,
-            "cached_input": 0.0075,
-            "cache_write": null,
-            "output": 0.075
-          },
-          "hugging_face_id": "mistralai/Ministral-3-8B-Instruct-2512",
-          "expiration_date": null,
-          "benchmark_score": 9.7,
-          "variant": true
-        },
-        {
-          "provider": "mistral",
           "id": "mistralai/mistral-large",
           "canonical_slug": "mistralai/mistral-large",
           "name": "Mistral Large",
@@ -10922,47 +10933,6 @@
           "expiration_date": null,
           "benchmark_score": 20.1,
           "variant": false
-        },
-        {
-          "provider": "mistral",
-          "id": "mistralai/mistral-large-2512:batch",
-          "canonical_slug": "mistralai/mistral-large-2512",
-          "name": "Mistral: Mistral Large 3 2512 (batch)",
-          "created": 1764624472,
-          "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license.",
-          "context_length": 262144,
-          "max_output_tokens": 209715,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.25,
-            "cached_input": 0.025,
-            "cache_write": null,
-            "output": 0.75
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 20.1,
-          "variant": true
         },
         {
           "provider": "mistral",
@@ -11181,47 +11151,6 @@
         },
         {
           "provider": "mistral",
-          "id": "mistralai/mistral-medium-3.1:batch",
-          "canonical_slug": "mistralai/mistral-medium-3.1",
-          "name": "Mistral: Mistral Medium 3.1 (batch)",
-          "created": 1755095639,
-          "description": "Mistral Medium 3.1 is an updated version of Mistral Medium 3, which is a high-performance enterprise-grade language model designed to deliver frontier-level capabilities at significantly reduced operational cost. It balances...",
-          "context_length": 131072,
-          "max_output_tokens": 104857,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.2,
-            "cached_input": 0.02,
-            "cache_write": null,
-            "output": 1
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 20.5,
-          "variant": true
-        },
-        {
-          "provider": "mistral",
           "id": "mistralai/mistral-nemo",
           "canonical_slug": "mistralai/mistral-nemo",
           "name": "Mistral: Mistral Nemo",
@@ -11388,49 +11317,6 @@
           "expiration_date": null,
           "benchmark_score": 26.6,
           "variant": false
-        },
-        {
-          "provider": "mistral",
-          "id": "mistralai/mistral-small-2603:batch",
-          "canonical_slug": "mistralai/mistral-small-2603",
-          "name": "Mistral: Mistral Small 4 (batch)",
-          "created": 1773695685,
-          "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from...",
-          "context_length": 262144,
-          "max_output_tokens": 209715,
-          "input_modalities": [
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.075,
-            "cached_input": 0.0075,
-            "cache_write": null,
-            "output": 0.3
-          },
-          "hugging_face_id": "mistralai/Mistral-Small-4-119B-2603",
-          "expiration_date": null,
-          "benchmark_score": 26.6,
-          "variant": true
         },
         {
           "provider": "mistral",
@@ -13624,8 +13510,8 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.517Z",
-          "content_digest": "6340d76f4778786b615651e784de408a0327d7186fffa7f15a185ee35c9387f2",
+          "observed_at": "2026-10-27T19:00:11.972Z",
+          "content_digest": "0892214ef482e607ac409b7a896b19821ce62bc0da459605a19943fcc0d0f858",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         },
@@ -13633,7 +13519,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.509Z",
+          "observed_at": "2026-10-27T19:00:11.991Z",
           "content_digest": "ebe7ccf2bd39dddc1af088345ad0ad726f512a3fdc85787804eaac898fb33498",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -13646,8 +13532,8 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:36.496Z",
-          "content_digest": "3a9c4858d25271e7ebe53e5626d1e6f532109f94375526c50df84ffed32c2051",
+          "observed_at": "2026-10-27T19:00:12.184Z",
+          "content_digest": "8fb30ddf505ca373ecae5f1a35052d35053a2d46a11640302a1401b0006e95a1",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
             "deprecation is announced as soon as a replacement model is available. the replacement can be in general availability or public preview.",
@@ -13668,7 +13554,7 @@
           "created": 1776874269,
           "description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
           "context_length": 1050000,
-          "max_output_tokens": 945000,
+          "max_output_tokens": 65536,
           "input_modalities": [
             "audio",
             "image",
@@ -13695,10 +13581,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.119,
-            "cached_input": 0.00255,
+            "input": 0.4,
+            "cached_input": 0.08,
             "cache_write": null,
-            "output": 0.238
+            "output": 2
           },
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
           "expiration_date": null,
@@ -13713,7 +13599,7 @@
           "created": 1776874273,
           "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
           "context_length": 1050000,
-          "max_output_tokens": 945000,
+          "max_output_tokens": 235929,
           "input_modalities": [
             "text"
           ],
@@ -13735,10 +13621,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.3045,
-            "cached_input": 0.0028,
+            "input": 0.48,
+            "cached_input": 0.096,
             "cache_write": null,
-            "output": 0.609
+            "output": 1.8
           },
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
           "expiration_date": null,
@@ -14591,7 +14477,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:37.216Z",
+          "observed_at": "2026-10-27T19:00:12.828Z",
           "content_digest": "a0d98accee8e3218edb6a142e1c5e7d92f0a1245014f8f6062c11ec1f76c4ed6",
           "facts_digest": "5ed3a04651d99a5c64a46a166b243ded5400a6e213a05bb7664aef7c5b99110d",
           "facts": [
@@ -14603,7 +14489,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:37.213Z",
+          "observed_at": "2026-10-27T19:00:12.832Z",
           "content_digest": "8109fa7192085b0d2bac98358316e5cbda749c8bcf174f280bf09387429c667f",
           "facts_digest": "2ae2eacaa8e77c27443d1defd5cab615c225f6d9fe87f8bba0727df56959c580",
           "facts": [
@@ -14625,8 +14511,8 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-10-26T19:35:37.294Z",
-          "content_digest": "f6f7acb395a30b265f83b3993ab4e4e8a8e97a00e6008898f5c7963d856aa111",
+          "observed_at": "2026-10-27T19:00:12.925Z",
+          "content_digest": "824d8b8b54f826bbc1c5c726229664cb71bbea3d52330d137bb3015a20087e87",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
             "by optimizing cot generation strategies, the consumption of redundant tokens has been significantly reduced. in benchmarks such as aime25 and hmmt, the average generation length has decreased by 13% to 30% . this effectively lowers latency and token costs while maintaining model performance.",
