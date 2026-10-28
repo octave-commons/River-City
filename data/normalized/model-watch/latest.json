@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-10-27T19:00:12.925Z",
+  "observed_at": "2026-10-28T19:08:25.390Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -115,12 +115,10 @@
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
             "presence_penalty",
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -136,49 +134,6 @@
           "hugging_face_id": null,
           "expiration_date": null,
           "benchmark_score": 13.1,
-          "variant": false
-        },
-        {
-          "provider": "openai",
-          "id": "openai/gpt-4-turbo",
-          "canonical_slug": "openai/gpt-4-turbo",
-          "name": "OpenAI: GPT-4 Turbo",
-          "created": 1712620800,
-          "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling. Training data: up to December 2023.",
-          "context_length": 128000,
-          "max_output_tokens": 4096,
-          "input_modalities": [
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 10,
-            "cached_input": null,
-            "cache_write": null,
-            "output": 30
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 21.5,
           "variant": false
         },
         {
@@ -260,7 +215,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 12.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -359,7 +314,6 @@
           ],
           "supported_parameters": [
             "max_completion_tokens",
-            "max_tokens",
             "response_format",
             "seed",
             "structured_outputs",
@@ -452,7 +406,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 12.7,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -524,8 +478,6 @@
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
-            "prediction",
             "presence_penalty",
             "response_format",
             "seed",
@@ -593,7 +545,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 7.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -639,7 +591,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 8.4,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -990,7 +942,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.6,
+          "benchmark_score": 15.6,
           "variant": false
         },
         {
@@ -1030,7 +982,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.6,
+          "benchmark_score": 15.6,
           "variant": true
         },
         {
@@ -1071,7 +1023,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 13,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1111,7 +1063,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 13,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -1311,7 +1263,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 23.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1389,7 +1341,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.4,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1470,7 +1422,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 30.4,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1546,7 +1498,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 28.5,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1666,7 +1618,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 30.4,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -1707,7 +1659,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 32.5,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -2436,7 +2388,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 77.4,
+          "benchmark_score": 78.3,
           "variant": false
         },
         {
@@ -2557,7 +2509,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 77.4,
+          "benchmark_score": 78.3,
           "variant": true
         },
         {
@@ -2922,7 +2874,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 38.1,
+          "benchmark_score": 27.8,
           "variant": false
         },
         {
@@ -3043,7 +2995,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 38.1,
+          "benchmark_score": 27.8,
           "variant": true
         },
         {
@@ -3084,7 +3036,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 47.6,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -3205,7 +3157,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 47.6,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -3246,7 +3198,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 51.8,
+          "benchmark_score": 54.5,
           "variant": false
         },
         {
@@ -3367,7 +3319,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 51.8,
+          "benchmark_score": 54.5,
           "variant": true
         },
         {
@@ -3408,7 +3360,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 48.1,
+          "benchmark_score": 51,
           "variant": false
         },
         {
@@ -3529,7 +3481,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 48.1,
+          "benchmark_score": 51,
           "variant": true
         },
         {
@@ -3796,7 +3748,7 @@
           },
           "hugging_face_id": "openai/gpt-oss-20b",
           "expiration_date": null,
-          "benchmark_score": 10,
+          "benchmark_score": 20.7,
           "variant": false
         },
         {
@@ -3842,7 +3794,7 @@
           },
           "hugging_face_id": "openai/gpt-oss-20b",
           "expiration_date": null,
-          "benchmark_score": 10,
+          "benchmark_score": 20.7,
           "variant": true
         },
         {
@@ -3886,80 +3838,6 @@
         },
         {
           "provider": "openai",
-          "id": "openai/o1",
-          "canonical_slug": "openai/o1-2024-12-17",
-          "name": "OpenAI: o1",
-          "created": 1734459999,
-          "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding. The o1 model series is trained with large-scale reinforcement learning to reason...",
-          "context_length": 200000,
-          "max_output_tokens": 100000,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "pricing": {
-            "input": 15,
-            "cached_input": 7.5,
-            "cache_write": null,
-            "output": 60
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 39.7,
-          "variant": false
-        },
-        {
-          "provider": "openai",
-          "id": "openai/o1-pro",
-          "canonical_slug": "openai/o1-pro",
-          "name": "OpenAI: o1-pro",
-          "created": 1742423211,
-          "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide...",
-          "context_length": 200000,
-          "max_output_tokens": 100000,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs"
-          ],
-          "pricing": {
-            "input": 150,
-            "cached_input": null,
-            "cache_write": null,
-            "output": 600
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 12.4,
-          "variant": false
-        },
-        {
-          "provider": "openai",
           "id": "openai/o3",
           "canonical_slug": "openai/o3-2025-04-16",
           "name": "OpenAI: o3",
@@ -3993,82 +3871,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.2,
-          "variant": false
-        },
-        {
-          "provider": "openai",
-          "id": "openai/o3-mini",
-          "canonical_slug": "openai/o3-mini-2025-01-31",
-          "name": "OpenAI: o3 Mini",
-          "created": 1738351721,
-          "description": "OpenAI o3-mini is a cost-efficient language model optimized for STEM reasoning tasks, particularly excelling in science, mathematics, and coding. This model supports the `reasoning_effort` parameter, which can be set to...",
-          "context_length": 200000,
-          "max_output_tokens": 100000,
-          "input_modalities": [
-            "file",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "pricing": {
-            "input": 1.1,
-            "cached_input": 0.55,
-            "cache_write": null,
-            "output": 4.4
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 12.5,
-          "variant": false
-        },
-        {
-          "provider": "openai",
-          "id": "openai/o3-mini-high",
-          "canonical_slug": "openai/o3-mini-high-2025-01-31",
-          "name": "OpenAI: o3 Mini High",
-          "created": 1739372611,
-          "description": "OpenAI o3-mini-high is the same model as [o3-mini](/openai/o3-mini) with reasoning_effort set to high. o3-mini is a cost-efficient language model optimized for STEM reasoning tasks, particularly excelling in science, mathematics, and...",
-          "context_length": 200000,
-          "max_output_tokens": 100000,
-          "input_modalities": [
-            "file",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "pricing": {
-            "input": 1.1,
-            "cached_input": 0.55,
-            "cache_write": null,
-            "output": 4.4
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 16.3,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -4105,7 +3908,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 12.5,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -4143,7 +3946,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 21.9,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -4181,85 +3984,8 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.2,
-          "variant": true
-        },
-        {
-          "provider": "openai",
-          "id": "openai/o4-mini",
-          "canonical_slug": "openai/o4-mini-2025-04-16",
-          "name": "OpenAI: o4 Mini",
-          "created": 1744820942,
-          "description": "OpenAI o4-mini is a compact reasoning model in the o-series, optimized for fast, cost-efficient performance while retaining strong multimodal and agentic capabilities. It supports tool use and demonstrates competitive reasoning...",
-          "context_length": 200000,
-          "max_output_tokens": 100000,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "pricing": {
-            "input": 1.1,
-            "cached_input": 0.275,
-            "cache_write": null,
-            "output": 4.4
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": 16.7,
-          "variant": false
-        },
-        {
-          "provider": "openai",
-          "id": "openai/o4-mini-high",
-          "canonical_slug": "openai/o4-mini-high-2025-04-16",
-          "name": "OpenAI: o4 Mini High",
-          "created": 1744824212,
-          "description": "OpenAI o4-mini-high is the same model as [o4-mini](/openai/o4-mini) with reasoning_effort set to high. OpenAI o4-mini is a compact reasoning model in the o-series, optimized for fast, cost-efficient performance while retaining...",
-          "context_length": 200000,
-          "max_output_tokens": 100000,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "pricing": {
-            "input": 1.1,
-            "cached_input": 0.275,
-            "cache_write": null,
-            "output": 4.4
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
           "benchmark_score": null,
-          "variant": false
+          "variant": true
         },
         {
           "provider": "openai",
@@ -4296,7 +4022,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 16.7,
+          "benchmark_score": null,
           "variant": true
         }
       ],
@@ -5996,7 +5722,7 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:11.712Z",
+          "observed_at": "2026-10-28T19:08:24.081Z",
           "content_digest": "feda7eb36006d2b3c766ede504c9c986db9552958528810a5600eac80c362327",
           "facts_digest": "3a190256927b00081cc38c61a256516b818d1e09b1ea31827ec1a73f9f0757af",
           "facts": [
@@ -6011,7 +5737,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:11.724Z",
+          "observed_at": "2026-10-28T19:08:24.056Z",
           "content_digest": "b92363ae9d22b993d09bdc28a9d64d4b11f9bc1232dee4a07a3e4c6f76c0fc57",
           "facts_digest": "fe42b0fa2990ebaea454c8c38b45dab0233aa4838c0d06e2b2e882cf02195393",
           "facts": [
@@ -6024,7 +5750,7 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:11.667Z",
+          "observed_at": "2026-10-28T19:08:24.104Z",
           "content_digest": "8d301cfd2cd55cfddc2548b8d7c5164073ac44240f23302f7e4911ea84d4c6e9",
           "facts_digest": "85db676a899781128abc96a9f61b8bc86a3a9344bba031701f12cf577b9fbe64",
           "facts": [
@@ -6198,7 +5924,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 81.6,
+          "benchmark_score": 80.7,
           "variant": false
         },
         {
@@ -6238,7 +5964,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 81.6,
+          "benchmark_score": 80.7,
           "variant": true
         },
         {
@@ -6362,7 +6088,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 43.4,
+          "benchmark_score": 36.2,
           "variant": false
         },
         {
@@ -6402,7 +6128,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 43.4,
+          "benchmark_score": 36.2,
           "variant": true
         },
         {
@@ -6441,7 +6167,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 22.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -6480,7 +6206,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 22.8,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -6522,7 +6248,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 29.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -6562,7 +6288,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 29.1,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -6606,7 +6332,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 31.9,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -6648,7 +6374,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 31.9,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -6932,7 +6658,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 57.6,
+          "benchmark_score": 58.4,
           "variant": false
         },
         {
@@ -6972,7 +6698,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 57.6,
+          "benchmark_score": 58.4,
           "variant": true
         },
         {
@@ -7263,7 +6989,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 56,
+          "benchmark_score": 54.2,
           "variant": false
         },
         {
@@ -7303,7 +7029,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 56,
+          "benchmark_score": 54.2,
           "variant": true
         }
       ],
@@ -7313,7 +7039,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.206Z",
+          "observed_at": "2026-10-28T19:08:24.399Z",
           "content_digest": "f6d2c7f5a67819ed3f6a3430bcd956500c9470ae8233c7681875ae71e611837b",
           "facts_digest": "6de1bf86db8eb29a29e2d71781e66c05a17388b89c618ec2b61294a6de7ba08c",
           "facts": [
@@ -7346,7 +7072,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.502Z",
+          "observed_at": "2026-10-28T19:08:24.799Z",
           "content_digest": "c3f567beef6ff8d1f394123cc88c487ec68f5b9fc42a6335067f5933208130ef",
           "facts_digest": "daf076ddedd84d35d0bbb1765fed1383dc3b348aeaa4c6f18da406a6cfd089aa",
           "facts": [
@@ -7367,7 +7093,7 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.367Z",
+          "observed_at": "2026-10-28T19:08:24.778Z",
           "content_digest": "7eea9784f5f0528d5fe32475a63a509f768ab84b92c877c394fa584f2137753a",
           "facts_digest": "8b89b5e1138250de2343dc44eacebdd840e4f91d44ae570e9496d6dfeca34b56",
           "facts": [
@@ -7467,7 +7193,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K2-Instruct",
           "expiration_date": null,
-          "benchmark_score": 12.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7508,7 +7234,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K2-Instruct-0905",
           "expiration_date": null,
-          "benchmark_score": 15.3,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7529,7 +7255,6 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -7542,7 +7267,6 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "pricing": {
@@ -7553,7 +7277,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K2-Thinking",
           "expiration_date": null,
-          "benchmark_score": 22,
+          "benchmark_score": 21,
           "variant": false
         },
         {
@@ -7744,10 +7468,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.15,
-            "cached_input": 0.14,
+            "input": 0.192,
+            "cached_input": 0.182,
             "cache_write": null,
-            "output": 11.5
+            "output": 20
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
@@ -7842,7 +7566,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 55.1,
+          "benchmark_score": 46,
           "variant": false
         }
       ],
@@ -8293,8 +8017,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.306Z",
-          "content_digest": "50f2a34e9adf43fd4ae3e4dc8e74c818af4ee96f302020c0d798ba87a5296cb2",
+          "observed_at": "2026-10-28T19:08:24.960Z",
+          "content_digest": "12b0008841f948e191aadcd315e23538126e86f59a482e57aa4072a88fd95e1e",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -8304,7 +8028,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.378Z",
+          "observed_at": "2026-10-28T19:08:24.997Z",
           "content_digest": "3f6aaee6d8ec9513ba791c3d0cc7c833ea9497e9ce9d3190b7c5875ccd31b61d",
           "facts_digest": "b688f28a0436d5051f9cd2544f9612c53ab3f91cc26a6b531d782c13d3ca7ad2",
           "facts": [
@@ -8331,8 +8055,8 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.387Z",
-          "content_digest": "bf5ed7f985b31c7750afd7c924a4eb1d8c0927238bb78226a4469f4bcde0d610",
+          "observed_at": "2026-10-28T19:08:24.995Z",
+          "content_digest": "f6e5648b472c145d067b2eb968ac7ea2290ad04404e8e9a2f597cb95c0ca8d2f",
           "facts_digest": "35ea819dccea95aac042e64470208c3aaff93ea5494c895e2c2678f2fe051358",
           "facts": [
             "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md).",
@@ -8345,7 +8069,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.371Z",
+          "observed_at": "2026-10-28T19:08:24.977Z",
           "content_digest": "3f6aaee6d8ec9513ba791c3d0cc7c833ea9497e9ce9d3190b7c5875ccd31b61d",
           "facts_digest": "b688f28a0436d5051f9cd2544f9612c53ab3f91cc26a6b531d782c13d3ca7ad2",
           "facts": [
@@ -8372,8 +8096,8 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.374Z",
-          "content_digest": "bf5ed7f985b31c7750afd7c924a4eb1d8c0927238bb78226a4469f4bcde0d610",
+          "observed_at": "2026-10-28T19:08:24.976Z",
+          "content_digest": "f6e5648b472c145d067b2eb968ac7ea2290ad04404e8e9a2f597cb95c0ca8d2f",
           "facts_digest": "35ea819dccea95aac042e64470208c3aaff93ea5494c895e2c2678f2fe051358",
           "facts": [
             "* the `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms. calls to these models now return a 404 \"model not found\" error. please migrate to [kimi k3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md).",
@@ -8386,47 +8110,44 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.385Z",
-          "content_digest": "a38348dec7828ba21886a5dc5653b9546e20156499e0f744a13fb3aba9fb6742",
-          "facts_digest": "505df4080df6c1f21b71e84e9f8676fcf31dc104feb2857941903e38ef425cb4",
+          "observed_at": "2026-10-28T19:08:24.993Z",
+          "content_digest": "b6d7a4ee396e28a75749e5e1f174adc52fbd2dac818ccbf8e4564de562c04ea6",
+          "facts_digest": "112d1e98d96aab27295f34161c40e1d6ae63fbc86cfffd4ea990c87158bc0cb5",
           "facts": [
-            "batch api inference costs are **60%** of the standard model price, ideal for large-scale tasks with low real-time requirements."
+            "batch api inference costs **60%** of the standard model price, making it well suited for large-scale tasks that do not require real-time responses."
           ]
         },
         {
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.385Z",
-          "content_digest": "cde89879abb62bbafc50745508dfe9446d2220dfbe8d7cce8a9437d12856782d",
-          "facts_digest": "92b3a11d47c094ebaf141de1030337453872bbdbd2d07a4c31e57c87d2b07811",
+          "observed_at": "2026-10-28T19:08:25.013Z",
+          "content_digest": "7ac39688ce9dead328ba1c492fff453e916eb8457612fccff53ce2e81b4d1ec7",
+          "facts_digest": "144ff37301e40b4fab0be8e2652e0c4341dd1bd0b68bd2dc49bbf6e3d469aa57",
           "facts": [
             "> dear kimi users, starting october 31, 2026, k2 series models will no longer be available to newly registered users; existing users are not affected. we plan to retire all k2 series models by the end of december 2026, please [prepare your migration](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart.md) in advance.",
-            "token: a token represents a common sequence of characters. the number of tokens used for each english character may vary. for example, a single character like \"antidisestablishmentarianism\" might be broken down into several tokens, while a short and common phrase like \"word\" might use just one token. generally speaking, for a typical english text, 1 token is roughly equivalent to 3-4 english characters. the exact number of tokens generated by each call can be obtained through the [token calculation api](https://platform.kimi.ai/docs/api/estimate.md)."
+            "token: the basic unit of text processed by the model. a long word like \"antidisestablishmentarianism\" may be split into several tokens, while a common short word like \"word\" usually takes just one. for typical english text, 1 token is roughly equivalent to 3-4 characters. use the [token calculation api](https://platform.kimi.ai/docs/api/estimate.md) to get the exact token count of each call."
           ]
         },
         {
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.392Z",
-          "content_digest": "e513666b71edffbf59edea2a84315756b7ce96866f9ff6ef46361126b9802ca4",
-          "facts_digest": "bbcb8db94a900f27651a30d5b8d3e2bcf14459e266e5a448ae61d869ddac9ea7",
+          "observed_at": "2026-10-28T19:08:24.996Z",
+          "content_digest": "48d3930270ebb2a80df336a0b4dfeee7a014545ba1133a5059f664eb549ba545",
+          "facts_digest": "737bee2a800aac905175f87f37f827c1394f79d999fd101d0d7994b963f12811",
           "facts": [
-            "* to prevent abuse, you need to recharge at least \\$1 to start using, and when your cumulative recharge reaches \\$5, you will receive a \\$5 voucher."
+            "* to prevent abuse, a minimum recharge of \\$1 is required to start using the api; when your cumulative recharge reaches \\$5, you receive a \\$5 voucher."
           ]
         },
         {
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.401Z",
-          "content_digest": "095349a26aa68f7988ae10b9c9ea5ff5d213ac78e335f51cf827a45cedeceef6",
-          "facts_digest": "33b96b9679e8ec87130fa3513d04ae9d00867c422994a5eb22f7546f39540d21",
-          "facts": [
-            "> `$web_search` is a built-in tool triggered via `tools` in `/v1/chat/completions`. it is independent of the rest endpoints above and billed separately. this approach is expected to be deprecated on october 20, 2026 — for new integrations, please use the `/v1/tools/search` endpoint or the `web-search` official tool; see the [web search guide](https://platform.kimi.ai/docs/guide/use-web-search.md).",
-            "additionally, when using `$web_search`, we still charge for the tokens generated by the `/chat/completions` interface based on the model size. **it is important to note that when the `$web_search` tool is triggered, the search results are also counted in the tokens. the number of tokens occupied by the search results can be obtained from the returned `tool_call.function.arguments`.** for example, if the content of the `$web_search` occupies 4k tokens, these 4k tokens will be included in the total tokens when the caller makes the next call to the `/chat/completions` interface. the total billing tokens will be:"
-          ]
+          "observed_at": "2026-10-28T19:08:24.993Z",
+          "content_digest": "3e7f416da2857c6e04973083340fbf5dfa6be5581dce085c14bae3b64c0999e5",
+          "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "facts": []
         }
       ]
     },
@@ -8467,7 +8188,7 @@
           },
           "hugging_face_id": "zai-org/GLM-4.5",
           "expiration_date": "2026-12-31",
-          "benchmark_score": 12.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8508,7 +8229,7 @@
           },
           "hugging_face_id": "zai-org/GLM-4.5-Air",
           "expiration_date": null,
-          "benchmark_score": 11.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8551,7 +8272,7 @@
           },
           "hugging_face_id": "zai-org/GLM-4.5V",
           "expiration_date": "2026-12-31",
-          "benchmark_score": 7.6,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8634,13 +8355,13 @@
           ],
           "pricing": {
             "input": 0.3,
-            "cached_input": 0.055,
+            "cached_input": 0.05,
             "cache_write": null,
             "output": 0.9
           },
           "hugging_face_id": "zai-org/GLM-4.6V",
           "expiration_date": null,
-          "benchmark_score": 11.2,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8733,7 +8454,7 @@
           },
           "hugging_face_id": "zai-org/GLM-4.7-Flash",
           "expiration_date": null,
-          "benchmark_score": 14.9,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8778,7 +8499,7 @@
           },
           "hugging_face_id": "zai-org/GLM-5",
           "expiration_date": null,
-          "benchmark_score": 27.9,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8815,7 +8536,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 26.6,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8826,7 +8547,7 @@
           "created": 1775578025,
           "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
           "context_length": 204800,
-          "max_output_tokens": 128000,
+          "max_output_tokens": 131072,
           "input_modalities": [
             "text"
           ],
@@ -8855,10 +8576,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.966,
-            "cached_input": 0.1794,
+            "input": 1.4,
+            "cached_input": 0.26,
             "cache_write": null,
-            "output": 3.036
+            "output": 4.4
           },
           "hugging_face_id": "zai-org/GLM-5.1",
           "expiration_date": null,
@@ -8904,8 +8625,8 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.0319,
-            "cached_input": 0.0309,
+            "input": 0.0086,
+            "cached_input": 0.0076,
             "cache_write": null,
             "output": 7
           },
@@ -8971,7 +8692,7 @@
           "created": 1787752741,
           "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
           "context_length": 1048576,
-          "max_output_tokens": 131072,
+          "max_output_tokens": 943717,
           "input_modalities": [
             "image",
             "text",
@@ -9004,10 +8725,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.0345,
+            "input": 0.15,
             "cached_input": 0.03,
             "cache_write": null,
-            "output": 0.0823
+            "output": 0.5
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
@@ -9230,7 +8951,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 23.5,
+          "benchmark_score": null,
           "variant": false
         }
       ],
@@ -10590,8 +10311,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:11.978Z",
-          "content_digest": "dfac9c3ec1d5352d8cc4aeaaba14a87c3995d7243b3efd2a0c8b00aa8302f6f5",
+          "observed_at": "2026-10-28T19:08:24.497Z",
+          "content_digest": "42dd61a6f5d081e09aa3339fb4f86dfa2318fe1893f36526b11fc87bc1ed3543",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10602,8 +10323,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:11.995Z",
-          "content_digest": "466c401fc01eff17a9c6fbdf833ed495472eba4760ba97e5450869bc93a569cf",
+          "observed_at": "2026-10-28T19:08:24.480Z",
+          "content_digest": "c758c21d557e0bcddf29e78c22fb7d7e24e94e665b4f4df7a16abedbe24d2b96",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -10850,7 +10571,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 5.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -10890,7 +10611,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 7.6,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -10976,7 +10697,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 38.4,
+          "benchmark_score": 25.3,
           "variant": false
         },
         {
@@ -11017,7 +10738,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 9,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -11231,7 +10952,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 6.5,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -11272,7 +10993,7 @@
           },
           "hugging_face_id": "mistralai/Mistral-Small-24B-Instruct-2501",
           "expiration_date": null,
-          "benchmark_score": 6.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -11446,7 +11167,7 @@
           },
           "hugging_face_id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
           "expiration_date": null,
-          "benchmark_score": 5.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -13510,8 +13231,8 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:11.972Z",
-          "content_digest": "0892214ef482e607ac409b7a896b19821ce62bc0da459605a19943fcc0d0f858",
+          "observed_at": "2026-10-28T19:08:24.453Z",
+          "content_digest": "5eb7b0bcf339b25fed483a787d7f0dcb73e0b8151d94987131ea7b050d2ffd1a",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         },
@@ -13519,8 +13240,8 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:11.991Z",
-          "content_digest": "ebe7ccf2bd39dddc1af088345ad0ad726f512a3fdc85787804eaac898fb33498",
+          "observed_at": "2026-10-28T19:08:24.447Z",
+          "content_digest": "e6005fa4708bc5b38444a78907763ec6194df39a665f4c09c66119a6bfc44aec",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
             "deprecated & retired models",
@@ -13532,7 +13253,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.184Z",
+          "observed_at": "2026-10-28T19:08:24.525Z",
           "content_digest": "8fb30ddf505ca373ecae5f1a35052d35053a2d46a11640302a1401b0006e95a1",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -13679,7 +13400,7 @@
           },
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
           "expiration_date": null,
-          "benchmark_score": 37.9,
+          "benchmark_score": 26.7,
           "variant": false
         },
         {
@@ -13727,7 +13448,7 @@
           },
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
           "expiration_date": null,
-          "benchmark_score": 46.3,
+          "benchmark_score": 29.9,
           "variant": false
         },
         {
@@ -13779,7 +13500,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-Base",
           "created_at": "2025-04-29T23:41:27.000Z",
-          "last_modified": "2025-06-05T16:06:42.000Z",
+          "last_modified": "2026-10-28T13:59:01.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -13800,7 +13521,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-MTPs",
           "created_at": "2025-11-14T12:44:49.000Z",
-          "last_modified": "2025-11-14T12:50:02.000Z",
+          "last_modified": "2026-10-28T14:08:41.000Z",
           "pipeline_tag": "feature-extraction",
           "library_name": "transformers",
           "tags": [
@@ -13819,7 +13540,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-RL",
           "created_at": "2025-04-29T23:48:55.000Z",
-          "last_modified": "2025-06-05T15:55:53.000Z",
+          "last_modified": "2026-10-28T13:58:17.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -13840,7 +13561,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-RL-0530",
           "created_at": "2025-05-30T01:19:37.000Z",
-          "last_modified": "2025-06-05T15:50:15.000Z",
+          "last_modified": "2026-10-28T13:57:17.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -13860,7 +13581,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-RL-Zero",
           "created_at": "2025-04-29T23:56:19.000Z",
-          "last_modified": "2025-05-13T04:26:02.000Z",
+          "last_modified": "2026-10-28T13:56:45.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -13880,7 +13601,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-SFT",
           "created_at": "2025-04-29T23:30:47.000Z",
-          "last_modified": "2025-06-05T16:00:02.000Z",
+          "last_modified": "2026-10-28T13:58:38.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -13900,7 +13621,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-Audio-7B-Base",
           "created_at": "2025-09-18T20:55:36.000Z",
-          "last_modified": "2026-06-17T09:39:51.000Z",
+          "last_modified": "2026-10-28T14:10:47.000Z",
           "pipeline_tag": "any-to-any",
           "library_name": null,
           "tags": [
@@ -13921,7 +13642,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-Audio-7B-Instruct",
           "created_at": "2025-09-18T21:28:00.000Z",
-          "last_modified": "2026-06-17T09:41:11.000Z",
+          "last_modified": "2026-10-28T14:11:06.000Z",
           "pipeline_tag": "any-to-any",
           "library_name": null,
           "tags": [
@@ -13942,7 +13663,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-Audio-Tokenizer",
           "created_at": "2025-09-18T20:56:05.000Z",
-          "last_modified": "2026-06-17T09:42:00.000Z",
+          "last_modified": "2026-10-28T14:11:25.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -13979,7 +13700,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2-Flash",
           "created_at": "2025-12-16T08:47:02.000Z",
-          "last_modified": "2026-07-09T04:25:07.000Z",
+          "last_modified": "2026-10-28T14:12:00.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14001,7 +13722,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2-Flash-Base",
           "created_at": "2025-12-16T09:08:24.000Z",
-          "last_modified": "2026-07-09T04:25:37.000Z",
+          "last_modified": "2026-10-28T14:12:32.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14024,7 +13745,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5",
           "created_at": "2026-04-27T13:37:38.000Z",
-          "last_modified": "2026-07-09T04:23:16.000Z",
+          "last_modified": "2026-10-28T14:13:36.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14053,7 +13774,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-ASR",
           "created_at": "2026-04-23T06:30:09.000Z",
-          "last_modified": "2026-04-24T03:45:28.000Z",
+          "last_modified": "2026-10-28T14:09:09.000Z",
           "pipeline_tag": "automatic-speech-recognition",
           "library_name": "transformers",
           "tags": [
@@ -14076,7 +13797,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Base",
           "created_at": "2026-04-27T12:49:45.000Z",
-          "last_modified": "2026-07-09T04:22:38.000Z",
+          "last_modified": "2026-10-28T14:13:10.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14104,7 +13825,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-DFlash",
           "created_at": "2026-07-03T11:18:28.000Z",
-          "last_modified": "2026-07-04T03:19:50.000Z",
+          "last_modified": "2026-10-28T14:14:37.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -14121,7 +13842,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Pro",
           "created_at": "2026-04-27T12:52:53.000Z",
-          "last_modified": "2026-07-09T04:20:08.000Z",
+          "last_modified": "2026-10-28T14:14:01.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14147,7 +13868,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Pro-Base",
           "created_at": "2026-04-27T11:32:54.000Z",
-          "last_modified": "2026-07-09T04:23:49.000Z",
+          "last_modified": "2026-10-28T14:15:56.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14172,7 +13893,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Pro-FP4-DFlash",
           "created_at": "2026-06-08T04:32:32.000Z",
-          "last_modified": "2026-06-08T14:11:27.000Z",
+          "last_modified": "2026-10-28T14:15:07.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14203,7 +13924,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
           "created_at": "2026-09-21T18:18:40.000Z",
-          "last_modified": "2026-09-22T03:52:45.000Z",
+          "last_modified": "2026-10-28T14:18:23.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14231,7 +13952,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
           "created_at": "2026-09-27T04:01:00.000Z",
-          "last_modified": "2026-10-09T06:30:44.000Z",
+          "last_modified": "2026-10-28T14:17:25.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14260,7 +13981,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
           "created_at": "2026-09-21T15:39:51.000Z",
-          "last_modified": "2026-10-09T06:30:29.000Z",
+          "last_modified": "2026-10-28T14:16:28.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14290,7 +14011,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
           "created_at": "2026-09-27T03:58:00.000Z",
-          "last_modified": "2026-10-09T06:30:36.000Z",
+          "last_modified": "2026-10-28T14:17:53.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14319,7 +14040,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
           "created_at": "2026-09-21T15:39:33.000Z",
-          "last_modified": "2026-10-09T06:30:24.000Z",
+          "last_modified": "2026-10-28T14:16:57.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14349,7 +14070,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-RL",
           "created_at": "2025-05-30T00:37:21.000Z",
-          "last_modified": "2025-06-07T06:09:22.000Z",
+          "last_modified": "2026-10-28T13:59:24.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14372,7 +14093,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-RL-2508",
           "created_at": "2025-08-07T09:59:03.000Z",
-          "last_modified": "2025-08-21T08:09:45.000Z",
+          "last_modified": "2026-10-28T14:00:25.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14395,7 +14116,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-RL-GGUF",
           "created_at": "2025-06-08T13:30:49.000Z",
-          "last_modified": "2025-06-08T14:22:41.000Z",
+          "last_modified": "2026-10-28T14:10:21.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -14412,7 +14133,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-SFT",
           "created_at": "2025-05-30T00:44:26.000Z",
-          "last_modified": "2025-06-07T06:10:01.000Z",
+          "last_modified": "2026-10-28T13:59:53.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14435,7 +14156,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-SFT-2508",
           "created_at": "2025-08-07T09:36:36.000Z",
-          "last_modified": "2025-08-21T08:10:15.000Z",
+          "last_modified": "2026-10-28T14:00:50.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14458,7 +14179,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-SFT-GGUF",
           "created_at": "2025-06-08T13:44:26.000Z",
-          "last_modified": "2025-06-08T14:24:04.000Z",
+          "last_modified": "2026-10-28T14:09:58.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -14477,7 +14198,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.828Z",
+          "observed_at": "2026-10-28T19:08:25.377Z",
           "content_digest": "a0d98accee8e3218edb6a142e1c5e7d92f0a1245014f8f6062c11ec1f76c4ed6",
           "facts_digest": "5ed3a04651d99a5c64a46a166b243ded5400a6e213a05bb7664aef7c5b99110d",
           "facts": [
@@ -14489,7 +14210,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.832Z",
+          "observed_at": "2026-10-28T19:08:25.390Z",
           "content_digest": "8109fa7192085b0d2bac98358316e5cbda749c8bcf174f280bf09387429c667f",
           "facts_digest": "2ae2eacaa8e77c27443d1defd5cab615c225f6d9fe87f8bba0727df56959c580",
           "facts": [
@@ -14511,7 +14232,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-10-27T19:00:12.925Z",
+          "observed_at": "2026-10-28T19:08:25.382Z",
           "content_digest": "824d8b8b54f826bbc1c5c726229664cb71bbea3d52330d137bb3015a20087e87",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
