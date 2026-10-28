@@ -1,32 +1,34 @@
 # River City Daily: PortWatch
 
-![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-10-26-7daccda43f7c0e0b.svg)
+![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-10-28-63723fda3c9f4586.svg)
 
-**Establishes:** Canonical measurement coverage is too old, invalid, or insufficient for a current trend claim.
+**Establishes:** The source records 36 vessels/day at its latest observation; 14 finite observations inform this diagnostic window.
 
 **Does not establish:** an approved normal regime, true unobserved traffic, deliverability, or a causal explanation.
 
-**Question:** Does a newer independent observation confirm or contradict the last measured level?
+**Question:** Would more comparable historical observations narrow the comparison enough to distinguish these alternatives?
 
-**Diagnostic flags:** displaced, regime-unknown, stale, unexplained. Source age: 8 days.
+**Diagnostic flags:** regime-unknown, uncertain, unexplained. Source age: 3 days.
 
-Research attempts this report: 0; retained attempts: 2. Suppressed: [{:id "portwatch/chokepoint4", :reason :cooldown} {:id "portwatch/chokepoint6", :reason :cooldown}].
+Research attempts this report: 2; retained attempts: 4. Suppressed: [].
 
+- `portwatch/chokepoint4`: **completed**. 2 retained search responses; 4 candidate references. [Dossier](../../data/research/research-e160cc1e5091be53dc650556358d19578c7c37fa08d78b449c0c21fe23c82a9f/result.edn).
+- `portwatch/chokepoint6`: **completed**. 2 retained search responses; 4 candidate references. [Dossier](../../data/research/research-77224a3ce6df44cf4f3f14b156528fe4d5be151556ad704c269777e221a5962a/result.edn).
 
-Retained research: [`portwatch/chokepoint4` completed](../../data/research/research-aed82fa1ddd0eb1e7ccb389734511822c94cacad7bd06034554892e68ab4f20e/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-bba0aaf799f16362442220e4335a1b79e489554f46e80377e30ed38c011ca2fb/result.edn).
+Retained research: [`portwatch/chokepoint6` completed](../../data/research/research-77224a3ce6df44cf4f3f14b156528fe4d5be151556ad704c269777e221a5962a/result.edn); [`portwatch/chokepoint4` completed](../../data/research/research-e160cc1e5091be53dc650556358d19578c7c37fa08d78b449c0c21fe23c82a9f/result.edn); [`portwatch/chokepoint4` completed](../../data/research/research-aed82fa1ddd0eb1e7ccb389734511822c94cacad7bd06034554892e68ab4f20e/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-bba0aaf799f16362442220e4335a1b79e489554f46e80377e30ed38c011ca2fb/result.edn).
 
 Literature metadata supplies leads, not verified experimental findings. Null searches remain valid; failed searches remain failures. Proposed indicators/tests do not modify production definitions. Foresight/Clio event admission is explicitly pending.
 
-Generated: `2026-10-26T18:45:03.704316824Z`
+Generated: `2026-10-28T18:24:00.611603759Z`
 
-Source coverage through: `2026-10-18`
+Source coverage through: `2026-10-25`
 
 ## Status
 
 | Chokepoint | Date | Visible vessels | Prior-year median | Deviation | Baseline n |
 |---|---:|---:|---:|---:|---:|
-| Bab el-Mandeb Strait | 2026-10-18 | 32 | 46.0 | -30.4% | 7 |
-| Strait of Hormuz | 2026-10-18 | 4 | 87.0 | -95.4% | 7 |
+| Bab el-Mandeb Strait | 2026-10-25 | 36 | 46.0 | -21.7% | 7 |
+| Strait of Hormuz | 2026-10-25 | 2 | 84.0 | -97.6% | 7 |
 
 ## Stable artifacts
 

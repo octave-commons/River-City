@@ -1,0 +1,121 @@
+{
+  "request-id": "research-e160cc1e5091be53dc650556358d19578c7c37fa08d78b449c0c21fe23c82a9f",
+  "status": "completed",
+  "evidence": [
+    {
+      "uri": "https://api.crossref.org/works?query.bibliographic=Bab+el-Mandeb+Strait+visible+vessel+passages+measurement+reliability+coverage+uncertainty&rows=4&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cabstract%2Clink",
+      "raw-path": "query-0.json",
+      "sha256": "e7b302e0f1712c26735a3998cbe291c8063350e89302a344701d96c3243b8444",
+      "retrieved-at": "2026-10-28T18:24:01.432Z",
+      "evidence-level": "bibliographic-metadata",
+      "http-status": 200,
+      "query": "Bab el-Mandeb Strait visible vessel passages measurement reliability coverage uncertainty"
+    },
+    {
+      "uri": "https://api.crossref.org/works?query.bibliographic=Bab+el-Mandeb+Strait+visible+vessel+passages+alternative+indicators+usable+capacity+delivery+disruption&rows=4&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cabstract%2Clink",
+      "raw-path": "query-1.json",
+      "sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0",
+      "retrieved-at": "2026-10-28T18:24:02.110Z",
+      "evidence-level": "bibliographic-metadata",
+      "http-status": 200,
+      "query": "Bab el-Mandeb Strait visible vessel passages alternative indicators usable capacity delivery disruption"
+    }
+  ],
+  "candidates": [
+    {
+      "title": "Bab-El-Mandeb Strait",
+      "abstract": null,
+      "indicators": [],
+      "inspected_text": "title-only",
+      "proposed_test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "uri": "https://doi.org/10.1007/978-3-319-16999-6_376-1",
+      "publication_type": "book-chapter",
+      "peer_review": "not-verified",
+      "evidence_level": "bibliographic-metadata",
+      "status": "candidate",
+      "production_change": false,
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    },
+    {
+      "title": "Bab-El-Mandeb Strait",
+      "abstract": null,
+      "indicators": [],
+      "inspected_text": "title-only",
+      "proposed_test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "uri": "https://doi.org/10.1007/978-3-319-19650-3_376",
+      "publication_type": "book-chapter",
+      "peer_review": "not-verified",
+      "evidence_level": "bibliographic-metadata",
+      "status": "candidate",
+      "production_change": false,
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    },
+    {
+      "title": "Bab-El-Mandeb Strait",
+      "abstract": null,
+      "indicators": [],
+      "inspected_text": "title-only",
+      "proposed_test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "uri": "https://doi.org/10.1007/978-3-319-16999-6_376-2",
+      "publication_type": "book-chapter",
+      "peer_review": "not-verified",
+      "evidence_level": "bibliographic-metadata",
+      "status": "candidate",
+      "production_change": false,
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    },
+    {
+      "title": "Strategic rivalries around the Bab el-Mandeb Strait",
+      "abstract": null,
+      "indicators": [],
+      "inspected_text": "title-only",
+      "proposed_test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "uri": "https://doi.org/10.1080/13567888.2018.1485341",
+      "publication_type": "journal-article",
+      "peer_review": "not-verified",
+      "evidence_level": "bibliographic-metadata",
+      "status": "candidate",
+      "production_change": false,
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    }
+  ],
+  "errors": [],
+  "proposals": [],
+  "tests": [
+    {
+      "status": "proposed",
+      "test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "falsifies": "Reject common-basis disagreement if source revisions or matched coverage remove it.",
+      "source-uri": "https://doi.org/10.1007/978-3-319-16999-6_376-1",
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    },
+    {
+      "status": "proposed",
+      "test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "falsifies": "Reject common-basis disagreement if source revisions or matched coverage remove it.",
+      "source-uri": "https://doi.org/10.1007/978-3-319-19650-3_376",
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    },
+    {
+      "status": "proposed",
+      "test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "falsifies": "Reject common-basis disagreement if source revisions or matched coverage remove it.",
+      "source-uri": "https://doi.org/10.1007/978-3-319-16999-6_376-2",
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    },
+    {
+      "status": "proposed",
+      "test": "Compare this candidate measurement with date-, geography-, unit-, coverage- and revision-matched canonical observations; disagreement that vanishes after matching falsifies the source-divergence explanation.",
+      "falsifies": "Reject common-basis disagreement if source revisions or matched coverage remove it.",
+      "source-uri": "https://doi.org/10.1080/13567888.2018.1485341",
+      "source-sha256": "18c963693d982d7c6f007ac66d0e0c1193f3d83ba76fae5fcfbc73b8ff9199f0"
+    }
+  ],
+  "limitation": "Bounded literature search and available-abstract inspection. Full-text experimental claims and indicator adoption require review. Empty results do not establish absence.",
+  "runtime": {
+    "node": "v22.23.4"
+  },
+  "requests-attempted": 2,
+  "max-cost-usd": 0,
+  "production-change?": false
+}
