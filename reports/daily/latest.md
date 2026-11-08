@@ -1,6 +1,6 @@
 # River City Daily: PortWatch
 
-![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-11-07-bbb59b81dd007268.svg)
+![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-11-08-365114f5d898ae2d.svg)
 
 **Establishes:** Canonical measurement coverage is too old, invalid, or insufficient for a current trend claim.
 
@@ -8,18 +8,16 @@
 
 **Question:** Does a newer independent observation confirm or contradict the last measured level?
 
-**Diagnostic flags:** displaced, regime-unknown, stale, unexplained. Source age: 6 days.
+**Diagnostic flags:** displaced, regime-unknown, stale, unexplained. Source age: 7 days.
 
-Research attempts this report: 2; retained attempts: 6. Suppressed: [].
+Research attempts this report: 0; retained attempts: 6. Suppressed: [{:id "portwatch/chokepoint4", :reason :cooldown} {:id "portwatch/chokepoint6", :reason :cooldown}].
 
-- `portwatch/chokepoint4`: **failed**. 2 retained search responses; 4 candidate references. [Dossier](../../data/research/research-307c8b0eeb983a763b3ae5d3ff82a955c055b563c9e6ed4955d2001dbc4f6f8f/result.edn).
-- `portwatch/chokepoint6`: **failed**. 2 retained search responses; 4 candidate references. [Dossier](../../data/research/research-0b84843788fdfb6a3b5b95147b050b3c4a5152a30940d05568e68fb2bf32d96a/result.edn).
 
-Retained research: [`portwatch/chokepoint6` failed](../../data/research/research-0b84843788fdfb6a3b5b95147b050b3c4a5152a30940d05568e68fb2bf32d96a/result.edn); [`portwatch/chokepoint4` failed](../../data/research/research-307c8b0eeb983a763b3ae5d3ff82a955c055b563c9e6ed4955d2001dbc4f6f8f/result.edn); [`portwatch/chokepoint4` completed](../../data/research/research-aed82fa1ddd0eb1e7ccb389734511822c94cacad7bd06034554892e68ab4f20e/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-bba0aaf799f16362442220e4335a1b79e489554f46e80377e30ed38c011ca2fb/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-77224a3ce6df44cf4f3f14b156528fe4d5be151556ad704c269777e221a5962a/result.edn); [`portwatch/chokepoint4` completed](../../data/research/research-e160cc1e5091be53dc650556358d19578c7c37fa08d78b449c0c21fe23c82a9f/result.edn).
+Retained research: [`portwatch/chokepoint4` completed](../../data/research/research-aed82fa1ddd0eb1e7ccb389734511822c94cacad7bd06034554892e68ab4f20e/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-bba0aaf799f16362442220e4335a1b79e489554f46e80377e30ed38c011ca2fb/result.edn); [`portwatch/chokepoint6` completed](../../data/research/research-77224a3ce6df44cf4f3f14b156528fe4d5be151556ad704c269777e221a5962a/result.edn); [`portwatch/chokepoint4` completed](../../data/research/research-e160cc1e5091be53dc650556358d19578c7c37fa08d78b449c0c21fe23c82a9f/result.edn); [`portwatch/chokepoint6` failed](../../data/research/research-0b84843788fdfb6a3b5b95147b050b3c4a5152a30940d05568e68fb2bf32d96a/result.edn); [`portwatch/chokepoint4` failed](../../data/research/research-307c8b0eeb983a763b3ae5d3ff82a955c055b563c9e6ed4955d2001dbc4f6f8f/result.edn).
 
 Literature metadata supplies leads, not verified experimental findings. Null searches remain valid; failed searches remain failures. Proposed indicators/tests do not modify production definitions. Foresight/Clio event admission is explicitly pending.
 
-Generated: `2026-11-07T17:46:55.058415379Z`
+Generated: `2026-11-08T17:58:36.078054537Z`
 
 Source coverage through: `2026-11-01`
 

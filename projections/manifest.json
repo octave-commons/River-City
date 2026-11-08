@@ -24,10 +24,10 @@
       "path" : "reports/daily/latest.md"
     }, {
       "id" : "report/daily-dated",
-      "path" : "reports/daily/2026-11-07-bbb59b81dd007268.md"
+      "path" : "reports/daily/2026-11-08-365114f5d898ae2d.md"
     } ]
   },
-  "generated-at" : "2026-11-07T17:46:55.058415379Z",
+  "generated-at" : "2026-11-08T17:58:36.078054537Z",
   "latest-successful-projection" : {
     "portwatch" : {
       "edn" : "projections/portwatch/latest.edn",
@@ -57,11 +57,11 @@
       "event-admission" : "pending",
       "event-host" : "foresight",
       "input-refs" : [ {
-        "digest" : "dd140c37e680d03dd0bba2c30f6cb2178b6e1f8ddc46a47351a67f9f9f4cb5ee",
+        "digest" : "5d968c402348ed5e205a0a496bfd20d55f0b02e3fb9dd8559468ffbf1681db14",
         "lineage/mode" : "direct-source-snapshot",
         "path" : "projections/portwatch/latest.edn",
         "source/id" : "source/imf-portwatch",
-        "source/retrieved-at" : "2026-11-07T17:46:20.037218916Z"
+        "source/retrieved-at" : "2026-11-08T17:58:04.790679329Z"
       } ],
       "ledger-backed?" : false,
       "mode" : "source-evidence-bundles"
