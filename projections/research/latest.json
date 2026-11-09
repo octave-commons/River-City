@@ -4,14 +4,14 @@
     "suppressed" : [ {
       "id" : "portwatch/chokepoint4",
       "reason" : "cooldown",
-      "request-id" : "research-9f92957da7778c5239390f98304927afec5b5ae21d1399d892a3084fbf7a20cd"
+      "request-id" : "research-fe9c6889e4a3412e84de277cac664514397ad81b16745d63798e03e4c7f79101"
     }, {
       "id" : "portwatch/chokepoint6",
       "reason" : "cooldown",
-      "request-id" : "research-0affe45c85bf32711daf184f3be31d2e0a797242fb9827d1c0493194128b2206"
+      "request-id" : "research-75b200a25801a72b4a4e8b37d7c666df1ab0da8878a163b43e89f40eb37e569e"
     } ]
   },
-  "as-of" : "2026-11-08T17:58:36.394674373Z",
+  "as-of" : "2026-11-09T22:28:55.349803733Z",
   "assessments" : [ {
     "chart-kind" : "freshness",
     "comparison" : {
@@ -119,9 +119,9 @@
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-9f92957da7778c5239390f98304927afec5b5ae21d1399d892a3084fbf7a20cd",
+    "request-id" : "research-fe9c6889e4a3412e84de277cac664514397ad81b16745d63798e03e4c7f79101",
     "research?" : true,
-    "source-age-days" : 7,
+    "source-age-days" : 8,
     "spread-relative" : 0.6768447837150127,
     "unit" : "vessels/day"
   }, {
@@ -231,13 +231,13 @@
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-0affe45c85bf32711daf184f3be31d2e0a797242fb9827d1c0493194128b2206",
+    "request-id" : "research-75b200a25801a72b4a4e8b37d7c666df1ab0da8878a163b43e89f40eb37e569e",
     "research?" : true,
-    "source-age-days" : 7,
+    "source-age-days" : 8,
     "spread-relative" : 1.814814814814815,
     "unit" : "vessels/day"
   } ],
-  "chart-path" : "charts/research/2026-11-08-365114f5d898ae2d.svg",
+  "chart-path" : "charts/research/2026-11-09-9dc925f8ae0d7b42.svg",
   "history" : [ {
     "day" : 20764,
     "id" : "portwatch/chokepoint6",
@@ -382,9 +382,9 @@
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-9f92957da7778c5239390f98304927afec5b5ae21d1399d892a3084fbf7a20cd",
+    "request-id" : "research-fe9c6889e4a3412e84de277cac664514397ad81b16745d63798e03e4c7f79101",
     "research?" : true,
-    "source-age-days" : 7,
+    "source-age-days" : 8,
     "spread-relative" : 0.6768447837150127,
     "unit" : "vessels/day"
   },
@@ -392,11 +392,11 @@
     "event-admission" : "pending",
     "event-host" : "foresight",
     "input-refs" : [ {
-      "digest" : "5d968c402348ed5e205a0a496bfd20d55f0b02e3fb9dd8559468ffbf1681db14",
+      "digest" : "0d69668a509e5c02d30807d4e0b863048b0bad8108d598cbb127291e2358bad9",
       "lineage/mode" : "direct-source-snapshot",
       "path" : "projections/portwatch/latest.edn",
       "source/id" : "source/imf-portwatch",
-      "source/retrieved-at" : "2026-11-08T17:58:04.790679329Z"
+      "source/retrieved-at" : "2026-11-09T22:27:23.067685368Z"
     } ],
     "ledger-backed?" : false,
     "mode" : "source-evidence-bundles"
