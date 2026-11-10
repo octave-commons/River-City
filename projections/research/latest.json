@@ -4,240 +4,240 @@
     "suppressed" : [ {
       "id" : "portwatch/chokepoint4",
       "reason" : "cooldown",
-      "request-id" : "research-fe9c6889e4a3412e84de277cac664514397ad81b16745d63798e03e4c7f79101"
+      "request-id" : "research-1933a0d5cfb68418076971d1966e924b8822c5267434c42f8f89c6eefdde6a34"
     }, {
       "id" : "portwatch/chokepoint6",
       "reason" : "cooldown",
-      "request-id" : "research-75b200a25801a72b4a4e8b37d7c666df1ab0da8878a163b43e89f40eb37e569e"
+      "request-id" : "research-d4386fc87fb57ca33df0fc85def4845e2d5668f34bc983b52797613ef9c97856"
     } ]
   },
-  "as-of" : "2026-11-09T22:28:55.349803733Z",
+  "as-of" : "2026-11-10T19:49:00.610769273Z",
   "assessments" : [ {
-    "chart-kind" : "freshness",
+    "chart-kind" : "series",
     "comparison" : {
       "approved?" : false,
-      "lower" : 40.0,
+      "lower" : 41.5,
       "n" : 7,
-      "upper" : 64.0,
-      "value" : 55.0
+      "upper" : 60.5,
+      "value" : 46.0
     },
     "comparison-key" : "portwatch-visible-vessels/chokepoint4",
-    "flags" : [ "displaced", "regime-unknown", "stale", "unexplained" ],
+    "flags" : [ "displaced", "regime-unknown", "unexplained" ],
     "id" : "portwatch/chokepoint4",
     "label" : "Bab el-Mandeb Strait visible vessel passages",
-    "latest" : 30,
+    "latest" : 24,
     "normal-regime-established?" : false,
     "observations" : [ {
-      "date" : "2026-10-19",
-      "day" : 20745,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11483",
-      "value" : 36
-    }, {
-      "date" : "2026-10-20",
-      "day" : 20746,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11484",
-      "value" : 33
-    }, {
-      "date" : "2026-10-21",
-      "day" : 20747,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11485",
-      "value" : 21
-    }, {
-      "date" : "2026-10-22",
-      "day" : 20748,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11486",
-      "value" : 23
-    }, {
-      "date" : "2026-10-23",
-      "day" : 20749,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11487",
-      "value" : 32
-    }, {
-      "date" : "2026-10-24",
-      "day" : 20750,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11488",
-      "value" : 21
-    }, {
-      "date" : "2026-10-25",
-      "day" : 20751,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11489",
-      "value" : 36
-    }, {
       "date" : "2026-10-26",
       "day" : 20752,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11490",
+      "source-ref" : "imf-portwatch/10342",
       "value" : 29
     }, {
       "date" : "2026-10-27",
       "day" : 20753,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11491",
+      "source-ref" : "imf-portwatch/10343",
       "value" : 27
     }, {
       "date" : "2026-10-28",
       "day" : 20754,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11492",
+      "source-ref" : "imf-portwatch/10344",
       "value" : 19
     }, {
       "date" : "2026-10-29",
       "day" : 20755,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11493",
+      "source-ref" : "imf-portwatch/10345",
       "value" : 22
     }, {
       "date" : "2026-10-30",
       "day" : 20756,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11494",
+      "source-ref" : "imf-portwatch/10346",
       "value" : 26
     }, {
       "date" : "2026-10-31",
       "day" : 20757,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11495",
+      "source-ref" : "imf-portwatch/10347",
       "value" : 38
     }, {
       "date" : "2026-11-01",
       "day" : 20758,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11496",
+      "source-ref" : "imf-portwatch/10348",
       "value" : 30
+    }, {
+      "date" : "2026-11-02",
+      "day" : 20759,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10349",
+      "value" : 30
+    }, {
+      "date" : "2026-11-03",
+      "day" : 20760,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10350",
+      "value" : 25
+    }, {
+      "date" : "2026-11-04",
+      "day" : 20761,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10351",
+      "value" : 27
+    }, {
+      "date" : "2026-11-05",
+      "day" : 20762,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10352",
+      "value" : 34
+    }, {
+      "date" : "2026-11-06",
+      "day" : 20763,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10353",
+      "value" : 25
+    }, {
+      "date" : "2026-11-07",
+      "day" : 20764,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10354",
+      "value" : 19
+    }, {
+      "date" : "2026-11-08",
+      "day" : 20765,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10355",
+      "value" : 24
     } ],
     "points" : 14,
-    "question" : "Does a newer independent observation confirm or contradict the last measured level?",
-    "rank" : 0,
+    "question" : "Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?",
+    "rank" : 4,
     "regime" : {
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-fe9c6889e4a3412e84de277cac664514397ad81b16745d63798e03e4c7f79101",
+    "request-id" : "research-1933a0d5cfb68418076971d1966e924b8822c5267434c42f8f89c6eefdde6a34",
     "research?" : true,
-    "source-age-days" : 8,
-    "spread-relative" : 0.6768447837150127,
+    "source-age-days" : 2,
+    "spread-relative" : 0.7093333333333333,
     "unit" : "vessels/day"
   }, {
-    "chart-kind" : "freshness",
+    "chart-kind" : "series",
     "comparison" : {
       "approved?" : false,
-      "lower" : 77.5,
+      "lower" : 61.5,
       "n" : 7,
-      "upper" : 94.0,
-      "value" : 86.0
+      "upper" : 98.5,
+      "value" : 77.0
     },
     "comparison-key" : "portwatch-visible-vessels/chokepoint6",
-    "flags" : [ "displaced", "noisy", "regime-unknown", "stale", "unexplained" ],
+    "flags" : [ "displaced", "noisy", "regime-unknown", "unexplained" ],
     "id" : "portwatch/chokepoint6",
     "label" : "Strait of Hormuz visible vessel passages",
-    "latest" : 1,
+    "latest" : 3,
     "normal-regime-established?" : false,
     "observations" : [ {
-      "date" : "2026-10-19",
-      "day" : 20745,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17617",
-      "value" : 4
-    }, {
-      "date" : "2026-10-20",
-      "day" : 20746,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17619",
-      "value" : 3
-    }, {
-      "date" : "2026-10-21",
-      "day" : 20747,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17620",
-      "value" : 3
-    }, {
-      "date" : "2026-10-22",
-      "day" : 20748,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17621",
-      "value" : 4
-    }, {
-      "date" : "2026-10-23",
-      "day" : 20749,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17622",
-      "value" : 5
-    }, {
-      "date" : "2026-10-24",
-      "day" : 20750,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17623",
-      "value" : 2
-    }, {
-      "date" : "2026-10-25",
-      "day" : 20751,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17624",
-      "value" : 2
-    }, {
       "date" : "2026-10-26",
       "day" : 20752,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17625",
+      "source-ref" : "imf-portwatch/16052",
       "value" : 5
     }, {
       "date" : "2026-10-27",
       "day" : 20753,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17626",
+      "source-ref" : "imf-portwatch/16407",
       "value" : 4
     }, {
       "date" : "2026-10-28",
       "day" : 20754,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17627",
+      "source-ref" : "imf-portwatch/16411",
       "value" : 3
     }, {
       "date" : "2026-10-29",
       "day" : 20755,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17628",
+      "source-ref" : "imf-portwatch/16415",
       "value" : 3
     }, {
       "date" : "2026-10-30",
       "day" : 20756,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17629",
+      "source-ref" : "imf-portwatch/16419",
       "value" : 7
     }, {
       "date" : "2026-10-31",
       "day" : 20757,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17630",
+      "source-ref" : "imf-portwatch/16423",
       "value" : 8
     }, {
       "date" : "2026-11-01",
       "day" : 20758,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/17631",
+      "source-ref" : "imf-portwatch/16427",
       "value" : 1
+    }, {
+      "date" : "2026-11-02",
+      "day" : 20759,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/16431",
+      "value" : 2
+    }, {
+      "date" : "2026-11-03",
+      "day" : 20760,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/16435",
+      "value" : 4
+    }, {
+      "date" : "2026-11-04",
+      "day" : 20761,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/16439",
+      "value" : 5
+    }, {
+      "date" : "2026-11-05",
+      "day" : 20762,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/16443",
+      "value" : 5
+    }, {
+      "date" : "2026-11-06",
+      "day" : 20763,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/16447",
+      "value" : 6
+    }, {
+      "date" : "2026-11-07",
+      "day" : 20764,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/16451",
+      "value" : 2
+    }, {
+      "date" : "2026-11-08",
+      "day" : 20765,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/16455",
+      "value" : 3
     } ],
     "points" : 14,
-    "question" : "Does a newer independent observation confirm or contradict the last measured level?",
-    "rank" : 0,
+    "question" : "Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?",
+    "rank" : 1,
     "regime" : {
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-75b200a25801a72b4a4e8b37d7c666df1ab0da8878a163b43e89f40eb37e569e",
+    "request-id" : "research-d4386fc87fb57ca33df0fc85def4845e2d5668f34bc983b52797613ef9c97856",
     "research?" : true,
-    "source-age-days" : 8,
-    "spread-relative" : 1.814814814814815,
+    "source-age-days" : 2,
+    "spread-relative" : 1.689655172413793,
     "unit" : "vessels/day"
   } ],
-  "chart-path" : "charts/research/2026-11-09-9dc925f8ae0d7b42.svg",
+  "chart-path" : "charts/research/2026-11-10-e0a5847617f48eb3.svg",
   "history" : [ {
     "day" : 20764,
     "id" : "portwatch/chokepoint6",
@@ -276,127 +276,127 @@
     "status" : "completed"
   } ],
   "lead" : {
-    "chart-kind" : "freshness",
+    "chart-kind" : "series",
     "comparison" : {
       "approved?" : false,
-      "lower" : 40.0,
+      "lower" : 41.5,
       "n" : 7,
-      "upper" : 64.0,
-      "value" : 55.0
+      "upper" : 60.5,
+      "value" : 46.0
     },
     "comparison-key" : "portwatch-visible-vessels/chokepoint4",
-    "flags" : [ "displaced", "regime-unknown", "stale", "unexplained" ],
+    "flags" : [ "displaced", "regime-unknown", "unexplained" ],
     "id" : "portwatch/chokepoint4",
     "label" : "Bab el-Mandeb Strait visible vessel passages",
-    "latest" : 30,
+    "latest" : 24,
     "normal-regime-established?" : false,
     "observations" : [ {
-      "date" : "2026-10-19",
-      "day" : 20745,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11483",
-      "value" : 36
-    }, {
-      "date" : "2026-10-20",
-      "day" : 20746,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11484",
-      "value" : 33
-    }, {
-      "date" : "2026-10-21",
-      "day" : 20747,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11485",
-      "value" : 21
-    }, {
-      "date" : "2026-10-22",
-      "day" : 20748,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11486",
-      "value" : 23
-    }, {
-      "date" : "2026-10-23",
-      "day" : 20749,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11487",
-      "value" : 32
-    }, {
-      "date" : "2026-10-24",
-      "day" : 20750,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11488",
-      "value" : 21
-    }, {
-      "date" : "2026-10-25",
-      "day" : 20751,
-      "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11489",
-      "value" : 36
-    }, {
       "date" : "2026-10-26",
       "day" : 20752,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11490",
+      "source-ref" : "imf-portwatch/10342",
       "value" : 29
     }, {
       "date" : "2026-10-27",
       "day" : 20753,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11491",
+      "source-ref" : "imf-portwatch/10343",
       "value" : 27
     }, {
       "date" : "2026-10-28",
       "day" : 20754,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11492",
+      "source-ref" : "imf-portwatch/10344",
       "value" : 19
     }, {
       "date" : "2026-10-29",
       "day" : 20755,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11493",
+      "source-ref" : "imf-portwatch/10345",
       "value" : 22
     }, {
       "date" : "2026-10-30",
       "day" : 20756,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11494",
+      "source-ref" : "imf-portwatch/10346",
       "value" : 26
     }, {
       "date" : "2026-10-31",
       "day" : 20757,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11495",
+      "source-ref" : "imf-portwatch/10347",
       "value" : 38
     }, {
       "date" : "2026-11-01",
       "day" : 20758,
       "event-ids" : [ ],
-      "source-ref" : "imf-portwatch/11496",
+      "source-ref" : "imf-portwatch/10348",
       "value" : 30
+    }, {
+      "date" : "2026-11-02",
+      "day" : 20759,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10349",
+      "value" : 30
+    }, {
+      "date" : "2026-11-03",
+      "day" : 20760,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10350",
+      "value" : 25
+    }, {
+      "date" : "2026-11-04",
+      "day" : 20761,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10351",
+      "value" : 27
+    }, {
+      "date" : "2026-11-05",
+      "day" : 20762,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10352",
+      "value" : 34
+    }, {
+      "date" : "2026-11-06",
+      "day" : 20763,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10353",
+      "value" : 25
+    }, {
+      "date" : "2026-11-07",
+      "day" : 20764,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10354",
+      "value" : 19
+    }, {
+      "date" : "2026-11-08",
+      "day" : 20765,
+      "event-ids" : [ ],
+      "source-ref" : "imf-portwatch/10355",
+      "value" : 24
     } ],
     "points" : 14,
-    "question" : "Does a newer independent observation confirm or contradict the last measured level?",
-    "rank" : 0,
+    "question" : "Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?",
+    "rank" : 4,
     "regime" : {
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-fe9c6889e4a3412e84de277cac664514397ad81b16745d63798e03e4c7f79101",
+    "request-id" : "research-1933a0d5cfb68418076971d1966e924b8822c5267434c42f8f89c6eefdde6a34",
     "research?" : true,
-    "source-age-days" : 8,
-    "spread-relative" : 0.6768447837150127,
+    "source-age-days" : 2,
+    "spread-relative" : 0.7093333333333333,
     "unit" : "vessels/day"
   },
   "lineage" : {
     "event-admission" : "pending",
     "event-host" : "foresight",
     "input-refs" : [ {
-      "digest" : "0d69668a509e5c02d30807d4e0b863048b0bad8108d598cbb127291e2358bad9",
+      "digest" : "682ac249b4c720eafef76bf8bcae80c6920bc0a0f3b8d43bf28079813c9b30f0",
       "lineage/mode" : "direct-source-snapshot",
       "path" : "projections/portwatch/latest.edn",
       "source/id" : "source/imf-portwatch",
-      "source/retrieved-at" : "2026-11-09T22:27:23.067685368Z"
+      "source/retrieved-at" : "2026-11-10T19:48:32.555985375Z"
     } ],
     "ledger-backed?" : false,
     "mode" : "source-evidence-bundles"
