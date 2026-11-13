@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-11-12T21:08:22.433Z",
+  "observed_at": "2026-11-13T20:39:59.321Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -5721,8 +5721,8 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:20.708Z",
-          "content_digest": "bace79460038d4aa11a4db81e5a65fcdcd97c67d0a9db11bb3210acfe995e244",
+          "observed_at": "2026-11-13T20:39:58.205Z",
+          "content_digest": "78ad82a1fa37525dee837ac29e9ebc3fa86a0d625e8336284e482d9940e4eca8",
           "facts_digest": "49abcfb588794811e0451ec8626eea772b71c8c71772de225682106a0949345b",
           "facts": [
             "fine-tuned models remain available for inference until their base models are deprecated.",
@@ -5734,8 +5734,8 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:20.678Z",
-          "content_digest": "2c6618afe79a55a16a4ad3db19a3937b67dd6d345f032e5e1331e4e441208d5f",
+          "observed_at": "2026-11-13T20:39:58.240Z",
+          "content_digest": "62a2932a42c4915442a9350413b71a960eecc94331b23de2a9e84cc7c6fe64f8",
           "facts_digest": "3cafd395432329dd2d1499d9af363785d2878f6858dc7bdf0955cc42fbd96d79",
           "facts": [
             "browse [all models](/api/docs/models/all.md), including deprecated models.",
@@ -5746,56 +5746,36 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:20.771Z",
-          "content_digest": "b9ed62b5062ca9ecbd0727fb27cf4c58cbf5254971a69647c7dc972b79b62218",
-          "facts_digest": "9f933d2e9807934c31f0bc65ec60431c6c25223400fdf6752d756fca2efaeb7f",
+          "observed_at": "2026-11-13T20:39:58.232Z",
+          "content_digest": "5ddfd629aeac29f4a201bc9d6335acea9d4320fb1601b66b3296e55e6eda8c23",
+          "facts_digest": "d52e6b9d05ce5467a0c7e4c44635df21c9dbccea99e6e64432fb3821ae748f46",
           "facts": [
-            "2026-06-02: gpt image model deprecations",
-            "2026-06-11: gpt-5 and o3 model deprecations",
-            "2026-10-14: gpt-4 series model deprecations",
             "active existing customers will no longer be able to create new fine-tuning jobs on this date. inference on fine-tuned models will be disabled only when the underlying base model is deprecated.",
-            "deprecated model",
-            "deprecated model price",
-            "fine-tuned models created from these base models are not affected by this deprecation, but you will no longer be able to create new fine-tuned versions with these models.",
+            "active. you can use the model through the api. openai hasn’t announced its retirement.",
+            "agents sdk or chatgpt workspace agents. migration guide . chatkit remains available.",
+            "check the documentation regularly for model deprecation updates.",
+            "deprecated. openai has announced the model’s retirement. you can still use it until its shutdown date.",
+            "for deprecation notice periods and help migrating to a replacement model, see the deprecation policy and migration guidance below.",
             "generally available models: at least 6 months.",
-            "in september, 2025, we notified developers using gpt-4o-realtime-preview models of their deprecation and removal from the api in six months.",
+            "gpt-3.5-turbo-0301 historical price $15.00 / 1m input tokens + $20.00 / 1m output tokens",
+            "gpt-3.5-turbo-0613 historical price $1.50 / 1m input tokens + $2.00 / 1m output tokens",
+            "gpt-3.5-turbo-16k-0613 historical price $3.00 / 1m input tokens + $4.00 / 1m output tokens",
+            "gpt-4-0314 historical price $30.00 / 1m input tokens + $60.00 / 1m output tokens",
+            "gpt-4-1106-vision-preview historical price $10.00 / 1m input tokens + $30 / 1m output tokens",
+            "gpt-4-32k historical price $60.00 / 1m input tokens + $120 / 1m output tokens",
+            "gpt-4-32k-0314 historical price $60.00 / 1m input tokens + $120 / 1m output tokens",
+            "gpt-4-32k-0613 historical price $60.00 / 1m input tokens + $120 / 1m output tokens",
+            "gpt-4-vision-preview historical price $10.00 / 1m input tokens + $30 / 1m output tokens",
             "inference on fine-tuned models will continue to be available until the base models are deprecated.",
             "model deprecation notice periods",
-            "on april 14th, 2025, we notified developers that the gpt-4.5-preview model is deprecated and will be removed from the api in the coming months.",
-            "on april 22, 2026, we announced the deprecation of the following older openai models. access to these models was shut down on july 23, 2026.",
-            "on april 22, 2026, we announced the deprecation of the following older openai models. access to these models was shut down on october 23, 2026.",
-            "on august 26, 2026, we notified developers using whisper-1 , gpt-4o-transcribe , gpt-4o-mini-transcribe , and gpt-4o-transcribe-diarize of their deprecation and removal from the api on february 26, 2027.",
-            "on july 06, 2023, we announced the upcoming retirements of older gpt-3 and gpt-3.5 models served via the completions endpoint. we also announced the upcoming retirement of our first-generation text embedding models. they will be shut down on january 04, 2024.",
-            "on july 20, 2026, we notified developers using legacy audio, realtime, and transcription model families and snapshots of their deprecation and removal from the api on january 20, 2027.",
-            "on june 10th, 2025, we notified developers using gpt-4o-audio-preview-2024-10-01 of its deprecation and removal from the api in three months.",
-            "on june 10th, 2025, we notified developers using gpt-4o-realtime-preview-2024-10-01 of its deprecation and removal from the api in three months.",
-            "on june 11, 2026, we notified developers using older gpt-5 and o3 model snapshots of their deprecation and removal from the api on december 11, 2026.",
-            "on june 13, 2023, we announced new chat model versions in the function calling and other api updates blog post. the three original versions will be retired in june 2024 at the earliest. as of january 10, 2024, only existing users of these models will be able to continue using them.",
-            "on june 2, 2026, we notified developers using older gpt image models of their deprecation and removal from the api on december 1, 2026.",
-            "on june 6th, 2024, we notified developers using gpt-4-32k and gpt-4-vision-preview of their upcoming deprecations in one year and six months respectively. as of june 17, 2024, only existing users of these models will be able to continue using them.",
-            "on march 24th, 2026, we notified developers using the videos api and sora 2 video generation model aliases and snapshots of their deprecation and removal from the api on september 24, 2026.",
-            "on may 8th, 2026, we notified developers using gpt-5.2-chat-latest and gpt-5.3-chat-latest model snapshots of their deprecation and removal from the api.",
-            "on november 14th, 2025, we notified developers using dall·e model snapshots of their deprecation and removal from the api on may 12, 2026.",
-            "on november 17th, 2025, we notified developers using codex-mini-latest model of its deprecation and removal from the api on february 12, 2026. as part of this deprecation, we will no longer support our legacy local shell tool, which is only available for use with codex-mini-latest . for new use cases, please use our latest shell tool.",
-            "on november 18th, 2025, we notified developers using chatgpt-4o-latest model snapshot of its deprecation and removal from the api on february 17, 2026.",
-            "on november 6th, 2023, we announced the release of an updated gpt-3.5-turbo model (which now comes by default with 16k context) along with deprecation of gpt-3.5-turbo-0613 and gpt-3.5-turbo-16k-0613 . as of june 17, 2024, only existing users of these models will be able to continue using them.",
-            "on october 14, 2026, we notified developers using certain gpt-4 series models of their deprecation and removal from the api on january 14, 2027.",
             "preview models: preview models, identified by preview in the model name, may be retired with much shorter notice, such as 2 weeks. examples include computer-use-preview and gpt-4o-audio-preview . we don’t recommend using preview models for business-critical production workloads unless you can migrate on short notice.",
+            "see the gpt-6 migration guide .",
             "specialized variants of generally available models and image generation models: at least 3 months. examples include chat variants such as gpt-5.1-chat-latest , codex variants such as gpt-5.3-codex , and deep research variants such as o3-deep-research .",
-            "the following models are deprecated and will be removed from the api on april 1, 2027, with six months’ notice. migrate to the recommended replacements before the shutdown date.",
-            "the following text-to-speech models are deprecated and will be removed from the api on january 6, 2027, with at least three months’ notice. migrate to gpt-realtime-2.1-mini before the shutdown date. see the realtime api guide to plan your migration.",
-            "the gpt-5.4-cyber model is deprecated and will be removed from the api on october 1, 2026. migrate to the most capable cyber model available to you before the shutdown date.",
-            "the gpt-5.5-cyber-preview model is deprecated and will be removed from the api on february 1, 2027. migrate to the most capable cyber model available to you before the shutdown date.",
-            "the gpt-image-2 model and gpt-image-2-2026-04-21 snapshot are deprecated and will be removed from the api on february 10, 2027.",
+            "the june 2023 announcement gave an earliest retirement date of june 13, 2024 for the original chat models. starting january 10, 2024, access was limited to existing users. see the march 2026 shutdown notice for the final shutdown date of gpt-4-0314 .",
+            "the june 6, 2024 notice reconfirmed the retirement of gpt-4-32k-0314 . starting june 17, 2024, access to the gpt-4-32k and vision preview models and the gpt-3.5 turbo snapshots announced in november 2023 was limited to existing users. existing fine-tuned models from those gpt-3.5 turbo snapshots were unaffected by that shutdown.",
             "these notice periods give customers time to evaluate recommended replacement models, test application behavior, and complete migrations before a model is no longer available. in some cases, developers may be able to provision dedicated capacity for continued access after a model’s shutdown date. to explore this option, contact our sales team .",
-            "to improve reliability and make it easier for developers to choose the right models, we deprecated a set of older openai models with declining usage. access to these models was shut down on march 26, 2026.",
-            "to improve reliability and make it easier for developers to choose the right models, we deprecated a set of older openai models with declining usage. access to these models was shut down on september 28, 2026.",
             "unless safety or compliance concerns require a faster timeline, we provide the following minimum notice periods before model retirement:",
-            "we provide advance notice before retiring models so customers have time to plan and migrate. when we announce a model deprecation, we notify customers who are actively using the model by email and document the deprecation on this page.",
-            "we use the term “deprecation” to refer to the process of retiring a model or endpoint. when we announce that a model or endpoint is being deprecated, it immediately becomes deprecated. all deprecated models and endpoints will also have a shut down date. at the time of the shut down, the model or endpoint will no longer be accessible.",
-            "we use the term “legacy” to refer to models and endpoints that no longer receive updates. we tag endpoints and models as legacy to signal to developers where we’re moving as a platform and that they should likely migrate to newer models or endpoints. you can expect that a legacy model or endpoint will be deprecated at some point in the future.",
-            "we use the terms “sunset” and “shut down” interchangeably to mean a model or endpoint is no longer accessible.",
-            "when we released the responses api in march 2025 , we announced plans to bring all assistants api features to the easier to use responses api, with a sunset date in 2026."
+            "we provide advance notice before retiring models so customers have time to plan and migrate. when we announce a model deprecation, we notify customers who are actively using the model by email and document the deprecation on this page."
           ]
         }
       ]
@@ -7118,8 +7098,8 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.275Z",
-          "content_digest": "110d476a88a87fba4855a2837fc8be2b31a5395c0cdc98a8950d9b551e3fbe97",
+          "observed_at": "2026-11-13T20:39:58.526Z",
+          "content_digest": "0d37e0746cb69193a1ce487a8930062efea316389e10b905f681a5ab3d4d5a3c",
           "facts_digest": "6976a3133a8c4886a086884282ecfdeafc20dbe3a832893d12272531cf0a62df",
           "facts": [
             "$0.01 usd per ccu (fixed; discounts apply at token-to-ccu conversion, not to the ccu price)",
@@ -7153,8 +7133,8 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.555Z",
-          "content_digest": "85f135ea336116aa63ab3023e2cab7799608b1b82a8a502500322a9852b4dcd8",
+          "observed_at": "2026-11-13T20:39:59.144Z",
+          "content_digest": "13d9d0e0e5dc99fb776b2dcbe78118bf73755eef87fce40bfd8d120da5f62fd7",
           "facts_digest": "edb02ae50e2bab5c4f0ba2d266147b9d5f903d3da4ed77971538ff0ed5214d4c",
           "facts": [
             "active : the model is available for use, open to new adopters, and not scheduled for retirement.",
@@ -7175,8 +7155,8 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.314Z",
-          "content_digest": "833f87e115c258d8100e9999dac2944612c685ebeb90bd838afd3983a836ddc1",
+          "observed_at": "2026-11-13T20:39:58.588Z",
+          "content_digest": "dc6fcd978a2aaf7eaa9e95afc20efa4b11e28c1695b22ac4f88704fc7687de6b",
           "facts_digest": "cc4fc79014fe88c9b920ecef3fbae4fe036dcc572f19f20e30d9465f82057286",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer. see token counts on claude fable and claude mythos models .",
@@ -7650,10 +7630,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.2375,
-            "cached_input": 0.19,
+            "input": 2,
+            "cached_input": 0.2,
             "cache_write": null,
-            "output": 8.7856
+            "output": 10
           },
           "hugging_face_id": "moonshotai/Kimi-K3.1-Pro",
           "expiration_date": null,
@@ -8173,7 +8153,7 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.008Z",
+          "observed_at": "2026-11-13T20:39:58.790Z",
           "content_digest": "8305a063f5893bf145f0e28cd9b5c05add18a09240a71c8e8fce4e0d6a6af817",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
@@ -8184,7 +8164,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.050Z",
+          "observed_at": "2026-11-13T20:39:58.814Z",
           "content_digest": "cf7443131efc7930a80248e009bdc753940836969fc3dbea7e9a814eea7b20bc",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8214,7 +8194,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.021Z",
+          "observed_at": "2026-11-13T20:39:58.847Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8229,7 +8209,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.039Z",
+          "observed_at": "2026-11-13T20:39:58.840Z",
           "content_digest": "cf7443131efc7930a80248e009bdc753940836969fc3dbea7e9a814eea7b20bc",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8259,7 +8239,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.027Z",
+          "observed_at": "2026-11-13T20:39:58.858Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8274,7 +8254,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.432Z",
+          "observed_at": "2026-11-13T20:39:58.841Z",
           "content_digest": "9e2fb91c69addc91752166a15f4b90e53f0c0a424485786c27f400a29c3cb95c",
           "facts_digest": "112d1e98d96aab27295f34161c40e1d6ae63fbc86cfffd4ea990c87158bc0cb5",
           "facts": [
@@ -8285,7 +8265,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.036Z",
+          "observed_at": "2026-11-13T20:39:58.846Z",
           "content_digest": "397449b74cc111c241eb37b9d0be51993689d2132b52d23742f5c143bebcc54d",
           "facts_digest": "55f80e324fb9558f5847130ad6eb79ac5480c4bc99fc6ee245ec5d066028953f",
           "facts": [
@@ -8298,7 +8278,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.044Z",
+          "observed_at": "2026-11-13T20:39:58.855Z",
           "content_digest": "48d3930270ebb2a80df336a0b4dfeee7a014545ba1133a5059f664eb549ba545",
           "facts_digest": "737bee2a800aac905175f87f37f827c1394f79d999fd101d0d7994b963f12811",
           "facts": [
@@ -8309,7 +8289,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.040Z",
+          "observed_at": "2026-11-13T20:39:58.830Z",
           "content_digest": "3e7f416da2857c6e04973083340fbf5dfa6be5581dce085c14bae3b64c0999e5",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -8838,10 +8818,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.322,
-            "cached_input": 0.109,
+            "input": 0.347,
+            "cached_input": 0.117,
             "cache_write": null,
-            "output": 0.989
+            "output": 1.068
           },
           "hugging_face_id": "zai-org/GLM-5.2",
           "expiration_date": null,
@@ -8887,10 +8867,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.0699,
-            "cached_input": 0.0689,
+            "input": 0.084,
+            "cached_input": 0.079,
             "cache_write": null,
-            "output": 1.4
+            "output": 3.6
           },
           "hugging_face_id": "zai-org/GLM-5.3",
           "expiration_date": null,
@@ -9016,16 +8996,11 @@
             "text"
           ],
           "supported_parameters": [
-            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
             "reasoning_effort",
-            "repetition_penalty",
             "response_format",
-            "seed",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
@@ -10574,8 +10549,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.019Z",
-          "content_digest": "e65bd123b406d07b886bfba3ce7ea647f9d62f0cf0aec721cfbb6da38c9cbae6",
+          "observed_at": "2026-11-13T20:39:58.529Z",
+          "content_digest": "5082c4190637018c248853a10a966240180a04336d55c7666df0f8a89d7752d4",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10586,8 +10561,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.042Z",
-          "content_digest": "73b74b6b80f4469edf4b8c11ebb02d5ec8d088e82a7d35113ad2a7808b119540",
+          "observed_at": "2026-11-13T20:39:58.478Z",
+          "content_digest": "9054f9f378f2d4731ef04140f02f490b69d9d697395c61bc1d7c5ae8085b5a3e",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -13531,7 +13506,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.188Z",
+          "observed_at": "2026-11-13T20:39:58.491Z",
           "content_digest": "2bb2e7e476532dc36e6307e019a414254e6e7a40bd75a47dc8422278af27cc65",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13540,7 +13515,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.139Z",
+          "observed_at": "2026-11-13T20:39:58.509Z",
           "content_digest": "0720db60b4af9f1169a69b89713059f6282c72816f34e32e91c8f6555bb35379",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -13553,7 +13528,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.216Z",
+          "observed_at": "2026-11-13T20:39:58.750Z",
           "content_digest": "30d7983ddcb3416f854c622a958abbd0313ec2c84072cfaa9a2d43b7d4565818",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -13619,7 +13594,7 @@
           "created": 1776874273,
           "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
           "context_length": 1024000,
-          "max_output_tokens": 235929,
+          "max_output_tokens": 131072,
           "input_modalities": [
             "text"
           ],
@@ -13640,10 +13615,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.48,
-            "cached_input": 0.096,
+            "input": 0.435,
+            "cached_input": 0.0036,
             "cache_write": null,
-            "output": 1.8
+            "output": 0.87
           },
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
           "expiration_date": null,
@@ -14499,7 +14474,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.956Z",
+          "observed_at": "2026-11-13T20:39:59.298Z",
           "content_digest": "81d4d2baa09d3d169bd72b46741bb863858c652e4f8945f5b6946c335d2dbe17",
           "facts_digest": "5ed3a04651d99a5c64a46a166b243ded5400a6e213a05bb7664aef7c5b99110d",
           "facts": [
@@ -14511,7 +14486,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:21.965Z",
+          "observed_at": "2026-11-13T20:39:59.266Z",
           "content_digest": "8109fa7192085b0d2bac98358316e5cbda749c8bcf174f280bf09387429c667f",
           "facts_digest": "2ae2eacaa8e77c27443d1defd5cab615c225f6d9fe87f8bba0727df56959c580",
           "facts": [
@@ -14533,7 +14508,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-11-12T21:08:22.018Z",
+          "observed_at": "2026-11-13T20:39:59.321Z",
           "content_digest": "824d8b8b54f826bbc1c5c726229664cb71bbea3d52330d137bb3015a20087e87",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
