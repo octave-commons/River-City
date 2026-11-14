@@ -1,0 +1,148 @@
+{
+  "causal/parents" : [ ],
+  "observations" : [ {
+    "date" : "2026-10-26",
+    "day" : 20752,
+    "value" : 5,
+    "source-ref" : "imf-portwatch/16052",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-10-27",
+    "day" : 20753,
+    "value" : 4,
+    "source-ref" : "imf-portwatch/16407",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-10-28",
+    "day" : 20754,
+    "value" : 3,
+    "source-ref" : "imf-portwatch/16411",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-10-29",
+    "day" : 20755,
+    "value" : 3,
+    "source-ref" : "imf-portwatch/16415",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-10-30",
+    "day" : 20756,
+    "value" : 7,
+    "source-ref" : "imf-portwatch/16419",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-10-31",
+    "day" : 20757,
+    "value" : 8,
+    "source-ref" : "imf-portwatch/16423",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-01",
+    "day" : 20758,
+    "value" : 1,
+    "source-ref" : "imf-portwatch/16427",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-02",
+    "day" : 20759,
+    "value" : 2,
+    "source-ref" : "imf-portwatch/16431",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-03",
+    "day" : 20760,
+    "value" : 4,
+    "source-ref" : "imf-portwatch/16435",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-04",
+    "day" : 20761,
+    "value" : 5,
+    "source-ref" : "imf-portwatch/16439",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-05",
+    "day" : 20762,
+    "value" : 5,
+    "source-ref" : "imf-portwatch/16443",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-06",
+    "day" : 20763,
+    "value" : 6,
+    "source-ref" : "imf-portwatch/16447",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-07",
+    "day" : 20764,
+    "value" : 2,
+    "source-ref" : "imf-portwatch/16451",
+    "event-ids" : [ ]
+  }, {
+    "date" : "2026-11-08",
+    "day" : 20765,
+    "value" : 3,
+    "source-ref" : "imf-portwatch/16455",
+    "event-ids" : [ ]
+  } ],
+  "input-refs" : [ {
+    "path" : "projections/portwatch/latest.edn",
+    "digest" : "2a4d5997cfb216fc8d7a65754b271d4faaf2f375014d96748658b3a68bfc55b5",
+    "source/id" : "source/imf-portwatch",
+    "source/retrieved-at" : "2026-11-14T18:12:21.442818749Z",
+    "lineage/mode" : "direct-source-snapshot"
+  } ],
+  "chart-kind" : "freshness",
+  "comparison" : {
+    "value" : 77.0,
+    "lower" : 61.5,
+    "upper" : 98.5,
+    "n" : 7,
+    "approved?" : false
+  },
+  "label" : "Strait of Hormuz visible vessel passages",
+  "points" : 14,
+  "normal-regime-established?" : false,
+  "spread-relative" : 1.689655172413793,
+  "id" : "portwatch/chokepoint6",
+  "flags" : [ "displaced", "noisy", "regime-unknown", "stale", "unexplained" ],
+  "rank" : 0,
+  "comparison-key" : "portwatch-visible-vessels/chokepoint6",
+  "implementation" : {
+    "orchestrator-sha256" : "eb5bf4dce7b224b29b5987b87f39a5644d3ab46caedab71bdda41e2969988cc5",
+    "shape-sha256" : "6360d44519801da9fcc9e4fb5d23ba9f0031ac6edd316c78e6de230beb7a0622",
+    "worker-sha256" : "9ff2048af03862cf7f98bbbb7ac40d1c1812c68d1070f81303018665ab643274",
+    "domain-sha256" : "636457714f9caf8d9717442bd5c2debc748245b8931fa42a1512e4b21e36e984",
+    "law-sha256" : "ab565df45ab31f0df7faa814f60b7c73003c87ba1e0aa3fb08c40a84b6c01f92"
+  },
+  "question" : "Does a newer independent observation confirm or contradict the last measured level?",
+  "policy" : {
+    "cooldown-days" : 7,
+    "window" : 14,
+    "noise-relative" : 0.35,
+    "abnormal-relative" : 0.25,
+    "queries-per-run" : 2,
+    "max-candidates" : 4,
+    "timeout-ms" : 15000,
+    "min-points" : 5,
+    "max-relative-uncertainty" : 0.5,
+    "version" : 1,
+    "flat-relative" : 0.03,
+    "max-runs-per-day" : 2,
+    "max-age-days" : 3,
+    "divergence-relative" : 0.25,
+    "max-runs-per-report" : 2,
+    "max-response-bytes" : 262144
+  },
+  "research?" : true,
+  "as-of" : "2026-11-14T18:12:52.638563298Z",
+  "unit" : "vessels/day",
+  "source-age-days" : 6,
+  "regime" : {
+    "status" : "unknown",
+    "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3."
+  },
+  "request-id" : "research-85f9de66476d67ba0644bd693d04c7f1e3bb868506a0df63c418444490573fea",
+  "day" : 20771,
+  "latest" : 3
+}
