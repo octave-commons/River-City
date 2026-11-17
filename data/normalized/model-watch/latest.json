@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-11-16T23:03:24.688Z",
+  "observed_at": "2026-11-17T21:55:14.386Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -3485,6 +3485,170 @@
         },
         {
           "provider": "openai",
+          "id": "openai/gpt-6.2-astra",
+          "canonical_slug": "openai/gpt-6.2-astra-20261117",
+          "name": "OpenAI: GPT-6.2 Astra",
+          "created": 1794938423,
+          "description": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for real-world engineering, professional work and scientific research, with stronger...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 8,
+            "cached_input": 0.4,
+            "cache_write": 10,
+            "output": 40
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": false
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.2-astra-pro",
+          "canonical_slug": "openai/gpt-6.2-astra-pro-20261117",
+          "name": "OpenAI: GPT-6.2 Astra Pro",
+          "created": 1794938432,
+          "description": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 8,
+            "cached_input": 0.4,
+            "cache_write": 10,
+            "output": 40
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": false
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.2-sol",
+          "canonical_slug": "openai/gpt-6.2-sol-20261117",
+          "name": "OpenAI: GPT-6.2 Sol",
+          "created": 1794938371,
+          "description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series. It is an efficient, versatile model for everyday work, suited...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 2,
+            "cached_input": 0.1,
+            "cache_write": 2.5,
+            "output": 10
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": false
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.2-sol-pro",
+          "canonical_slug": "openai/gpt-6.2-sol-pro-20261117",
+          "name": "OpenAI: GPT-6.2 Sol Pro",
+          "created": 1794938409,
+          "description": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 2,
+            "cached_input": 0.1,
+            "cache_write": 2.5,
+            "output": 10
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": false
+        },
+        {
+          "provider": "openai",
           "id": "openai/gpt-audio",
           "canonical_slug": "openai/gpt-audio",
           "name": "OpenAI: GPT Audio",
@@ -3710,7 +3874,7 @@
           "created": 1754414229,
           "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
           "context_length": 131072,
-          "max_output_tokens": 65536,
+          "max_output_tokens": 117964,
           "input_modalities": [
             "text"
           ],
@@ -3740,10 +3904,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.075,
-            "cached_input": 0.0375,
+            "input": 0.03,
+            "cached_input": 0.03,
             "cache_write": null,
-            "output": 0.3
+            "output": 0.13
           },
           "hugging_face_id": "openai/gpt-oss-20b",
           "expiration_date": null,
@@ -5721,23 +5885,25 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.264Z",
-          "content_digest": "a0c390967e499f08a25a9327a60d89bc443004d592a5af45719f24988adca5e6",
-          "facts_digest": "e4c8c7e27e737b211c52a2dd288351c671ebfe08c261cdf58e5302c72526de69",
+          "observed_at": "2026-11-17T21:55:12.310Z",
+          "content_digest": "97ed567bcaf6747f4a9d9ac474e7ef33fbb2b6016e9217eecd539f3f7fe75956",
+          "facts_digest": "526b12dd6686a1d08311577b31c0f73d8d0454197bedce50b21deaff2ea85d79",
           "facts": [
             "fine-tuned models remain available for inference until their base models are deprecated.",
+            "for gpt‑6.2 astra, gpt‑6.2 sol, gpt‑6.1 terra, and gpt‑6 luna, model token rates for eligible background requests are 30% below standard for the 2‑hour completion window and 40% below standard for the 8‑hour completion window.",
             "gpt-4.1-2025-04-14 deprecated",
             "gpt-4.1-mini-2025-04-14 deprecated",
             "regional processing (data residency) endpoints are charged a 10% uplift for models released on or after march 5, 2026.",
-            "regional processing (data residency) endpoints are charged a 10% uplift for models released on or after march 5, 2026. fedramp endpoints are also charged a 10% uplift. priority processing was renamed fast mode on july 30, 2026. gpt-5.6 sol’s promotional pricing is available until november 30, 2026."
+            "regional processing (data residency) endpoints are charged a 10% uplift for models released on or after march 5, 2026. fedramp endpoints are also charged a 10% uplift. priority processing was renamed fast mode on july 30, 2026. gpt-5.6 sol’s promotional pricing is available until november 30, 2026.",
+            "regional processing (data residency) endpoints are charged a 10% uplift for models released on or after march 5, 2026. for standalone fedramp endpoints, gpt-6 rosalind rates are 10% above the corresponding global rates."
           ]
         },
         {
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.306Z",
-          "content_digest": "62a2932a42c4915442a9350413b71a960eecc94331b23de2a9e84cc7c6fe64f8",
+          "observed_at": "2026-11-17T21:55:12.290Z",
+          "content_digest": "1637a3df80ea645903d1417644c69ea8e03b3a074162a91fdcd96d7a2578e5c6",
           "facts_digest": "3cafd395432329dd2d1499d9af363785d2878f6858dc7bdf0955cc42fbd96d79",
           "facts": [
             "browse [all models](/api/docs/models/all.md), including deprecated models.",
@@ -5748,8 +5914,8 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.315Z",
-          "content_digest": "d6b3056e0da33ebb0a60f8dc4103bd38ed936e7b5492c9c0d888f900d1fe0293",
+          "observed_at": "2026-11-17T21:55:12.332Z",
+          "content_digest": "e50254edc1f7648a353f37d3037bdeacc2373b250366ba3e277586c428920bd1",
           "facts_digest": "d52e6b9d05ce5467a0c7e4c44635df21c9dbccea99e6e64432fb3821ae748f46",
           "facts": [
             "active existing customers will no longer be able to create new fine-tuning jobs on this date. inference on fine-tuned models will be disabled only when the underlying base model is deprecated.",
@@ -7100,7 +7266,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.433Z",
+          "observed_at": "2026-11-17T21:55:12.560Z",
           "content_digest": "05127cbc4ea46f5a8306d71bc6736bca278802e7b91f7fb8fe877ce568f3d4f6",
           "facts_digest": "6976a3133a8c4886a086884282ecfdeafc20dbe3a832893d12272531cf0a62df",
           "facts": [
@@ -7135,8 +7301,8 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.875Z",
-          "content_digest": "34b3d5ae2175bae01645a9aeb7e610cdb222c921e1afa8a4452bf246ccb822ec",
+          "observed_at": "2026-11-17T21:55:12.967Z",
+          "content_digest": "76c4672ef924ff6203aad1f22a3f4a026928b57759137f8af671225cb7f02182",
           "facts_digest": "edb02ae50e2bab5c4f0ba2d266147b9d5f903d3da4ed77971538ff0ed5214d4c",
           "facts": [
             "active : the model is available for use, open to new adopters, and not scheduled for retirement.",
@@ -7157,8 +7323,8 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.546Z",
-          "content_digest": "704f7a6f5ef47f4c3c05ddfc0320a3f6f45a78f4dd0d7a625690b5a62da0ceda",
+          "observed_at": "2026-11-17T21:55:12.650Z",
+          "content_digest": "e05536e6ad347270fc377f5f92957e23ff201c4a9f3f6c5ff5ee295e0a5b2a84",
           "facts_digest": "cc4fc79014fe88c9b920ecef3fbae4fe036dcc572f19f20e30d9465f82057286",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer. see token counts on claude fable and claude mythos models .",
@@ -7484,10 +7650,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.6,
-            "cached_input": 0.16,
+            "input": 0.7,
+            "cached_input": 0.17,
             "cache_write": null,
-            "output": 3.5
+            "output": 3.75
           },
           "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
           "expiration_date": null,
@@ -7676,10 +7842,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.354,
-            "cached_input": 0.113,
+            "input": 0.372,
+            "cached_input": 0.1,
             "cache_write": null,
-            "output": 5.31
+            "output": 5.583
           },
           "hugging_face_id": "moonshotai/Kimi-K3.1-Pro",
           "expiration_date": null,
@@ -8159,8 +8325,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.684Z",
-          "content_digest": "8305a063f5893bf145f0e28cd9b5c05add18a09240a71c8e8fce4e0d6a6af817",
+          "observed_at": "2026-11-17T21:55:14.386Z",
+          "content_digest": "76a22aa82dd1aef6efeb989f9584167c33455d812dea93784af7033a416af267",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -8170,7 +8336,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.015Z",
+          "observed_at": "2026-11-17T21:55:13.728Z",
           "content_digest": "cf7443131efc7930a80248e009bdc753940836969fc3dbea7e9a814eea7b20bc",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8200,7 +8366,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.076Z",
+          "observed_at": "2026-11-17T21:55:14.172Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8215,7 +8381,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.523Z",
+          "observed_at": "2026-11-17T21:55:14.178Z",
           "content_digest": "cf7443131efc7930a80248e009bdc753940836969fc3dbea7e9a814eea7b20bc",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8245,7 +8411,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.078Z",
+          "observed_at": "2026-11-17T21:55:14.188Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8260,7 +8426,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.051Z",
+          "observed_at": "2026-11-17T21:55:14.173Z",
           "content_digest": "9e2fb91c69addc91752166a15f4b90e53f0c0a424485786c27f400a29c3cb95c",
           "facts_digest": "112d1e98d96aab27295f34161c40e1d6ae63fbc86cfffd4ea990c87158bc0cb5",
           "facts": [
@@ -8271,7 +8437,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.688Z",
+          "observed_at": "2026-11-17T21:55:13.715Z",
           "content_digest": "397449b74cc111c241eb37b9d0be51993689d2132b52d23742f5c143bebcc54d",
           "facts_digest": "55f80e324fb9558f5847130ad6eb79ac5480c4bc99fc6ee245ec5d066028953f",
           "facts": [
@@ -8284,7 +8450,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.075Z",
+          "observed_at": "2026-11-17T21:55:13.697Z",
           "content_digest": "48d3930270ebb2a80df336a0b4dfeee7a014545ba1133a5059f664eb549ba545",
           "facts_digest": "737bee2a800aac905175f87f37f827c1394f79d999fd101d0d7994b963f12811",
           "facts": [
@@ -8295,7 +8461,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.053Z",
+          "observed_at": "2026-11-17T21:55:14.155Z",
           "content_digest": "3e7f416da2857c6e04973083340fbf5dfa6be5581dce085c14bae3b64c0999e5",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -8974,10 +9140,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.03,
-            "cached_input": 0.015,
+            "input": 0.024,
+            "cached_input": 0.01,
             "cache_write": null,
-            "output": 0.087
+            "output": 0.069
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
@@ -9118,7 +9284,7 @@
           "created": 1787086655,
           "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves...",
           "context_length": 1048576,
-          "max_output_tokens": 131072,
+          "max_output_tokens": 943718,
           "input_modalities": [
             "text"
           ],
@@ -9148,10 +9314,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.45,
-            "cached_input": 0.1,
+            "input": 0.281,
+            "cached_input": 0.062,
             "cache_write": null,
-            "output": 2
+            "output": 1.25
           },
           "hugging_face_id": "zai-org/GLM-5.3",
           "expiration_date": null,
@@ -10558,8 +10724,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.485Z",
-          "content_digest": "a0967daa2beedf034e8aa505768ef7c5633e741b137191434426fc92f5c1f171",
+          "observed_at": "2026-11-17T21:55:12.566Z",
+          "content_digest": "b0ff5e9f03de8bac1f7c9b6e948c5e959fa8f889572b15b1db498995334d4ac1",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10570,8 +10736,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.478Z",
-          "content_digest": "d670a5ff2fc453258205d59fe8bf07546d1a245d9aba5263463840ea3557f2aa",
+          "observed_at": "2026-11-17T21:55:12.563Z",
+          "content_digest": "2dd2e9a62e15834ce056f7019b25aa0fd4d49cab617e3f7520934ebaedc642ab",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -10978,10 +11144,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.4,
-            "cached_input": 0.04,
+            "input": 0.44,
+            "cached_input": 0.044,
             "cache_write": null,
-            "output": 2
+            "output": 2.2
           },
           "hugging_face_id": null,
           "expiration_date": null,
@@ -11028,7 +11194,7 @@
             "output": 7.5
           },
           "hugging_face_id": "mistralai/Mistral-Medium-3.5-128B",
-          "expiration_date": null,
+          "expiration_date": "2027-01-31",
           "benchmark_score": 46.9,
           "variant": false
         },
@@ -11107,10 +11273,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.4,
-            "cached_input": 0.04,
+            "input": 0.44,
+            "cached_input": 0.044,
             "cache_write": null,
-            "output": 2
+            "output": 2.2
           },
           "hugging_face_id": null,
           "expiration_date": null,
@@ -11339,7 +11505,7 @@
           "created": 1750443016,
           "description": "Mistral-Small-3.2-24B-Instruct-2506 is an updated 24B parameter model from Mistral optimized for instruction following, repetition reduction, and improved function calling. Compared to the 3.1 release, version 3.2 significantly improves accuracy on...",
           "context_length": 256000,
-          "max_output_tokens": 26214,
+          "max_output_tokens": 16384,
           "input_modalities": [
             "image",
             "text"
@@ -11367,10 +11533,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.1,
-            "cached_input": 0.01,
+            "input": 0.075,
+            "cached_input": null,
             "cache_write": null,
-            "output": 0.3
+            "output": 0.2
           },
           "hugging_face_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
           "expiration_date": null,
@@ -13515,7 +13681,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.573Z",
+          "observed_at": "2026-11-17T21:55:12.656Z",
           "content_digest": "2bb2e7e476532dc36e6307e019a414254e6e7a40bd75a47dc8422278af27cc65",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13524,7 +13690,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.452Z",
+          "observed_at": "2026-11-17T21:55:12.687Z",
           "content_digest": "0720db60b4af9f1169a69b89713059f6282c72816f34e32e91c8f6555bb35379",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -13537,7 +13703,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:23.595Z",
+          "observed_at": "2026-11-17T21:55:12.790Z",
           "content_digest": "30d7983ddcb3416f854c622a958abbd0313ec2c84072cfaa9a2d43b7d4565818",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -14483,7 +14649,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.605Z",
+          "observed_at": "2026-11-17T21:55:13.460Z",
           "content_digest": "81d4d2baa09d3d169bd72b46741bb863858c652e4f8945f5b6946c335d2dbe17",
           "facts_digest": "5ed3a04651d99a5c64a46a166b243ded5400a6e213a05bb7664aef7c5b99110d",
           "facts": [
@@ -14495,7 +14661,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.589Z",
+          "observed_at": "2026-11-17T21:55:13.455Z",
           "content_digest": "8109fa7192085b0d2bac98358316e5cbda749c8bcf174f280bf09387429c667f",
           "facts_digest": "2ae2eacaa8e77c27443d1defd5cab615c225f6d9fe87f8bba0727df56959c580",
           "facts": [
@@ -14517,7 +14683,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-11-16T23:03:24.557Z",
+          "observed_at": "2026-11-17T21:55:13.639Z",
           "content_digest": "824d8b8b54f826bbc1c5c726229664cb71bbea3d52330d137bb3015a20087e87",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
