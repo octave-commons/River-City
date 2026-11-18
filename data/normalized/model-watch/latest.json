@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-11-17T21:55:14.386Z",
+  "observed_at": "2026-11-18T21:37:59.703Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -132,7 +132,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 13.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -175,7 +175,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 21.5,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -253,7 +253,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.2,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -291,7 +291,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.2,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -329,7 +329,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 11.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -367,7 +367,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 11.1,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -497,7 +497,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 24.2,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -637,7 +637,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 11.4,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -729,7 +729,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 11.4,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -816,7 +816,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": "2026-12-11",
-          "benchmark_score": 37.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -941,7 +941,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": "2026-12-11",
-          "benchmark_score": 15.6,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -981,7 +981,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": "2026-12-11",
-          "benchmark_score": 15.6,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -1182,7 +1182,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": "2026-12-11",
-          "benchmark_score": 37.8,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -1223,7 +1223,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 49.4,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1380,7 +1380,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 49.4,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -1699,7 +1699,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 71.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1781,7 +1781,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 56.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1821,7 +1821,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 56.1,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -1862,7 +1862,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 56.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -1902,7 +1902,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 56.1,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -2023,7 +2023,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 71.1,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -2064,7 +2064,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 74.9,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -2184,7 +2184,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 74.9,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -2225,7 +2225,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 71.4,
+          "benchmark_score": 23.8,
           "variant": false
         },
         {
@@ -2346,7 +2346,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 71.4,
+          "benchmark_score": 23.8,
           "variant": true
         },
         {
@@ -2387,7 +2387,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 78.3,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -2508,7 +2508,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 78.3,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -2549,7 +2549,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 76.7,
+          "benchmark_score": 32.3,
           "variant": false
         },
         {
@@ -2670,7 +2670,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 76.7,
+          "benchmark_score": 32.3,
           "variant": true
         },
         {
@@ -2711,7 +2711,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 76.9,
+          "benchmark_score": 56.9,
           "variant": false
         },
         {
@@ -2832,7 +2832,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 76.9,
+          "benchmark_score": 56.9,
           "variant": true
         },
         {
@@ -3521,7 +3521,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": null,
+          "benchmark_score": 62.1,
           "variant": false
         },
         {
@@ -3567,6 +3567,86 @@
         },
         {
           "provider": "openai",
+          "id": "openai/gpt-6.2-astra-pro:batch",
+          "canonical_slug": "openai/gpt-6.2-astra-pro-20261117",
+          "name": "OpenAI: GPT-6.2 Astra Pro (batch)",
+          "created": 1794938432,
+          "description": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 4,
+            "cached_input": 0.2,
+            "cache_write": 5,
+            "output": 20
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": true
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.2-astra:batch",
+          "canonical_slug": "openai/gpt-6.2-astra-20261117",
+          "name": "OpenAI: GPT-6.2 Astra (batch)",
+          "created": 1794938423,
+          "description": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for real-world engineering, professional work and scientific research, with stronger...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 4,
+            "cached_input": 0.2,
+            "cache_write": 5,
+            "output": 20
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": 62.1,
+          "variant": true
+        },
+        {
+          "provider": "openai",
           "id": "openai/gpt-6.2-sol",
           "canonical_slug": "openai/gpt-6.2-sol-20261117",
           "name": "OpenAI: GPT-6.2 Sol",
@@ -3603,7 +3683,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": null,
+          "benchmark_score": 57.3,
           "variant": false
         },
         {
@@ -3646,6 +3726,86 @@
           "expiration_date": null,
           "benchmark_score": null,
           "variant": false
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.2-sol-pro:batch",
+          "canonical_slug": "openai/gpt-6.2-sol-pro-20261117",
+          "name": "OpenAI: GPT-6.2 Sol Pro (batch)",
+          "created": 1794938409,
+          "description": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 1,
+            "cached_input": 0.05,
+            "cache_write": 1.25,
+            "output": 5
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": null,
+          "variant": true
+        },
+        {
+          "provider": "openai",
+          "id": "openai/gpt-6.2-sol:batch",
+          "canonical_slug": "openai/gpt-6.2-sol-20261117",
+          "name": "OpenAI: GPT-6.2 Sol (batch)",
+          "created": 1794938371,
+          "description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series. It is an efficient, versatile model for everyday work, suited...",
+          "context_length": 1050000,
+          "max_output_tokens": 128000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "pricing": {
+            "input": 1,
+            "cached_input": 0.05,
+            "cache_write": 1.25,
+            "output": 5
+          },
+          "hugging_face_id": null,
+          "expiration_date": null,
+          "benchmark_score": 57.3,
+          "variant": true
         },
         {
           "provider": "openai",
@@ -3817,7 +3977,7 @@
           },
           "hugging_face_id": "openai/gpt-oss-120b",
           "expiration_date": null,
-          "benchmark_score": 30.4,
+          "benchmark_score": 3.8,
           "variant": false
         },
         {
@@ -3863,7 +4023,7 @@
           },
           "hugging_face_id": "openai/gpt-oss-120b",
           "expiration_date": null,
-          "benchmark_score": 30.4,
+          "benchmark_score": 3.8,
           "variant": true
         },
         {
@@ -3904,14 +4064,14 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.03,
-            "cached_input": 0.03,
+            "input": 0.018,
+            "cached_input": 0.009,
             "cache_write": null,
-            "output": 0.13
+            "output": 0.09
           },
           "hugging_face_id": "openai/gpt-oss-20b",
           "expiration_date": null,
-          "benchmark_score": 20.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -3957,7 +4117,7 @@
           },
           "hugging_face_id": "openai/gpt-oss-20b",
           "expiration_date": null,
-          "benchmark_score": 20.7,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -5885,7 +6045,7 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.310Z",
+          "observed_at": "2026-11-18T21:37:58.768Z",
           "content_digest": "97ed567bcaf6747f4a9d9ac474e7ef33fbb2b6016e9217eecd539f3f7fe75956",
           "facts_digest": "526b12dd6686a1d08311577b31c0f73d8d0454197bedce50b21deaff2ea85d79",
           "facts": [
@@ -5902,8 +6062,8 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.290Z",
-          "content_digest": "1637a3df80ea645903d1417644c69ea8e03b3a074162a91fdcd96d7a2578e5c6",
+          "observed_at": "2026-11-18T21:37:58.858Z",
+          "content_digest": "ec1440df8f2a4757a05c0a8b94f71425e475830bbc960fb15d602a4613a37fe2",
           "facts_digest": "3cafd395432329dd2d1499d9af363785d2878f6858dc7bdf0955cc42fbd96d79",
           "facts": [
             "browse [all models](/api/docs/models/all.md), including deprecated models.",
@@ -5914,7 +6074,7 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.332Z",
+          "observed_at": "2026-11-18T21:37:58.788Z",
           "content_digest": "e50254edc1f7648a353f37d3037bdeacc2373b250366ba3e277586c428920bd1",
           "facts_digest": "d52e6b9d05ce5467a0c7e4c44635df21c9dbccea99e6e64432fb3821ae748f46",
           "facts": [
@@ -5989,7 +6149,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 76.5,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -6029,7 +6189,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 76.5,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -6070,7 +6230,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 80.7,
+          "benchmark_score": 50,
           "variant": false
         },
         {
@@ -6110,7 +6270,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 80.7,
+          "benchmark_score": 50,
           "variant": true
         },
         {
@@ -6233,7 +6393,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 43.9,
+          "benchmark_score": 7.4,
           "variant": false
         },
         {
@@ -6274,7 +6434,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 43.9,
+          "benchmark_score": 7.4,
           "variant": true
         },
         {
@@ -6642,7 +6802,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 73.6,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -6682,7 +6842,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 73.6,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -6723,7 +6883,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 74.3,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -6763,7 +6923,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 74.3,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -6804,7 +6964,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 78,
+          "benchmark_score": 44.2,
           "variant": false
         },
         {
@@ -6844,7 +7004,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 78,
+          "benchmark_score": 44.2,
           "variant": true
         },
         {
@@ -6967,7 +7127,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 52.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7008,7 +7168,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 52.1,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -7052,7 +7212,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 63,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7094,7 +7254,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 63,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -7135,7 +7295,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 71.5,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7175,7 +7335,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 71.5,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -7266,15 +7426,14 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.560Z",
-          "content_digest": "05127cbc4ea46f5a8306d71bc6736bca278802e7b91f7fb8fe877ce568f3d4f6",
-          "facts_digest": "6976a3133a8c4886a086884282ecfdeafc20dbe3a832893d12272531cf0a62df",
+          "observed_at": "2026-11-18T21:37:59.169Z",
+          "content_digest": "65fc2d127bfdec7a9aaf058a0318461c5bd7b18b0de274f93519e12d48ee2b66",
+          "facts_digest": "d4fa95f35848750e4aeb48de5cd5f9c14f00cc1c3499cc8c40313052572d3902",
           "facts": [
             "$0.01 usd per ccu (fixed; discounts apply at token-to-ccu conversion, not to the ccu price)",
             "0.1x base input price on most models",
             "1-hour duration (2x write): after two cache reads",
             "5-minute duration (1.25x write): after one cache read",
-            "all tokens consumed by a claude managed agents session are billed at the rates shown in model pricing . prompt caching multipliers apply identically. web search triggered inside a session incurs the standard $10 usd per 1,000 searches. on claude platform on aws, session token and runtime charges convert to claude consumption units at the standard rate (see claude platform on aws pricing ). fast mode premium pricing applies when an agent’s model.speed is set to \"fast\" .",
             "cache valid for 1 hour",
             "cache valid for 5 minutes",
             "claude 4.6 and later models (except claude haiku 5.5) and claude mythos preview include the full 1m token context window at standard pricing. (a 900k-token request is billed at the same per-token rate as a 9k-token request.) prompt caching and batch processing discounts apply at standard rates across the full context window.",
@@ -7288,21 +7447,20 @@
             "for claude 4.6 and later models, specifying us-only inference through the inference_geo parameter incurs a 1.1x multiplier on all token pricing categories, including input tokens, output tokens, cache writes, and cache reads. on claude haiku 5.5, the multiplier also applies to the higher prices for prompts over 100,000 tokens (see long context pricing ). global routing (the default) uses standard pricing.",
             "for claude 4.6 and later models, using inference_geo: \"us\" applies a 1.1x pricing multiplier. inference_geo: \"global\" (default) uses standard pricing. see data residency for details.",
             "model ids and versioning model deprecations model cards pricing api credits for subscribers system prompts",
+            "on the claude api, web search costs $10 usd per 1,000 searches , plus standard token costs for search-generated content. search results count as input tokens, both while claude keeps searching within a turn and in later conversation turns.",
             "scope: this pricing structure applies to claude sonnet 4.5 (deprecated), haiku 4.5, opus 4.5, and later models. it doesn’t apply to earlier models (claude opus 4.1 and prior releases).",
             "the data residency multiplier also applies: when an agent’s model.inference_geo is pinned to \"us\" , tokens consumed by sessions running that agent are billed at 1.1x the standard rates, the same multiplier that applies to us-only inference on the messages api.",
-            "this applies to the claude api (first-party), claude platform on aws, and claude models on google cloud (anthropic managed). on claude in microsoft foundry, the same 1.1x multiplier applies to deployments that use the us data zone standard deployment type (see inference geography ). partner-operated platforms, claude models on google cloud (google managed) and amazon bedrock, have independent regional pricing. see amazon bedrock pricing and google cloud pricing for details. earlier models do not support the inference_geo parameter and always use standard pricing; requests that include the parameter on these models return a 400 error.",
             "this page provides detailed pricing information for anthropic’s models and features. all prices are in usd.",
             "token usage rated in usd at standard per-model, per-feature rates (same as model pricing ), then converted to ccus at $0.01 usd per ccu",
-            "toolset definition overhead: declaring browser_toolset_20260801 with its default members adds about 6,600 input tokens to a request: about 6,670 on claude sonnet 5 and about 6,610 on the other supported models. these tokens cover the member tool definitions and the tool use system prompt. enabling all four optional members adds about 880 tokens, and disabling members with configs reduces the count. the response usage reports the exact count for a request, and you can estimate it in advance with the token counting endpoint .",
-            "web search is available on the claude api for $10 usd per 1,000 searches , plus standard token costs for search-generated content. web search results retrieved throughout a conversation are counted as input tokens, in search iterations run during a single turn and in subsequent conversation turns."
+            "toolset definition overhead: declaring browser_toolset_20260801 with its default members adds about 6,600 input tokens to a request: about 6,670 on claude sonnet 5 and about 6,610 on the other supported models. these tokens cover the member tool definitions and the tool use system prompt. enabling all four optional members adds about 880 tokens, and disabling members with configs reduces the count. the response usage reports the exact count for a request, and you can estimate it in advance with the token counting endpoint ."
           ]
         },
         {
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.967Z",
-          "content_digest": "76c4672ef924ff6203aad1f22a3f4a026928b57759137f8af671225cb7f02182",
+          "observed_at": "2026-11-18T21:37:59.444Z",
+          "content_digest": "0e025847d7374c303162eb1eae13e62917c58b39e3a6c5802eff0dd9ba522736",
           "facts_digest": "edb02ae50e2bab5c4f0ba2d266147b9d5f903d3da4ed77971538ff0ed5214d4c",
           "facts": [
             "active : the model is available for use, open to new adopters, and not scheduled for retirement.",
@@ -7323,27 +7481,25 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.650Z",
-          "content_digest": "e05536e6ad347270fc377f5f92957e23ff201c4a9f3f6c5ff5ee295e0a5b2a84",
-          "facts_digest": "cc4fc79014fe88c9b920ecef3fbae4fe036dcc572f19f20e30d9465f82057286",
+          "observed_at": "2026-11-18T21:37:59.135Z",
+          "content_digest": "31bdfac131daceb77c3ef2e020b492c1dfed6e237cd76fa98ca409eebcedb289",
+          "facts_digest": "733450bab3d891ed71a168c743520f55bc9755a0544ae586b062c64f01099ba5",
           "facts": [
             "claude fable 5 and claude mythos 5 use the tokenizer introduced with claude opus 4.7. compared to models before claude opus 4.7, the same text produces roughly 30% more tokens. the exact increase depends on the content and workload shape. use the token counting api with model: \"claude-fable-5\" to measure your prompts under the new tokenizer. see token counts on claude fable and claude mythos models .",
             "claude opus 4.7 supports high-resolution image input , raising the maximum image resolution from 1,568 to 2,576 pixels on the long edge for improved performance on computer use, screenshot understanding, and document analysis. high-resolution support is automatic and requires no beta header; images might use up to approximately 3x more image tokens than on prior models.",
             "generate outputs up to 8,192 tokens in length from claude sonnet 3.5 with the new anthropic-beta: max-tokens-3-5-sonnet-2024-07-15 header.",
             "long conversations and agent loops on the messages api can now send smaller requests and get a lower time to first token with message threads , in beta with the message-threads-2026-08-12 beta header. the api keeps the conversation on the server, so each later request sends only the new messages. a thread expires 5 minutes after its last request and is deleted no more than 1 hour after its last use. message threads are available on the claude api, claude platform on aws , claude models on google cloud (anthropic managed), and claude in microsoft foundry .",
             "mcp tunnels (research preview): the management api moved from /v1/organizations/tunnels on the admin api to /v1/tunnels on the claude api. the new surface uses the anthropic-beta: mcp-tunnels-2026-06-22 header and the workspace:manage_tunnels wif scope. the previous surface remains available during a migration window. see the tunnels api reference .",
-            "message batches api : process large batches of messages asynchronously at 50% of the standard api cost.",
             "on claude opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on claude opus 4.7.",
             "on claude opus 5.5, thinking can’t be disabled: thinking: {\"type\": \"disabled\"} and thinking: {\"type\": \"enabled\", ...} return a 400 error. omit the thinking field and control thinking depth with the effort parameter . tool_choice types any and tool also return a 400 error, as on claude fable 5.1; use auto with strict tool use . on the claude api and google cloud, computer use on this model requires the computer_toolset_20260801 toolset and the earlier computer_20251124 tool returns a 400 error; on amazon bedrock, computer_20251124 keeps working. see the claude opus 5.5 migration guide .",
+            "outputs of 8,192 tokens on claude sonnet 3.5 are out of beta and no longer require the max-tokens-3-5-sonnet-2024-07-15 header.",
             "prompt cache reads on claude fable 5.1 and claude mythos 5.1 cost $0.25 usd per million tokens: 0.025x the base input price, compared with 0.1x on other models. cache writes are unchanged. see prompt caching pricing .",
-            "prompt caching is now available as a beta feature in the claude api. cache and re-use prompts to reduce latency by up to 80% and costs by up to 90%.",
             "setting the sampling parameters temperature , top_p , or top_k to a non-default value returns a 400 error on claude opus 4.8, same as on claude opus 4.7. see the migration guide for details.",
             "the 1m token context window is now available in beta for claude opus 4.6, in addition to sonnet 4.5 and sonnet 4. long context pricing applies to requests exceeding 200k input tokens.",
             "the 1m token context window is now available on vertex ai. for more information, see claude on vertex ai .",
             "the 1m token context window is out of beta for claude opus 4.6 and sonnet 4.6, at standard pricing. requests over 200k tokens work automatically for these models with no beta header required. the 1m token context window remains in beta for claude sonnet 4.5 and sonnet 4.",
             "the introductory pricing for claude sonnet 5 ($2 / $10 usd per mtok) is now the standard price: the previously scheduled increase to $3 / $15 usd per mtok on september 1, 2026, will not occur. see pricing .",
             "the legacy workbench ( platform.claude.com/workbench ) in the claude console is being sunset with access ending on august 17, 2026. saved prompts, variables, and evals are not supported in the updated workbench in the console. you can export any data you want to keep from the banner and under your organizational settings . for more, see how do i use the workbench? in the claude help center.",
-            "the message batches api is now available in beta. process large batches of queries asynchronously in the claude api for 50% less cost. read more in batch processing .",
             "we announced the deprecation of the claude 1 models. read more in model deprecations .",
             "we announced the deprecation of the claude 2, claude 2.1, and claude sonnet 3 models. read more in model deprecations .",
             "we announced the deprecation of the claude haiku 3 model ( claude-3-haiku-20240307 ), with retirement scheduled for april 20, 2026. we recommend migrating to claude haiku 4.5 . read more in model deprecations .",
@@ -7364,13 +7520,14 @@
             "we’ve launched beta support for a 1m token context window in claude sonnet 4 on the claude api and amazon bedrock.",
             "we’ve launched claude fable 5 ( claude-fable-5 ), our most capable model open to all customers, alongside claude mythos 5 ( claude-mythos-5 ) for project glasswing participants. both models support a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking . see claude fable 5 for specifications, pricing, and availability.",
             "we’ve launched claude haiku 5.5 ( claude-haiku-5-5 ), our most capable model tuned for high-volume and latency-sensitive work. it has a 1m token context window , 128k max output tokens, and adaptive thinking with the effort parameter . it’s available on the claude api, claude in amazon bedrock , claude platform on aws , claude models on google cloud (google managed) , and claude in microsoft foundry . see what’s new in claude haiku 5.5 .",
-            "we’ve launched claude opus 4.6 , our most intelligent model for complex agentic tasks and long-horizon work. opus 4.6 recommends adaptive thinking ( thinking: {type: \"adaptive\"} ); manual thinking ( type: \"enabled\" with budget_tokens ) is deprecated. opus 4.6 does not support prefilling assistant messages. learn more in what’s new in claude 4.6 .",
-            "we’ve launched claude opus 4.7 , our most capable model for complex reasoning and agentic coding, at the same $5 / $25 usd per mtok pricing as opus 4.6. see what’s new in claude opus 4.7 for capability improvements, new features, and the updated tokenizer. opus 4.7 includes api breaking changes versus opus 4.6; see the migration guide before upgrading.",
-            "we’ve launched claude opus 4.8 ( claude-opus-4-8 ), our most capable model. claude opus 4.8 supports a 1m token context window by default on the claude api, amazon bedrock, google cloud, and microsoft foundry, 128k max output tokens, and the same set of tools and platform features as claude opus 4.7. see the migration guide for baseline settings, features, and migration guidance.",
+            "we’ve launched claude opus 4.6 , our most intelligent model for complex agentic tasks and long-horizon work. for opus 4.6, we recommend adaptive thinking ( thinking: {type: \"adaptive\"} ); manual thinking ( type: \"enabled\" with budget_tokens ) is deprecated. opus 4.6 does not support prefilling assistant messages. learn more in claude opus 4.6 .",
+            "we’ve launched claude opus 4.7 , our most capable model for complex reasoning and agentic coding, at the same $5 / $25 usd per mtok pricing as claude opus 4.6. see claude opus 4.7 for its specifications. opus 4.7 includes an updated tokenizer and api breaking changes versus opus 4.6; see migration guides before upgrading.",
+            "we’ve launched claude opus 4.8 ( claude-opus-4-8 ⁠  ), our most capable model. claude opus 4.8 supports a 1m token context window by default on the claude api, amazon bedrock, google cloud, and microsoft foundry, 128k max output tokens, and the same set of tools and platform features as claude opus 4.7. see the migration guide for baseline settings, features, and migration guidance.",
             "we’ve launched claude opus 5 ( claude-opus-5 ), a step-change improvement over claude opus 4.8. claude opus 5 supports a 1m token context window (both the default and the maximum), 128k max output tokens, and thinking on by default, at $5 / $25 usd per mtok, the same pricing as claude opus 4.8. it’s available on the claude api, claude in amazon bedrock , claude platform on aws , claude models on google cloud (google managed) , and claude in microsoft foundry . see claude opus 5 and the models overview for complete specs.",
             "we’ve launched claude opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. it has a 1m token context window by default, 128k max output tokens, and always-on adaptive thinking , at $4 / $20 usd per mtok (claude opus 5 is $5 / $25 usd). claude opus 5.5 is available on the claude api, claude in amazon bedrock , claude platform on aws , claude models on google cloud (google managed) , and claude in microsoft foundry . see what’s new in claude opus 5.5 for capabilities, api changes, and migration guidance.",
-            "we’ve launched claude sonnet 4.6 , our latest balanced model combining speed and intelligence for everyday tasks. sonnet 4.6 delivers improved agentic search performance while consuming fewer tokens. sonnet 4.6 supports extended thinking and a 1m token context window (beta). see models & pricing for details.",
+            "we’ve launched claude sonnet 4.6 , our latest balanced model combining speed and intelligence for everyday tasks. sonnet 4.6 delivers improved agentic search performance while consuming fewer tokens. sonnet 4.6 supports extended thinking and a 1m token context window , which is in beta. see models overview for details.",
             "we’ve launched fast mode for claude fable 5.2 in messages api requests on the claude api. fast mode delivers up to 2.5x higher output tokens per second, at $16 usd per mtok of input and $80 usd per mtok of output. set speed: \"fast\" on your request, with no beta header.",
+            "we’ve launched fast mode in research preview for claude opus 4.6, providing significantly faster output token generation through the speed parameter. fast mode is up to 2.5x as fast at premium pricing. interested customers should join the fast mode waitlist .",
             "we’ve lowered the price of prompt cache reads on claude sonnet 5.5 from $0.20 usd to $0.10 usd per million tokens: 0.05x the base input price instead of 0.1x. cache writes and all other prices are unchanged. see prompt caching pricing .",
             "we’ve retired the 1m token context window beta ( context-1m-2025-08-07 ) for claude sonnet 4.5 and claude sonnet 4. the beta header now has no effect on these models, and requests exceeding the standard 200k-token context window return an error. to use the 1m context window, migrate to claude sonnet 4.6 or claude opus 4.6 , where it’s included at standard pricing with no beta header required.",
             "we’ve retired the claude 1 and instant models. read more in model deprecations .",
@@ -7511,7 +7668,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K2-Thinking",
           "expiration_date": null,
-          "benchmark_score": 21,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7559,7 +7716,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K2.5",
           "expiration_date": null,
-          "benchmark_score": 46.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7608,7 +7765,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K2.6",
           "expiration_date": null,
-          "benchmark_score": 61.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7650,14 +7807,14 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.7,
-            "cached_input": 0.17,
+            "input": 0.6,
+            "cached_input": 0.16,
             "cache_write": null,
-            "output": 3.75
+            "output": 3.5
           },
           "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
           "expiration_date": null,
-          "benchmark_score": 60.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -7707,7 +7864,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
-          "benchmark_score": 72,
+          "benchmark_score": 17.4,
           "variant": false
         },
         {
@@ -7755,7 +7912,7 @@
           },
           "hugging_face_id": "moonshotai/Kimi-K3",
           "expiration_date": null,
-          "benchmark_score": 72,
+          "benchmark_score": 17.4,
           "variant": true
         },
         {
@@ -8325,7 +8482,7 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:14.386Z",
+          "observed_at": "2026-11-18T21:37:59.448Z",
           "content_digest": "76a22aa82dd1aef6efeb989f9584167c33455d812dea93784af7033a416af267",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
@@ -8336,7 +8493,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:13.728Z",
+          "observed_at": "2026-11-18T21:37:59.473Z",
           "content_digest": "cf7443131efc7930a80248e009bdc753940836969fc3dbea7e9a814eea7b20bc",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8366,7 +8523,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:14.172Z",
+          "observed_at": "2026-11-18T21:37:59.415Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8381,7 +8538,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:14.178Z",
+          "observed_at": "2026-11-18T21:37:59.469Z",
           "content_digest": "cf7443131efc7930a80248e009bdc753940836969fc3dbea7e9a814eea7b20bc",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8411,7 +8568,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:14.188Z",
+          "observed_at": "2026-11-18T21:37:59.418Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8426,7 +8583,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:14.173Z",
+          "observed_at": "2026-11-18T21:37:59.394Z",
           "content_digest": "9e2fb91c69addc91752166a15f4b90e53f0c0a424485786c27f400a29c3cb95c",
           "facts_digest": "112d1e98d96aab27295f34161c40e1d6ae63fbc86cfffd4ea990c87158bc0cb5",
           "facts": [
@@ -8437,7 +8594,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:13.715Z",
+          "observed_at": "2026-11-18T21:37:59.434Z",
           "content_digest": "397449b74cc111c241eb37b9d0be51993689d2132b52d23742f5c143bebcc54d",
           "facts_digest": "55f80e324fb9558f5847130ad6eb79ac5480c4bc99fc6ee245ec5d066028953f",
           "facts": [
@@ -8450,7 +8607,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:13.697Z",
+          "observed_at": "2026-11-18T21:37:59.449Z",
           "content_digest": "48d3930270ebb2a80df336a0b4dfeee7a014545ba1133a5059f664eb549ba545",
           "facts_digest": "737bee2a800aac905175f87f37f827c1394f79d999fd101d0d7994b963f12811",
           "facts": [
@@ -8461,7 +8618,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:14.155Z",
+          "observed_at": "2026-11-18T21:37:59.456Z",
           "content_digest": "3e7f416da2857c6e04973083340fbf5dfa6be5581dce085c14bae3b64c0999e5",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -8634,7 +8791,7 @@
           },
           "hugging_face_id": "zai-org/GLM-4.6",
           "expiration_date": null,
-          "benchmark_score": 45.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8672,7 +8829,7 @@
           ],
           "pricing": {
             "input": 0.3,
-            "cached_input": 0.055,
+            "cached_input": 0.05,
             "cache_write": null,
             "output": 0.9
           },
@@ -8724,7 +8881,7 @@
           },
           "hugging_face_id": "zai-org/GLM-4.7",
           "expiration_date": null,
-          "benchmark_score": 45.3,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8864,7 +9021,7 @@
           "created": 1775578025,
           "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
           "context_length": 204800,
-          "max_output_tokens": 182476,
+          "max_output_tokens": 131072,
           "input_modalities": [
             "text"
           ],
@@ -8899,8 +9056,8 @@
             "output": 4.4
           },
           "hugging_face_id": "zai-org/GLM-5.1",
-          "expiration_date": "2026-11-20",
-          "benchmark_score": 55.8,
+          "expiration_date": null,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8925,7 +9082,6 @@
             "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -8942,14 +9098,14 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.007,
-            "cached_input": 0.006,
+            "input": 0.62,
+            "cached_input": 0.14,
             "cache_write": null,
-            "output": 6.8
+            "output": 2.42
           },
           "hugging_face_id": "zai-org/GLM-5.2",
           "expiration_date": null,
-          "benchmark_score": 68.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -8997,7 +9153,7 @@
           },
           "hugging_face_id": "zai-org/GLM-5.2",
           "expiration_date": null,
-          "benchmark_score": 68.8,
+          "benchmark_score": null,
           "variant": true
         },
         {
@@ -9046,7 +9202,7 @@
           },
           "hugging_face_id": "zai-org/GLM-5.3",
           "expiration_date": null,
-          "benchmark_score": 74.8,
+          "benchmark_score": 31.7,
           "variant": false
         },
         {
@@ -9057,7 +9213,7 @@
           "created": 1787752741,
           "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
           "context_length": 1048576,
-          "max_output_tokens": 131072,
+          "max_output_tokens": 943717,
           "input_modalities": [
             "image",
             "text",
@@ -9090,14 +9246,14 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.0399,
+            "input": 0.15,
             "cached_input": 0.03,
             "cache_write": null,
-            "output": 0.0784
+            "output": 0.5
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
-          "benchmark_score": 71.5,
+          "benchmark_score": 27.8,
           "variant": false
         },
         {
@@ -9147,7 +9303,7 @@
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
-          "benchmark_score": 71.5,
+          "benchmark_score": 27.8,
           "variant": true
         },
         {
@@ -9321,7 +9477,7 @@
           },
           "hugging_face_id": "zai-org/GLM-5.3",
           "expiration_date": null,
-          "benchmark_score": 74.8,
+          "benchmark_score": 31.7,
           "variant": true
         },
         {
@@ -10724,8 +10880,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.566Z",
-          "content_digest": "b0ff5e9f03de8bac1f7c9b6e948c5e959fa8f889572b15b1db498995334d4ac1",
+          "observed_at": "2026-11-18T21:37:58.888Z",
+          "content_digest": "ba18d5143b24b734d7768059473e0169220faacdbdfd2ef1bd5ad74b6d6f3afe",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10736,8 +10892,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.563Z",
-          "content_digest": "2dd2e9a62e15834ce056f7019b25aa0fd4d49cab617e3f7520934ebaedc642ab",
+          "observed_at": "2026-11-18T21:37:58.899Z",
+          "content_digest": "33b78bb17fbb50660958b107becabb139236cf07241070cde845398dbb6f26d0",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -10824,7 +10980,7 @@
           },
           "hugging_face_id": "mistralai/Devstral-2-123B-Instruct-2512",
           "expiration_date": null,
-          "benchmark_score": 31.3,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -10864,7 +11020,7 @@
           },
           "hugging_face_id": "mistralai/Ministral-3-14B-Instruct-2512",
           "expiration_date": null,
-          "benchmark_score": 14.4,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -10904,7 +11060,7 @@
           },
           "hugging_face_id": "mistralai/Ministral-3-3B-Instruct-2512",
           "expiration_date": null,
-          "benchmark_score": 4.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -10944,7 +11100,7 @@
           },
           "hugging_face_id": "mistralai/Ministral-3-8B-Instruct-2512",
           "expiration_date": null,
-          "benchmark_score": 9.7,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -11065,7 +11221,7 @@
           },
           "hugging_face_id": "mistralai/Mistral-Large-3-675B-Instruct-2512",
           "expiration_date": null,
-          "benchmark_score": 20.1,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -11195,7 +11351,7 @@
           },
           "hugging_face_id": "mistralai/Mistral-Medium-3.5-128B",
           "expiration_date": "2027-01-31",
-          "benchmark_score": 46.9,
+          "benchmark_score": 4.6,
           "variant": false
         },
         {
@@ -11239,7 +11395,7 @@
           },
           "hugging_face_id": "mistralai/Mistral-Medium-3.5-128B",
           "expiration_date": null,
-          "benchmark_score": 46.9,
+          "benchmark_score": 4.6,
           "variant": true
         },
         {
@@ -11280,7 +11436,7 @@
           },
           "hugging_face_id": null,
           "expiration_date": null,
-          "benchmark_score": 20.5,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -11449,7 +11605,7 @@
           },
           "hugging_face_id": "mistralai/Mistral-Small-4-119B-2603",
           "expiration_date": null,
-          "benchmark_score": 26.6,
+          "benchmark_score": 4.3,
           "variant": false
         },
         {
@@ -13681,7 +13837,7 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.656Z",
+          "observed_at": "2026-11-18T21:37:58.841Z",
           "content_digest": "2bb2e7e476532dc36e6307e019a414254e6e7a40bd75a47dc8422278af27cc65",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -13690,7 +13846,7 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.687Z",
+          "observed_at": "2026-11-18T21:37:58.851Z",
           "content_digest": "0720db60b4af9f1169a69b89713059f6282c72816f34e32e91c8f6555bb35379",
           "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
           "facts": [
@@ -13703,7 +13859,7 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:12.790Z",
+          "observed_at": "2026-11-18T21:37:59.260Z",
           "content_digest": "30d7983ddcb3416f854c622a958abbd0313ec2c84072cfaa9a2d43b7d4565818",
           "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
           "facts": [
@@ -13758,7 +13914,7 @@
           },
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
           "expiration_date": null,
-          "benchmark_score": 56.8,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -13768,8 +13924,8 @@
           "name": "Xiaomi: MiMo-V2.5-Pro",
           "created": 1776874273,
           "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
-          "context_length": 1024000,
-          "max_output_tokens": 131072,
+          "context_length": 262144,
+          "max_output_tokens": 235929,
           "input_modalities": [
             "text"
           ],
@@ -13790,14 +13946,14 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.435,
-            "cached_input": 0.0036,
+            "input": 0.48,
+            "cached_input": 0.096,
             "cache_write": null,
-            "output": 0.87
+            "output": 1.8
           },
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
           "expiration_date": null,
-          "benchmark_score": 60.2,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -14649,11 +14805,10 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:13.460Z",
-          "content_digest": "81d4d2baa09d3d169bd72b46741bb863858c652e4f8945f5b6946c335d2dbe17",
-          "facts_digest": "5ed3a04651d99a5c64a46a166b243ded5400a6e213a05bb7664aef7c5b99110d",
+          "observed_at": "2026-11-18T21:37:59.678Z",
+          "content_digest": "9643256b00c13ec6bdffe9f464a2268f0ae9308e927688072ff65ebb93cfffb1",
+          "facts_digest": "cb59712e2ca23487dfdecc785bc9866263cc95a25f3ab5370c49c782a7aa573b",
           "facts": [
-            "mimo-v2.5-pro and mimo-v2.5 were officially deprecated at 10:00 (beijing time) on october 21,2026. it is recommended to switch to the new version of the models as soon as possible. for details, please refer to model deprecation .",
             "xiaomi mimo-v2.5-pro and mimo-v2.5 were retired on oct 21, 2026, at 10:00 (utc+8), and their model ids no longer work. please update your integrations to use the v2.6 series. view details →"
           ]
         },
@@ -14661,7 +14816,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:13.455Z",
+          "observed_at": "2026-11-18T21:37:59.675Z",
           "content_digest": "8109fa7192085b0d2bac98358316e5cbda749c8bcf174f280bf09387429c667f",
           "facts_digest": "2ae2eacaa8e77c27443d1defd5cab615c225f6d9fe87f8bba0727df56959c580",
           "facts": [
@@ -14683,7 +14838,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-11-17T21:55:13.639Z",
+          "observed_at": "2026-11-18T21:37:59.703Z",
           "content_digest": "824d8b8b54f826bbc1c5c726229664cb71bbea3d52330d137bb3015a20087e87",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
