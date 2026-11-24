@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-11-24T01:15:07.874Z",
+  "observed_at": "2026-11-24T23:16:58.694Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -6046,8 +6046,8 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:06.746Z",
-          "content_digest": "6ae5e9e36bfe7ab37ec9912aca046ec3a1a9b2aa572fe9ee6ed72169826249ab",
+          "observed_at": "2026-11-24T23:16:57.544Z",
+          "content_digest": "00df66625427c6d83b34b30ce5f5882326a2e8a649ff6193afd1876691c8047e",
           "facts_digest": "57e1d76eb8771a133e648ee4b8cad416dd4719f579320f4dd647f093f4da7df9",
           "facts": [
             "* flex remains available on the models listed here as we wind down the beta. we won’t be adding flex to new models. we’ll publish the retirement date in the flex processing guide once confirmed.",
@@ -6064,7 +6064,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:06.753Z",
+          "observed_at": "2026-11-24T23:16:57.502Z",
           "content_digest": "d99df03f357b643d3ffe24533537a0d63d33df0c914ea0c93c6165d350d559bb",
           "facts_digest": "3cafd395432329dd2d1499d9af363785d2878f6858dc7bdf0955cc42fbd96d79",
           "facts": [
@@ -6076,7 +6076,7 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:06.776Z",
+          "observed_at": "2026-11-24T23:16:57.580Z",
           "content_digest": "b204422e71cc5f189bc48c3f89bccf1be42906b6c1fb44c03f7a4f1b10ae7eb4",
           "facts_digest": "d52e6b9d05ce5467a0c7e4c44635df21c9dbccea99e6e64432fb3821ae748f46",
           "facts": [
@@ -7428,7 +7428,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:06.980Z",
+          "observed_at": "2026-11-24T23:16:57.733Z",
           "content_digest": "65fc2d127bfdec7a9aaf058a0318461c5bd7b18b0de274f93519e12d48ee2b66",
           "facts_digest": "d4fa95f35848750e4aeb48de5cd5f9c14f00cc1c3499cc8c40313052572d3902",
           "facts": [
@@ -7461,7 +7461,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.326Z",
+          "observed_at": "2026-11-24T23:16:58.181Z",
           "content_digest": "a2ae3d768de04690802a9f0712990c85846d84afe9601f937ae167db096de458",
           "facts_digest": "edb02ae50e2bab5c4f0ba2d266147b9d5f903d3da4ed77971538ff0ed5214d4c",
           "facts": [
@@ -7483,7 +7483,7 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.097Z",
+          "observed_at": "2026-11-24T23:16:57.764Z",
           "content_digest": "42d0be9fc8ddd776abd2f0d5ad55028b933425a3055168b270fc846d07441bdd",
           "facts_digest": "745261a05b6ed5b12e40e0b31799a16d96cb0fe645997bbec3e1462c5ec71807",
           "facts": [
@@ -7551,131 +7551,6 @@
       "models": [
         {
           "provider": "kimi",
-          "id": "moonshotai/kimi-k2",
-          "canonical_slug": "moonshotai/kimi-k2",
-          "name": "MoonshotAI: Kimi K2 0711",
-          "created": 1752263252,
-          "description": "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for...",
-          "context_length": 131072,
-          "max_output_tokens": 98304,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.57,
-            "cached_input": null,
-            "cache_write": null,
-            "output": 2.3
-          },
-          "hugging_face_id": "moonshotai/Kimi-K2-Instruct",
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": false
-        },
-        {
-          "provider": "kimi",
-          "id": "moonshotai/kimi-k2-0905",
-          "canonical_slug": "moonshotai/kimi-k2-0905",
-          "name": "MoonshotAI: Kimi K2 0905",
-          "created": 1757021147,
-          "description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32...",
-          "context_length": 262144,
-          "max_output_tokens": 98304,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.6,
-            "cached_input": null,
-            "cache_write": null,
-            "output": 2.5
-          },
-          "hugging_face_id": "moonshotai/Kimi-K2-Instruct-0905",
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": false
-        },
-        {
-          "provider": "kimi",
-          "id": "moonshotai/kimi-k2-thinking",
-          "canonical_slug": "moonshotai/kimi-k2-thinking-20251106",
-          "name": "MoonshotAI: Kimi K2 Thinking",
-          "created": 1762440622,
-          "description": "Kimi K2 Thinking is Moonshot AI’s most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in...",
-          "context_length": 262144,
-          "max_output_tokens": 98304,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.6,
-            "cached_input": 0.15,
-            "cache_write": null,
-            "output": 2.5
-          },
-          "hugging_face_id": "moonshotai/Kimi-K2-Thinking",
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": false
-        },
-        {
-          "provider": "kimi",
           "id": "moonshotai/kimi-k2.5",
           "canonical_slug": "moonshotai/kimi-k2.5-0127",
           "name": "MoonshotAI: Kimi K2.5",
@@ -7693,11 +7568,8 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
@@ -7706,7 +7578,6 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "pricing": {
@@ -8253,7 +8124,7 @@
           "provider": "kimi",
           "id": "moonshotai/Kimi-K3",
           "created_at": "2026-06-13T06:42:57.000Z",
-          "last_modified": "2026-11-20T02:36:10.000Z",
+          "last_modified": "2026-11-24T08:03:25.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -8487,8 +8358,8 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.534Z",
-          "content_digest": "2ec2a6196260eb91252be970ad83eadcc73378652a8597e1cec8a5bde59808e1",
+          "observed_at": "2026-11-24T23:16:58.387Z",
+          "content_digest": "e534fdc3a301384c0d140fbffd15156381e099485a3de9029d9dfa79ec09db7d",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
             "- [model list](https://platform.kimi.ai/docs/models.md): review currently available kimi multimodal and coding models, plus migration guidance for discontinued models."
@@ -8498,7 +8369,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.417Z",
+          "observed_at": "2026-11-24T23:16:58.212Z",
           "content_digest": "6612f2c2c580a45832c2a441a01f2860da11ea192b4090cd33a6ebcf2a062f5d",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8528,7 +8399,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.531Z",
+          "observed_at": "2026-11-24T23:16:58.207Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8543,7 +8414,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.450Z",
+          "observed_at": "2026-11-24T23:16:58.212Z",
           "content_digest": "6612f2c2c580a45832c2a441a01f2860da11ea192b4090cd33a6ebcf2a062f5d",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8573,7 +8444,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.432Z",
+          "observed_at": "2026-11-24T23:16:58.219Z",
           "content_digest": "0671af3a6f1ac0382743389cd785fd9d4ee759e199beda86c8ea25237f828ef7",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8588,7 +8459,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.429Z",
+          "observed_at": "2026-11-24T23:16:58.235Z",
           "content_digest": "9e2fb91c69addc91752166a15f4b90e53f0c0a424485786c27f400a29c3cb95c",
           "facts_digest": "112d1e98d96aab27295f34161c40e1d6ae63fbc86cfffd4ea990c87158bc0cb5",
           "facts": [
@@ -8599,7 +8470,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.447Z",
+          "observed_at": "2026-11-24T23:16:58.214Z",
           "content_digest": "397449b74cc111c241eb37b9d0be51993689d2132b52d23742f5c143bebcc54d",
           "facts_digest": "55f80e324fb9558f5847130ad6eb79ac5480c4bc99fc6ee245ec5d066028953f",
           "facts": [
@@ -8612,7 +8483,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.444Z",
+          "observed_at": "2026-11-24T23:16:58.204Z",
           "content_digest": "48d3930270ebb2a80df336a0b4dfeee7a014545ba1133a5059f664eb549ba545",
           "facts_digest": "737bee2a800aac905175f87f37f827c1394f79d999fd101d0d7994b963f12811",
           "facts": [
@@ -8623,7 +8494,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.443Z",
+          "observed_at": "2026-11-24T23:16:58.230Z",
           "content_digest": "3e7f416da2857c6e04973083340fbf5dfa6be5581dce085c14bae3b64c0999e5",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -9216,7 +9087,7 @@
           "created": 1787752741,
           "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
           "context_length": 1048576,
-          "max_output_tokens": 131072,
+          "max_output_tokens": 943717,
           "input_modalities": [
             "image",
             "text",
@@ -9249,10 +9120,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.0356,
+            "input": 0.15,
             "cached_input": 0.03,
             "cache_write": null,
-            "output": 0.0815
+            "output": 0.5
           },
           "hugging_face_id": "zai-org/GLM-5.3-Flash",
           "expiration_date": null,
@@ -10883,8 +10754,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:06.984Z",
-          "content_digest": "c49710ef1374375013d9b671604817362b2fd4ec72f9a27a8a76619d66ea838f",
+          "observed_at": "2026-11-24T23:16:57.784Z",
+          "content_digest": "5397e293709ed66f645f4bc07c9e821a537d06311ac23b09793c5ce30e477286",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10895,8 +10766,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:06.965Z",
-          "content_digest": "2538faf76acc4b746351c35c27c3e5aa64474d3496346cb8edfaf854ab1868de",
+          "observed_at": "2026-11-24T23:16:57.873Z",
+          "content_digest": "4e372f10d5cfb71a4c0d7cb8e44e54954be72e3e093d3fe5e61d31d58c8565e6",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -11274,47 +11145,6 @@
         },
         {
           "provider": "mistral",
-          "id": "mistralai/mistral-medium-3",
-          "canonical_slug": "mistralai/mistral-medium-3",
-          "name": "Mistral: Mistral Medium 3",
-          "created": 1746627341,
-          "description": "Mistral Medium 3 is a high-performance enterprise-grade language model designed to deliver frontier-level capabilities at significantly reduced operational cost. It balances state-of-the-art reasoning and multimodal performance with 8× lower cost...",
-          "context_length": 131072,
-          "max_output_tokens": 104857,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.44,
-            "cached_input": 0.044,
-            "cache_write": null,
-            "output": 2.2
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": false
-        },
-        {
-          "provider": "mistral",
           "id": "mistralai/mistral-medium-3-5",
           "canonical_slug": "mistralai/mistral-medium-3.5-20260430",
           "name": "Mistral: Mistral Medium 3.5",
@@ -11400,47 +11230,6 @@
           "expiration_date": null,
           "benchmark_score": 4.6,
           "variant": true
-        },
-        {
-          "provider": "mistral",
-          "id": "mistralai/mistral-medium-3.1",
-          "canonical_slug": "mistralai/mistral-medium-3.1",
-          "name": "Mistral: Mistral Medium 3.1",
-          "created": 1755095639,
-          "description": "Mistral Medium 3.1 is an updated version of Mistral Medium 3, which is a high-performance enterprise-grade language model designed to deliver frontier-level capabilities at significantly reduced operational cost. It balances...",
-          "context_length": 131072,
-          "max_output_tokens": 104857,
-          "input_modalities": [
-            "file",
-            "image",
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.44,
-            "cached_input": 0.044,
-            "cache_write": null,
-            "output": 2.2
-          },
-          "hugging_face_id": null,
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": false
         },
         {
           "provider": "mistral",
@@ -11823,7 +11612,7 @@
           "provider": "mistral",
           "id": "mistralai/Devstral-2-123B-Instruct-2512",
           "created_at": "2025-11-28T17:32:09.000Z",
-          "last_modified": "2026-07-15T12:19:49.000Z",
+          "last_modified": "2026-11-24T08:48:20.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -11841,7 +11630,7 @@
           "provider": "mistral",
           "id": "mistralai/Devstral-Small-2-24B-Instruct-2512",
           "created_at": "2025-11-28T11:27:11.000Z",
-          "last_modified": "2026-07-15T12:20:36.000Z",
+          "last_modified": "2026-11-24T08:48:30.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12034,7 +11823,7 @@
           "provider": "mistral",
           "id": "mistralai/Leanstral-1.5-119B-A6B",
           "created_at": "2026-07-01T16:43:19.000Z",
-          "last_modified": "2026-07-15T12:24:10.000Z",
+          "last_modified": "2026-11-24T10:23:48.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12050,7 +11839,7 @@
           "provider": "mistral",
           "id": "mistralai/Leanstral-2603",
           "created_at": "2026-03-11T14:01:29.000Z",
-          "last_modified": "2026-07-15T12:20:49.000Z",
+          "last_modified": "2026-11-24T10:23:58.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12413,7 +12202,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-14B-Instruct-2512",
           "created_at": "2025-10-31T08:43:24.000Z",
-          "last_modified": "2026-07-15T12:20:59.000Z",
+          "last_modified": "2026-11-24T08:49:19.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12446,7 +12235,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
           "created_at": "2025-10-31T08:42:04.000Z",
-          "last_modified": "2026-07-15T12:21:11.000Z",
+          "last_modified": "2026-11-24T10:22:55.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12509,7 +12298,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-14B-Reasoning-2512",
           "created_at": "2025-10-31T08:42:28.000Z",
-          "last_modified": "2026-07-15T12:21:23.000Z",
+          "last_modified": "2026-11-24T08:49:32.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12600,7 +12389,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-3B-Instruct-2512",
           "created_at": "2025-10-31T08:43:46.000Z",
-          "last_modified": "2026-07-15T12:21:35.000Z",
+          "last_modified": "2026-11-24T08:48:36.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12634,7 +12423,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
           "created_at": "2025-10-31T08:39:19.000Z",
-          "last_modified": "2026-07-15T12:21:45.000Z",
+          "last_modified": "2026-11-24T10:22:29.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12697,7 +12486,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-3B-Instruct-2512-ONNX",
           "created_at": "2025-11-24T08:49:49.000Z",
-          "last_modified": "2026-01-15T11:19:37.000Z",
+          "last_modified": "2026-11-24T08:19:44.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers.js",
           "tags": [
@@ -12730,7 +12519,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-3B-Reasoning-2512",
           "created_at": "2025-10-31T08:39:58.000Z",
-          "last_modified": "2026-07-15T12:21:57.000Z",
+          "last_modified": "2026-11-24T08:48:46.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12821,7 +12610,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-8B-Instruct-2512",
           "created_at": "2025-10-31T08:43:35.000Z",
-          "last_modified": "2026-07-15T12:22:08.000Z",
+          "last_modified": "2026-11-24T08:49:00.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12854,7 +12643,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
           "created_at": "2025-10-31T08:41:17.000Z",
-          "last_modified": "2026-07-15T12:22:19.000Z",
+          "last_modified": "2026-11-24T10:22:43.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -12917,7 +12706,7 @@
           "provider": "mistral",
           "id": "mistralai/Ministral-3-8B-Reasoning-2512",
           "created_at": "2025-10-31T08:41:36.000Z",
-          "last_modified": "2026-07-15T12:22:30.000Z",
+          "last_modified": "2026-11-24T08:49:11.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -13005,7 +12794,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Large-3-675B-Instruct-2512",
           "created_at": "2025-11-28T18:05:12.000Z",
-          "last_modified": "2026-07-15T12:22:43.000Z",
+          "last_modified": "2026-11-24T08:10:12.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -13063,7 +12852,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle",
           "created_at": "2025-11-10T07:41:02.000Z",
-          "last_modified": "2026-07-15T12:22:54.000Z",
+          "last_modified": "2026-11-24T10:23:04.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -13089,7 +12878,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Large-3-675B-Instruct-2512-NVFP4",
           "created_at": "2025-11-28T17:57:04.000Z",
-          "last_modified": "2026-09-11T08:37:56.000Z",
+          "last_modified": "2026-11-24T10:23:13.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -13118,7 +12907,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Large-4-1T-A52B",
           "created_at": "2026-09-30T18:35:13.000Z",
-          "last_modified": "2026-11-02T18:30:59.000Z",
+          "last_modified": "2026-11-24T08:49:52.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -13180,7 +12969,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Large-4-1T-A52B-NVFP4",
           "created_at": "2026-10-15T19:09:41.000Z",
-          "last_modified": "2026-10-29T16:46:50.000Z",
+          "last_modified": "2026-11-24T08:14:27.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -13237,7 +13026,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Medium-3.5-128B",
           "created_at": "2026-03-31T09:50:20.000Z",
-          "last_modified": "2026-07-15T12:23:17.000Z",
+          "last_modified": "2026-11-24T08:50:01.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -13389,7 +13178,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
           "created_at": "2025-03-11T17:04:58.000Z",
-          "last_modified": "2025-12-22T10:15:41.000Z",
+          "last_modified": "2026-11-24T08:09:18.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -13478,7 +13267,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Small-4-119B-2603",
           "created_at": "2026-01-23T13:14:14.000Z",
-          "last_modified": "2026-07-15T12:23:29.000Z",
+          "last_modified": "2026-11-24T08:50:09.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -13521,7 +13310,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Small-4-119B-2603-eagle",
           "created_at": "2026-03-04T16:38:14.000Z",
-          "last_modified": "2026-07-15T12:23:57.000Z",
+          "last_modified": "2026-11-24T10:24:20.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -13561,7 +13350,7 @@
           "provider": "mistral",
           "id": "mistralai/Mistral-Small-4-119B-2603-NVFP4",
           "created_at": "2026-03-03T10:51:08.000Z",
-          "last_modified": "2026-09-07T07:28:06.000Z",
+          "last_modified": "2026-11-24T08:50:58.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -13602,7 +13391,7 @@
           "provider": "mistral",
           "id": "mistralai/Shieldstral-1.0-3B",
           "created_at": "2026-07-16T10:24:13.000Z",
-          "last_modified": "2026-08-05T10:06:52.000Z",
+          "last_modified": "2026-11-24T08:11:27.000Z",
           "pipeline_tag": null,
           "library_name": "vllm",
           "tags": [
@@ -13874,35 +13663,37 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.042Z",
-          "content_digest": "2bb2e7e476532dc36e6307e019a414254e6e7a40bd75a47dc8422278af27cc65",
-          "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-          "facts": []
+          "observed_at": "2026-11-24T23:16:57.867Z",
+          "content_digest": "b26ee986382dfaee94565ca21970cc4f90fca3f48eff2dfb13ccda6067b523fd",
+          "facts_digest": "7966b4f4ac7fc9c9438c4c338087a3cff2075cfed89b801c51d43a3f396df18a",
+          "facts": [
+            "regional inference (+10%)"
+          ]
         },
         {
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.055Z",
-          "content_digest": "0720db60b4af9f1169a69b89713059f6282c72816f34e32e91c8f6555bb35379",
-          "facts_digest": "5a0005316ea111a7d803cb38a4e7fe7d678d0b963dabcf6e2396212718a563b6",
+          "observed_at": "2026-11-24T23:16:57.895Z",
+          "content_digest": "94d8c8e0a9b6b9f301a0a0687cd84652137276e7a7312df5af799aecf28f5b34",
+          "facts_digest": "18a8f49c1aa62b9a9d575fb7f71a4a51a4e165834deaad9ef0d158a97fa875dc",
           "facts": [
             "deprecated & retired models",
-            "older models that have been deprecated or retired.",
-            "our latest moderation model with 128k context window and jailbreaking detection."
+            "older models that have been deprecated or retired."
           ]
         },
         {
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.066Z",
-          "content_digest": "e723977f687522e13fd51260ac9e07e990315a7c8d27f6b6c5dcc218e3943d2a",
-          "facts_digest": "356fa56d9c3ccf531b761d1df5ed8e21f657eb140b1eac895794afb2125a8eca",
+          "observed_at": "2026-11-24T23:16:57.960Z",
+          "content_digest": "3f2da38e0514bb4466e332a933bcfd933200c866af66219982f106c97f93d226",
+          "facts_digest": "9f3dbb72910da5a44eef88eecd19af3db6ba435dff27b563cbf161c6d89d6d40",
           "facts": [
             "deprecation is announced as soon as a replacement model is available. the replacement can be in general availability or public preview.",
             "during the deprecation period, the model remains accessible. once retired, requests to its identifiers fail with a 404 error.",
-            "each model on the mistral serverless api moves through a defined lifecycle, from initial release to retirement. use these stages to choose the right model for production and plan migrations before a model is retired."
+            "each model on the mistral serverless api moves through a defined lifecycle, from initial release to retirement. use these stages to choose the right model for production and plan migrations before a model is retired.",
+            "understand the labs, public preview and general availability stages, model naming, and the deprecation policy to plan migrations."
           ]
         }
       ]
@@ -13910,50 +13701,6 @@
     "mimo": {
       "label": "MiMo / Xiaomi",
       "models": [
-        {
-          "provider": "mimo",
-          "id": "xiaomi/mimo-v2.5",
-          "canonical_slug": "xiaomi/mimo-v2.5-20260422",
-          "name": "Xiaomi: MiMo-V2.5",
-          "created": 1776874269,
-          "description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
-          "context_length": 1000000,
-          "max_output_tokens": 65536,
-          "input_modalities": [
-            "audio",
-            "image",
-            "text",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "pricing": {
-            "input": 0.4,
-            "cached_input": 0.08,
-            "cache_write": null,
-            "output": 2
-          },
-          "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
-          "expiration_date": null,
-          "benchmark_score": null,
-          "variant": false
-        },
         {
           "provider": "mimo",
           "id": "xiaomi/mimo-v2.6-flash",
@@ -14003,6 +13750,52 @@
           "hugging_face_id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
           "expiration_date": null,
           "benchmark_score": 26.7,
+          "variant": false
+        },
+        {
+          "provider": "mimo",
+          "id": "xiaomi/mimo-v2.6-flash-mopd",
+          "canonical_slug": "xiaomi/mimo-v2.6-flash-mopd-20260927",
+          "name": "Xiaomi: MiMo-V2.6-Flash-MOPD",
+          "created": 1795456634,
+          "description": "MiMo-V2.6-Flash-MOPD is an updated checkpoint of Xiaomi's MiMo-V2.6-Flash, a Mixture-of-Experts model with 309B total and 15B active parameters, a 1M-token context window, and native multimodal input. It adds a multi-teacher...",
+          "context_length": 1048576,
+          "max_output_tokens": 32768,
+          "input_modalities": [
+            "audio",
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "pricing": {
+            "input": 0.15,
+            "cached_input": 0.02,
+            "cache_write": null,
+            "output": 0.42
+          },
+          "hugging_face_id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+          "expiration_date": null,
+          "benchmark_score": null,
           "variant": false
         },
         {
@@ -14803,7 +14596,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.813Z",
+          "observed_at": "2026-11-24T23:16:58.621Z",
           "content_digest": "9643256b00c13ec6bdffe9f464a2268f0ae9308e927688072ff65ebb93cfffb1",
           "facts_digest": "cb59712e2ca23487dfdecc785bc9866263cc95a25f3ab5370c49c782a7aa573b",
           "facts": [
@@ -14814,7 +14607,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.817Z",
+          "observed_at": "2026-11-24T23:16:58.609Z",
           "content_digest": "a17bd8a3c7f1dc0904e41c24dd804196999cc545b432e09897405e6079f2a559",
           "facts_digest": "59cc090e0e2cf6b4738e8f0f8022e28b90833c4b1c269cb70155f11722883921",
           "facts": [
@@ -14839,7 +14632,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-11-24T01:15:07.874Z",
+          "observed_at": "2026-11-24T23:16:58.694Z",
           "content_digest": "824d8b8b54f826bbc1c5c726229664cb71bbea3d52330d137bb3015a20087e87",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
