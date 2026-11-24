@@ -1,8 +1,8 @@
 # River City model-economics watch
 
-Observed: 2026-11-22T20:29:18.458Z
+Observed: 2026-11-24T01:15:07.874Z
 
-10 material change(s) crossed the alert gate.
+4 material change(s) crossed the alert gate.
 
 ## Coverage
 
@@ -11,7 +11,7 @@ Observed: 2026-11-22T20:29:18.458Z
 - Kimi / Moonshot AI: 10 OpenRouter rows; 20 official Hugging Face rows; 9/9 official pages fresh.
 - GLM / Z.ai: 20 OpenRouter rows; 60 official Hugging Face rows; 2/2 official pages fresh.
 - Mistral: 22 OpenRouter rows; 60 official Hugging Face rows; 3/3 official pages fresh.
-- MiMo / Xiaomi: 5 OpenRouter rows; 30 official Hugging Face rows; 3/3 official pages fresh.
+- MiMo / Xiaomi: 4 OpenRouter rows; 30 official Hugging Face rows; 3/3 official pages fresh.
 
 ## Gate
 
