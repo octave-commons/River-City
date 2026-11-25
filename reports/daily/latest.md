@@ -1,14 +1,14 @@
 # River City Daily: PortWatch
 
-![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-11-22-076092c07bc7e87d.svg)
+![Bab el-Mandeb Strait visible vessel passages](../../charts/research/2026-11-25-09fdc70b13aeb2bb.svg)
 
-**Establishes:** Canonical measurement coverage is too old, invalid, or insufficient for a current trend claim.
+**Establishes:** The source records 20 vessels/day at its latest observation; 14 finite observations inform this diagnostic window.
 
 **Does not establish:** an approved normal regime, true unobserved traffic, deliverability, or a causal explanation.
 
-**Question:** Does a newer independent observation confirm or contradict the last measured level?
+**Question:** Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?
 
-**Diagnostic flags:** displaced, regime-unknown, stale, unexplained. Source age: 7 days.
+**Diagnostic flags:** displaced, regime-unknown, uncertain, unexplained. Source age: 3 days.
 
 Research attempts this report: 0; retained attempts: 10. Suppressed: [{:id "portwatch/chokepoint4", :reason :cooldown} {:id "portwatch/chokepoint6", :reason :cooldown}].
 
@@ -17,16 +17,16 @@ Retained research: [`portwatch/chokepoint6` failed](../../data/research/research
 
 Literature metadata supplies leads, not verified experimental findings. Null searches remain valid; failed searches remain failures. Proposed indicators/tests do not modify production definitions. Foresight/Clio event admission is explicitly pending.
 
-Generated: `2026-11-22T19:47:28.229292580Z`
+Generated: `2026-11-25T21:47:07.898287818Z`
 
-Source coverage through: `2026-11-15`
+Source coverage through: `2026-11-22`
 
 ## Status
 
 | Chokepoint | Date | Visible vessels | Prior-year median | Deviation | Baseline n |
 |---|---:|---:|---:|---:|---:|
-| Bab el-Mandeb Strait | 2026-11-15 | 34 | 62.0 | -45.2% | 7 |
-| Strait of Hormuz | 2026-11-15 | 2 | 70.0 | -97.1% | 7 |
+| Bab el-Mandeb Strait | 2026-11-22 | 20 | 61.0 | -67.2% | 7 |
+| Strait of Hormuz | 2026-11-22 | 1 | 65.0 | -98.5% | 7 |
 
 ## Stable artifacts
 
