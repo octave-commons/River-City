@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at": "2026-11-26T22:37:58.256Z",
+  "observed_at": "2026-11-27T22:22:12.240Z",
   "openrouter": {
     "url": "https://openrouter.ai/api/v1/models",
     "ok": true,
@@ -6046,7 +6046,7 @@
           "id": "openai-pricing",
           "url": "https://developers.openai.com/api/docs/pricing",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:56.876Z",
+          "observed_at": "2026-11-27T22:22:11.075Z",
           "content_digest": "64b66c5d0c7b1c93e2eda7a568823269fe9dba9897c8c68f5ea29c0a96ebe3b4",
           "facts_digest": "57e1d76eb8771a133e648ee4b8cad416dd4719f579320f4dd647f093f4da7df9",
           "facts": [
@@ -6064,7 +6064,7 @@
           "id": "openai-models",
           "url": "https://developers.openai.com/api/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:56.848Z",
+          "observed_at": "2026-11-27T22:22:11.046Z",
           "content_digest": "d99df03f357b643d3ffe24533537a0d63d33df0c914ea0c93c6165d350d559bb",
           "facts_digest": "3cafd395432329dd2d1499d9af363785d2878f6858dc7bdf0955cc42fbd96d79",
           "facts": [
@@ -6076,7 +6076,7 @@
           "id": "openai-deprecations",
           "url": "https://developers.openai.com/api/docs/deprecations",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:56.864Z",
+          "observed_at": "2026-11-27T22:22:11.064Z",
           "content_digest": "7bde2da64557774ffd3964cf8741e4a6871e4b2e4c00a0ef9c056130e662b126",
           "facts_digest": "00f1d11780404d085dc1804d5c33ba60afb09bf00ad35a02a11cdfb8ae4472d1",
           "facts": [
@@ -7426,7 +7426,7 @@
           "id": "anthropic-pricing",
           "url": "https://platform.claude.com/docs/en/about-claude/pricing",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.021Z",
+          "observed_at": "2026-11-27T22:22:11.246Z",
           "content_digest": "bf4d0f108cb6bca18a787c1f9e2efe1376a7a40041f5395f0fd325ce9706e308",
           "facts_digest": "9700c02b293b42de0c6e0c9770ded72467a3cd5ae3095185eb894b037944903d",
           "facts": [
@@ -7458,7 +7458,7 @@
           "id": "anthropic-models",
           "url": "https://platform.claude.com/docs/en/models/overview",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.636Z",
+          "observed_at": "2026-11-27T22:22:11.453Z",
           "content_digest": "a2ae3d768de04690802a9f0712990c85846d84afe9601f937ae167db096de458",
           "facts_digest": "edb02ae50e2bab5c4f0ba2d266147b9d5f903d3da4ed77971538ff0ed5214d4c",
           "facts": [
@@ -7480,7 +7480,7 @@
           "id": "anthropic-release-notes",
           "url": "https://platform.claude.com/docs/en/release-notes/overview",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.088Z",
+          "observed_at": "2026-11-27T22:22:11.335Z",
           "content_digest": "05bb030ec04160e99e993ce9a453d0c198773c51c0f7819dbed5ec132c7a2ff3",
           "facts_digest": "745261a05b6ed5b12e40e0b31799a16d96cb0fe645997bbec3e1462c5ec71807",
           "facts": [
@@ -7636,7 +7636,7 @@
           "created": 1769487076,
           "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
           "context_length": 262144,
-          "max_output_tokens": 235929,
+          "max_output_tokens": 131072,
           "input_modalities": [
             "image",
             "text"
@@ -7660,10 +7660,10 @@
             "top_p"
           ],
           "pricing": {
-            "input": 0.5,
-            "cached_input": 0.15,
+            "input": 0.6,
+            "cached_input": null,
             "cache_write": null,
-            "output": 2.5
+            "output": 3
           },
           "hugging_face_id": "moonshotai/Kimi-K2.5",
           "expiration_date": null,
@@ -8437,7 +8437,7 @@
           "id": "kimi-index",
           "url": "https://platform.kimi.ai/docs/llms.txt",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.707Z",
+          "observed_at": "2026-11-27T22:22:11.873Z",
           "content_digest": "a8674baf1a9583327c4ead3b9f66e6639768213db9e7fd7096ce762e04d58c8c",
           "facts_digest": "d1900903ba397fffae4ac55ac7cdecf577a4d5412bd06162f08f1872aae4e079",
           "facts": [
@@ -8448,7 +8448,7 @@
           "id": "kimi-models",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.661Z",
+          "observed_at": "2026-11-27T22:22:11.855Z",
           "content_digest": "6612f2c2c580a45832c2a441a01f2860da11ea192b4090cd33a6ebcf2a062f5d",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8478,7 +8478,7 @@
           "id": "kimi-changelog",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.692Z",
+          "observed_at": "2026-11-27T22:22:11.876Z",
           "content_digest": "e49b75da38270227c0c1c5633a06404a9e85d995a43df017139c8a07cd437be2",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8493,7 +8493,7 @@
           "id": "kimi-discovered-794c052941",
           "url": "https://platform.kimi.ai/docs/models.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.702Z",
+          "observed_at": "2026-11-27T22:22:11.875Z",
           "content_digest": "6612f2c2c580a45832c2a441a01f2860da11ea192b4090cd33a6ebcf2a062f5d",
           "facts_digest": "a173b05c332bf7978ae13ae48acdd74ec4c8f0a7062302e48448021effbcb421",
           "facts": [
@@ -8523,7 +8523,7 @@
           "id": "kimi-discovered-f518e1fac4",
           "url": "https://platform.kimi.ai/docs/platform-changelog.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.654Z",
+          "observed_at": "2026-11-27T22:22:11.868Z",
           "content_digest": "e49b75da38270227c0c1c5633a06404a9e85d995a43df017139c8a07cd437be2",
           "facts_digest": "bdb0bc4b079d1d2499b46f8646e9b52d76353648da15fdad40796f6e758da82e",
           "facts": [
@@ -8538,7 +8538,7 @@
           "id": "kimi-discovered-c72fb12843",
           "url": "https://platform.kimi.ai/docs/pricing/batch.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.660Z",
+          "observed_at": "2026-11-27T22:22:11.881Z",
           "content_digest": "9e2fb91c69addc91752166a15f4b90e53f0c0a424485786c27f400a29c3cb95c",
           "facts_digest": "112d1e98d96aab27295f34161c40e1d6ae63fbc86cfffd4ea990c87158bc0cb5",
           "facts": [
@@ -8549,7 +8549,7 @@
           "id": "kimi-discovered-bf4a7a3a58",
           "url": "https://platform.kimi.ai/docs/pricing/chat.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.675Z",
+          "observed_at": "2026-11-27T22:22:11.883Z",
           "content_digest": "397449b74cc111c241eb37b9d0be51993689d2132b52d23742f5c143bebcc54d",
           "facts_digest": "55f80e324fb9558f5847130ad6eb79ac5480c4bc99fc6ee245ec5d066028953f",
           "facts": [
@@ -8562,7 +8562,7 @@
           "id": "kimi-discovered-a186d1bc0e",
           "url": "https://platform.kimi.ai/docs/pricing/limits.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.680Z",
+          "observed_at": "2026-11-27T22:22:11.901Z",
           "content_digest": "48d3930270ebb2a80df336a0b4dfeee7a014545ba1133a5059f664eb549ba545",
           "facts_digest": "737bee2a800aac905175f87f37f827c1394f79d999fd101d0d7994b963f12811",
           "facts": [
@@ -8573,7 +8573,7 @@
           "id": "kimi-discovered-93b9440dfc",
           "url": "https://platform.kimi.ai/docs/pricing/websearch.md",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.668Z",
+          "observed_at": "2026-11-27T22:22:11.889Z",
           "content_digest": "3e7f416da2857c6e04973083340fbf5dfa6be5581dce085c14bae3b64c0999e5",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
@@ -10818,8 +10818,8 @@
           "id": "zai-pricing",
           "url": "https://docs.z.ai/guides/overview/pricing",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.131Z",
-          "content_digest": "db3270d789871ab4388194175a60e1552d1024edd1878494dd54a68942019355",
+          "observed_at": "2026-11-27T22:22:11.234Z",
+          "content_digest": "2bb1a1241525e31cd503a26f88edceec5203da537b3010f2d989c4718b43331a",
           "facts_digest": "511107a1a16821e0ae2d0e1b1df7ab585e81c0d58915596ec515ca8555c33113",
           "facts": [
             "prices per 1m tokens. model",
@@ -10830,8 +10830,8 @@
           "id": "zai-models",
           "url": "https://docs.z.ai/guides/overview/overview",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.134Z",
-          "content_digest": "e278b155d0682f3d6720c3dabeedd7ad532d91e1bb74eafa71d105a8f3aae619",
+          "observed_at": "2026-11-27T22:22:11.239Z",
+          "content_digest": "99df4314b8efb3d4fae47c557c0270ede40f411e7956ebabfcaf34e6506e9555",
           "facts_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
           "facts": []
         }
@@ -13892,8 +13892,8 @@
           "id": "mistral-pricing",
           "url": "https://docs.mistral.ai/inference/pricing",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.140Z",
-          "content_digest": "ba798ac84d07b9e26625cb6703a29c3a2e8b8e5a3a3adf044dcca93b08b4ad49",
+          "observed_at": "2026-11-27T22:22:11.217Z",
+          "content_digest": "f0227018d731fce107b236b6bc2ad53524ea30b456240b4ab82a7c4002e5350c",
           "facts_digest": "7966b4f4ac7fc9c9438c4c338087a3cff2075cfed89b801c51d43a3f396df18a",
           "facts": [
             "regional inference (+10%)"
@@ -13903,8 +13903,8 @@
           "id": "mistral-models",
           "url": "https://docs.mistral.ai/models",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.151Z",
-          "content_digest": "e6092924f7948e5d6115973f09ed6facc8d6d962d549b556a467cd2258c2c7b3",
+          "observed_at": "2026-11-27T22:22:11.230Z",
+          "content_digest": "22a4860725a07a21959ca047007418036d20b564f5f7f7f5db8fb49167acd352",
           "facts_digest": "18a8f49c1aa62b9a9d575fb7f71a4a51a4e165834deaad9ef0d158a97fa875dc",
           "facts": [
             "deprecated & retired models",
@@ -13915,8 +13915,8 @@
           "id": "mistral-lifecycle",
           "url": "https://docs.mistral.ai/inference/model-lifecycle",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:57.198Z",
-          "content_digest": "1fba8b45aa4cf88308d38e0953bcd938e68097cceabc34f4f0a8c9fdc1914da3",
+          "observed_at": "2026-11-27T22:22:11.299Z",
+          "content_digest": "768f93ca57896ce58287f970135cf09da7da3024cb9df150d404c5990552f423",
           "facts_digest": "9f3dbb72910da5a44eef88eecd19af3db6ba435dff27b563cbf161c6d89d6d40",
           "facts": [
             "deprecation is announced as soon as a replacement model is available. the replacement can be in general availability or public preview.",
@@ -14127,7 +14127,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-Base",
           "created_at": "2025-04-29T23:41:27.000Z",
-          "last_modified": "2026-10-28T13:59:01.000Z",
+          "last_modified": "2026-11-27T11:59:43.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14148,7 +14148,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-MTPs",
           "created_at": "2025-11-14T12:44:49.000Z",
-          "last_modified": "2026-10-28T14:08:41.000Z",
+          "last_modified": "2026-11-27T11:59:52.000Z",
           "pipeline_tag": "feature-extraction",
           "library_name": "transformers",
           "tags": [
@@ -14167,7 +14167,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-RL",
           "created_at": "2025-04-29T23:48:55.000Z",
-          "last_modified": "2026-10-28T13:58:17.000Z",
+          "last_modified": "2026-11-27T12:00:01.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14188,7 +14188,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-RL-0530",
           "created_at": "2025-05-30T01:19:37.000Z",
-          "last_modified": "2026-10-28T13:57:17.000Z",
+          "last_modified": "2026-11-27T11:59:55.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14208,7 +14208,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-RL-Zero",
           "created_at": "2025-04-29T23:56:19.000Z",
-          "last_modified": "2026-10-28T13:56:45.000Z",
+          "last_modified": "2026-11-27T11:59:58.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14228,7 +14228,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-7B-SFT",
           "created_at": "2025-04-29T23:30:47.000Z",
-          "last_modified": "2026-10-28T13:58:38.000Z",
+          "last_modified": "2026-11-27T12:00:04.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14248,7 +14248,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-Audio-7B-Base",
           "created_at": "2025-09-18T20:55:36.000Z",
-          "last_modified": "2026-10-28T14:10:47.000Z",
+          "last_modified": "2026-11-27T12:00:10.000Z",
           "pipeline_tag": "any-to-any",
           "library_name": null,
           "tags": [
@@ -14269,7 +14269,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-Audio-7B-Instruct",
           "created_at": "2025-09-18T21:28:00.000Z",
-          "last_modified": "2026-10-28T14:11:06.000Z",
+          "last_modified": "2026-11-27T12:00:13.000Z",
           "pipeline_tag": "any-to-any",
           "library_name": null,
           "tags": [
@@ -14290,7 +14290,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-Audio-Tokenizer",
           "created_at": "2025-09-18T20:56:05.000Z",
-          "last_modified": "2026-10-28T14:11:25.000Z",
+          "last_modified": "2026-11-27T12:00:16.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -14327,7 +14327,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2-Flash",
           "created_at": "2025-12-16T08:47:02.000Z",
-          "last_modified": "2026-10-28T14:12:00.000Z",
+          "last_modified": "2026-11-27T12:00:27.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14349,7 +14349,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2-Flash-Base",
           "created_at": "2025-12-16T09:08:24.000Z",
-          "last_modified": "2026-10-28T14:12:32.000Z",
+          "last_modified": "2026-11-27T12:00:19.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14372,7 +14372,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5",
           "created_at": "2026-04-27T13:37:38.000Z",
-          "last_modified": "2026-10-28T14:13:36.000Z",
+          "last_modified": "2026-11-27T12:01:08.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14401,7 +14401,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-ASR",
           "created_at": "2026-04-23T06:30:09.000Z",
-          "last_modified": "2026-10-28T14:09:09.000Z",
+          "last_modified": "2026-11-27T12:00:35.000Z",
           "pipeline_tag": "automatic-speech-recognition",
           "library_name": "transformers",
           "tags": [
@@ -14424,7 +14424,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Base",
           "created_at": "2026-04-27T12:49:45.000Z",
-          "last_modified": "2026-10-28T14:13:10.000Z",
+          "last_modified": "2026-11-27T12:00:38.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14452,7 +14452,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-DFlash",
           "created_at": "2026-07-03T11:18:28.000Z",
-          "last_modified": "2026-10-28T14:14:37.000Z",
+          "last_modified": "2026-11-27T12:00:43.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -14469,7 +14469,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Pro",
           "created_at": "2026-04-27T12:52:53.000Z",
-          "last_modified": "2026-10-28T14:14:01.000Z",
+          "last_modified": "2026-11-27T12:01:02.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14495,7 +14495,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Pro-Base",
           "created_at": "2026-04-27T11:32:54.000Z",
-          "last_modified": "2026-10-28T14:15:56.000Z",
+          "last_modified": "2026-11-27T12:00:48.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14520,7 +14520,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.5-Pro-FP4-DFlash",
           "created_at": "2026-06-08T04:32:32.000Z",
-          "last_modified": "2026-10-28T14:15:07.000Z",
+          "last_modified": "2026-11-27T12:00:55.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14551,7 +14551,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
           "created_at": "2026-09-21T18:18:40.000Z",
-          "last_modified": "2026-10-28T14:18:23.000Z",
+          "last_modified": "2026-11-27T12:01:14.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14579,7 +14579,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
           "created_at": "2026-09-27T04:01:00.000Z",
-          "last_modified": "2026-10-28T14:17:25.000Z",
+          "last_modified": "2026-11-27T12:01:17.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14608,7 +14608,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
           "created_at": "2026-09-21T15:39:51.000Z",
-          "last_modified": "2026-10-28T14:16:28.000Z",
+          "last_modified": "2026-11-27T12:01:24.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14638,7 +14638,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
           "created_at": "2026-09-27T03:58:00.000Z",
-          "last_modified": "2026-10-28T14:17:53.000Z",
+          "last_modified": "2026-11-27T12:01:30.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14667,7 +14667,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
           "created_at": "2026-09-21T15:39:33.000Z",
-          "last_modified": "2026-10-28T14:16:57.000Z",
+          "last_modified": "2026-11-27T12:01:42.000Z",
           "pipeline_tag": "text-generation",
           "library_name": "transformers",
           "tags": [
@@ -14697,7 +14697,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-RL",
           "created_at": "2025-05-30T00:37:21.000Z",
-          "last_modified": "2026-10-28T13:59:24.000Z",
+          "last_modified": "2026-11-27T12:01:58.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14720,7 +14720,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-RL-2508",
           "created_at": "2025-08-07T09:59:03.000Z",
-          "last_modified": "2026-10-28T14:00:25.000Z",
+          "last_modified": "2026-11-27T12:01:51.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14744,7 +14744,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-RL-GGUF",
           "created_at": "2025-06-08T13:30:49.000Z",
-          "last_modified": "2026-10-28T14:10:21.000Z",
+          "last_modified": "2026-11-27T12:01:54.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -14761,7 +14761,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-SFT",
           "created_at": "2025-05-30T00:44:26.000Z",
-          "last_modified": "2026-10-28T13:59:53.000Z",
+          "last_modified": "2026-11-27T12:02:07.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14784,7 +14784,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-SFT-2508",
           "created_at": "2025-08-07T09:36:36.000Z",
-          "last_modified": "2026-10-28T14:00:50.000Z",
+          "last_modified": "2026-11-27T12:02:01.000Z",
           "pipeline_tag": "image-text-to-text",
           "library_name": "transformers",
           "tags": [
@@ -14807,7 +14807,7 @@
           "provider": "mimo",
           "id": "XiaomiMiMo/MiMo-VL-7B-SFT-GGUF",
           "created_at": "2025-06-08T13:44:26.000Z",
-          "last_modified": "2026-10-28T14:09:58.000Z",
+          "last_modified": "2026-11-27T12:02:03.000Z",
           "pipeline_tag": null,
           "library_name": null,
           "tags": [
@@ -14826,7 +14826,7 @@
           "id": "mimo-paygo",
           "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:58.244Z",
+          "observed_at": "2026-11-27T22:22:12.150Z",
           "content_digest": "55264efe7dc1a078b7067526f72fa7475e849749cdd43eb62e1853d724ccee50",
           "facts_digest": "cb59712e2ca23487dfdecc785bc9866263cc95a25f3ab5370c49c782a7aa573b",
           "facts": [
@@ -14837,7 +14837,7 @@
           "id": "mimo-token-plan",
           "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:58.241Z",
+          "observed_at": "2026-11-27T22:22:12.240Z",
           "content_digest": "47d550d5c6e4b582839e350a8bdaba723232b6e053920ad40c1a753406a00c2f",
           "facts_digest": "59cc090e0e2cf6b4738e8f0f8022e28b90833c4b1c269cb70155f11722883921",
           "facts": [
@@ -14862,7 +14862,7 @@
           "id": "mimo-model-updates",
           "url": "https://mimo.mi.com/docs/en-US/updates/model",
           "ok": true,
-          "observed_at": "2026-11-26T22:37:58.256Z",
+          "observed_at": "2026-11-27T22:22:12.155Z",
           "content_digest": "30fe18aba2dd069a4c163bb09b6fa948a48860f70d8f3250f2f2478d14d8455d",
           "facts_digest": "e26a9fbafb43d766be731bad6f6305c0f968694571ce9ccfadb968c56f73d78a",
           "facts": [
