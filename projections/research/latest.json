@@ -4,16 +4,16 @@
     "suppressed" : [ {
       "id" : "portwatch/chokepoint4",
       "reason" : "cooldown",
-      "request-id" : "research-6ab0d2db41ff4d8babe1f11a096c258072441e491ea5dca3a6697c3a544916c0"
+      "request-id" : "research-766e5d2e03567a7aba07397a77c152158667b9f9e2d30cb0ad96421c088f3629"
     }, {
       "id" : "portwatch/chokepoint6",
       "reason" : "cooldown",
-      "request-id" : "research-dd13e5c6142b87b3d6e06c6c46de93b62b6eadc72affe382526b5342e818f53b"
+      "request-id" : "research-92ef01801b9307e409783a31189b03c3a7ac9fea16cff0d9c618d1f9e78606fc"
     } ]
   },
-  "as-of" : "2026-11-25T21:47:08.312827965Z",
+  "as-of" : "2026-11-27T21:25:00.578396666Z",
   "assessments" : [ {
-    "chart-kind" : "series",
+    "chart-kind" : "freshness",
     "comparison" : {
       "approved?" : false,
       "lower" : 42.5,
@@ -22,7 +22,7 @@
       "value" : 61.0
     },
     "comparison-key" : "portwatch-visible-vessels/chokepoint4",
-    "flags" : [ "displaced", "regime-unknown", "uncertain", "unexplained" ],
+    "flags" : [ "displaced", "regime-unknown", "stale", "uncertain", "unexplained" ],
     "id" : "portwatch/chokepoint4",
     "label" : "Bab el-Mandeb Strait visible vessel passages",
     "latest" : 20,
@@ -113,19 +113,19 @@
       "value" : 20
     } ],
     "points" : 14,
-    "question" : "Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?",
-    "rank" : 3,
+    "question" : "Does a newer independent observation confirm or contradict the last measured level?",
+    "rank" : 0,
     "regime" : {
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-6ab0d2db41ff4d8babe1f11a096c258072441e491ea5dca3a6697c3a544916c0",
+    "request-id" : "research-766e5d2e03567a7aba07397a77c152158667b9f9e2d30cb0ad96421c088f3629",
     "research?" : true,
-    "source-age-days" : 3,
+    "source-age-days" : 5,
     "spread-relative" : 0.6467391304347826,
     "unit" : "vessels/day"
   }, {
-    "chart-kind" : "series",
+    "chart-kind" : "freshness",
     "comparison" : {
       "approved?" : false,
       "lower" : 56.0,
@@ -134,7 +134,7 @@
       "value" : 65.0
     },
     "comparison-key" : "portwatch-visible-vessels/chokepoint6",
-    "flags" : [ "displaced", "noisy", "regime-unknown", "unexplained" ],
+    "flags" : [ "displaced", "noisy", "regime-unknown", "stale", "unexplained" ],
     "id" : "portwatch/chokepoint6",
     "label" : "Strait of Hormuz visible vessel passages",
     "latest" : 1,
@@ -225,19 +225,19 @@
       "value" : 1
     } ],
     "points" : 14,
-    "question" : "Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?",
-    "rank" : 1,
+    "question" : "Does a newer independent observation confirm or contradict the last measured level?",
+    "rank" : 0,
     "regime" : {
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-dd13e5c6142b87b3d6e06c6c46de93b62b6eadc72affe382526b5342e818f53b",
+    "request-id" : "research-92ef01801b9307e409783a31189b03c3a7ac9fea16cff0d9c618d1f9e78606fc",
     "research?" : true,
-    "source-age-days" : 3,
+    "source-age-days" : 5,
     "spread-relative" : 2,
     "unit" : "vessels/day"
   } ],
-  "chart-path" : "charts/research/2026-11-25-09fdc70b13aeb2bb.svg",
+  "chart-path" : "charts/research/2026-11-27-4e5a4f2546cec224.svg",
   "history" : [ {
     "day" : 20778,
     "id" : "portwatch/chokepoint6",
@@ -300,7 +300,7 @@
     "status" : "completed"
   } ],
   "lead" : {
-    "chart-kind" : "series",
+    "chart-kind" : "freshness",
     "comparison" : {
       "approved?" : false,
       "lower" : 42.5,
@@ -309,7 +309,7 @@
       "value" : 61.0
     },
     "comparison-key" : "portwatch-visible-vessels/chokepoint4",
-    "flags" : [ "displaced", "regime-unknown", "uncertain", "unexplained" ],
+    "flags" : [ "displaced", "regime-unknown", "stale", "uncertain", "unexplained" ],
     "id" : "portwatch/chokepoint4",
     "label" : "Bab el-Mandeb Strait visible vessel passages",
     "latest" : 20,
@@ -400,15 +400,15 @@
       "value" : 20
     } ],
     "points" : 14,
-    "question" : "Does the displacement from descriptive history persist in fresh independent observations with matched coverage and revision state?",
-    "rank" : 3,
+    "question" : "Does a newer independent observation confirm or contradict the last measured level?",
+    "rank" : 0,
     "regime" : {
       "note" : "All-prior-year descriptive history; approved normal-regime exclusions remain issue #3.",
       "status" : "unknown"
     },
-    "request-id" : "research-6ab0d2db41ff4d8babe1f11a096c258072441e491ea5dca3a6697c3a544916c0",
+    "request-id" : "research-766e5d2e03567a7aba07397a77c152158667b9f9e2d30cb0ad96421c088f3629",
     "research?" : true,
-    "source-age-days" : 3,
+    "source-age-days" : 5,
     "spread-relative" : 0.6467391304347826,
     "unit" : "vessels/day"
   },
@@ -416,11 +416,11 @@
     "event-admission" : "pending",
     "event-host" : "foresight",
     "input-refs" : [ {
-      "digest" : "2d5fbcd9ce699dfc85c52066f805e382e598f53118a931a75f1f21e11f7cba84",
+      "digest" : "d7c404c5d357561c0057dee786cb15a1251246cd655857fa9d6d6e3a517aedb8",
       "lineage/mode" : "direct-source-snapshot",
       "path" : "projections/portwatch/latest.edn",
       "source/id" : "source/imf-portwatch",
-      "source/retrieved-at" : "2026-11-25T21:46:35.787044479Z"
+      "source/retrieved-at" : "2026-11-27T21:24:28.399589325Z"
     } ],
     "ledger-backed?" : false,
     "mode" : "source-evidence-bundles"
